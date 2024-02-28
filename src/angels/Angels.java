@@ -9,12 +9,16 @@ package angels;
  * @author jluis
  */
 public class Angels {
-
+   
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+         Tiket imprimTiket = new Tiket();
+         
     }
+
+  
     
 }
