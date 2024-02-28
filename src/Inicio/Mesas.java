@@ -15,6 +15,7 @@ public class Mesas extends javax.swing.JFrame {
      */
     public Mesas() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

@@ -24,9 +24,9 @@ public class Ordenes extends javax.swing.JFrame {
         }
         initComponents();
         setLocationRelativeTo(null);
-        /*String texto1 = "<html><center><body>TRAGOS<br>PREPARADOS</body></center></html>";
+        String texto1 = "<html><center><body>NUEVA ORDEN<br>PARA LLEVAR</body></center></html>";
         nueva.setText(texto1);
-         String texto2 = "<html><center><body>BEBIDAS<br>SIN LICOR</body></center></html>";
+        /* String texto2 = "<html><center><body>BEBIDAS<br>SIN LICOR</body></center></html>";
         T3.setText(texto2);*/
     }
 
@@ -48,7 +48,6 @@ public class Ordenes extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         NUEVAPARALLEVAR = new ClassAngels.PanelRound();
         jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1060, 643));
@@ -65,6 +64,11 @@ public class Ordenes extends javax.swing.JFrame {
         nueva.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         nueva.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         nueva.setText("NUEVA ORDEN");
+        nueva.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                nuevaMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout NEWORDERLayout = new javax.swing.GroupLayout(NEWORDER);
         NEWORDER.setLayout(NEWORDERLayout);
@@ -131,26 +135,16 @@ public class Ordenes extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("NUEVA ORDEN");
-        jLabel1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText(" PARA LLEVAR");
 
         javax.swing.GroupLayout NUEVAPARALLEVARLayout = new javax.swing.GroupLayout(NUEVAPARALLEVAR);
         NUEVAPARALLEVAR.setLayout(NUEVAPARALLEVARLayout);
         NUEVAPARALLEVARLayout.setHorizontalGroup(
             NUEVAPARALLEVARLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         NUEVAPARALLEVARLayout.setVerticalGroup(
             NUEVAPARALLEVARLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NUEVAPARALLEVARLayout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addContainerGap(18, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -198,6 +192,13 @@ public class Ordenes extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void nuevaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nuevaMouseClicked
+        Mesas F = new Mesas();
+        F.setVisible(true);
+        this.dispose();
+
+    }//GEN-LAST:event_nuevaMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -241,7 +242,6 @@ public class Ordenes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel nueva;
     // End of variables declaration//GEN-END:variables
