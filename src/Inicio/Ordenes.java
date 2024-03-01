@@ -4,6 +4,10 @@
  */
 package Inicio;
 
+import BDclass.BDOrdenes;
+import ClassAngels.OrdenesClass;
+import java.sql.SQLException;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -12,7 +16,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  * @author jluis
  */
 public class Ordenes extends javax.swing.JFrame {
-
+   int noorden;
     /**
      * Creates new form Ordenes
      */
@@ -25,9 +29,27 @@ public class Ordenes extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         String texto1 = "<html><center><body>NUEVA ORDEN<br>PARA LLEVAR</body></center></html>";
-        nueva.setText(texto1);
+        llevar.setText(texto1);
         /* String texto2 = "<html><center><body>BEBIDAS<br>SIN LICOR</body></center></html>";
         T3.setText(texto2);*/
+    }
+    
+    public void crear() {
+
+        try {
+
+            OrdenesClass p = new OrdenesClass();
+            BDOrdenes.InsertarPedido(p);
+            noorden = p.getIdregresoPedido();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, ex);
+        }
+
+        //System.out.println("ID ="+id_pedido);
+        Mesas F = new Mesas(noorden);
+        F.setVisible(true);
+        this.dispose();
+
     }
 
     /**
@@ -47,10 +69,9 @@ public class Ordenes extends javax.swing.JFrame {
         ADMINISTRAR = new ClassAngels.PanelRound();
         jLabel2 = new javax.swing.JLabel();
         NUEVAPARALLEVAR = new ClassAngels.PanelRound();
-        jLabel1 = new javax.swing.JLabel();
+        llevar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1060, 643));
 
         jPanel1.setBackground(new java.awt.Color(102, 153, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1060, 643));
@@ -91,6 +112,11 @@ public class Ordenes extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("MESAS");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout MESASLayout = new javax.swing.GroupLayout(MESAS);
         MESAS.setLayout(MESASLayout);
@@ -132,19 +158,19 @@ public class Ordenes extends javax.swing.JFrame {
         NUEVAPARALLEVAR.setRoundTopLeft(20);
         NUEVAPARALLEVAR.setRoundTopRight(20);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("NUEVA ORDEN");
+        llevar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        llevar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        llevar.setText("NUEVA ORDEN");
 
         javax.swing.GroupLayout NUEVAPARALLEVARLayout = new javax.swing.GroupLayout(NUEVAPARALLEVAR);
         NUEVAPARALLEVAR.setLayout(NUEVAPARALLEVARLayout);
         NUEVAPARALLEVARLayout.setHorizontalGroup(
             NUEVAPARALLEVARLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+            .addComponent(llevar, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
         );
         NUEVAPARALLEVARLayout.setVerticalGroup(
             NUEVAPARALLEVARLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+            .addComponent(llevar, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -193,11 +219,14 @@ public class Ordenes extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void nuevaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nuevaMouseClicked
-        Mesas F = new Mesas();
+       crear();
+    }//GEN-LAST:event_nuevaMouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+       MesasSeguimiento F = new MesasSeguimiento();
         F.setVisible(true);
         this.dispose();
-
-    }//GEN-LAST:event_nuevaMouseClicked
+    }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -239,10 +268,10 @@ public class Ordenes extends javax.swing.JFrame {
     private ClassAngels.PanelRound MESAS;
     private ClassAngels.PanelRound NEWORDER;
     private ClassAngels.PanelRound NUEVAPARALLEVAR;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel llevar;
     private javax.swing.JLabel nueva;
     // End of variables declaration//GEN-END:variables
 }

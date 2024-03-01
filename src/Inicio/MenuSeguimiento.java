@@ -14,22 +14,14 @@ import javax.swing.BorderFactory;
  *
  * @author jluis
  */
-public class Menu extends javax.swing.JFrame {
-     int noorden;
-     int nomesa;
+public class MenuSeguimiento extends javax.swing.JFrame {
+     
     /**
      * Creates new form Menu
-     * @param a
-     * @param b
      */
-    public Menu(int a,int b) {
+    public MenuSeguimiento() {
         initComponents();
         setLocationRelativeTo(null);
-        this.nomesa = a;
-        this.noorden = b;
-        
-        Ordentxt.setText(String.valueOf(b));
-        mesatxt.setText(String.valueOf(a));
     }
 
     /**
@@ -351,16 +343,14 @@ public class Menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

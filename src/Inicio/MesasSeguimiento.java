@@ -4,35 +4,26 @@
  */
 package Inicio;
 
-import BDclass.BDConexion;
 import ClassAngels.MesasClass;
 import java.awt.Color;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
-import javax.swing.JOptionPane;
 
 /**
  *
  * @author jluis
  */
-public final class Mesas extends javax.swing.JFrame {
+public final class MesasSeguimiento extends javax.swing.JFrame {
 
-    int id_mesa;
-    int orden;
+     int id_mesa;
 
     /**
      * Creates new form Mesas
      */
-    public Mesas(int ord) {
+    public MesasSeguimiento() {
         initComponents();
-        this.orden = ord;
         setLocationRelativeTo(null);
         habilitartodo();
-        disponibilidad(false);
+        disponibilidad(true);
 
     }
 
@@ -150,25 +141,7 @@ public final class Mesas extends javax.swing.JFrame {
         }
     }
 
-    public void actualizarmesa() {
-
-        try {
-            BDConexion conecta = new BDConexion();
-            Connection con = conecta.getConexion();
-            PreparedStatement ps = null;
-            PreparedStatement p = null;
-            ps = con.prepareStatement("UPDATE MESAS SET ESTADO = 2 WHERE id_mesa =" + id_mesa);
-            p = con.prepareStatement("UPDATE ordenes SET id_mesa = "+id_mesa+"  WHERE noorden =" + orden);
-            ps.executeUpdate();
-            p.executeUpdate();
-            con.close();
-            ps.close();
-            p.close();
-
-        } catch (SQLException e) {
-        }
-    }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -817,100 +790,86 @@ public final class Mesas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        if(Mesa1.isEnabled()){
-           id_mesa = 1;
-           actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        id_mesa = 1;
+       
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
-        } else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO...");
-                }
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         id_mesa = 2;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         id_mesa = 3;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         id_mesa = 4;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         id_mesa = 5;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         id_mesa = 6;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         id_mesa = 7;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
         id_mesa = 8;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         id_mesa = 9;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
         id_mesa = 10;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel11MouseClicked
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
         id_mesa = 11;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel12MouseClicked
 
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
         id_mesa = 12;
-        actualizarmesa();
-        Menu F = new Menu(id_mesa,orden);
+        MenuSeguimiento F = new MenuSeguimiento();
         F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel13MouseClicked
@@ -932,20 +891,21 @@ public final class Mesas extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Mesas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MesasSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Mesas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MesasSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Mesas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MesasSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Mesas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MesasSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                // new Mesas().setVisible(true);
+            new MesasSeguimiento().setVisible(true);
             }
         });
     }
