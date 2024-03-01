@@ -33,7 +33,6 @@ public final class Mesas extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         habilitartodo();
         disponibilidad(false);
-
     }
 
     public void habilitartodo() {
