@@ -53,7 +53,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         setBackground(new java.awt.Color(153, 255, 204));
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SIN ALCOHOL", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BEBIDAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         panelRound1.setBackground(new java.awt.Color(204, 255, 102));
         panelRound1.setPreferredSize(new java.awt.Dimension(100, 75));

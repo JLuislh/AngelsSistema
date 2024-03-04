@@ -35,16 +35,18 @@ public class Menu extends javax.swing.JFrame {
         Ordentxt.setText(String.valueOf(b));
         mesatxt.setText(String.valueOf(a));
         
-        String texto1 = "<html><center><body>HAMBURGUEZAS<br>Y<br>FUERA DEL MAR</body></center></html>";
+        String texto1 = "<html><center><body>HAMBURGUEZAS<br>FUERA DEL MAR</body></center></html>";
         Titulo2.setText(texto1);
-        String texto2 = "<html><center><body>AMANTES DEL CEVICHE<br>Y<br>SABORES DEL MAR</body></center></html>";
+        String texto2 = "<html><center><body>AMANTES DEL CEVICHE<br>SABORES DEL MAR</body></center></html>";
         Titulo3.setText(texto2);
-        String texto3 = "<html><center><body>BEBIDAS SIN<br>ALCOHOL</body></center></html>";
+        String texto3 = "<html><center><body>BEBIDAS<br>BEBIDAS PREPARADAS</body></center></html>";
         Titulo4.setText(texto3);
-        String texto4 = "<html><center><body>BEBIDAS CON<br>ALCOHOL</body></center></html>";
+        String texto4 = "<html><center><body>CERVEZAS<br>DRINKS</body></center></html>";
         Titulo5.setText(texto4);
         String texto5 = "<html><center><body>BOTELLAS</body></center></html>";
         Titulo6.setText(texto5);
+        String texto6 = "<html><center><body>CANCELAR<br>ORDEN</body></center></html>";
+        Titulo7.setText(texto6);
     }
     
     
@@ -97,7 +99,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Menu1.setBackground(new java.awt.Color(255, 204, 153));
-        Menu1.setPreferredSize(new java.awt.Dimension(145, 50));
+        Menu1.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu1.setRoundTopLeft(20);
         Menu1.setRoundTopRight(20);
 
@@ -114,7 +116,9 @@ public class Menu extends javax.swing.JFrame {
         Menu1.setLayout(Menu1Layout);
         Menu1Layout.setHorizontalGroup(
             Menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+            .addGroup(Menu1Layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 11, Short.MAX_VALUE))
         );
         Menu1Layout.setVerticalGroup(
             Menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,7 +126,7 @@ public class Menu extends javax.swing.JFrame {
         );
 
         Menu2.setBackground(new java.awt.Color(204, 204, 255));
-        Menu2.setPreferredSize(new java.awt.Dimension(145, 50));
+        Menu2.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu2.setRoundTopLeft(20);
         Menu2.setRoundTopRight(20);
 
@@ -139,7 +143,7 @@ public class Menu extends javax.swing.JFrame {
         Menu2.setLayout(Menu2Layout);
         Menu2Layout.setHorizontalGroup(
             Menu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Titulo2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, Short.MAX_VALUE)
         );
         Menu2Layout.setVerticalGroup(
             Menu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,7 +151,7 @@ public class Menu extends javax.swing.JFrame {
         );
 
         Menu3.setBackground(new java.awt.Color(0, 204, 204));
-        Menu3.setPreferredSize(new java.awt.Dimension(145, 50));
+        Menu3.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu3.setRoundTopLeft(20);
         Menu3.setRoundTopRight(20);
 
@@ -164,7 +168,7 @@ public class Menu extends javax.swing.JFrame {
         Menu3.setLayout(Menu3Layout);
         Menu3Layout.setHorizontalGroup(
             Menu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo3, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+            .addComponent(Titulo3, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
         );
         Menu3Layout.setVerticalGroup(
             Menu3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,7 +176,7 @@ public class Menu extends javax.swing.JFrame {
         );
 
         Menu4.setBackground(new java.awt.Color(153, 255, 204));
-        Menu4.setPreferredSize(new java.awt.Dimension(145, 50));
+        Menu4.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu4.setRoundTopLeft(20);
         Menu4.setRoundTopRight(20);
 
@@ -189,7 +193,7 @@ public class Menu extends javax.swing.JFrame {
         Menu4.setLayout(Menu4Layout);
         Menu4Layout.setHorizontalGroup(
             Menu4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo4, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+            .addComponent(Titulo4, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
         );
         Menu4Layout.setVerticalGroup(
             Menu4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,7 +201,7 @@ public class Menu extends javax.swing.JFrame {
         );
 
         Menu5.setBackground(new java.awt.Color(204, 204, 204));
-        Menu5.setPreferredSize(new java.awt.Dimension(145, 50));
+        Menu5.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu5.setRoundTopLeft(20);
         Menu5.setRoundTopRight(20);
 
@@ -214,7 +218,7 @@ public class Menu extends javax.swing.JFrame {
         Menu5.setLayout(Menu5Layout);
         Menu5Layout.setHorizontalGroup(
             Menu5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo5, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+            .addComponent(Titulo5, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
         );
         Menu5Layout.setVerticalGroup(
             Menu5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -222,7 +226,7 @@ public class Menu extends javax.swing.JFrame {
         );
 
         Menu6.setBackground(new java.awt.Color(51, 153, 255));
-        Menu6.setPreferredSize(new java.awt.Dimension(145, 50));
+        Menu6.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu6.setRoundTopLeft(20);
         Menu6.setRoundTopRight(20);
 
@@ -239,27 +243,27 @@ public class Menu extends javax.swing.JFrame {
         Menu6.setLayout(Menu6Layout);
         Menu6Layout.setHorizontalGroup(
             Menu6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo6, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+            .addComponent(Titulo6, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
         );
         Menu6Layout.setVerticalGroup(
             Menu6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Titulo6, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        Menu7.setBackground(new java.awt.Color(153, 204, 255));
-        Menu7.setPreferredSize(new java.awt.Dimension(145, 50));
+        Menu7.setBackground(new java.awt.Color(255, 0, 0));
+        Menu7.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu7.setRoundTopLeft(20);
         Menu7.setRoundTopRight(20);
 
-        Titulo7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Titulo7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Titulo7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo7.setText("jLabel9");
+        Titulo7.setText("CANCELAR");
 
         javax.swing.GroupLayout Menu7Layout = new javax.swing.GroupLayout(Menu7);
         Menu7.setLayout(Menu7Layout);
         Menu7Layout.setHorizontalGroup(
             Menu7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo7, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+            .addComponent(Titulo7, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
         );
         Menu7Layout.setVerticalGroup(
             Menu7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,7 +275,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(Menu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Menu1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Menu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -289,7 +293,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Menu1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(Menu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Menu2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -306,14 +310,14 @@ public class Menu extends javax.swing.JFrame {
         PanelMenu.setLayout(PanelMenuLayout);
         PanelMenuLayout.setHorizontalGroup(
             PanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1060, Short.MAX_VALUE)
+            .addGap(0, 1030, Short.MAX_VALUE)
         );
         PanelMenuLayout.setVerticalGroup(
             PanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        jPanel1.add(PanelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1060, 410));
+        jPanel1.add(PanelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1030, 380));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -328,7 +332,7 @@ public class Menu extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 700, 190));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 700, 190));
 
         jPanel6.setBackground(new java.awt.Color(153, 204, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -343,6 +347,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel6.add(Ordentxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 17, 90, -1));
         jPanel6.add(mesatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 90, -1));
 
+        panelRound1.setBackground(new java.awt.Color(0, 255, 0));
         panelRound1.setRoundBottomLeft(20);
         panelRound1.setRoundBottomRight(20);
         panelRound1.setRoundTopLeft(20);
@@ -356,14 +361,16 @@ public class Menu extends javax.swing.JFrame {
         panelRound1.setLayout(panelRound1Layout);
         panelRound1Layout.setHorizontalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+            .addGroup(panelRound1Layout.createSequentialGroup()
+                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                .addContainerGap())
         );
         panelRound1Layout.setVerticalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
         );
 
-        jPanel6.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, -1, -1));
+        jPanel6.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 130, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("TOTAL");
@@ -371,15 +378,15 @@ public class Menu extends javax.swing.JFrame {
 
         jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(255, 0, 0));
-        jPanel6.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 177, -1));
+        jPanel6.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, -1));
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 460, 360, 190));
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 430, 330, 190));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1027, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -391,7 +398,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
     CaldosAntojos op1 = new CaldosAntojos();
-    op1.setSize(1060, 410);
+    op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -403,7 +410,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void Titulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo2MouseClicked
     Hamburguesas op1 = new Hamburguesas();
-    op1.setSize(1060, 410);
+    op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -413,7 +420,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void Titulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo3MouseClicked
     Ceviches op1 = new Ceviches();
-    op1.setSize(1060, 410);
+    op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -423,7 +430,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void Titulo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo4MouseClicked
     BebidasSinAlcohol op1 = new BebidasSinAlcohol();
-    op1.setSize(1060, 410);
+    op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -433,7 +440,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
     ConAlcohol op1 = new ConAlcohol();
-    op1.setSize(1060, 410);
+    op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -443,7 +450,7 @@ public class Menu extends javax.swing.JFrame {
 
     private void Titulo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo6MouseClicked
     Botellas op1 = new Botellas();
-    op1.setSize(1060, 410);
+    op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
