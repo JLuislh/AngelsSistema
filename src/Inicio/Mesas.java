@@ -36,26 +36,26 @@ public final class Mesas extends javax.swing.JFrame {
     }
 
     public void habilitartodo() {
-        Mesa1.setEnabled(false);
-        Mesa2.setEnabled(false);
-        Mesa3.setEnabled(false);
-        Mesa4.setEnabled(false);
-        Mesa5.setEnabled(false);
-        Mesa6.setEnabled(false);
-        Mesa7.setEnabled(false);
-        Mesa8.setEnabled(false);
-        Mesa9.setEnabled(false);
-        Mesa10.setEnabled(false);
-        Mesa11.setEnabled(false);
-        Mesa12.setEnabled(false);
-        Mesa13.setEnabled(false);
-        Mesa14.setEnabled(false);
-        Mesa15.setEnabled(false);
-        Mesa16.setEnabled(false);
-        Mesa17.setEnabled(false);
-        Mesa18.setEnabled(false);
-        Mesa19.setEnabled(false);
-        Mesa20.setEnabled(false);
+        Mesa1.setEnabled(true);
+        Mesa2.setEnabled(true);
+        Mesa3.setEnabled(true);
+        Mesa4.setEnabled(true);
+        Mesa5.setEnabled(true);
+        Mesa6.setEnabled(true);
+        Mesa7.setEnabled(true);
+        Mesa8.setEnabled(true);
+        Mesa9.setEnabled(true);
+        Mesa10.setEnabled(true);
+        Mesa11.setEnabled(true);
+        Mesa12.setEnabled(true);
+        Mesa13.setEnabled(true);
+        Mesa14.setEnabled(true);
+        Mesa15.setEnabled(true);
+        Mesa16.setEnabled(true);
+        Mesa17.setEnabled(true);
+        Mesa18.setEnabled(true);
+        Mesa19.setEnabled(true);
+        Mesa20.setEnabled(true);
         Mesa1.setBackground(Color.GREEN);
         Mesa2.setBackground(Color.GREEN);
         Mesa3.setBackground(Color.GREEN);
@@ -219,13 +219,16 @@ public final class Mesas extends javax.swing.JFrame {
         Mesa20 = new ClassAngels.PanelRound();
         jLabel21 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        panelRound1 = new ClassAngels.PanelRound();
+        jLabel22 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1060, 643));
 
-        Mesa1.setBackground(new java.awt.Color(255, 153, 153));
+        Mesa1.setBackground(new java.awt.Color(255, 255, 204));
         Mesa1.setRoundBottomLeft(20);
         Mesa1.setRoundBottomRight(20);
         Mesa1.setRoundTopLeft(20);
@@ -546,6 +549,11 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("MESA 13");
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Mesa13Layout = new javax.swing.GroupLayout(Mesa13);
         Mesa13.setLayout(Mesa13Layout);
@@ -567,6 +575,11 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("MESA 14");
+        jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel15MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Mesa14Layout = new javax.swing.GroupLayout(Mesa14);
         Mesa14.setLayout(Mesa14Layout);
@@ -588,6 +601,11 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("MESA 15");
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Mesa15Layout = new javax.swing.GroupLayout(Mesa15);
         Mesa15.setLayout(Mesa15Layout);
@@ -609,6 +627,11 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("MESA 16");
+        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel17MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Mesa16Layout = new javax.swing.GroupLayout(Mesa16);
         Mesa16.setLayout(Mesa16Layout);
@@ -630,6 +653,11 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("MESA 17");
+        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel18MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Mesa17Layout = new javax.swing.GroupLayout(Mesa17);
         Mesa17.setLayout(Mesa17Layout);
@@ -651,6 +679,11 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setText("MESA 18");
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Mesa18Layout = new javax.swing.GroupLayout(Mesa18);
         Mesa18.setLayout(Mesa18Layout);
@@ -672,6 +705,11 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setText("MESA 19");
+        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel20MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Mesa19Layout = new javax.swing.GroupLayout(Mesa19);
         Mesa19.setLayout(Mesa19Layout);
@@ -693,6 +731,11 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel21.setText("MESA 20");
+        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel21MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Mesa20Layout = new javax.swing.GroupLayout(Mesa20);
         Mesa20.setLayout(Mesa20Layout);
@@ -710,6 +753,32 @@ public final class Mesas extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("CONTROL");
+
+        panelRound1.setBackground(new java.awt.Color(255, 255, 0));
+        panelRound1.setRoundBottomLeft(20);
+        panelRound1.setRoundBottomRight(20);
+        panelRound1.setRoundTopLeft(20);
+        panelRound1.setRoundTopRight(20);
+
+        jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel22.setText("CANCELAR");
+        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel22MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
+        panelRound1.setLayout(panelRound1Layout);
+        panelRound1Layout.setHorizontalGroup(
+            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        panelRound1Layout.setVerticalGroup(
+            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -760,7 +829,10 @@ public final class Mesas extends javax.swing.JFrame {
                                 .addComponent(Mesa13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(Mesa14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Mesa20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Mesa20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(93, 93, 93))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -793,7 +865,8 @@ public final class Mesas extends javax.swing.JFrame {
                     .addComponent(Mesa17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Mesa18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Mesa19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Mesa20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Mesa20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(203, 203, 203))
         );
 
@@ -817,102 +890,224 @@ public final class Mesas extends javax.swing.JFrame {
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         if(Mesa1.isEnabled()){
-           id_mesa = 1;
-           actualizarmesa();
+        id_mesa = 1;
+        actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
-        } else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO...");
-                }
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        if(Mesa2.isEnabled()){
         id_mesa = 2;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+         if(Mesa3.isEnabled()){
         id_mesa = 3;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        if(Mesa4.isEnabled()){
         id_mesa = 4;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        if(Mesa5.isEnabled()){
         id_mesa = 5;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        if(Mesa6.isEnabled()){
         id_mesa = 6;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        if(Mesa7.isEnabled()){
         id_mesa = 7;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        if(Mesa8.isEnabled()){
         id_mesa = 8;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        if(Mesa9.isEnabled()){
         id_mesa = 9;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        if(Mesa10.isEnabled()){
         id_mesa = 10;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel11MouseClicked
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        if(Mesa11.isEnabled()){
         id_mesa = 11;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel12MouseClicked
 
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        if(Mesa12.isEnabled()){
         id_mesa = 12;
         actualizarmesa();
         Menu F = new Menu(id_mesa,orden);
         F.setVisible(true);
         this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
     }//GEN-LAST:event_jLabel13MouseClicked
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        if(Mesa13.isEnabled()){
+        id_mesa = 13;
+        actualizarmesa();
+        Menu F = new Menu(id_mesa,orden);
+        F.setVisible(true);
+        this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
+    }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
+        if(Mesa14.isEnabled()){
+        id_mesa = 14;
+        actualizarmesa();
+        Menu F = new Menu(id_mesa,orden);
+        F.setVisible(true);
+        this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
+    }//GEN-LAST:event_jLabel15MouseClicked
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+        if(Mesa15.isEnabled()){
+        id_mesa = 15;
+        actualizarmesa();
+        Menu F = new Menu(id_mesa,orden);
+        F.setVisible(true);
+        this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
+    }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+        if(Mesa16.isEnabled()){
+        id_mesa = 16;
+        actualizarmesa();
+        Menu F = new Menu(id_mesa,orden);
+        F.setVisible(true);
+        this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
+    }//GEN-LAST:event_jLabel17MouseClicked
+
+    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
+        if(Mesa17.isEnabled()){
+        id_mesa = 17;
+        actualizarmesa();
+        Menu F = new Menu(id_mesa,orden);
+        F.setVisible(true);
+        this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
+    }//GEN-LAST:event_jLabel18MouseClicked
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+        if(Mesa18.isEnabled()){
+        id_mesa = 18;
+        actualizarmesa();
+        Menu F = new Menu(id_mesa,orden);
+        F.setVisible(true);
+        this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
+    }//GEN-LAST:event_jLabel19MouseClicked
+
+    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+        if(Mesa19.isEnabled()){
+        id_mesa = 19;
+        actualizarmesa();
+        Menu F = new Menu(id_mesa,orden);
+        F.setVisible(true);
+        this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
+    }//GEN-LAST:event_jLabel20MouseClicked
+
+    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
+        if(Mesa20.isEnabled()){
+        id_mesa = 20;
+        actualizarmesa();
+        Menu F = new Menu(id_mesa,orden);
+        F.setVisible(true);
+        this.dispose();
+        }else{ JOptionPane.showMessageDialog(null, "MESA ESTA EN USO..."); }
+    }//GEN-LAST:event_jLabel21MouseClicked
+
+    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
+          
+        try {
+            
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            PreparedStatement ps = null;
+            ps= con.prepareStatement("delete from Ordenes where noorden="+orden);
+            ps.executeUpdate();
+            con.close();
+            ps.close();
+            
+            
+        } catch (SQLException e) { System.out.println("ERRROR ELIMINANDO LA ORDEN EN MESAS"+e);
+        }
+        Ordenes F = new Ordenes();
+        F.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_jLabel22MouseClicked
 
     /**
      * @param args the command line arguments
@@ -984,6 +1179,7 @@ public final class Mesas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -992,5 +1188,6 @@ public final class Mesas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private ClassAngels.PanelRound panelRound1;
     // End of variables declaration//GEN-END:variables
 }

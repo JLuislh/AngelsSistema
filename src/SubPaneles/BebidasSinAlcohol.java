@@ -56,7 +56,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BEBIDAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         panelRound1.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound1.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound1.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound1.setRoundBottomLeft(20);
         panelRound1.setRoundBottomRight(20);
         panelRound1.setRoundTopLeft(20);
@@ -70,11 +70,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound1Layout.setVerticalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound2.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound2.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound2.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound2.setRoundBottomLeft(20);
         panelRound2.setRoundBottomRight(20);
         panelRound2.setRoundTopLeft(20);
@@ -88,11 +88,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound2Layout.setVerticalGroup(
             panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound3.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound3.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound3.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound3.setRoundBottomLeft(20);
         panelRound3.setRoundBottomRight(20);
         panelRound3.setRoundTopLeft(20);
@@ -106,11 +106,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound3Layout.setVerticalGroup(
             panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound4.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound4.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound4.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound4.setRoundBottomLeft(20);
         panelRound4.setRoundBottomRight(20);
         panelRound4.setRoundTopLeft(20);
@@ -124,11 +124,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound4Layout.setVerticalGroup(
             panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound5.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound5.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound5.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound5.setRoundBottomLeft(20);
         panelRound5.setRoundBottomRight(20);
         panelRound5.setRoundTopLeft(20);
@@ -142,11 +142,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound5Layout.setVerticalGroup(
             panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound6.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound6.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound6.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound6.setRoundBottomLeft(20);
         panelRound6.setRoundBottomRight(20);
         panelRound6.setRoundTopLeft(20);
@@ -160,11 +160,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound6Layout.setVerticalGroup(
             panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound7.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound7.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound7.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound7.setRoundBottomLeft(20);
         panelRound7.setRoundBottomRight(20);
         panelRound7.setRoundTopLeft(20);
@@ -178,11 +178,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound7Layout.setVerticalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound8.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound8.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound8.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound8.setRoundBottomLeft(20);
         panelRound8.setRoundBottomRight(20);
         panelRound8.setRoundTopLeft(20);
@@ -196,11 +196,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound8Layout.setVerticalGroup(
             panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound9.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound9.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound9.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound9.setRoundBottomLeft(20);
         panelRound9.setRoundBottomRight(20);
         panelRound9.setRoundTopLeft(20);
@@ -214,11 +214,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound9Layout.setVerticalGroup(
             panelRound9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound10.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound10.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound10.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound10.setRoundBottomLeft(20);
         panelRound10.setRoundBottomRight(20);
         panelRound10.setRoundTopLeft(20);
@@ -232,11 +232,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound10Layout.setVerticalGroup(
             panelRound10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound11.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound11.setPreferredSize(new java.awt.Dimension(100, 75));
+        panelRound11.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound11.setRoundBottomLeft(20);
         panelRound11.setRoundBottomRight(20);
         panelRound11.setRoundTopLeft(20);
@@ -250,7 +250,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound11Layout.setVerticalGroup(
             panelRound11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -282,7 +282,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
                         .addComponent(panelRound10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(panelRound11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -310,7 +310,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BEBIDAS PREPARADAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         panelRound12.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound12.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound12.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound12.setRoundBottomLeft(20);
         panelRound12.setRoundBottomRight(20);
         panelRound12.setRoundTopLeft(20);
@@ -324,11 +324,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound12Layout.setVerticalGroup(
             panelRound12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound13.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound13.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound13.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound13.setRoundBottomLeft(20);
         panelRound13.setRoundBottomRight(20);
         panelRound13.setRoundTopLeft(20);
@@ -342,11 +342,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound13Layout.setVerticalGroup(
             panelRound13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound14.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound14.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound14.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound14.setRoundBottomLeft(20);
         panelRound14.setRoundBottomRight(20);
         panelRound14.setRoundTopLeft(20);
@@ -360,11 +360,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound14Layout.setVerticalGroup(
             panelRound14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound15.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound15.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound15.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound15.setRoundBottomLeft(20);
         panelRound15.setRoundBottomRight(20);
         panelRound15.setRoundTopLeft(20);
@@ -378,11 +378,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound15Layout.setVerticalGroup(
             panelRound15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound16.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound16.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound16.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound16.setRoundBottomLeft(20);
         panelRound16.setRoundBottomRight(20);
         panelRound16.setRoundTopLeft(20);
@@ -396,11 +396,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound16Layout.setVerticalGroup(
             panelRound16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound17.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound17.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound17.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound17.setRoundBottomLeft(20);
         panelRound17.setRoundBottomRight(20);
         panelRound17.setRoundTopLeft(20);
@@ -414,11 +414,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound17Layout.setVerticalGroup(
             panelRound17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound18.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound18.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound18.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound18.setRoundBottomLeft(20);
         panelRound18.setRoundBottomRight(20);
         panelRound18.setRoundTopLeft(20);
@@ -432,11 +432,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound18Layout.setVerticalGroup(
             panelRound18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound19.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound19.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound19.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound19.setRoundBottomLeft(20);
         panelRound19.setRoundBottomRight(20);
         panelRound19.setRoundTopLeft(20);
@@ -450,11 +450,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound19Layout.setVerticalGroup(
             panelRound19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound20.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound20.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound20.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound20.setRoundBottomLeft(20);
         panelRound20.setRoundBottomRight(20);
         panelRound20.setRoundTopLeft(20);
@@ -468,11 +468,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound20Layout.setVerticalGroup(
             panelRound20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         panelRound21.setBackground(new java.awt.Color(204, 255, 102));
-        panelRound21.setPreferredSize(new java.awt.Dimension(100, 70));
+        panelRound21.setPreferredSize(new java.awt.Dimension(100, 65));
         panelRound21.setRoundBottomLeft(20);
         panelRound21.setRoundBottomRight(20);
         panelRound21.setRoundTopLeft(20);
@@ -486,7 +486,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         );
         panelRound21Layout.setVerticalGroup(
             panelRound21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+            .addGap(0, 65, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -549,11 +549,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

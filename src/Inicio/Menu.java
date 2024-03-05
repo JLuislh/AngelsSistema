@@ -4,6 +4,7 @@
  */
 package Inicio;
 
+import BDclass.BDConexion;
 import SubPaneles.BebidasSinAlcohol;
 import SubPaneles.Botellas;
 import SubPaneles.CaldosAntojos;
@@ -12,7 +13,11 @@ import SubPaneles.ConAlcohol;
 import SubPaneles.Hamburguesas;
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import javax.swing.BorderFactory;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -34,7 +39,6 @@ public class Menu extends javax.swing.JFrame {
         
         Ordentxt.setText(String.valueOf(b));
         mesatxt.setText(String.valueOf(a));
-        
         String texto1 = "<html><center><body>HAMBURGUEZAS<br>FUERA DEL MAR</body></center></html>";
         Titulo2.setText(texto1);
         String texto2 = "<html><center><body>AMANTES DEL CEVICHE<br>SABORES DEL MAR</body></center></html>";
@@ -49,6 +53,23 @@ public class Menu extends javax.swing.JFrame {
         Titulo7.setText(texto6);
     }
     
+    private void eliminarOrden(){
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            PreparedStatement ps = null;
+            PreparedStatement p = null;
+            ps= con.prepareStatement("delete from Ordenes where noorden="+noorden);
+            p = con.prepareStatement("UPDATE MESAS SET ESTADO = 1 WHERE id_mesa =" + nomesa);
+            ps.executeUpdate();
+            p.executeUpdate();
+            con.close();
+            ps.close();
+            p.close();
+        } catch (SQLException ex) {
+           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+        }
+ }
     
 
     /**
@@ -116,9 +137,7 @@ public class Menu extends javax.swing.JFrame {
         Menu1.setLayout(Menu1Layout);
         Menu1Layout.setHorizontalGroup(
             Menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Menu1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 11, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
         );
         Menu1Layout.setVerticalGroup(
             Menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,6 +277,11 @@ public class Menu extends javax.swing.JFrame {
         Titulo7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Titulo7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Titulo7.setText("CANCELAR");
+        Titulo7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Titulo7MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout Menu7Layout = new javax.swing.GroupLayout(Menu7);
         Menu7.setLayout(Menu7Layout);
@@ -275,6 +299,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(Menu1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Menu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -288,12 +313,12 @@ public class Menu extends javax.swing.JFrame {
                 .addComponent(Menu6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Menu7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Menu1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(Menu2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Menu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Menu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -361,16 +386,14 @@ public class Menu extends javax.swing.JFrame {
         panelRound1.setLayout(panelRound1Layout);
         panelRound1Layout.setHorizontalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
         );
         panelRound1Layout.setVerticalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
         );
 
-        jPanel6.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 130, -1));
+        jPanel6.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 130, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("TOTAL");
@@ -390,7 +413,7 @@ public class Menu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
         );
 
         pack();
@@ -457,6 +480,18 @@ public class Menu extends javax.swing.JFrame {
     PanelMenu.revalidate();
     PanelMenu.repaint();
     }//GEN-LAST:event_Titulo6MouseClicked
+
+    private void Titulo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo7MouseClicked
+     int resp=JOptionPane.showConfirmDialog(null,"DESEA CANCELAR LA ORDEN");
+          if (JOptionPane.OK_OPTION == resp){
+           eliminarOrden();
+           Ordenes F = new Ordenes();
+           F.setVisible(true);
+           this.dispose();
+          }
+    
+
+    }//GEN-LAST:event_Titulo7MouseClicked
 
     /**
      * @param args the command line arguments
