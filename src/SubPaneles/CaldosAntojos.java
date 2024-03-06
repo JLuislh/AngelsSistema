@@ -1,5 +1,8 @@
 package SubPaneles;
 
+import ClassAngels.EtiquetasClass;
+import java.util.ArrayList;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
@@ -9,6 +12,26 @@ package SubPaneles;
  * @author jluis
  */
 public class CaldosAntojos extends javax.swing.JPanel {
+ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
+ String descripcion2;	String descripcion2_2;	 String Precio2;  int codigo2;
+ String descripcion3;	String descripcion2_3;	 String Precio3;  int codigo3;
+ String descripcion4;	String descripcion2_4;	 String Precio4;  int codigo4;
+ String descripcion5;	String descripcion2_5;	 String Precio5;  int codigo5;
+ String descripcion6;	String descripcion2_6;	 String Precio6;  int codigo6;
+ String descripcion7;	String descripcion2_7;	 String Precio7;  int codigo7;
+ String descripcion8;	String descripcion2_8;	 String Precio8;  int codigo8;
+ String descripcion9;	String descripcion2_9;	 String Precio9;  int codigo9;
+ String descripcion10;	String descripcion2_10;	 String Precio10; int codigo10;
+ String descripcion11;	String descripcion2_11;	 String Precio11; int codigo11;
+ String descripcion12;	String descripcion2_12;	 String Precio12; int codigo12;
+ String descripcion13;	String descripcion2_13;	 String Precio13; int codigo13;
+ String descripcion14;	String descripcion2_14;	 String Precio14; int codigo14;
+ String descripcion15;	String descripcion2_15;	 String Precio15; int codigo15;
+ String descripcion16;	String descripcion2_16;	 String Precio16; int codigo16;
+ String descripcion17;	String descripcion2_17;	 String Precio17; int codigo17;
+ String descripcion18;	String descripcion2_18;	 String Precio18; int codigo18;
+ String descripcion19;	String descripcion2_19;	 String Precio19; int codigo19;
+ String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
 
     /**
      * Creates new form CaldosAntojos
@@ -17,6 +40,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
         initComponents();
         Etiquetas();
     }
+   
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -604,6 +629,13 @@ public class CaldosAntojos extends javax.swing.JPanel {
                 .addContainerGap(26, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+  private void nombres(){
+    ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiqutas();
+        for (int i = 0; i < result.size(); i++) {
+        codigo1 = result.get(i).getCodigo(); 
+        }
+  }
+    
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -649,38 +681,37 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
     private void Etiquetas() {
 
-        String texto1 = "<html><center><body>CALDO DE<br>MARISCOS<br>CON MOJARA<br><font color='RED'>Q75.00</font></body></center></html>";
+        String texto1 = "<html><center><body>"+descripcion1+"<br>"+descripcion2_1+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         Caldos1.setText(texto1);
-        String texto2 = "<html><center><body>CALDO DE<br>PESCADO<br><font color='RED'>Q60.00</font></body></center></html>";
+        String texto2 ="<html><center><body>"+descripcion2+"<br>"+descripcion2_2+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         Caldos2.setText(texto2);
-        String texto3 = "<html><center><body>CALDO DE<br>CAMARON<br><font color='RED'>Q60.00</font></body></center></html>";
+        String texto3 ="<html><center><body>"+descripcion3+"<br>"+descripcion2_3+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         Caldos3.setText(texto3);
-        String texto4 = "<html><center><body>SOPA<br>KOREANA<br><font color='RED'>Q50.00</font></body></center></html>";
+        String texto4 ="<html><center><body>"+descripcion4+"<br>"+descripcion2_4+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         Caldos4.setText(texto4);
-        String texto5 = "<html><center><body>SOPA DE<br>POLLO<br><font color='RED'>Q50.00</font></body></center></html>";
+        String texto5 ="<html><center><body>"+descripcion5+"<br>"+descripcion2_5+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         Caldos5.setText(texto5);
-        
-        String texto6 = "<html><center><body>TACOS<br><font color='RED'>Q75.00</font></body></center></html>";
+        String texto6 ="<html><center><body>"+descripcion6+"<br>"+descripcion2_6+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL1.setText(texto6);
-        String texto7 = "<html><center><body>TACOS DE RES<br><font color='RED'>Q60.00</font></body></center></html>";
+        String texto7 ="<html><center><body>"+descripcion7+"<br>"+descripcion2_7+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL2.setText(texto7);
-        String texto8 = "<html><center><body>NACHOS<br><font color='RED'>Q60.00</font></body></center></html>";
+        String texto8 ="<html><center><body>"+descripcion8+"<br>"+descripcion2_8+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL3.setText(texto8);
-        String texto9 = "<html><center><body>DOBLADAS<br><font color='RED'>Q50.00</font></body></center></html>";
+        String texto9 ="<html><center><body>"+descripcion9+"<br>"+descripcion2_9+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL4.setText(texto9);
-        String texto10 = "<html><center><body>MALTEADA<br><font color='RED'>Q50.00</font></body></center></html>";
+        String texto10 ="<html><center><body>"+descripcion10+"<br>"+descripcion2_10+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL5.setText(texto10);
-        String texto11 = "<html><center><body>BURRITO<br><font color='RED'>Q75.00</font></body></center></html>";
+        String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL6.setText(texto11);
-        String texto12 = "<html><center><body>BURRITO<br>MIXTO<br><font color='RED'>Q60.00</font></body></center></html>";
+        String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL7.setText(texto12);
-        String texto13 = "<html><center><body>GRINGA<br><font color='RED'>Q60.00</font></body></center></html>";
+        String texto13 ="<html><center><body>"+descripcion13+"<br>"+descripcion2_13+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL8.setText(texto13);
-        String texto14 = "<html><center><body>TORTILLA DE<br>HARINA<br><font color='RED'>Q50.00</font></body></center></html>";
+        String texto14 ="<html><center><body>"+descripcion14+"<br>"+descripcion2_14+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL9.setText(texto14);
-        String texto15 = "<html><center><body>TORTILLA DE<br>HARINA MIXTA<br><font color='RED'>Q50.00</font></body></center></html>";
+        String texto15 ="<html><center><body>"+descripcion15+"<br>"+descripcion2_15+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL10.setText(texto15);
-        String texto16 = "<html><center><body>PAPAS CON<br>QUESO Y CARNE<br><font color='RED'>Q75.00</font></body></center></html>";
+        String texto16 ="<html><center><body>"+descripcion16+"<br>"+descripcion2_16+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
         PAL11.setText(texto16);
         
     }
