@@ -4,17 +4,44 @@
  */
 package SubPaneles;
 
+import ClassAngels.EtiquetasClass;
+import java.util.ArrayList;
+
 /**
  *
  * @author jluis
  */
 public class Ceviches extends javax.swing.JPanel {
-
-    /**
+ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
+ String descripcion2;	String descripcion2_2;	 String Precio2;  int codigo2;
+ String descripcion3;	String descripcion2_3;	 String Precio3;  int codigo3;
+ String descripcion4;	String descripcion2_4;	 String Precio4;  int codigo4;
+ String descripcion5;	String descripcion2_5;	 String Precio5;  int codigo5;
+ String descripcion6;	String descripcion2_6;	 String Precio6;  int codigo6;
+ String descripcion7;	String descripcion2_7;	 String Precio7;  int codigo7;
+ String descripcion8;	String descripcion2_8;	 String Precio8;  int codigo8;
+ String descripcion9;	String descripcion2_9;	 String Precio9;  int codigo9;
+ String descripcion10;	String descripcion2_10;	 String Precio10; int codigo10;
+ String descripcion11;	String descripcion2_11;	 String Precio11; int codigo11;
+ String descripcion12;	String descripcion2_12;	 String Precio12; int codigo12;
+ String descripcion13;	String descripcion2_13;	 String Precio13; int codigo13;
+ String descripcion14;	String descripcion2_14;	 String Precio14; int codigo14;
+ String descripcion15;	String descripcion2_15;	 String Precio15; int codigo15;
+ String descripcion16;	String descripcion2_16;	 String Precio16; int codigo16;
+ String descripcion17;	String descripcion2_17;	 String Precio17; int codigo17;
+ String descripcion18;	String descripcion2_18;	 String Precio18; int codigo18;
+ String descripcion19;	String descripcion2_19;	 String Precio19; int codigo19;
+ String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
+ String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
+ String descripcion22;	String descripcion2_22;	 String Precio22; int codigo22;   
+ /**
      * Creates new form Ceviches
      */
     public Ceviches() {
         initComponents();
+        nombres();
+        Etiquetas();
+        
     }
 
     /**
@@ -28,28 +55,50 @@ public class Ceviches extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         panelRound1 = new ClassAngels.PanelRound();
+        AMA1 = new javax.swing.JLabel();
         panelRound2 = new ClassAngels.PanelRound();
+        AMA2 = new javax.swing.JLabel();
         panelRound3 = new ClassAngels.PanelRound();
+        AMA3 = new javax.swing.JLabel();
         panelRound4 = new ClassAngels.PanelRound();
+        AMA4 = new javax.swing.JLabel();
         panelRound5 = new ClassAngels.PanelRound();
+        AMA5 = new javax.swing.JLabel();
         panelRound6 = new ClassAngels.PanelRound();
+        AMA6 = new javax.swing.JLabel();
         panelRound7 = new ClassAngels.PanelRound();
+        AMA7 = new javax.swing.JLabel();
         panelRound8 = new ClassAngels.PanelRound();
+        AMA8 = new javax.swing.JLabel();
         panelRound9 = new ClassAngels.PanelRound();
+        AMA9 = new javax.swing.JLabel();
         panelRound19 = new ClassAngels.PanelRound();
+        AMA10 = new javax.swing.JLabel();
         panelRound20 = new ClassAngels.PanelRound();
+        AMA11 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         panelRound10 = new ClassAngels.PanelRound();
+        SAB1 = new javax.swing.JLabel();
         panelRound11 = new ClassAngels.PanelRound();
+        SAB2 = new javax.swing.JLabel();
         panelRound12 = new ClassAngels.PanelRound();
+        SAB3 = new javax.swing.JLabel();
         panelRound13 = new ClassAngels.PanelRound();
+        SAB4 = new javax.swing.JLabel();
         panelRound14 = new ClassAngels.PanelRound();
+        SAB5 = new javax.swing.JLabel();
         panelRound15 = new ClassAngels.PanelRound();
+        SAB6 = new javax.swing.JLabel();
         panelRound16 = new ClassAngels.PanelRound();
+        SAB7 = new javax.swing.JLabel();
         panelRound17 = new ClassAngels.PanelRound();
+        SAB8 = new javax.swing.JLabel();
         panelRound18 = new ClassAngels.PanelRound();
+        SAB9 = new javax.swing.JLabel();
         panelRound21 = new ClassAngels.PanelRound();
+        SAB10 = new javax.swing.JLabel();
         panelRound22 = new ClassAngels.PanelRound();
+        SAB11 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 204, 204));
 
@@ -64,15 +113,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound1.setRoundTopLeft(20);
         panelRound1.setRoundTopRight(20);
 
+        AMA1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA1.setText("jLabel1");
+
         javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
         panelRound1.setLayout(panelRound1Layout);
         panelRound1Layout.setHorizontalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound1Layout.setVerticalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound1Layout.createSequentialGroup()
+                .addComponent(AMA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         panelRound2.setBackground(new java.awt.Color(204, 255, 102));
@@ -83,15 +138,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound2.setRoundTopLeft(20);
         panelRound2.setRoundTopRight(20);
 
+        AMA2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA2.setText("jLabel2");
+
         javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
         panelRound2.setLayout(panelRound2Layout);
         panelRound2Layout.setHorizontalGroup(
             panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound2Layout.setVerticalGroup(
             panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound2Layout.createSequentialGroup()
+                .addComponent(AMA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panelRound3.setBackground(new java.awt.Color(204, 255, 102));
@@ -102,15 +163,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound3.setRoundTopLeft(20);
         panelRound3.setRoundTopRight(20);
 
+        AMA3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA3.setText("jLabel11");
+
         javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
         panelRound3.setLayout(panelRound3Layout);
         panelRound3Layout.setHorizontalGroup(
             panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound3Layout.setVerticalGroup(
             panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound3Layout.createSequentialGroup()
+                .addComponent(AMA3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panelRound4.setBackground(new java.awt.Color(204, 255, 102));
@@ -121,15 +188,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound4.setRoundTopLeft(20);
         panelRound4.setRoundTopRight(20);
 
+        AMA4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA4.setText("jLabel10");
+
         javax.swing.GroupLayout panelRound4Layout = new javax.swing.GroupLayout(panelRound4);
         panelRound4.setLayout(panelRound4Layout);
         panelRound4Layout.setHorizontalGroup(
             panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA4, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound4Layout.setVerticalGroup(
             panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound4Layout.createSequentialGroup()
+                .addComponent(AMA4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panelRound5.setBackground(new java.awt.Color(204, 255, 102));
@@ -140,15 +213,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound5.setRoundTopLeft(20);
         panelRound5.setRoundTopRight(20);
 
+        AMA5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA5.setText("jLabel9");
+
         javax.swing.GroupLayout panelRound5Layout = new javax.swing.GroupLayout(panelRound5);
         panelRound5.setLayout(panelRound5Layout);
         panelRound5Layout.setHorizontalGroup(
             panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA5, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound5Layout.setVerticalGroup(
             panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound5Layout.createSequentialGroup()
+                .addComponent(AMA5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panelRound6.setBackground(new java.awt.Color(204, 255, 102));
@@ -159,15 +238,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound6.setRoundTopLeft(20);
         panelRound6.setRoundTopRight(20);
 
+        AMA6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA6.setText("jLabel8");
+
         javax.swing.GroupLayout panelRound6Layout = new javax.swing.GroupLayout(panelRound6);
         panelRound6.setLayout(panelRound6Layout);
         panelRound6Layout.setHorizontalGroup(
             panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA6, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound6Layout.setVerticalGroup(
             panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound6Layout.createSequentialGroup()
+                .addComponent(AMA6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panelRound7.setBackground(new java.awt.Color(204, 255, 102));
@@ -178,15 +263,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound7.setRoundTopLeft(20);
         panelRound7.setRoundTopRight(20);
 
+        AMA7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA7.setText("jLabel7");
+
         javax.swing.GroupLayout panelRound7Layout = new javax.swing.GroupLayout(panelRound7);
         panelRound7.setLayout(panelRound7Layout);
         panelRound7Layout.setHorizontalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA7, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound7Layout.setVerticalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound7Layout.createSequentialGroup()
+                .addComponent(AMA7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panelRound8.setBackground(new java.awt.Color(204, 255, 102));
@@ -197,15 +288,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound8.setRoundTopLeft(20);
         panelRound8.setRoundTopRight(20);
 
+        AMA8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA8.setText("jLabel6");
+
         javax.swing.GroupLayout panelRound8Layout = new javax.swing.GroupLayout(panelRound8);
         panelRound8.setLayout(panelRound8Layout);
         panelRound8Layout.setHorizontalGroup(
             panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA8, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound8Layout.setVerticalGroup(
             panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound8Layout.createSequentialGroup()
+                .addComponent(AMA8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panelRound9.setBackground(new java.awt.Color(204, 255, 102));
@@ -216,15 +313,21 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound9.setRoundTopLeft(20);
         panelRound9.setRoundTopRight(20);
 
+        AMA9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA9.setText("jLabel5");
+
         javax.swing.GroupLayout panelRound9Layout = new javax.swing.GroupLayout(panelRound9);
         panelRound9.setLayout(panelRound9Layout);
         panelRound9Layout.setHorizontalGroup(
             panelRound9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA9, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound9Layout.setVerticalGroup(
             panelRound9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panelRound9Layout.createSequentialGroup()
+                .addComponent(AMA9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panelRound19.setBackground(new java.awt.Color(204, 255, 102));
@@ -234,15 +337,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound19.setRoundTopLeft(20);
         panelRound19.setRoundTopRight(20);
 
+        AMA10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA10.setText("jLabel3");
+
         javax.swing.GroupLayout panelRound19Layout = new javax.swing.GroupLayout(panelRound19);
         panelRound19.setLayout(panelRound19Layout);
         panelRound19Layout.setHorizontalGroup(
             panelRound19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA10, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound19Layout.setVerticalGroup(
             panelRound19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(AMA10, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound20.setBackground(new java.awt.Color(204, 255, 102));
@@ -252,15 +359,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound20.setRoundTopLeft(20);
         panelRound20.setRoundTopRight(20);
 
+        AMA11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        AMA11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        AMA11.setText("jLabel4");
+
         javax.swing.GroupLayout panelRound20Layout = new javax.swing.GroupLayout(panelRound20);
         panelRound20.setLayout(panelRound20Layout);
         panelRound20Layout.setHorizontalGroup(
             panelRound20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(AMA11, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound20Layout.setVerticalGroup(
             panelRound20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(AMA11, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -325,15 +436,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound10.setRoundTopLeft(20);
         panelRound10.setRoundTopRight(20);
 
+        SAB1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB1.setText("jLabel12");
+
         javax.swing.GroupLayout panelRound10Layout = new javax.swing.GroupLayout(panelRound10);
         panelRound10.setLayout(panelRound10Layout);
         panelRound10Layout.setHorizontalGroup(
             panelRound10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound10Layout.setVerticalGroup(
             panelRound10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB1, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound11.setBackground(new java.awt.Color(204, 255, 102));
@@ -343,15 +458,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound11.setRoundTopLeft(20);
         panelRound11.setRoundTopRight(20);
 
+        SAB2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB2.setText("jLabel13");
+
         javax.swing.GroupLayout panelRound11Layout = new javax.swing.GroupLayout(panelRound11);
         panelRound11.setLayout(panelRound11Layout);
         panelRound11Layout.setHorizontalGroup(
             panelRound11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound11Layout.setVerticalGroup(
             panelRound11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB2, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound12.setBackground(new java.awt.Color(204, 255, 102));
@@ -361,15 +480,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound12.setRoundTopLeft(20);
         panelRound12.setRoundTopRight(20);
 
+        SAB3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB3.setText("jLabel1");
+
         javax.swing.GroupLayout panelRound12Layout = new javax.swing.GroupLayout(panelRound12);
         panelRound12.setLayout(panelRound12Layout);
         panelRound12Layout.setHorizontalGroup(
             panelRound12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound12Layout.setVerticalGroup(
             panelRound12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound13.setBackground(new java.awt.Color(204, 255, 102));
@@ -379,15 +502,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound13.setRoundTopLeft(20);
         panelRound13.setRoundTopRight(20);
 
+        SAB4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB4.setText("jLabel2");
+
         javax.swing.GroupLayout panelRound13Layout = new javax.swing.GroupLayout(panelRound13);
         panelRound13.setLayout(panelRound13Layout);
         panelRound13Layout.setHorizontalGroup(
             panelRound13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound13Layout.setVerticalGroup(
             panelRound13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound14.setBackground(new java.awt.Color(204, 255, 102));
@@ -397,15 +524,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound14.setRoundTopLeft(20);
         panelRound14.setRoundTopRight(20);
 
+        SAB5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB5.setText("jLabel3");
+
         javax.swing.GroupLayout panelRound14Layout = new javax.swing.GroupLayout(panelRound14);
         panelRound14.setLayout(panelRound14Layout);
         panelRound14Layout.setHorizontalGroup(
             panelRound14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound14Layout.setVerticalGroup(
             panelRound14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound15.setBackground(new java.awt.Color(204, 255, 102));
@@ -415,15 +546,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound15.setRoundTopLeft(20);
         panelRound15.setRoundTopRight(20);
 
+        SAB6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB6.setText("jLabel5");
+
         javax.swing.GroupLayout panelRound15Layout = new javax.swing.GroupLayout(panelRound15);
         panelRound15.setLayout(panelRound15Layout);
         panelRound15Layout.setHorizontalGroup(
             panelRound15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound15Layout.setVerticalGroup(
             panelRound15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound16.setBackground(new java.awt.Color(204, 255, 102));
@@ -433,15 +568,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound16.setRoundTopLeft(20);
         panelRound16.setRoundTopRight(20);
 
+        SAB7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB7.setText("jLabel6");
+
         javax.swing.GroupLayout panelRound16Layout = new javax.swing.GroupLayout(panelRound16);
         panelRound16.setLayout(panelRound16Layout);
         panelRound16Layout.setHorizontalGroup(
             panelRound16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound16Layout.setVerticalGroup(
             panelRound16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound17.setBackground(new java.awt.Color(204, 255, 102));
@@ -451,15 +590,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound17.setRoundTopLeft(20);
         panelRound17.setRoundTopRight(20);
 
+        SAB8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB8.setText("jLabel7");
+
         javax.swing.GroupLayout panelRound17Layout = new javax.swing.GroupLayout(panelRound17);
         panelRound17.setLayout(panelRound17Layout);
         panelRound17Layout.setHorizontalGroup(
             panelRound17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound17Layout.setVerticalGroup(
             panelRound17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound18.setBackground(new java.awt.Color(204, 255, 102));
@@ -469,15 +612,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound18.setRoundTopLeft(20);
         panelRound18.setRoundTopRight(20);
 
+        SAB9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB9.setText("jLabel8");
+
         javax.swing.GroupLayout panelRound18Layout = new javax.swing.GroupLayout(panelRound18);
         panelRound18.setLayout(panelRound18Layout);
         panelRound18Layout.setHorizontalGroup(
             panelRound18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound18Layout.setVerticalGroup(
             panelRound18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound21.setBackground(new java.awt.Color(204, 255, 102));
@@ -487,15 +634,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound21.setRoundTopLeft(20);
         panelRound21.setRoundTopRight(20);
 
+        SAB10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB10.setText("jLabel9");
+
         javax.swing.GroupLayout panelRound21Layout = new javax.swing.GroupLayout(panelRound21);
         panelRound21.setLayout(panelRound21Layout);
         panelRound21Layout.setHorizontalGroup(
             panelRound21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound21Layout.setVerticalGroup(
             panelRound21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound22.setBackground(new java.awt.Color(204, 255, 102));
@@ -505,15 +656,19 @@ public class Ceviches extends javax.swing.JPanel {
         panelRound22.setRoundTopLeft(20);
         panelRound22.setRoundTopRight(20);
 
+        SAB11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB11.setText("jLabel10");
+
         javax.swing.GroupLayout panelRound22Layout = new javax.swing.GroupLayout(panelRound22);
         panelRound22.setLayout(panelRound22Layout);
         panelRound22Layout.setHorizontalGroup(
             panelRound22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(SAB11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound22Layout.setVerticalGroup(
             panelRound22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(SAB11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -589,8 +744,103 @@ public class Ceviches extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void nombres(){
+    ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasCeviches();
+        for (int i = 0; i < result.size(); i++) {
+          int codigo = result.get(i).getCodigo();
+          
+            if (32 == codigo) {
+             descripcion1 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_1 = result.get(i).getDescripcion2().toUpperCase(); Precio1 = result.get(i).getPrecio();codigo1 = result.get(i).getCodigo();
+            }
+            else if (33 == codigo){
+             descripcion2 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_2 = result.get(i).getDescripcion2().toUpperCase(); Precio2 = result.get(i).getPrecio();codigo2 = result.get(i).getCodigo();
+            }
+             else if (34 == codigo){
+             descripcion3 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_3 = result.get(i).getDescripcion2().toUpperCase(); Precio3 = result.get(i).getPrecio();codigo3 = result.get(i).getCodigo();
+            }
+             else if (35== codigo){
+             descripcion4 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_4 = result.get(i).getDescripcion2().toUpperCase(); Precio4 = result.get(i).getPrecio();codigo4 = result.get(i).getCodigo();
+            }
+             else if (36== codigo){
+             descripcion5 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_5 = result.get(i).getDescripcion2().toUpperCase(); Precio5 = result.get(i).getPrecio();codigo5 = result.get(i).getCodigo();
+            }
+             else if (37== codigo){
+             descripcion6 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_6 = result.get(i).getDescripcion2().toUpperCase(); Precio6 = result.get(i).getPrecio();codigo6 = result.get(i).getCodigo();
+            }
+             else if (38== codigo){
+             descripcion7 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_7 = result.get(i).getDescripcion2().toUpperCase(); Precio7 = result.get(i).getPrecio();codigo7 = result.get(i).getCodigo();
+            }
+             else if (39== codigo){
+             descripcion8 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_8 = result.get(i).getDescripcion2().toUpperCase(); Precio8 = result.get(i).getPrecio();codigo8 = result.get(i).getCodigo();
+            }
+             else if (40== codigo){
+             descripcion9 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_9 = result.get(i).getDescripcion2().toUpperCase(); Precio9 = result.get(i).getPrecio();codigo9 = result.get(i).getCodigo();
+            }
+             else if (41== codigo){
+             descripcion10 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_10 = result.get(i).getDescripcion2().toUpperCase(); Precio10 = result.get(i).getPrecio();codigo10 = result.get(i).getCodigo();
+            }
+             else if (42== codigo){
+             descripcion11 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_11 = result.get(i).getDescripcion2().toUpperCase(); Precio11 = result.get(i).getPrecio();codigo11 = result.get(i).getCodigo();
+            }
+             else if (43== codigo){
+             descripcion12 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_12 = result.get(i).getDescripcion2().toUpperCase(); Precio12 = result.get(i).getPrecio();codigo12 = result.get(i).getCodigo();
+            }
+             else if (44== codigo){
+             descripcion13 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_13 = result.get(i).getDescripcion2().toUpperCase(); Precio13 = result.get(i).getPrecio();codigo13 = result.get(i).getCodigo();
+            }
+             else if (45== codigo){
+             descripcion14 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_14 = result.get(i).getDescripcion2().toUpperCase(); Precio14 = result.get(i).getPrecio();codigo14 = result.get(i).getCodigo();
+            }
+             else if (46== codigo){
+             descripcion15 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_15 = result.get(i).getDescripcion2().toUpperCase(); Precio15 = result.get(i).getPrecio();codigo15 = result.get(i).getCodigo();
+            }
+             else if (47== codigo){
+             descripcion16 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_16 = result.get(i).getDescripcion2().toUpperCase(); Precio16 = result.get(i).getPrecio();codigo16 = result.get(i).getCodigo();
+            }
+            else if (48== codigo){
+             descripcion17 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_17 = result.get(i).getDescripcion2().toUpperCase(); Precio17 = result.get(i).getPrecio();codigo17 = result.get(i).getCodigo();
+            }
+            else if (49== codigo){
+             descripcion18 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_18 = result.get(i).getDescripcion2().toUpperCase(); Precio18 = result.get(i).getPrecio();codigo18 = result.get(i).getCodigo();
+            }
+            else if (50== codigo){
+             descripcion19 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_19 = result.get(i).getDescripcion2().toUpperCase(); Precio19 = result.get(i).getPrecio();codigo19 = result.get(i).getCodigo();
+            }
+            else if (51== codigo){
+             descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
+            }
+            else if (52== codigo){
+             descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
+            }
+            else if (53== codigo){
+             descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
+            }
+        }
+  }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel AMA1;
+    private javax.swing.JLabel AMA10;
+    private javax.swing.JLabel AMA11;
+    private javax.swing.JLabel AMA2;
+    private javax.swing.JLabel AMA3;
+    private javax.swing.JLabel AMA4;
+    private javax.swing.JLabel AMA5;
+    private javax.swing.JLabel AMA6;
+    private javax.swing.JLabel AMA7;
+    private javax.swing.JLabel AMA8;
+    private javax.swing.JLabel AMA9;
+    private javax.swing.JLabel SAB1;
+    private javax.swing.JLabel SAB10;
+    private javax.swing.JLabel SAB11;
+    private javax.swing.JLabel SAB2;
+    private javax.swing.JLabel SAB3;
+    private javax.swing.JLabel SAB4;
+    private javax.swing.JLabel SAB5;
+    private javax.swing.JLabel SAB6;
+    private javax.swing.JLabel SAB7;
+    private javax.swing.JLabel SAB8;
+    private javax.swing.JLabel SAB9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private ClassAngels.PanelRound panelRound1;
@@ -616,4 +866,53 @@ public class Ceviches extends javax.swing.JPanel {
     private ClassAngels.PanelRound panelRound8;
     private ClassAngels.PanelRound panelRound9;
     // End of variables declaration//GEN-END:variables
+ private void Etiquetas() {
+
+        String texto1 = "<html><center><body>"+descripcion1+"<br>"+descripcion2_1+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
+        AMA1.setText(texto1);
+        String texto2 ="<html><center><body>"+descripcion2+"<br>"+descripcion2_2+"<br><font color='RED'>Q"+Precio2+"</font></body></center></html>";
+        AMA2.setText(texto2);
+        String texto3 ="<html><center><body>"+descripcion3+"<br>"+descripcion2_3+"<br><font color='RED'>Q"+Precio3+"</font></body></center></html>";
+        AMA3.setText(texto3);
+        String texto4 ="<html><center><body>"+descripcion4+"<br>"+descripcion2_4+"<br><font color='RED'>Q"+Precio4+"</font></body></center></html>";
+        AMA4.setText(texto4);
+        String texto5 ="<html><center><body>"+descripcion5+"<br>"+descripcion2_5+"<br><font color='RED'>Q"+Precio5+"</font></body></center></html>";
+        AMA5.setText(texto5);
+        String texto6 ="<html><center><body>"+descripcion6+"<br>"+descripcion2_6+"<br><font color='RED'>Q"+Precio6+"</font></body></center></html>";
+        AMA6.setText(texto6);
+        String texto7 ="<html><center><body>"+descripcion7+"<br>"+descripcion2_7+"<br><font color='RED'>Q"+Precio7+"</font></body></center></html>";
+        AMA7.setText(texto7);
+        String texto8 ="<html><center><body>"+descripcion8+"<br>"+descripcion2_8+"<br><font color='RED'>Q"+Precio8+"</font></body></center></html>";
+        AMA8.setText(texto8);
+        String texto9 ="<html><center><body>"+descripcion9+"<br>"+descripcion2_9+"<br><font color='RED'>Q"+Precio9+"</font></body></center></html>";
+        AMA9.setText(texto9);
+        String texto10 ="<html><center><body>"+descripcion10+"<br>"+descripcion2_10+"<br><font color='RED'>Q"+Precio10+"</font></body></center></html>";
+        AMA10.setText(texto10);
+        String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio11+"</font></body></center></html>";
+        AMA11.setText(texto11);
+        String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio12+"</font></body></center></html>";
+        SAB1.setText(texto12);
+        String texto13 ="<html><center><body>"+descripcion13+"<br>"+descripcion2_13+"<br><font color='RED'>Q"+Precio13+"</font></body></center></html>";
+        SAB2.setText(texto13);
+        String texto14 ="<html><center><body>"+descripcion14+"<br>"+descripcion2_14+"<br><font color='RED'>Q"+Precio14+"</font></body></center></html>";
+        SAB3.setText(texto14);
+        String texto15 ="<html><center><body>"+descripcion15+"<br>"+descripcion2_15+"<br><font color='RED'>Q"+Precio15+"</font></body></center></html>";
+        SAB4.setText(texto15);
+        String texto16 ="<html><center><body>"+descripcion16+"<br>"+descripcion2_16+"<br><font color='RED'>Q"+Precio16+"</font></body></center></html>";
+        SAB5.setText(texto16);
+         String texto17 ="<html><center><body>"+descripcion17+"<br>"+descripcion2_17+"<br><font color='RED'>Q"+Precio17+"</font></body></center></html>";
+        SAB6.setText(texto17);
+         String texto18 ="<html><center><body>"+descripcion18+"<br>"+descripcion2_18+"<br><font color='RED'>Q"+Precio18+"</font></body></center></html>";
+        SAB7.setText(texto18);
+         String texto19 ="<html><center><body>"+descripcion19+"<br>"+descripcion2_19+"<br><font color='RED'>Q"+Precio19+"</font></body></center></html>";
+        SAB8.setText(texto19);
+         String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
+        SAB9.setText(texto20);
+         String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
+        SAB10.setText(texto21);
+         String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
+        SAB11.setText(texto22);
+        
+    }
+
 }

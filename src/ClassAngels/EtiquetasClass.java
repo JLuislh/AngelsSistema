@@ -52,8 +52,14 @@ public class EtiquetasClass {
         this.codigo = codigo;
     }
     
-    public static ArrayList<EtiquetasClass> ListaEtiqutas() {
+    public static ArrayList<EtiquetasClass> ListaEtiquetasCaldos() {
         return SQLP("SELECT codigo,DESCRIPCION1,DESCRIPCION2,precio FROM productos where tipo = 1 order by codigo");    
+ }  
+    public static ArrayList<EtiquetasClass> ListaEtiquetasHambuerguesas() {
+        return SQLP("SELECT codigo,DESCRIPCION1,DESCRIPCION2,precio FROM productos where tipo = 2 order by codigo");    
+ }  
+     public static ArrayList<EtiquetasClass> ListaEtiquetasCeviches() {
+        return SQLP("SELECT codigo,DESCRIPCION1,DESCRIPCION2,precio FROM productos where tipo = 3 order by codigo");    
  }  
 
 private static ArrayList<EtiquetasClass> SQLP(String sql){
