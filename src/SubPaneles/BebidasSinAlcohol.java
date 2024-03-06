@@ -4,17 +4,43 @@
  */
 package SubPaneles;
 
+import ClassAngels.EtiquetasClass;
+import java.util.ArrayList;
+
 /**
  *
  * @author jluis
  */
 public class BebidasSinAlcohol extends javax.swing.JPanel {
+ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
+ String descripcion2;	String descripcion2_2;	 String Precio2;  int codigo2;
+ String descripcion3;	String descripcion2_3;	 String Precio3;  int codigo3;
+ String descripcion4;	String descripcion2_4;	 String Precio4;  int codigo4;
+ String descripcion5;	String descripcion2_5;	 String Precio5;  int codigo5;
+ String descripcion6;	String descripcion2_6;	 String Precio6;  int codigo6;
+ String descripcion7;	String descripcion2_7;	 String Precio7;  int codigo7;
+ String descripcion8;	String descripcion2_8;	 String Precio8;  int codigo8;
+ String descripcion9;	String descripcion2_9;	 String Precio9;  int codigo9;
+ String descripcion10;	String descripcion2_10;	 String Precio10; int codigo10;
+ String descripcion11;	String descripcion2_11;	 String Precio11; int codigo11;
+ String descripcion12;	String descripcion2_12;	 String Precio12; int codigo12;
+ String descripcion13;	String descripcion2_13;	 String Precio13; int codigo13;
+ String descripcion14;	String descripcion2_14;	 String Precio14; int codigo14;
+ String descripcion15;	String descripcion2_15;	 String Precio15; int codigo15;
+ String descripcion16;	String descripcion2_16;	 String Precio16; int codigo16;
+ String descripcion17;	String descripcion2_17;	 String Precio17; int codigo17;
+ String descripcion18;	String descripcion2_18;	 String Precio18; int codigo18;
+ String descripcion19;	String descripcion2_19;	 String Precio19; int codigo19;
+ String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
+ String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
 
     /**
      * Creates new form BebidasSinAlcohol
      */
     public BebidasSinAlcohol() {
         initComponents();
+        nombres();
+        Etiquetas();
     }
 
     /**
@@ -28,27 +54,48 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         panelRound1 = new ClassAngels.PanelRound();
+        BE1 = new javax.swing.JLabel();
         panelRound2 = new ClassAngels.PanelRound();
+        BE2 = new javax.swing.JLabel();
         panelRound3 = new ClassAngels.PanelRound();
+        BE3 = new javax.swing.JLabel();
         panelRound4 = new ClassAngels.PanelRound();
+        BE4 = new javax.swing.JLabel();
         panelRound5 = new ClassAngels.PanelRound();
+        BE5 = new javax.swing.JLabel();
         panelRound6 = new ClassAngels.PanelRound();
+        BE6 = new javax.swing.JLabel();
         panelRound7 = new ClassAngels.PanelRound();
+        BE7 = new javax.swing.JLabel();
         panelRound8 = new ClassAngels.PanelRound();
+        BE8 = new javax.swing.JLabel();
         panelRound9 = new ClassAngels.PanelRound();
+        BE9 = new javax.swing.JLabel();
         panelRound10 = new ClassAngels.PanelRound();
+        BE10 = new javax.swing.JLabel();
         panelRound11 = new ClassAngels.PanelRound();
+        BE11 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         panelRound12 = new ClassAngels.PanelRound();
+        BEPRE1 = new javax.swing.JLabel();
         panelRound13 = new ClassAngels.PanelRound();
+        BEPRE2 = new javax.swing.JLabel();
         panelRound14 = new ClassAngels.PanelRound();
+        BEPRE3 = new javax.swing.JLabel();
         panelRound15 = new ClassAngels.PanelRound();
+        BEPRE4 = new javax.swing.JLabel();
         panelRound16 = new ClassAngels.PanelRound();
+        BEPRE5 = new javax.swing.JLabel();
         panelRound17 = new ClassAngels.PanelRound();
+        BEPRE6 = new javax.swing.JLabel();
         panelRound18 = new ClassAngels.PanelRound();
+        BEPRE7 = new javax.swing.JLabel();
         panelRound19 = new ClassAngels.PanelRound();
+        BEPRE8 = new javax.swing.JLabel();
         panelRound20 = new ClassAngels.PanelRound();
+        BEPRE9 = new javax.swing.JLabel();
         panelRound21 = new ClassAngels.PanelRound();
+        BEPRE10 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(153, 255, 204));
 
@@ -62,15 +109,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound1.setRoundTopLeft(20);
         panelRound1.setRoundTopRight(20);
 
+        BE1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE1.setText("jLabel1");
+
         javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
         panelRound1.setLayout(panelRound1Layout);
         panelRound1Layout.setHorizontalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound1Layout.setVerticalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound2.setBackground(new java.awt.Color(204, 255, 102));
@@ -80,15 +131,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound2.setRoundTopLeft(20);
         panelRound2.setRoundTopRight(20);
 
+        BE2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE2.setText("jLabel2");
+
         javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
         panelRound2.setLayout(panelRound2Layout);
         panelRound2Layout.setHorizontalGroup(
             panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound2Layout.setVerticalGroup(
             panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound3.setBackground(new java.awt.Color(204, 255, 102));
@@ -98,15 +153,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound3.setRoundTopLeft(20);
         panelRound3.setRoundTopRight(20);
 
+        BE3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE3.setText("jLabel3");
+
         javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
         panelRound3.setLayout(panelRound3Layout);
         panelRound3Layout.setHorizontalGroup(
             panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound3Layout.setVerticalGroup(
             panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound4.setBackground(new java.awt.Color(204, 255, 102));
@@ -116,15 +175,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound4.setRoundTopLeft(20);
         panelRound4.setRoundTopRight(20);
 
+        BE4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE4.setText("jLabel4");
+
         javax.swing.GroupLayout panelRound4Layout = new javax.swing.GroupLayout(panelRound4);
         panelRound4.setLayout(panelRound4Layout);
         panelRound4Layout.setHorizontalGroup(
             panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound4Layout.setVerticalGroup(
             panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound5.setBackground(new java.awt.Color(204, 255, 102));
@@ -134,15 +197,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound5.setRoundTopLeft(20);
         panelRound5.setRoundTopRight(20);
 
+        BE5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE5.setText("jLabel5");
+
         javax.swing.GroupLayout panelRound5Layout = new javax.swing.GroupLayout(panelRound5);
         panelRound5.setLayout(panelRound5Layout);
         panelRound5Layout.setHorizontalGroup(
             panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound5Layout.setVerticalGroup(
             panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound6.setBackground(new java.awt.Color(204, 255, 102));
@@ -152,15 +219,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound6.setRoundTopLeft(20);
         panelRound6.setRoundTopRight(20);
 
+        BE6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE6.setText("jLabel6");
+
         javax.swing.GroupLayout panelRound6Layout = new javax.swing.GroupLayout(panelRound6);
         panelRound6.setLayout(panelRound6Layout);
         panelRound6Layout.setHorizontalGroup(
             panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound6Layout.setVerticalGroup(
             panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound7.setBackground(new java.awt.Color(204, 255, 102));
@@ -170,15 +241,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound7.setRoundTopLeft(20);
         panelRound7.setRoundTopRight(20);
 
+        BE7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE7.setText("jLabel7");
+
         javax.swing.GroupLayout panelRound7Layout = new javax.swing.GroupLayout(panelRound7);
         panelRound7.setLayout(panelRound7Layout);
         panelRound7Layout.setHorizontalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound7Layout.setVerticalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound8.setBackground(new java.awt.Color(204, 255, 102));
@@ -188,15 +263,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound8.setRoundTopLeft(20);
         panelRound8.setRoundTopRight(20);
 
+        BE8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE8.setText("jLabel8");
+
         javax.swing.GroupLayout panelRound8Layout = new javax.swing.GroupLayout(panelRound8);
         panelRound8.setLayout(panelRound8Layout);
         panelRound8Layout.setHorizontalGroup(
             panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound8Layout.setVerticalGroup(
             panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound9.setBackground(new java.awt.Color(204, 255, 102));
@@ -206,15 +285,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound9.setRoundTopLeft(20);
         panelRound9.setRoundTopRight(20);
 
+        BE9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE9.setText("jLabel9");
+
         javax.swing.GroupLayout panelRound9Layout = new javax.swing.GroupLayout(panelRound9);
         panelRound9.setLayout(panelRound9Layout);
         panelRound9Layout.setHorizontalGroup(
             panelRound9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound9Layout.setVerticalGroup(
             panelRound9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound10.setBackground(new java.awt.Color(204, 255, 102));
@@ -224,15 +307,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound10.setRoundTopLeft(20);
         panelRound10.setRoundTopRight(20);
 
+        BE10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE10.setText("jLabel10");
+
         javax.swing.GroupLayout panelRound10Layout = new javax.swing.GroupLayout(panelRound10);
         panelRound10.setLayout(panelRound10Layout);
         panelRound10Layout.setHorizontalGroup(
             panelRound10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound10Layout.setVerticalGroup(
             panelRound10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound11.setBackground(new java.awt.Color(204, 255, 102));
@@ -242,15 +329,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound11.setRoundTopLeft(20);
         panelRound11.setRoundTopRight(20);
 
+        BE11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BE11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE11.setText("jLabel11");
+
         javax.swing.GroupLayout panelRound11Layout = new javax.swing.GroupLayout(panelRound11);
         panelRound11.setLayout(panelRound11Layout);
         panelRound11Layout.setHorizontalGroup(
             panelRound11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BE11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound11Layout.setVerticalGroup(
             panelRound11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BE11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -316,15 +407,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound12.setRoundTopLeft(20);
         panelRound12.setRoundTopRight(20);
 
+        BEPRE1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE1.setText("jLabel12");
+
         javax.swing.GroupLayout panelRound12Layout = new javax.swing.GroupLayout(panelRound12);
         panelRound12.setLayout(panelRound12Layout);
         panelRound12Layout.setHorizontalGroup(
             panelRound12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound12Layout.setVerticalGroup(
             panelRound12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound13.setBackground(new java.awt.Color(204, 255, 102));
@@ -334,15 +429,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound13.setRoundTopLeft(20);
         panelRound13.setRoundTopRight(20);
 
+        BEPRE2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE2.setText("jLabel13");
+
         javax.swing.GroupLayout panelRound13Layout = new javax.swing.GroupLayout(panelRound13);
         panelRound13.setLayout(panelRound13Layout);
         panelRound13Layout.setHorizontalGroup(
             panelRound13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound13Layout.setVerticalGroup(
             panelRound13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound14.setBackground(new java.awt.Color(204, 255, 102));
@@ -352,15 +451,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound14.setRoundTopLeft(20);
         panelRound14.setRoundTopRight(20);
 
+        BEPRE3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE3.setText("jLabel14");
+
         javax.swing.GroupLayout panelRound14Layout = new javax.swing.GroupLayout(panelRound14);
         panelRound14.setLayout(panelRound14Layout);
         panelRound14Layout.setHorizontalGroup(
             panelRound14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound14Layout.setVerticalGroup(
             panelRound14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound15.setBackground(new java.awt.Color(204, 255, 102));
@@ -370,15 +473,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound15.setRoundTopLeft(20);
         panelRound15.setRoundTopRight(20);
 
+        BEPRE4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE4.setText("jLabel15");
+
         javax.swing.GroupLayout panelRound15Layout = new javax.swing.GroupLayout(panelRound15);
         panelRound15.setLayout(panelRound15Layout);
         panelRound15Layout.setHorizontalGroup(
             panelRound15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound15Layout.setVerticalGroup(
             panelRound15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound16.setBackground(new java.awt.Color(204, 255, 102));
@@ -388,15 +495,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound16.setRoundTopLeft(20);
         panelRound16.setRoundTopRight(20);
 
+        BEPRE5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE5.setText("jLabel16");
+
         javax.swing.GroupLayout panelRound16Layout = new javax.swing.GroupLayout(panelRound16);
         panelRound16.setLayout(panelRound16Layout);
         panelRound16Layout.setHorizontalGroup(
             panelRound16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound16Layout.setVerticalGroup(
             panelRound16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound17.setBackground(new java.awt.Color(204, 255, 102));
@@ -406,15 +517,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound17.setRoundTopLeft(20);
         panelRound17.setRoundTopRight(20);
 
+        BEPRE6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE6.setText("jLabel17");
+
         javax.swing.GroupLayout panelRound17Layout = new javax.swing.GroupLayout(panelRound17);
         panelRound17.setLayout(panelRound17Layout);
         panelRound17Layout.setHorizontalGroup(
             panelRound17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound17Layout.setVerticalGroup(
             panelRound17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound18.setBackground(new java.awt.Color(204, 255, 102));
@@ -424,15 +539,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound18.setRoundTopLeft(20);
         panelRound18.setRoundTopRight(20);
 
+        BEPRE7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE7.setText("jLabel18");
+
         javax.swing.GroupLayout panelRound18Layout = new javax.swing.GroupLayout(panelRound18);
         panelRound18.setLayout(panelRound18Layout);
         panelRound18Layout.setHorizontalGroup(
             panelRound18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound18Layout.setVerticalGroup(
             panelRound18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound19.setBackground(new java.awt.Color(204, 255, 102));
@@ -442,15 +561,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound19.setRoundTopLeft(20);
         panelRound19.setRoundTopRight(20);
 
+        BEPRE8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE8.setText("jLabel19");
+
         javax.swing.GroupLayout panelRound19Layout = new javax.swing.GroupLayout(panelRound19);
         panelRound19.setLayout(panelRound19Layout);
         panelRound19Layout.setHorizontalGroup(
             panelRound19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound19Layout.setVerticalGroup(
             panelRound19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound20.setBackground(new java.awt.Color(204, 255, 102));
@@ -460,15 +583,19 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound20.setRoundTopLeft(20);
         panelRound20.setRoundTopRight(20);
 
+        BEPRE9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE9.setText("jLabel20");
+
         javax.swing.GroupLayout panelRound20Layout = new javax.swing.GroupLayout(panelRound20);
         panelRound20.setLayout(panelRound20Layout);
         panelRound20Layout.setHorizontalGroup(
             panelRound20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound20Layout.setVerticalGroup(
             panelRound20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addComponent(BEPRE9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         panelRound21.setBackground(new java.awt.Color(204, 255, 102));
@@ -478,15 +605,21 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         panelRound21.setRoundTopLeft(20);
         panelRound21.setRoundTopRight(20);
 
+        BEPRE10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE10.setText("jLabel21");
+
         javax.swing.GroupLayout panelRound21Layout = new javax.swing.GroupLayout(panelRound21);
         panelRound21.setLayout(panelRound21Layout);
         panelRound21Layout.setHorizontalGroup(
             panelRound21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(BEPRE10, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         panelRound21Layout.setVerticalGroup(
             panelRound21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 65, Short.MAX_VALUE)
+            .addGroup(panelRound21Layout.createSequentialGroup()
+                .addComponent(BEPRE10, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -556,9 +689,99 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
-
+   private void nombres(){
+    ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasBebidas();
+        for (int i = 0; i < result.size(); i++) {
+          int codigo = result.get(i).getCodigo();
+          
+            if (54 == codigo) {
+             descripcion1 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_1 = result.get(i).getDescripcion2().toUpperCase(); Precio1 = result.get(i).getPrecio();codigo1 = result.get(i).getCodigo();
+            }
+            else if (55 == codigo){
+             descripcion2 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_2 = result.get(i).getDescripcion2().toUpperCase(); Precio2 = result.get(i).getPrecio();codigo2 = result.get(i).getCodigo();
+            }
+             else if (56 == codigo){
+             descripcion3 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_3 = result.get(i).getDescripcion2().toUpperCase(); Precio3 = result.get(i).getPrecio();codigo3 = result.get(i).getCodigo();
+            }
+             else if (57== codigo){
+             descripcion4 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_4 = result.get(i).getDescripcion2().toUpperCase(); Precio4 = result.get(i).getPrecio();codigo4 = result.get(i).getCodigo();
+            }
+             else if (58== codigo){
+             descripcion5 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_5 = result.get(i).getDescripcion2().toUpperCase(); Precio5 = result.get(i).getPrecio();codigo5 = result.get(i).getCodigo();
+            }
+             else if (59== codigo){
+             descripcion6 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_6 = result.get(i).getDescripcion2().toUpperCase(); Precio6 = result.get(i).getPrecio();codigo6 = result.get(i).getCodigo();
+            }
+             else if (60== codigo){
+             descripcion7 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_7 = result.get(i).getDescripcion2().toUpperCase(); Precio7 = result.get(i).getPrecio();codigo7 = result.get(i).getCodigo();
+            }
+             else if (61== codigo){
+             descripcion8 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_8 = result.get(i).getDescripcion2().toUpperCase(); Precio8 = result.get(i).getPrecio();codigo8 = result.get(i).getCodigo();
+            }
+             else if (62== codigo){
+             descripcion9 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_9 = result.get(i).getDescripcion2().toUpperCase(); Precio9 = result.get(i).getPrecio();codigo9 = result.get(i).getCodigo();
+            }
+             else if (63== codigo){
+             descripcion10 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_10 = result.get(i).getDescripcion2().toUpperCase(); Precio10 = result.get(i).getPrecio();codigo10 = result.get(i).getCodigo();
+            }
+             else if (64== codigo){
+             descripcion11 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_11 = result.get(i).getDescripcion2().toUpperCase(); Precio11 = result.get(i).getPrecio();codigo11 = result.get(i).getCodigo();
+            }
+             else if (65== codigo){
+             descripcion12 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_12 = result.get(i).getDescripcion2().toUpperCase(); Precio12 = result.get(i).getPrecio();codigo12 = result.get(i).getCodigo();
+            }
+             else if (66== codigo){
+             descripcion13 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_13 = result.get(i).getDescripcion2().toUpperCase(); Precio13 = result.get(i).getPrecio();codigo13 = result.get(i).getCodigo();
+            }
+             else if (67== codigo){
+             descripcion14 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_14 = result.get(i).getDescripcion2().toUpperCase(); Precio14 = result.get(i).getPrecio();codigo14 = result.get(i).getCodigo();
+            }
+             else if (68== codigo){
+             descripcion15 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_15 = result.get(i).getDescripcion2().toUpperCase(); Precio15 = result.get(i).getPrecio();codigo15 = result.get(i).getCodigo();
+            }
+             else if (69== codigo){
+             descripcion16 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_16 = result.get(i).getDescripcion2().toUpperCase(); Precio16 = result.get(i).getPrecio();codigo16 = result.get(i).getCodigo();
+            }
+            else if (70== codigo){
+             descripcion17 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_17 = result.get(i).getDescripcion2().toUpperCase(); Precio17 = result.get(i).getPrecio();codigo17 = result.get(i).getCodigo();
+            }
+            else if (71== codigo){
+             descripcion18 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_18 = result.get(i).getDescripcion2().toUpperCase(); Precio18 = result.get(i).getPrecio();codigo18 = result.get(i).getCodigo();
+            }
+            else if (72== codigo){
+             descripcion19 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_19 = result.get(i).getDescripcion2().toUpperCase(); Precio19 = result.get(i).getPrecio();codigo19 = result.get(i).getCodigo();
+            }
+            else if (73== codigo){
+             descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
+            }
+            else if (74== codigo){
+             descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
+            }
+        }
+  }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BE1;
+    private javax.swing.JLabel BE10;
+    private javax.swing.JLabel BE11;
+    private javax.swing.JLabel BE2;
+    private javax.swing.JLabel BE3;
+    private javax.swing.JLabel BE4;
+    private javax.swing.JLabel BE5;
+    private javax.swing.JLabel BE6;
+    private javax.swing.JLabel BE7;
+    private javax.swing.JLabel BE8;
+    private javax.swing.JLabel BE9;
+    private javax.swing.JLabel BEPRE1;
+    private javax.swing.JLabel BEPRE10;
+    private javax.swing.JLabel BEPRE2;
+    private javax.swing.JLabel BEPRE3;
+    private javax.swing.JLabel BEPRE4;
+    private javax.swing.JLabel BEPRE5;
+    private javax.swing.JLabel BEPRE6;
+    private javax.swing.JLabel BEPRE7;
+    private javax.swing.JLabel BEPRE8;
+    private javax.swing.JLabel BEPRE9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private ClassAngels.PanelRound panelRound1;
@@ -583,4 +806,52 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
     private ClassAngels.PanelRound panelRound8;
     private ClassAngels.PanelRound panelRound9;
     // End of variables declaration//GEN-END:variables
+ private void Etiquetas() {
+
+        String texto1 = "<html><center><body>"+descripcion1+"<br>"+descripcion2_1+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
+        BE1.setText(texto1);
+        String texto2 ="<html><center><body>"+descripcion2+"<br>"+descripcion2_2+"<br><font color='RED'>Q"+Precio2+"</font></body></center></html>";
+        BE2.setText(texto2);
+        String texto3 ="<html><center><body>"+descripcion3+"<br>"+descripcion2_3+"<br><font color='RED'>Q"+Precio3+"</font></body></center></html>";
+        BE3.setText(texto3);
+        String texto4 ="<html><center><body>"+descripcion4+"<br>"+descripcion2_4+"<br><font color='RED'>Q"+Precio4+"</font></body></center></html>";
+        BE4.setText(texto4);
+        String texto5 ="<html><center><body>"+descripcion5+"<br>"+descripcion2_5+"<br><font color='RED'>Q"+Precio5+"</font></body></center></html>";
+        BE5.setText(texto5);
+        String texto6 ="<html><center><body>"+descripcion6+"<br>"+descripcion2_6+"<br><font color='RED'>Q"+Precio6+"</font></body></center></html>";
+        BE6.setText(texto6);
+        String texto7 ="<html><center><body>"+descripcion7+"<br>"+descripcion2_7+"<br><font color='RED'>Q"+Precio7+"</font></body></center></html>";
+        BE7.setText(texto7);
+        String texto8 ="<html><center><body>"+descripcion8+"<br>"+descripcion2_8+"<br><font color='RED'>Q"+Precio8+"</font></body></center></html>";
+        BE8.setText(texto8);
+        String texto9 ="<html><center><body>"+descripcion9+"<br>"+descripcion2_9+"<br><font color='RED'>Q"+Precio9+"</font></body></center></html>";
+        BE9.setText(texto9);
+        String texto10 ="<html><center><body>"+descripcion10+"<br>"+descripcion2_10+"<br><font color='RED'>Q"+Precio10+"</font></body></center></html>";
+        BE10.setText(texto10);
+        String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio11+"</font></body></center></html>";
+        BE11.setText(texto11);
+        String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio12+"</font></body></center></html>";
+        BEPRE1.setText(texto12);
+        String texto13 ="<html><center><body>"+descripcion13+"<br>"+descripcion2_13+"<br><font color='RED'>Q"+Precio13+"</font></body></center></html>";
+        BEPRE2.setText(texto13);
+        String texto14 ="<html><center><body>"+descripcion14+"<br>"+descripcion2_14+"<br><font color='RED'>Q"+Precio14+"</font></body></center></html>";
+        BEPRE3.setText(texto14);
+        String texto15 ="<html><center><body>"+descripcion15+"<br>"+descripcion2_15+"<br><font color='RED'>Q"+Precio15+"</font></body></center></html>";
+        BEPRE4.setText(texto15);
+        String texto16 ="<html><center><body>"+descripcion16+"<br>"+descripcion2_16+"<br><font color='RED'>Q"+Precio16+"</font></body></center></html>";
+        BEPRE5.setText(texto16);
+         String texto17 ="<html><center><body>"+descripcion17+"<br>"+descripcion2_17+"<br><font color='RED'>Q"+Precio17+"</font></body></center></html>";
+        BEPRE6.setText(texto17);
+         String texto18 ="<html><center><body>"+descripcion18+"<br>"+descripcion2_18+"<br><font color='RED'>Q"+Precio18+"</font></body></center></html>";
+        BEPRE7.setText(texto18);
+         String texto19 ="<html><center><body>"+descripcion19+"<br>"+descripcion2_19+"<br><font color='RED'>Q"+Precio19+"</font></body></center></html>";
+        BEPRE8.setText(texto19);
+         String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
+        BEPRE9.setText(texto20);
+         String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
+        BEPRE10.setText(texto21);
+         
+        
+    }
+
 }
