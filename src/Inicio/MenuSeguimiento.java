@@ -305,7 +305,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    CaldosAntojos op1 = new CaldosAntojos();
+    CaldosAntojos op1 = new CaldosAntojos(ABORT);
     op1.setSize(700, 590);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();

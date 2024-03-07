@@ -5,6 +5,9 @@
 package Inicio;
 
 import BDclass.BDConexion;
+import BDclass.BDOrdenes;
+import ClassAngels.InsertarProducto;
+import ClassAngels.TextAreaRenderer;
 import SubPaneles.BebidasSinAlcohol;
 import SubPaneles.Botellas;
 import SubPaneles.CaldosAntojos;
@@ -15,16 +18,20 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
+import javax.swing.table.TableColumn;
 
 /**
  *
  * @author jluis
  */
 public class Menu extends javax.swing.JFrame {
-     int noorden;
+     public static int noorden;
      int nomesa;
     /**
      * Creates new form Menu
@@ -35,7 +42,7 @@ public class Menu extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         this.nomesa = a;
-        this.noorden = b;
+        Menu.noorden = b;
         
         Ordentxt.setText(String.valueOf(b));
         mesatxt.setText(String.valueOf(a));
@@ -100,7 +107,7 @@ public class Menu extends javax.swing.JFrame {
         Titulo7 = new javax.swing.JLabel();
         PanelMenu = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        Pedidos = new javax.swing.JTable();
         jPanel6 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -109,7 +116,7 @@ public class Menu extends javax.swing.JFrame {
         panelRound1 = new ClassAngels.PanelRound();
         jLabel10 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        Total = new javax.swing.JTextField();
 
         jButton1.setText("jButton1");
 
@@ -345,7 +352,7 @@ public class Menu extends javax.swing.JFrame {
 
         jPanel1.add(PanelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1030, 380));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        Pedidos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -356,7 +363,7 @@ public class Menu extends javax.swing.JFrame {
                 "Cantidad", "Descripcion", "Precio"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(Pedidos);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 700, 190));
 
@@ -382,6 +389,11 @@ public class Menu extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("GENERAR ORDEN");
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
         panelRound1.setLayout(panelRound1Layout);
@@ -400,9 +412,9 @@ public class Menu extends javax.swing.JFrame {
         jLabel2.setText("TOTAL");
         jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 90, -1));
 
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(255, 0, 0));
-        jPanel6.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, -1));
+        Total.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Total.setForeground(new java.awt.Color(255, 0, 0));
+        jPanel6.add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, -1));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 430, 330, 190));
 
@@ -420,8 +432,75 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    public static void ListarProductosPedidos(){
+     
+        ArrayList<InsertarProducto> result = BDOrdenes.ListarProductosPedidos(noorden);
+        RecargarTabla(result);  
+    }
+     public static void RecargarTabla(ArrayList<InsertarProducto> list) {
+         DecimalFormat df = new DecimalFormat("#.00");
+              Object[][] datos = new Object[list.size()][4];
+              int i = 0;
+              for(InsertarProducto t : list)
+              {
+                  datos[i][0] = t.getCantidad();
+                  datos[i][1] = t.getDescripcion();
+                  datos[i][2] = df.format(t.getPrecio());
+                  datos[i][3] = df.format(t.getTotal());
+                  i++;
+              }    
+             Pedidos.setModel(new javax.swing.table.DefaultTableModel(
+                datos,
+                new String[]{
+                "CANTIDAD","DESCRIPCION","PRECIO","TOTAL"
+             })
+             {  
+                 @Override
+                 public boolean isCellEditable(int row, int column){
+                 return false;
+
+             }
+             });
+             Pedidos.getColumnModel().getColumn(1).setCellRenderer(new TextAreaRenderer());
+             TableColumn columna1 = Pedidos.getColumn("CANTIDAD");
+             columna1.setPreferredWidth(-20);
+             TableColumn columna2 = Pedidos.getColumn("DESCRIPCION");
+             columna2.setPreferredWidth(275);
+             TableColumn columna3 = Pedidos.getColumn("PRECIO");
+             columna3.setPreferredWidth(35);
+             TableColumn columna4 = Pedidos.getColumn("TOTAL");
+             columna4.setPreferredWidth(55);
+             sumaTotal();
+     }
+    
+    
+    public static void sumaTotal() {
+        DecimalFormat df = new DecimalFormat("#.00");
+            try {
+                 BDConexion conecta = new BDConexion();
+                Connection cn = conecta.getConexion();
+                java.sql.Statement stmt = cn.createStatement();
+                ResultSet rs = stmt.executeQuery("select truncate(sum(total),2) as Total from ventas where noorden =" + noorden);
+                while (rs.next()) {
+                     String TOTAL = df.format(rs.getInt(1));
+                    Total.setText(String.valueOf(TOTAL));
+                }
+                rs.close();
+                stmt.close();
+                cn.close();
+            } catch (Exception error) {
+                System.out.print(error);
+            }
+        }
+    
+    
+    
+    
+    
+    
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    CaldosAntojos op1 = new CaldosAntojos();
+    CaldosAntojos op1 = new CaldosAntojos(noorden);
     op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -494,6 +573,11 @@ public class Menu extends javax.swing.JFrame {
 
     }//GEN-LAST:event_Titulo7MouseClicked
 
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+       noorden = Integer.parseInt(Ordentxt.getText());
+        ListarProductosPedidos();
+    }//GEN-LAST:event_jLabel10MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -542,12 +626,14 @@ public class Menu extends javax.swing.JFrame {
     private ClassAngels.PanelRound Menu7;
     private javax.swing.JTextField Ordentxt;
     private javax.swing.JPanel PanelMenu;
+    public static javax.swing.JTable Pedidos;
     private javax.swing.JLabel Titulo2;
     private javax.swing.JLabel Titulo3;
     private javax.swing.JLabel Titulo4;
     private javax.swing.JLabel Titulo5;
     private javax.swing.JLabel Titulo6;
     private javax.swing.JLabel Titulo7;
+    public static javax.swing.JTextField Total;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -558,8 +644,6 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField mesatxt;
     private ClassAngels.PanelRound panelRound1;
     // End of variables declaration//GEN-END:variables

@@ -5,7 +5,9 @@
 package SubPaneles;
 
 import ClassAngels.EtiquetasClass;
+import ClassAngels.InsertarProducto;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -36,6 +38,8 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
         nombres();
         Etiquetas();
     }
+     
+     
 
     /**
      * This method is called from within the constructor to initialize the form.
