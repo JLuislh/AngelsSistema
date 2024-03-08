@@ -25,7 +25,7 @@ public class BDOrdenes {
         BDConexion conecta = new BDConexion();
         Connection con = conecta.getConexion();
         PreparedStatement smtp = null;
-        smtp =con.prepareStatement("insert into Ordenes (FECHA) values(CURRENT_TIMESTAMP)",Statement.RETURN_GENERATED_KEYS);
+        smtp =con.prepareStatement("insert into Ordenes (FECHA,ESTADO) values(CURRENT_TIMESTAMP,1)",Statement.RETURN_GENERATED_KEYS);
         try {
          smtp.executeUpdate();
      } catch (Exception e) {
@@ -83,7 +83,7 @@ private static ArrayList<InsertarProducto> SQL3(String sql){
             }
             cn.close();
         } catch (Exception e) {
-            System.out.println("error consulta DE LA ATABLA "+e);
+            System.out.println("error consulta DE LA TABLA "+e);
             return null;
         } 
         return list;

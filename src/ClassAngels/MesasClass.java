@@ -19,7 +19,16 @@ public class MesasClass {
     
     private String mesa;
     private int estado;
+    private int Orden;
 
+    public int getOrden() {
+        return Orden;
+    }
+
+    public void setOrden(int Orden) {
+        this.Orden = Orden;
+    }
+    
     public String getMesa() {
         return mesa;
     }
@@ -39,7 +48,7 @@ public class MesasClass {
     
     
     public static ArrayList<MesasClass> ListaMesas () {
-        return SQLP("SELECT nomesa,estado FROM mesas WHERE ESTADO = 2 order by ID_MESA");    
+        return SQLP("SELECT nomesa,m.estado,o.NOORDEN FROM mesas m inner join ordenes o on m.ID_MESA = o.ID_MESA WHERE m.ESTADO = 2 and o.estado = 1 order by m.ID_MESA;");    
  }  
 
 private static ArrayList<MesasClass> SQLP(String sql){
@@ -55,6 +64,7 @@ private static ArrayList<MesasClass> SQLP(String sql){
                  t = new MesasClass();
                  t.setMesa(rs.getString("nomesa"));
                  t.setEstado(rs.getInt("estado"));
+                 t.setOrden(rs.getInt("noorden"));
                  list.add(t);
             }
             cn.close();

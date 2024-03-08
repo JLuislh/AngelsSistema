@@ -33,6 +33,7 @@ import javax.swing.table.TableColumn;
 public class Menu extends javax.swing.JFrame {
      public static int noorden;
      int nomesa;
+     int tipomenu = 0;
     /**
      * Creates new form Menu
      * @param a
@@ -110,13 +111,12 @@ public class Menu extends javax.swing.JFrame {
         Pedidos = new javax.swing.JTable();
         jPanel6 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         Ordentxt = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
         mesatxt = new javax.swing.JTextField();
-        panelRound1 = new ClassAngels.PanelRound();
-        jLabel10 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         Total = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -371,50 +371,35 @@ public class Menu extends javax.swing.JFrame {
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setText("NO. ORDEN");
-        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 20, -1, -1));
+        jLabel3.setText(" NO. ORDEN");
+        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, -1));
+        jPanel6.add(Ordentxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 130, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel4.setText("NO. MESA");
-        jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 56, -1, 30));
-        jPanel6.add(Ordentxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 17, 90, -1));
-        jPanel6.add(mesatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, 90, -1));
+        jLabel4.setText(" NO. MESA");
+        jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 70, 20));
+        jPanel6.add(mesatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 140, -1));
 
-        panelRound1.setBackground(new java.awt.Color(0, 255, 0));
-        panelRound1.setRoundBottomLeft(20);
-        panelRound1.setRoundBottomRight(20);
-        panelRound1.setRoundTopLeft(20);
-        panelRound1.setRoundTopRight(20);
-
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("GENERAR ORDEN");
-        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel10MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
-        panelRound1.setLayout(panelRound1Layout);
-        panelRound1Layout.setHorizontalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        panelRound1Layout.setVerticalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
-        );
-
-        jPanel6.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 130, -1));
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("TOTAL");
-        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 90, -1));
+        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 300, -1));
 
         Total.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         Total.setForeground(new java.awt.Color(255, 0, 0));
-        jPanel6.add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, -1));
+        jPanel6.add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 170, -1));
+
+        jButton3.setBackground(new java.awt.Color(255, 255, 153));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Print.png"))); // NOI18N
+        jButton3.setText("GENERAR ORDEN");
+        jButton3.setPreferredSize(new java.awt.Dimension(75, 25));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 170, 40));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 430, 330, 190));
 
@@ -500,7 +485,7 @@ public class Menu extends javax.swing.JFrame {
     
     
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    CaldosAntojos op1 = new CaldosAntojos(noorden);
+    CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
     op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -573,10 +558,11 @@ public class Menu extends javax.swing.JFrame {
 
     }//GEN-LAST:event_Titulo7MouseClicked
 
-    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-       noorden = Integer.parseInt(Ordentxt.getText());
-        ListarProductosPedidos();
-    }//GEN-LAST:event_jLabel10MouseClicked
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       Ordenes F = new Ordenes();
+       F.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -635,8 +621,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel Titulo7;
     public static javax.swing.JTextField Total;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -645,6 +631,5 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField mesatxt;
-    private ClassAngels.PanelRound panelRound1;
     // End of variables declaration//GEN-END:variables
 }
