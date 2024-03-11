@@ -65,25 +65,25 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="panelRound1" min="-2" max="-2" attributes="0"/>
+                          <Component id="P1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="panelRound2" min="-2" max="-2" attributes="0"/>
+                          <Component id="P2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="panelRound3" min="-2" max="-2" attributes="0"/>
+                          <Component id="P3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="panelRound4" min="-2" max="-2" attributes="0"/>
+                          <Component id="P4" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="panelRound5" min="-2" max="-2" attributes="0"/>
+                          <Component id="P5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="panelRound6" min="-2" max="-2" attributes="0"/>
+                          <Component id="P6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="panelRound7" min="-2" max="-2" attributes="0"/>
+                          <Component id="P7" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="panelRound8" min="-2" max="-2" attributes="0"/>
+                          <Component id="P8" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="panelRound9" min="-2" max="-2" attributes="0"/>
+                          <Component id="P9" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="panelRound10" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="P10" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -94,25 +94,25 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="panelRound9" min="-2" max="-2" attributes="0"/>
-                      <Component id="panelRound8" min="-2" max="-2" attributes="0"/>
-                      <Component id="panelRound7" min="-2" max="-2" attributes="0"/>
-                      <Component id="panelRound6" min="-2" max="-2" attributes="0"/>
-                      <Component id="panelRound5" min="-2" max="-2" attributes="0"/>
-                      <Component id="panelRound4" min="-2" max="-2" attributes="0"/>
-                      <Component id="panelRound3" min="-2" max="-2" attributes="0"/>
-                      <Component id="panelRound2" min="-2" max="-2" attributes="0"/>
-                      <Component id="panelRound1" min="-2" max="-2" attributes="0"/>
+                      <Component id="P9" min="-2" max="-2" attributes="0"/>
+                      <Component id="P8" min="-2" max="-2" attributes="0"/>
+                      <Component id="P7" min="-2" max="-2" attributes="0"/>
+                      <Component id="P6" min="-2" max="-2" attributes="0"/>
+                      <Component id="P5" min="-2" max="-2" attributes="0"/>
+                      <Component id="P4" min="-2" max="-2" attributes="0"/>
+                      <Component id="P3" min="-2" max="-2" attributes="0"/>
+                      <Component id="P2" min="-2" max="-2" attributes="0"/>
+                      <Component id="P1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="panelRound10" min="-2" max="-2" attributes="0"/>
+                  <Component id="P10" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="ClassAngels.PanelRound" name="panelRound1">
+        <Container class="ClassAngels.PanelRound" name="P1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -147,10 +147,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER1MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound2">
+        <Container class="ClassAngels.PanelRound" name="P2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -185,10 +188,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel2"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER2MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound3">
+        <Container class="ClassAngels.PanelRound" name="P3">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -223,10 +229,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel3"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER3MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound4">
+        <Container class="ClassAngels.PanelRound" name="P4">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -261,10 +270,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel4"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER4MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound5">
+        <Container class="ClassAngels.PanelRound" name="P5">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -299,10 +311,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel5"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER5MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound6">
+        <Container class="ClassAngels.PanelRound" name="P6">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -337,10 +352,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel6"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER6MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound7">
+        <Container class="ClassAngels.PanelRound" name="P7">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -375,10 +393,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel7"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER7MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound8">
+        <Container class="ClassAngels.PanelRound" name="P8">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -413,10 +434,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel8"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER8MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound9">
+        <Container class="ClassAngels.PanelRound" name="P9">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -451,10 +475,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel9"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER9MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="panelRound10">
+        <Container class="ClassAngels.PanelRound" name="P10">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -489,6 +516,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel10"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CER10MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -515,25 +545,25 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="P1" min="-2" max="-2" attributes="0"/>
+                          <Component id="P11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="P2" min="-2" max="-2" attributes="0"/>
+                          <Component id="P12" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="P3" min="-2" max="-2" attributes="0"/>
+                          <Component id="P13" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="P4" min="-2" max="-2" attributes="0"/>
+                          <Component id="P14" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="P5" min="-2" max="-2" attributes="0"/>
+                          <Component id="P15" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="P6" min="-2" max="-2" attributes="0"/>
+                          <Component id="P16" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="P7" min="-2" max="-2" attributes="0"/>
+                          <Component id="P17" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="P8" min="-2" max="-2" attributes="0"/>
+                          <Component id="P18" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="P9" min="-2" max="-2" attributes="0"/>
+                          <Component id="P19" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="P10" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="P20" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -544,24 +574,24 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="P1" min="-2" max="-2" attributes="0"/>
-                      <Component id="P2" min="-2" max="-2" attributes="0"/>
-                      <Component id="P3" min="-2" max="-2" attributes="0"/>
-                      <Component id="P4" min="-2" max="-2" attributes="0"/>
-                      <Component id="P5" min="-2" max="-2" attributes="0"/>
-                      <Component id="P6" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="P7" min="-2" max="-2" attributes="0"/>
-                      <Component id="P8" min="-2" max="-2" attributes="0"/>
-                      <Component id="P9" min="-2" max="-2" attributes="0"/>
+                      <Component id="P11" min="-2" max="-2" attributes="0"/>
+                      <Component id="P12" min="-2" max="-2" attributes="0"/>
+                      <Component id="P13" min="-2" max="-2" attributes="0"/>
+                      <Component id="P14" min="-2" max="-2" attributes="0"/>
+                      <Component id="P15" min="-2" max="-2" attributes="0"/>
+                      <Component id="P16" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="P17" min="-2" max="-2" attributes="0"/>
+                      <Component id="P18" min="-2" max="-2" attributes="0"/>
+                      <Component id="P19" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="P10" min="-2" max="-2" attributes="0"/>
+                  <Component id="P20" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="ClassAngels.PanelRound" name="P1">
+        <Container class="ClassAngels.PanelRound" name="P11">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -596,10 +626,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel11"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="DRIN1MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P2">
+        <Container class="ClassAngels.PanelRound" name="P12">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -634,10 +667,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel12"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="DRIN2MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P3">
+        <Container class="ClassAngels.PanelRound" name="P13">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -672,10 +708,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel13"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="DRIN3MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P4">
+        <Container class="ClassAngels.PanelRound" name="P14">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -710,10 +749,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel14"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="DRIN4MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P5">
+        <Container class="ClassAngels.PanelRound" name="P15">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -748,10 +790,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel15"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="DRIN5MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P6">
+        <Container class="ClassAngels.PanelRound" name="P16">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -786,10 +831,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel16"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="DRIN6MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P7">
+        <Container class="ClassAngels.PanelRound" name="P17">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -824,10 +872,13 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="jLabel17"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="DRIN7MouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P8">
+        <Container class="ClassAngels.PanelRound" name="P18">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -860,12 +911,11 @@
                   <Font name="Segoe UI" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="jLabel18"/>
               </Properties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P9">
+        <Container class="ClassAngels.PanelRound" name="P19">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -898,12 +948,11 @@
                   <Font name="Segoe UI" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="jLabel19"/>
               </Properties>
             </Component>
           </SubComponents>
         </Container>
-        <Container class="ClassAngels.PanelRound" name="P10">
+        <Container class="ClassAngels.PanelRound" name="P20">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="ff" red="cc" type="rgb"/>
@@ -936,7 +985,6 @@
                   <Font name="Segoe UI" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="jLabel20"/>
               </Properties>
             </Component>
           </SubComponents>

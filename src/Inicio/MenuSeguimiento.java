@@ -46,8 +46,8 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         MenuSeguimiento.noorden = a;
         
         
-        Ordentxt.setText(String.valueOf(b));
-        mesatxt.setText(String.valueOf(a));
+        Ordentxt.setText(String.valueOf(a));
+        mesatxt.setText(String.valueOf(b));
         String texto1 = "<html><center><body>HAMBURGUEZAS<br>FUERA DEL MAR</body></center></html>";
         Titulo2.setText(texto1);
         String texto2 = "<html><center><body>AMANTES DEL CEVICHE<br>SABORES DEL MAR</body></center></html>";
@@ -511,7 +511,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void Titulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo2MouseClicked
-    Hamburguesas op1 = new Hamburguesas();
+    Hamburguesas op1 = new Hamburguesas(noorden,tipomenu);
     op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -521,7 +521,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo2MouseClicked
 
     private void Titulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo3MouseClicked
-    Ceviches op1 = new Ceviches();
+    Ceviches op1 = new Ceviches(noorden,tipomenu);
     op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -531,7 +531,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo3MouseClicked
 
     private void Titulo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo4MouseClicked
-    BebidasSinAlcohol op1 = new BebidasSinAlcohol();
+    BebidasSinAlcohol op1 = new BebidasSinAlcohol(noorden,tipomenu);
     op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -541,7 +541,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo4MouseClicked
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
-    ConAlcohol op1 = new ConAlcohol();
+    ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
     op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -551,7 +551,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo5MouseClicked
 
     private void Titulo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo6MouseClicked
-    Botellas op1 = new Botellas();
+    Botellas op1 = new Botellas(noorden,tipomenu);
     op1.setSize(1025, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();

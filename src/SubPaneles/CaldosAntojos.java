@@ -1017,14 +1017,14 @@ public class CaldosAntojos extends javax.swing.JPanel {
             codigooreden= codigo7;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P5.setBackground(Color.darkGray);
+            P7.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
           }else{
             codigooreden = codigo7;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P5.setBackground(Color.GREEN);
+            P7.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
        }
