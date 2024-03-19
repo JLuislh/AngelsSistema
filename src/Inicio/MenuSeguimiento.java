@@ -356,13 +356,10 @@ public class MenuSeguimiento extends javax.swing.JFrame {
 
         Pedidos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+
             },
             new String [] {
-                "Cantidad", "Descripcion", "Precio"
+                "CANTIDAD", "DESCRIPCION", "PRECIO", "TOTAL"
             }
         ));
         jScrollPane1.setViewportView(Pedidos);
