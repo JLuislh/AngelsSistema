@@ -22,9 +22,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableColumn;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperPrintManager;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.util.JRLoader;
 
 /**
  *
@@ -566,7 +573,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo7MouseClicked
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        ListarProductosPedidos();
+        imprimir();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -649,4 +656,17 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField mesatxt;
     // End of variables declaration//GEN-END:variables
+ private void imprimir(){
+      BDConexion con= new BDConexion();
+         Connection conexion= con.getConexion();
+        try {
+            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuenta.jasper");
+            Map parametros= new HashMap();
+            parametros.put("ID_ORDEN", Ordentxt.getText());
+            JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
+            JasperPrintManager.printReport(print, true);
+        } catch (Exception e) {System.out.println("F"+e);
+           JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
+        }
+    }
 }

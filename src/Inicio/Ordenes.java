@@ -61,6 +61,7 @@ public class Ordenes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jRadioButton1 = new javax.swing.JRadioButton();
         jPanel1 = new javax.swing.JPanel();
         NEWORDER = new ClassAngels.PanelRound();
         nueva = new javax.swing.JLabel();
@@ -70,6 +71,8 @@ public class Ordenes extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         NUEVAPARALLEVAR = new ClassAngels.PanelRound();
         llevar = new javax.swing.JLabel();
+
+        jRadioButton1.setText("jRadioButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -161,6 +164,11 @@ public class Ordenes extends javax.swing.JFrame {
         llevar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         llevar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         llevar.setText("NUEVA ORDEN");
+        llevar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                llevarMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout NUEVAPARALLEVARLayout = new javax.swing.GroupLayout(NUEVAPARALLEVAR);
         NUEVAPARALLEVAR.setLayout(NUEVAPARALLEVARLayout);
@@ -228,6 +236,14 @@ public class Ordenes extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jLabel3MouseClicked
 
+    private void llevarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_llevarMouseClicked
+       
+        MenuParaLlevar F = new MenuParaLlevar(noorden);
+        F.setVisible(true);
+        this.dispose(); 
+        
+    }//GEN-LAST:event_llevarMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -271,6 +287,7 @@ public class Ordenes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JLabel llevar;
     private javax.swing.JLabel nueva;
     // End of variables declaration//GEN-END:variables
