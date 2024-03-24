@@ -9,6 +9,7 @@ import BDclass.BDOrdenes;
 import ClassAngels.EtiquetasClass;
 import ClassAngels.InsertarProducto;
 import Inicio.Menu;
+import Inicio.MenuParaLlevar;
 import Inicio.MenuSeguimiento;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -102,6 +103,7 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
              MenuSeguimiento.ListarProductosPedidos();
              break;
          case 2:
+             MenuParaLlevar.ListarProductosPedidos();
              break;
          default:
              break;
@@ -131,6 +133,7 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
              MenuSeguimiento.ListarProductosPedidos();
              break;
          case 2:
+              MenuParaLlevar.ListarProductosPedidos();
              break;
          default:
              break;
@@ -178,6 +181,7 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
              MenuSeguimiento.ListarProductosPedidos();
              break;
          case 2:
+              MenuParaLlevar.ListarProductosPedidos();
              break;
          default:
              break;

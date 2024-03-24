@@ -5,6 +5,7 @@ import BDclass.BDOrdenes;
 import ClassAngels.EtiquetasClass;
 import ClassAngels.InsertarProducto;
 import Inicio.Menu;
+import Inicio.MenuParaLlevar;
 import Inicio.MenuSeguimiento;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -107,6 +108,7 @@ public class Hamburguesas extends javax.swing.JPanel {
              MenuSeguimiento.ListarProductosPedidos();
              break;
          case 2:
+              MenuParaLlevar.ListarProductosPedidos();
              break;
          default:
              break;
@@ -136,6 +138,7 @@ public class Hamburguesas extends javax.swing.JPanel {
              MenuSeguimiento.ListarProductosPedidos();
              break;
          case 2:
+              MenuParaLlevar.ListarProductosPedidos();
              break;
          default:
              break;
@@ -183,6 +186,7 @@ public class Hamburguesas extends javax.swing.JPanel {
              MenuSeguimiento.ListarProductosPedidos();
              break;
          case 2:
+              MenuParaLlevar.ListarProductosPedidos();
              break;
          default:
              break;

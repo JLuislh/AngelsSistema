@@ -46,9 +46,7 @@ public class Ordenes extends javax.swing.JFrame {
         }
 
         //System.out.println("ID ="+id_pedido);
-        Mesas F = new Mesas(noorden);
-        F.setVisible(true);
-        this.dispose();
+      
 
     }
 
@@ -228,6 +226,9 @@ public class Ordenes extends javax.swing.JFrame {
 
     private void nuevaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nuevaMouseClicked
        crear();
+         Mesas F = new Mesas(noorden);
+         F.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_nuevaMouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
@@ -237,7 +238,7 @@ public class Ordenes extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void llevarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_llevarMouseClicked
-       
+       crear();
         MenuParaLlevar F = new MenuParaLlevar(noorden);
         F.setVisible(true);
         this.dispose(); 

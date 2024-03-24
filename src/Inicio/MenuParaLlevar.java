@@ -8,6 +8,7 @@ import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
+import static Inicio.Menu.noorden;
 import SubPaneles.BebidasSinAlcohol;
 import SubPaneles.Botellas;
 import SubPaneles.CaldosAntojos;
@@ -37,8 +38,7 @@ import net.sf.jasperreports.engine.util.JRLoader;
  */
 public class MenuParaLlevar extends javax.swing.JFrame {
      public static int noorden;
-     int nomesa;
-     int tipomenu = 1;
+     int tipomenu = 2;
     /**
      * Creates new form Menu
      * @param a
@@ -48,7 +48,6 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         MenuParaLlevar.noorden = a;
-        
         
         Ordentxt.setText(String.valueOf(a));
         String texto1 = "<html><center><body>HAMBURGUEZAS<br>FUERA DEL MAR</body></center></html>";
@@ -276,15 +275,15 @@ public class MenuParaLlevar extends javax.swing.JFrame {
             .addComponent(Titulo6, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        Menu7.setBackground(new java.awt.Color(204, 204, 0));
+        Menu7.setBackground(new java.awt.Color(255, 102, 102));
         Menu7.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu7.setRoundTopLeft(20);
         Menu7.setRoundTopRight(20);
 
         Titulo7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Titulo7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Back.png"))); // NOI18N
-        Titulo7.setText("INICIO");
+        Titulo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Cancel.png"))); // NOI18N
+        Titulo7.setText("CANCELAR");
         Titulo7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Titulo7MouseClicked(evt);
@@ -475,6 +474,19 @@ public class MenuParaLlevar extends javax.swing.JFrame {
                 System.out.print(error);
             }
         }
+    private void eliminarOrden(){
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            PreparedStatement ps = null;
+            ps= con.prepareStatement("delete from Ordenes where noorden="+noorden);
+            ps.executeUpdate();
+            con.close();
+            ps.close();
+        } catch (SQLException ex) {
+           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+        }
+ }
     
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
     CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
@@ -539,7 +551,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo6MouseClicked
 
     private void Titulo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo7MouseClicked
-     
+          eliminarOrden();
            Ordenes F = new Ordenes();
            F.setVisible(true);
            this.dispose();
