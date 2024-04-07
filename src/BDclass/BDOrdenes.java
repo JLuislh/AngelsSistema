@@ -88,9 +88,123 @@ private static ArrayList<InsertarProducto> SQL3(String sql){
         } 
         return list;
 }  
+   
+public static ArrayList<InsertarProducto> ProductosVentas(String Fecha) {
+        return venta("SELECT v.codigo,concat(p.DESCRIPCION1 ,' ', p.DESCRIPCION2) as Descripcion,p.PRECIO,sum(v.CANTIDAD) as CANTIDAD,sum(v.TOTAL) as TOTAL\n" +
+"FROM ventas v inner join productos p on v.CODIGO = p.CODIGO join ordenes o on v.NOORDEN = o.NOORDEN where  date_format(fecha,\"%d/%m/%Y\" )  = '"+Fecha+"'  group by  v.codigo,p.DESCRIPCION1,p.DESCRIPCION2,p.PRECIO  order by codigo;");    
+ }  
+
+    private static ArrayList<InsertarProducto> venta(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCodigo(rs.getInt("CODIGO"));
+                 t.setDescripcion(rs.getString("DESCRIPCION").toUpperCase());
+                 t.setCantidad(rs.getInt("CANTIDAD"));
+                 t.setPrecio(rs.getDouble("PRECIO"));
+                 t.setTotal(rs.getDouble("TOTAL"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA ATABLA "+e);
+            return null;
+        } 
+        return list;
+} 
+    
+public static ArrayList<InsertarProducto> ProductosVentasDetallado(String Fecha) {
+        return ventaDeta("SELECT v.codigo,concat(p.DESCRIPCION1 ,' ', p.DESCRIPCION2) as DESCRIPCION ,p.PRECIO,v.CANTIDAD,v.TOTAL,o.FECHA \n" +
+"FROM ventas v inner join productos p on v.CODIGO = p.CODIGO join ordenes o on v.NOORDEN = o.NOORDEN where  date_format(fecha,\"%d/%m/%Y\" )  = '"+Fecha+"' order by codigo;");    
+ }  
+
+    private static ArrayList<InsertarProducto> ventaDeta(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCodigo(rs.getInt("CODIGO"));
+                 t.setDescripcion(rs.getString("DESCRIPCION").toUpperCase());
+                 t.setCantidad(rs.getInt("CANTIDAD"));
+                 t.setPrecio(rs.getDouble("PRECIO"));
+                 t.setTotal(rs.getDouble("TOTAL"));
+                 t.setFecha(rs.getString("FECHA"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA ATABLA "+e);
+            return null;
+        } 
+        return list;
+}      
+    
+  public static ArrayList<InsertarProducto> Ordenes(String Fecha) {
+        return Order("select noorden,Total,Fecha from ordenes where date_format(fecha,'%d/%m/%Y')  ='"+Fecha+"'");    
+ }  
+
+    private static ArrayList<InsertarProducto> Order(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setNoOrden(rs.getInt("noorden"));
+                 t.setTotal(rs.getDouble("TOTAL"));
+                 t.setFecha(rs.getString("FECHA"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (SQLException e) {
+            System.out.println("error consulta DE LA A TABLA "+e);
+            return null;
+        } 
+        return list;
+}
     
     
     
+public static InsertarProducto BuscarTotal(String a) throws SQLException{
+        return buscarTotal(a ,null);
+    }
+    
+    public static InsertarProducto buscarTotal(String a, InsertarProducto c) throws SQLException {
+             
+            BDConexion conecta = new BDConexion();
+            Connection cn = conecta.getConexion();
+            PreparedStatement ps = null;
+            ps = cn.prepareStatement("select SUM(TOTAL) AS TOTAL, count(*) as ORDENES from ordenes where date_format(fecha,'%d/%m/%Y' )  = '"+a+"';");
+            ResultSet rs = ps.executeQuery();
+            if (rs.next())
+            {
+               if (c==null)
+               {c = new InsertarProducto(){};}
+               c.setNoOrden(rs.getInt("ORDENES"));
+               c.setTotal(rs.getDouble("TOTAL"));
+               
+            }
+            cn.close();
+            ps.close();
+            return c;
+}    
     
     
 }

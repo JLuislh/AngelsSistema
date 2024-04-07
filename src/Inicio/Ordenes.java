@@ -4,6 +4,7 @@
  */
 package Inicio;
 
+import AdministradorAngels.Contraseña;
 import BDclass.BDOrdenes;
 import ClassAngels.OrdenesClass;
 import java.sql.SQLException;
@@ -140,6 +141,11 @@ public class Ordenes extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("ADMINISTRAR");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout ADMINISTRARLayout = new javax.swing.GroupLayout(ADMINISTRAR);
         ADMINISTRAR.setLayout(ADMINISTRARLayout);
@@ -244,6 +250,12 @@ public class Ordenes extends javax.swing.JFrame {
         this.dispose(); 
         
     }//GEN-LAST:event_llevarMouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        Contraseña F = new Contraseña();
+        F.setVisible(true);
+        this.dispose(); 
+    }//GEN-LAST:event_jLabel2MouseClicked
 
     /**
      * @param args the command line arguments
