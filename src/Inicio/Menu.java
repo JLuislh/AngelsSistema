@@ -490,7 +490,7 @@ public class Menu extends javax.swing.JFrame {
         try {
             JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngels.jasper");
             Map parametros= new HashMap();
-            parametros.put("ID_ORDEN", Ordentxt.getText());
+            parametros.put("ID_ORDEN", Integer.parseInt(Ordentxt.getText()));
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
             JasperPrintManager.printReport(print, true);
         } catch (Exception e) {System.out.println("F"+e);

@@ -153,7 +153,7 @@ public static ArrayList<InsertarProducto> ProductosVentasDetallado(String Fecha)
 }      
     
   public static ArrayList<InsertarProducto> Ordenes(String Fecha) {
-        return Order("select noorden,Total,Fecha from ordenes where date_format(fecha,'%d/%m/%Y')  ='"+Fecha+"'");    
+        return Order("select noorden,Total,Fecha from ordenes where estado = 2 and date_format(fecha,'%d/%m/%Y')  ='"+Fecha+"'");    
  }  
 
     private static ArrayList<InsertarProducto> Order(String sql){
@@ -191,7 +191,7 @@ public static InsertarProducto BuscarTotal(String a) throws SQLException{
             BDConexion conecta = new BDConexion();
             Connection cn = conecta.getConexion();
             PreparedStatement ps = null;
-            ps = cn.prepareStatement("select SUM(TOTAL) AS TOTAL, count(*) as ORDENES from ordenes where date_format(fecha,'%d/%m/%Y' )  = '"+a+"';");
+            ps = cn.prepareStatement("select SUM(TOTAL) AS TOTAL, count(*) as ORDENES from ordenes where estado = 2 and date_format(fecha,'%d/%m/%Y' )  = '"+a+"';");
             ResultSet rs = ps.executeQuery();
             if (rs.next())
             {

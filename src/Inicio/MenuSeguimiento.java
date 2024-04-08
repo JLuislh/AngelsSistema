@@ -24,7 +24,6 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableColumn;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -68,7 +67,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         ListarProductosPedidos();
     }
     
-    private void cobrarOrden(){
+    private void cobrarOrdenyCerrar(){
         try {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
@@ -81,6 +80,20 @@ public class MenuSeguimiento extends javax.swing.JFrame {
             con.close();
             ps.close();
             p.close();
+        } catch (SQLException ex) {
+           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+        }
+ }
+    
+    private void Totalizar(){
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            PreparedStatement ps = null;
+            ps= con.prepareStatement("UPDATE ORDENES SET TOTAL = "+Total.getText()+" where noorden="+noorden);
+            ps.executeUpdate();
+            con.close();
+            ps.close();
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
@@ -498,10 +511,6 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         }
     
     
-    
-    
-    
-    
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
     CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
     op1.setSize(1025, 380);
@@ -573,14 +582,19 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo7MouseClicked
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Totalizar();
         imprimir();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       cobrarOrden();
-       Ordenes F = new Ordenes();
-       F.setVisible(true);
+       
+        int resp=JOptionPane.showConfirmDialog(null,"COBRAR Q."+Total.getText()+" PARA CERRAR ORDEN");
+          if (JOptionPane.OK_OPTION == resp){ 
+                cobrarOrdenyCerrar();
+                Ordenes F = new Ordenes();
+                F.setVisible(true);
        this.dispose();
+          }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

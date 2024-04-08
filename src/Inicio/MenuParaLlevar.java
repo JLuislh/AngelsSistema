@@ -551,19 +551,37 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo6MouseClicked
 
     private void Titulo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo7MouseClicked
-          eliminarOrden();
+         
+         if(Pedidos.getRowCount()>0){
+      JOptionPane.showMessageDialog(null, "ELIMINE TODOS LOS PRODUCTOS"); 
+       }else{
+      int resp=JOptionPane.showConfirmDialog(null,"DESEA CANCELAR LA ORDEN");
+          if (JOptionPane.OK_OPTION == resp){
+            eliminarOrden();
            Ordenes F = new Ordenes();
            F.setVisible(true);
            this.dispose();
+          }
+      }
+        
+        
+        
+        
+        
+        
 
     }//GEN-LAST:event_Titulo7MouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       imprimir();
-       cobrarOrden();
-       Ordenes F = new Ordenes();
-       F.setVisible(true);
-       this.dispose();
+       
+        int resp=JOptionPane.showConfirmDialog(null,"COBRAR Q."+Total.getText()+" PARA CERRAR ORDEN");
+          if (JOptionPane.OK_OPTION == resp){
+              cobrarOrden();
+              imprimir();
+              Ordenes F = new Ordenes();
+              F.setVisible(true);
+              this.dispose();
+          }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -652,7 +670,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         try {
             JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuenta.jasper");
             Map parametros= new HashMap();
-            parametros.put("ID_ORDEN", Ordentxt.getText());
+            parametros.put("ID_ORDEN", Integer.parseInt(Ordentxt.getText()));
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
             JasperPrintManager.printReport(print, true);
         } catch (Exception e) {System.out.println("F"+e);
