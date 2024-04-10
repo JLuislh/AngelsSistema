@@ -103,6 +103,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         Menu6 = new ClassAngels.PanelRound();
         Titulo6 = new javax.swing.JLabel();
         Menu7 = new ClassAngels.PanelRound();
+        Titulo8 = new javax.swing.JLabel();
+        Menu8 = new ClassAngels.PanelRound();
         Titulo7 = new javax.swing.JLabel();
         PanelMenu = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -120,6 +122,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1170, 640));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1060, 643));
@@ -275,10 +278,35 @@ public class MenuParaLlevar extends javax.swing.JFrame {
             .addComponent(Titulo6, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        Menu7.setBackground(new java.awt.Color(255, 102, 102));
+        Menu7.setBackground(new java.awt.Color(255, 204, 102));
         Menu7.setPreferredSize(new java.awt.Dimension(140, 50));
         Menu7.setRoundTopLeft(20);
         Menu7.setRoundTopRight(20);
+
+        Titulo8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Titulo8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Titulo8.setText("EXTRAS");
+        Titulo8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Titulo8MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Menu7Layout = new javax.swing.GroupLayout(Menu7);
+        Menu7.setLayout(Menu7Layout);
+        Menu7Layout.setHorizontalGroup(
+            Menu7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Titulo8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+        );
+        Menu7Layout.setVerticalGroup(
+            Menu7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Titulo8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        Menu8.setBackground(new java.awt.Color(255, 102, 102));
+        Menu8.setPreferredSize(new java.awt.Dimension(140, 50));
+        Menu8.setRoundTopLeft(20);
+        Menu8.setRoundTopRight(20);
 
         Titulo7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Titulo7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -290,15 +318,18 @@ public class MenuParaLlevar extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout Menu7Layout = new javax.swing.GroupLayout(Menu7);
-        Menu7.setLayout(Menu7Layout);
-        Menu7Layout.setHorizontalGroup(
-            Menu7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo7, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+        javax.swing.GroupLayout Menu8Layout = new javax.swing.GroupLayout(Menu8);
+        Menu8.setLayout(Menu8Layout);
+        Menu8Layout.setHorizontalGroup(
+            Menu8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Menu8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Titulo7, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                .addContainerGap())
         );
-        Menu7Layout.setVerticalGroup(
-            Menu7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo7, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        Menu8Layout.setVerticalGroup(
+            Menu8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Titulo7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -320,7 +351,9 @@ public class MenuParaLlevar extends javax.swing.JFrame {
                 .addComponent(Menu6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Menu7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Menu8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -331,9 +364,10 @@ public class MenuParaLlevar extends javax.swing.JFrame {
             .addComponent(Menu4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Menu8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, -1));
 
         PanelMenu.setBackground(new java.awt.Color(255, 255, 255));
         PanelMenu.setPreferredSize(new java.awt.Dimension(697, 587));
@@ -342,14 +376,14 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         PanelMenu.setLayout(PanelMenuLayout);
         PanelMenuLayout.setHorizontalGroup(
             PanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1030, Short.MAX_VALUE)
+            .addGap(0, 1170, Short.MAX_VALUE)
         );
         PanelMenuLayout.setVerticalGroup(
             PanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 380, Short.MAX_VALUE)
         );
 
-        jPanel1.add(PanelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1030, 380));
+        jPanel1.add(PanelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 1170, 380));
 
         Pedidos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -361,7 +395,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(Pedidos);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 700, 190));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 840, 210));
 
         jPanel6.setBackground(new java.awt.Color(153, 204, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -369,22 +403,27 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText(" NO. ORDEN");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, -1));
+
+        Ordentxt.setEditable(false);
         jPanel6.add(Ordentxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 130, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setText(" NO. MESA");
         jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 70, 20));
+
+        mesatxt.setEditable(false);
         jPanel6.add(mesatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 140, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("TOTAL");
-        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 300, -1));
+        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 300, -1));
 
+        Total.setEditable(false);
         Total.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         Total.setForeground(new java.awt.Color(255, 0, 0));
         Total.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel6.add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 170, -1));
+        jPanel6.add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 180, -1));
 
         jButton2.setBackground(new java.awt.Color(102, 255, 102));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -396,19 +435,19 @@ public class MenuParaLlevar extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 150, 40));
+        jPanel6.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 150, 40));
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 430, 330, 190));
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 430, 330, 210));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1027, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1170, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 640, Short.MAX_VALUE)
         );
 
         pack();
@@ -490,7 +529,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
     CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
-    op1.setSize(1025, 380);
+    op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -502,7 +541,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
 
     private void Titulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo2MouseClicked
     Hamburguesas op1 = new Hamburguesas(noorden,tipomenu);
-    op1.setSize(1025, 380);
+    op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -512,7 +551,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
 
     private void Titulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo3MouseClicked
     Ceviches op1 = new Ceviches(noorden,tipomenu);
-    op1.setSize(1025, 380);
+    op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -522,7 +561,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
 
     private void Titulo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo4MouseClicked
     BebidasSinAlcohol op1 = new BebidasSinAlcohol(noorden,tipomenu);
-    op1.setSize(1025, 380);
+    op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -532,7 +571,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
     ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
-    op1.setSize(1025, 380);
+    op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -542,7 +581,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
 
     private void Titulo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo6MouseClicked
     Botellas op1 = new Botellas(noorden,tipomenu);
-    op1.setSize(1025, 380);
+    op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
     PanelMenu.add(op1,BorderLayout.CENTER);
@@ -552,23 +591,15 @@ public class MenuParaLlevar extends javax.swing.JFrame {
 
     private void Titulo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo7MouseClicked
          
-         if(Pedidos.getRowCount()>0){
-      JOptionPane.showMessageDialog(null, "ELIMINE TODOS LOS PRODUCTOS"); 
-       }else{
+      
       int resp=JOptionPane.showConfirmDialog(null,"DESEA CANCELAR LA ORDEN");
           if (JOptionPane.OK_OPTION == resp){
             eliminarOrden();
            Ordenes F = new Ordenes();
            F.setVisible(true);
            this.dispose();
-          }
+          
       }
-        
-        
-        
-        
-        
-        
 
     }//GEN-LAST:event_Titulo7MouseClicked
 
@@ -583,6 +614,10 @@ public class MenuParaLlevar extends javax.swing.JFrame {
               this.dispose();
           }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void Titulo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Titulo8MouseClicked
 
     /**
      * @param args the command line arguments
@@ -642,6 +677,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     private ClassAngels.PanelRound Menu5;
     private ClassAngels.PanelRound Menu6;
     private ClassAngels.PanelRound Menu7;
+    private ClassAngels.PanelRound Menu8;
     private javax.swing.JTextField Ordentxt;
     private javax.swing.JPanel PanelMenu;
     public static javax.swing.JTable Pedidos;
@@ -651,6 +687,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     private javax.swing.JLabel Titulo5;
     private javax.swing.JLabel Titulo6;
     private javax.swing.JLabel Titulo7;
+    private javax.swing.JLabel Titulo8;
     public static javax.swing.JTextField Total;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

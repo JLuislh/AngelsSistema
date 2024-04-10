@@ -9,6 +9,7 @@ import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -29,6 +30,7 @@ import net.sf.jasperreports.engine.util.JRLoader;
  */
 public class AdTotalEnCaja extends javax.swing.JPanel {
     String Fecha;
+    int cantidadOrdenes;
     /**
      * Creates new form TotalEnCaja
      */
@@ -134,13 +136,14 @@ public class AdTotalEnCaja extends javax.swing.JPanel {
                         .addComponent(jButton1))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(146, 146, 146)
+                                .addGap(18, 18, 18)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(155, 155, 155)
                                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,11 +171,11 @@ public class AdTotalEnCaja extends javax.swing.JPanel {
         JOptionPane.showMessageDialog(null, "INGRESE UNA FECHA...");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
+  
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
+        ValidarOrdenes();
         if(Fe.getDate() != null){ 
-        
+        if(cantidadOrdenes>0){JOptionPane.showMessageDialog(null, "Imprimira un total parcial, ya que aun hay Ordenes de Mesas Pendientes de cerrar, cerrar todas para tener un TOTAL FINAL");}
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
          Fecha = df.format(Fe.getDate());
             BDConexion con= new BDConexion();
@@ -247,6 +250,25 @@ try {
             JOptionPane.showMessageDialog(null, "error mas"+e);
         } 
      }
+     
+     
+      public void ValidarOrdenes() {
+            try {
+                 BDConexion conecta = new BDConexion();
+                Connection cn = conecta.getConexion();
+                java.sql.Statement stmt = cn.createStatement();
+                ResultSet rs = stmt.executeQuery("select count(noorden) cantidad from ordenes where estado = 1");
+                while (rs.next()) {
+                      cantidadOrdenes = rs.getInt(1);
+                   // Total.setText(String.valueOf(TOTAL));
+                }
+                rs.close();
+                stmt.close();
+                cn.close();
+            } catch (Exception error) {
+                System.out.print(error);
+            }
+        }
     
     
     

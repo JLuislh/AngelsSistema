@@ -201,7 +201,19 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
-        Menu.ListarProductosPedidos();
+         switch (tipomenu) {
+         case 0:
+             Menu.ListarProductosPedidos();
+             break;
+         case 1:
+             MenuSeguimiento.ListarProductosPedidos();
+             break;
+         case 2:
+              MenuParaLlevar.ListarProductosPedidos();
+             break;
+         default:
+             break;
+     }
         existe = 0;
  }
      

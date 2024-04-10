@@ -244,7 +244,7 @@ public class Ordenes extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void llevarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_llevarMouseClicked
-       crear();
+        crear();
         MenuParaLlevar F = new MenuParaLlevar(noorden);
         F.setVisible(true);
         this.dispose(); 
