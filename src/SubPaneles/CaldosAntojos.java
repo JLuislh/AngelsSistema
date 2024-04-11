@@ -43,7 +43,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
  String descripcion14;	String descripcion2_14;	 String Precio14; int codigo14;
  String descripcion15;	String descripcion2_15;	 String Precio15; int codigo15;
  String descripcion16;	String descripcion2_16;	 String Precio16; int codigo16;
- 
+ String descripcion17;	String descripcion2_17;	 String Precio17; int codigo17;
+ String descripcion18;	String descripcion2_18;	 String Precio18; int codigo18;
+ String descripcion19;	String descripcion2_19;	 String Precio19; int codigo19;
+ String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -118,6 +121,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
        P14.setBackground(Original);
        P15.setBackground(Original);
        P16.setBackground(Original);
+       P17.setBackground(Original);
+       P18.setBackground(Original);
+       P19.setBackground(Original);
+       P20.setBackground(Original);
       
      }
     });
@@ -279,9 +286,13 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P16 = new ClassAngels.PanelRound();
         PAL11 = new javax.swing.JLabel();
         P17 = new ClassAngels.PanelRound();
+        PAL12 = new javax.swing.JLabel();
         P18 = new ClassAngels.PanelRound();
+        PAL13 = new javax.swing.JLabel();
         P19 = new ClassAngels.PanelRound();
+        PAL14 = new javax.swing.JLabel();
         P20 = new ClassAngels.PanelRound();
+        PAL15 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 153));
         setPreferredSize(new java.awt.Dimension(1025, 380));
@@ -466,7 +477,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL1.setText("jLabel1");
+        PAL1.setText("6");
         PAL1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL1MouseClicked(evt);
@@ -493,7 +504,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL2.setText("jLabel2");
+        PAL2.setText("7");
         PAL2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL2MouseClicked(evt);
@@ -520,7 +531,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL3.setText("jLabel3");
+        PAL3.setText("8");
         PAL3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL3MouseClicked(evt);
@@ -547,7 +558,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL4.setText("jLabel4");
+        PAL4.setText("9");
         PAL4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL4MouseClicked(evt);
@@ -574,7 +585,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL5.setText("jLabel5");
+        PAL5.setText("10");
         PAL5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL5MouseClicked(evt);
@@ -601,7 +612,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL6.setText("jLabel6");
+        PAL6.setText("11");
         PAL6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL6MouseClicked(evt);
@@ -628,7 +639,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL7.setText("jLabel7");
+        PAL7.setText("12");
         PAL7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL7MouseClicked(evt);
@@ -655,7 +666,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL8.setText("jLabel8");
+        PAL8.setText("13");
         PAL8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL8MouseClicked(evt);
@@ -682,7 +693,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL9.setText("jLabel9");
+        PAL9.setText("14");
         PAL9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL9MouseClicked(evt);
@@ -709,7 +720,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL10.setText("jLabel10");
+        PAL10.setText("15");
         PAL10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL10MouseClicked(evt);
@@ -736,7 +747,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL11.setText("jLabel11");
+        PAL11.setText("16");
         PAL11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL11MouseClicked(evt);
@@ -761,15 +772,24 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P17.setRoundTopLeft(20);
         P17.setRoundTopRight(20);
 
+        PAL12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        PAL12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PAL12.setText("17");
+        PAL12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PAL12MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout P17Layout = new javax.swing.GroupLayout(P17);
         P17.setLayout(P17Layout);
         P17Layout.setHorizontalGroup(
             P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(PAL12, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P17Layout.setVerticalGroup(
             P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addComponent(PAL12, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P18.setBackground(new java.awt.Color(204, 255, 102));
@@ -779,15 +799,24 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P18.setRoundTopLeft(20);
         P18.setRoundTopRight(20);
 
+        PAL13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        PAL13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PAL13.setText("18");
+        PAL13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PAL13MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout P18Layout = new javax.swing.GroupLayout(P18);
         P18.setLayout(P18Layout);
         P18Layout.setHorizontalGroup(
             P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(PAL13, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P18Layout.setVerticalGroup(
             P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addComponent(PAL13, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P19.setBackground(new java.awt.Color(204, 255, 102));
@@ -797,15 +826,24 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P19.setRoundTopLeft(20);
         P19.setRoundTopRight(20);
 
+        PAL14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        PAL14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PAL14.setText("19");
+        PAL14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PAL14MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout P19Layout = new javax.swing.GroupLayout(P19);
         P19.setLayout(P19Layout);
         P19Layout.setHorizontalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(PAL14, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P19Layout.setVerticalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addComponent(PAL14, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P20.setBackground(new java.awt.Color(204, 255, 102));
@@ -815,15 +853,24 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P20.setRoundTopLeft(20);
         P20.setRoundTopRight(20);
 
+        PAL15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        PAL15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PAL15.setText("20");
+        PAL15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PAL15MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout P20Layout = new javax.swing.GroupLayout(P20);
         P20.setLayout(P20Layout);
         P20Layout.setHorizontalGroup(
             P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(PAL15, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P20Layout.setVerticalGroup(
             P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addComponent(PAL15, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -1209,6 +1256,78 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.start();
        }
     }//GEN-LAST:event_PAL11MouseClicked
+
+    private void PAL12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL12MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo17;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P17.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo17;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P17.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_PAL12MouseClicked
+
+    private void PAL13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL13MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo18;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P18.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo18;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P18.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_PAL13MouseClicked
+
+    private void PAL14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL14MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo19;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P19.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo19;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P19.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_PAL14MouseClicked
+
+    private void PAL15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL15MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo20;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P20.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo20;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P20.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_PAL15MouseClicked
   private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasCaldos();
         for (int i = 0; i < result.size(); i++) {
@@ -1262,6 +1381,18 @@ public class CaldosAntojos extends javax.swing.JPanel {
              else if (16== codigo){
              descripcion16 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_16 = result.get(i).getDescripcion2().toUpperCase(); Precio16 = result.get(i).getPrecio();codigo16 = result.get(i).getCodigo();
             }
+             else if (111== codigo){
+             descripcion17 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_17 = result.get(i).getDescripcion2().toUpperCase(); Precio17 = result.get(i).getPrecio();codigo17 = result.get(i).getCodigo();
+            }
+             else if (112== codigo){
+             descripcion18 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_18 = result.get(i).getDescripcion2().toUpperCase(); Precio18 = result.get(i).getPrecio();codigo18 = result.get(i).getCodigo();
+            }
+             else if (113== codigo){
+             descripcion19 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_19 = result.get(i).getDescripcion2().toUpperCase(); Precio19 = result.get(i).getPrecio();codigo19 = result.get(i).getCodigo();
+            }
+             else if (114== codigo){
+             descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
+            }
         }
   }
     
@@ -1296,6 +1427,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
     private javax.swing.JLabel PAL1;
     private javax.swing.JLabel PAL10;
     private javax.swing.JLabel PAL11;
+    private javax.swing.JLabel PAL12;
+    private javax.swing.JLabel PAL13;
+    private javax.swing.JLabel PAL14;
+    private javax.swing.JLabel PAL15;
     private javax.swing.JLabel PAL2;
     private javax.swing.JLabel PAL3;
     private javax.swing.JLabel PAL4;
@@ -1342,6 +1477,14 @@ public class CaldosAntojos extends javax.swing.JPanel {
         PAL10.setText(texto15);
         String texto16 ="<html><center><body>"+descripcion16+"<br>"+descripcion2_16+"<br><font color='RED'>Q"+Precio16+"</font></body></center></html>";
         PAL11.setText(texto16);
+        String texto17 ="<html><center><body>"+descripcion17+"<br>"+descripcion2_17+"<br><font color='RED'>Q"+Precio17+"</font></body></center></html>";
+        PAL12.setText(texto17);
+        String texto18 ="<html><center><body>"+descripcion18+"<br>"+descripcion2_18+"<br><font color='RED'>Q"+Precio18+"</font></body></center></html>";
+        PAL13.setText(texto18);
+        String texto19 ="<html><center><body>"+descripcion19+"<br>"+descripcion2_19+"<br><font color='RED'>Q"+Precio19+"</font></body></center></html>";
+        PAL14.setText(texto19);
+        String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
+        PAL15.setText(texto20);
         
     }
 
