@@ -261,6 +261,7 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
         P16 = new ClassAngels.PanelRound();
 
         setBackground(new java.awt.Color(51, 153, 255));
+        setPreferredSize(new java.awt.Dimension(1170, 380));
 
         jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "BOTELLAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
@@ -792,7 +793,7 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(219, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -801,6 +802,8 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(35, Short.MAX_VALUE))
         );
+
+        getAccessibleContext().setAccessibleName("");
     }// </editor-fold>//GEN-END:initComponents
 
     private void BO1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BO1MouseClicked

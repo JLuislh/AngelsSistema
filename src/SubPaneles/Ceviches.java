@@ -49,6 +49,9 @@ public class Ceviches extends javax.swing.JPanel {
  String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
  String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
  String descripcion22;	String descripcion2_22;	 String Precio22; int codigo22;
+ String descripcion23;	String descripcion2_23;	 String Precio23; int codigo23;
+ String descripcion24;	String descripcion2_24;	 String Precio24; int codigo24;
+ String descripcion25;	String descripcion2_25;	 String Precio25; int codigo25;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -95,6 +98,9 @@ public class Ceviches extends javax.swing.JPanel {
        P20.setBackground(Original);
        P21.setBackground(Original);
        P22.setBackground(Original);
+       P23.setBackground(Original);
+       P24.setBackground(Original);
+       P25.setBackground(Original);
       
      }
     });
@@ -286,6 +292,12 @@ public class Ceviches extends javax.swing.JPanel {
         SAB10 = new javax.swing.JLabel();
         P22 = new ClassAngels.PanelRound();
         SAB11 = new javax.swing.JLabel();
+        P23 = new ClassAngels.PanelRound();
+        SAB12 = new javax.swing.JLabel();
+        P24 = new ClassAngels.PanelRound();
+        SAB13 = new javax.swing.JLabel();
+        P25 = new ClassAngels.PanelRound();
+        SAB14 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 204, 204));
 
@@ -302,7 +314,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA1.setText("jLabel1");
+        AMA1.setText("1");
         AMA1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA1MouseClicked(evt);
@@ -318,7 +330,7 @@ public class Ceviches extends javax.swing.JPanel {
         P1Layout.setVerticalGroup(
             P1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(P1Layout.createSequentialGroup()
-                .addComponent(AMA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AMA1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -332,7 +344,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA2.setText("jLabel2");
+        AMA2.setText("2");
         AMA2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA2MouseClicked(evt);
@@ -362,7 +374,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA3.setText("jLabel11");
+        AMA3.setText("3");
         AMA3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA3MouseClicked(evt);
@@ -392,7 +404,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA4.setText("jLabel10");
+        AMA4.setText("4");
         AMA4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA4MouseClicked(evt);
@@ -422,7 +434,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA5.setText("jLabel9");
+        AMA5.setText("5");
         AMA5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA5MouseClicked(evt);
@@ -452,7 +464,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA6.setText("jLabel8");
+        AMA6.setText("6");
         AMA6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA6MouseClicked(evt);
@@ -482,7 +494,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA7.setText("jLabel7");
+        AMA7.setText("7");
         AMA7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA7MouseClicked(evt);
@@ -512,7 +524,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA8.setText("jLabel6");
+        AMA8.setText("8");
         AMA8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA8MouseClicked(evt);
@@ -542,7 +554,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA9.setText("jLabel5");
+        AMA9.setText("9");
         AMA9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA9MouseClicked(evt);
@@ -571,7 +583,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA10.setText("jLabel3");
+        AMA10.setText("10");
         AMA10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA10MouseClicked(evt);
@@ -598,7 +610,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA11.setText("jLabel4");
+        AMA11.setText("11");
         AMA11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA11MouseClicked(evt);
@@ -640,12 +652,11 @@ public class Ceviches extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -660,11 +671,10 @@ public class Ceviches extends javax.swing.JPanel {
                     .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -680,7 +690,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB1.setText("jLabel12");
+        SAB1.setText("12");
         SAB1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB1MouseClicked(evt);
@@ -707,7 +717,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB2.setText("jLabel13");
+        SAB2.setText("13");
         SAB2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB2MouseClicked(evt);
@@ -734,7 +744,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB3.setText("jLabel1");
+        SAB3.setText("14");
         SAB3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB3MouseClicked(evt);
@@ -761,7 +771,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB4.setText("jLabel2");
+        SAB4.setText("15");
         SAB4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB4MouseClicked(evt);
@@ -788,7 +798,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB5.setText("jLabel3");
+        SAB5.setText("16");
         SAB5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB5MouseClicked(evt);
@@ -815,7 +825,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB6.setText("jLabel5");
+        SAB6.setText("17");
         SAB6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB6MouseClicked(evt);
@@ -842,7 +852,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB7.setText("jLabel6");
+        SAB7.setText("18");
         SAB7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB7MouseClicked(evt);
@@ -869,7 +879,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB8.setText("jLabel7");
+        SAB8.setText("19");
         SAB8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB8MouseClicked(evt);
@@ -896,7 +906,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB9.setText("jLabel8");
+        SAB9.setText("20");
         SAB9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB9MouseClicked(evt);
@@ -923,7 +933,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB10.setText("jLabel9");
+        SAB10.setText("21");
         SAB10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB10MouseClicked(evt);
@@ -950,7 +960,7 @@ public class Ceviches extends javax.swing.JPanel {
 
         SAB11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         SAB11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        SAB11.setText("jLabel10");
+        SAB11.setText("22");
         SAB11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SAB11MouseClicked(evt);
@@ -961,11 +971,94 @@ public class Ceviches extends javax.swing.JPanel {
         P22.setLayout(P22Layout);
         P22Layout.setHorizontalGroup(
             P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(SAB11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(SAB11, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P22Layout.setVerticalGroup(
             P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(SAB11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P22Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(SAB11, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        P23.setBackground(new java.awt.Color(204, 255, 102));
+        P23.setPreferredSize(new java.awt.Dimension(100, 65));
+        P23.setRoundBottomLeft(20);
+        P23.setRoundBottomRight(20);
+        P23.setRoundTopLeft(20);
+        P23.setRoundTopRight(20);
+
+        SAB12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB12.setText("23");
+        SAB12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SAB12MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P23Layout = new javax.swing.GroupLayout(P23);
+        P23.setLayout(P23Layout);
+        P23Layout.setHorizontalGroup(
+            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(SAB12, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P23Layout.setVerticalGroup(
+            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(SAB12, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P24.setBackground(new java.awt.Color(204, 255, 102));
+        P24.setPreferredSize(new java.awt.Dimension(100, 65));
+        P24.setRoundBottomLeft(20);
+        P24.setRoundBottomRight(20);
+        P24.setRoundTopLeft(20);
+        P24.setRoundTopRight(20);
+
+        SAB13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB13.setText("24");
+        SAB13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SAB13MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P24Layout = new javax.swing.GroupLayout(P24);
+        P24.setLayout(P24Layout);
+        P24Layout.setHorizontalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(SAB13, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P24Layout.setVerticalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(SAB13, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P25.setBackground(new java.awt.Color(204, 255, 102));
+        P25.setPreferredSize(new java.awt.Dimension(100, 65));
+        P25.setRoundBottomLeft(20);
+        P25.setRoundBottomRight(20);
+        P25.setRoundTopLeft(20);
+        P25.setRoundTopRight(20);
+
+        SAB14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        SAB14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SAB14.setText("25");
+        SAB14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SAB14MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P25Layout = new javax.swing.GroupLayout(P25);
+        P25.setLayout(P25Layout);
+        P25Layout.setHorizontalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(SAB14, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P25Layout.setVerticalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(SAB14, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -975,10 +1068,6 @@ public class Ceviches extends javax.swing.JPanel {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -996,8 +1085,19 @@ public class Ceviches extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1012,12 +1112,15 @@ public class Ceviches extends javax.swing.JPanel {
                     .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -1437,6 +1540,60 @@ public class Ceviches extends javax.swing.JPanel {
        }
     }//GEN-LAST:event_SAB11MouseClicked
 
+    private void SAB12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SAB12MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo23;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P23.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo23;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P23.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_SAB12MouseClicked
+
+    private void SAB13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SAB13MouseClicked
+      if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo24;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P24.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo24;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P24.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+      }
+    }//GEN-LAST:event_SAB13MouseClicked
+
+    private void SAB14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SAB14MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo25;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P25.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo25;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P25.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_SAB14MouseClicked
+
     private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasCeviches();
         for (int i = 0; i < result.size(); i++) {
@@ -1508,6 +1665,15 @@ public class Ceviches extends javax.swing.JPanel {
             else if (53== codigo){
              descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
             }
+            else if (118== codigo){
+             descripcion23 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_23 = result.get(i).getDescripcion2().toUpperCase(); Precio23 = result.get(i).getPrecio();codigo23 = result.get(i).getCodigo();
+            }
+            else if (119== codigo){
+             descripcion24 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_24 = result.get(i).getDescripcion2().toUpperCase(); Precio24 = result.get(i).getPrecio();codigo24 = result.get(i).getCodigo();
+            }
+            else if (120== codigo){
+             descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
+            }
         }
   }
 
@@ -1538,6 +1704,9 @@ public class Ceviches extends javax.swing.JPanel {
     private ClassAngels.PanelRound P20;
     private ClassAngels.PanelRound P21;
     private ClassAngels.PanelRound P22;
+    private ClassAngels.PanelRound P23;
+    private ClassAngels.PanelRound P24;
+    private ClassAngels.PanelRound P25;
     private ClassAngels.PanelRound P3;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
@@ -1548,6 +1717,9 @@ public class Ceviches extends javax.swing.JPanel {
     private javax.swing.JLabel SAB1;
     private javax.swing.JLabel SAB10;
     private javax.swing.JLabel SAB11;
+    private javax.swing.JLabel SAB12;
+    private javax.swing.JLabel SAB13;
+    private javax.swing.JLabel SAB14;
     private javax.swing.JLabel SAB2;
     private javax.swing.JLabel SAB3;
     private javax.swing.JLabel SAB4;
@@ -1605,5 +1777,11 @@ public class Ceviches extends javax.swing.JPanel {
         SAB10.setText(texto21);
          String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
         SAB11.setText(texto22);
+         String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
+        SAB12.setText(texto23);
+         String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
+        SAB13.setText(texto24);
+         String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
+        SAB14.setText(texto25);
     }
 }
