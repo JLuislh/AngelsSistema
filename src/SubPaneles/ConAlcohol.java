@@ -44,6 +44,25 @@ public class ConAlcohol extends javax.swing.JPanel {
  String descripcion15;	String descripcion2_15;	 String Precio15; int codigo15;
  String descripcion16;	String descripcion2_16;	 String Precio16; int codigo16;
  String descripcion17;	String descripcion2_17;	 String Precio17; int codigo17;
+ String descripcion18;	String descripcion2_18;	 String Precio18; int codigo18;
+ String descripcion19;	String descripcion2_19;	 String Precio19; int codigo19;
+ String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
+ String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
+ String descripcion22;	String descripcion2_22;	 String Precio22; int codigo22;
+ String descripcion23;	String descripcion2_23;	 String Precio23; int codigo23;
+ String descripcion24;	String descripcion2_24;	 String Precio24; int codigo24;
+ String descripcion25;	String descripcion2_25;	 String Precio25; int codigo25;
+ String descripcion26;	String descripcion2_26;	 String Precio26; int codigo26;
+ String descripcion27;	String descripcion2_27;	 String Precio27; int codigo27;
+ String descripcion28;	String descripcion2_28;	 String Precio28; int codigo28;
+ String descripcion29;	String descripcion2_29;	 String Precio29; int codigo29;
+ String descripcion30;	String descripcion2_30;	 String Precio30; int codigo30;
+ String descripcion31;	String descripcion2_31;	 String Precio31; int codigo31;
+ String descripcion32;	String descripcion2_32;	 String Precio32; int codigo32;
+ String descripcion33;	String descripcion2_33;	 String Precio33; int codigo33;
+ String descripcion34;	String descripcion2_34;	 String Precio34; int codigo34;
+ String descripcion35;	String descripcion2_35;	 String Precio35; int codigo35;
+ String descripcion36;	String descripcion2_36;	 String Precio36; int codigo36;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -88,7 +107,22 @@ public class ConAlcohol extends javax.swing.JPanel {
        P18.setBackground(Original);
        P19.setBackground(Original);
        P20.setBackground(Original);
-       
+       P21.setBackground(Original);
+       P22.setBackground(Original);
+       P23.setBackground(Original);
+       P24.setBackground(Original);
+       P25.setBackground(Original);
+       P26.setBackground(Original);
+       P27.setBackground(Original);
+       P28.setBackground(Original);
+       P29.setBackground(Original);
+       P30.setBackground(Original);
+       P31.setBackground(Original);
+       P32.setBackground(Original);
+       P33.setBackground(Original);
+       P34.setBackground(Original);
+       P35.setBackground(Original);
+       P36.setBackground(Original);
       
      }
     });
@@ -255,6 +289,38 @@ public class ConAlcohol extends javax.swing.JPanel {
         CER9 = new javax.swing.JLabel();
         P10 = new ClassAngels.PanelRound();
         CER10 = new javax.swing.JLabel();
+        P21 = new ClassAngels.PanelRound();
+        CER11 = new javax.swing.JLabel();
+        P22 = new ClassAngels.PanelRound();
+        CER12 = new javax.swing.JLabel();
+        P23 = new ClassAngels.PanelRound();
+        CER13 = new javax.swing.JLabel();
+        P24 = new ClassAngels.PanelRound();
+        CER14 = new javax.swing.JLabel();
+        P25 = new ClassAngels.PanelRound();
+        CER15 = new javax.swing.JLabel();
+        P26 = new ClassAngels.PanelRound();
+        CER16 = new javax.swing.JLabel();
+        P27 = new ClassAngels.PanelRound();
+        CER17 = new javax.swing.JLabel();
+        P28 = new ClassAngels.PanelRound();
+        CER18 = new javax.swing.JLabel();
+        P29 = new ClassAngels.PanelRound();
+        CER19 = new javax.swing.JLabel();
+        P30 = new ClassAngels.PanelRound();
+        CER20 = new javax.swing.JLabel();
+        P31 = new ClassAngels.PanelRound();
+        CER21 = new javax.swing.JLabel();
+        P32 = new ClassAngels.PanelRound();
+        CER22 = new javax.swing.JLabel();
+        P33 = new ClassAngels.PanelRound();
+        CER23 = new javax.swing.JLabel();
+        P34 = new ClassAngels.PanelRound();
+        CER24 = new javax.swing.JLabel();
+        P35 = new ClassAngels.PanelRound();
+        CER25 = new javax.swing.JLabel();
+        P36 = new ClassAngels.PanelRound();
+        CER26 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         P11 = new ClassAngels.PanelRound();
         DRIN1 = new javax.swing.JLabel();
@@ -278,6 +344,7 @@ public class ConAlcohol extends javax.swing.JPanel {
         DRIN10 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(204, 204, 204));
+        setPreferredSize(new java.awt.Dimension(1170, 368));
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CERVEZAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
@@ -291,7 +358,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER1.setText("jLabel1");
+        CER1.setText("1");
         CER1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER1MouseClicked(evt);
@@ -318,7 +385,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER2.setText("jLabel2");
+        CER2.setText("2");
         CER2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER2MouseClicked(evt);
@@ -345,7 +412,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER3.setText("jLabel3");
+        CER3.setText("3");
         CER3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER3MouseClicked(evt);
@@ -372,7 +439,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER4.setText("jLabel4");
+        CER4.setText("4");
         CER4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER4MouseClicked(evt);
@@ -399,7 +466,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER5.setText("jLabel5");
+        CER5.setText("5");
         CER5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER5MouseClicked(evt);
@@ -426,7 +493,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER6.setText("jLabel6");
+        CER6.setText("6");
         CER6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER6MouseClicked(evt);
@@ -453,7 +520,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER7.setText("jLabel7");
+        CER7.setText("7");
         CER7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER7MouseClicked(evt);
@@ -480,7 +547,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER8.setText("jLabel8");
+        CER8.setText("8");
         CER8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER8MouseClicked(evt);
@@ -507,7 +574,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER9.setText("jLabel9");
+        CER9.setText("9");
         CER9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER9MouseClicked(evt);
@@ -534,7 +601,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER10.setText("jLabel10");
+        CER10.setText("10");
         CER10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER10MouseClicked(evt);
@@ -550,6 +617,438 @@ public class ConAlcohol extends javax.swing.JPanel {
         P10Layout.setVerticalGroup(
             P10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(CER10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P21.setBackground(new java.awt.Color(204, 255, 102));
+        P21.setPreferredSize(new java.awt.Dimension(100, 65));
+        P21.setRoundBottomLeft(20);
+        P21.setRoundBottomRight(20);
+        P21.setRoundTopLeft(20);
+        P21.setRoundTopRight(20);
+
+        CER11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER11.setText("21");
+        CER11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER11MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P21Layout = new javax.swing.GroupLayout(P21);
+        P21.setLayout(P21Layout);
+        P21Layout.setHorizontalGroup(
+            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P21Layout.setVerticalGroup(
+            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P22.setBackground(new java.awt.Color(204, 255, 102));
+        P22.setPreferredSize(new java.awt.Dimension(100, 65));
+        P22.setRoundBottomLeft(20);
+        P22.setRoundBottomRight(20);
+        P22.setRoundTopLeft(20);
+        P22.setRoundTopRight(20);
+
+        CER12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER12.setText("22");
+        CER12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER12MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P22Layout = new javax.swing.GroupLayout(P22);
+        P22.setLayout(P22Layout);
+        P22Layout.setHorizontalGroup(
+            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P22Layout.setVerticalGroup(
+            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P23.setBackground(new java.awt.Color(204, 255, 102));
+        P23.setPreferredSize(new java.awt.Dimension(100, 65));
+        P23.setRoundBottomLeft(20);
+        P23.setRoundBottomRight(20);
+        P23.setRoundTopLeft(20);
+        P23.setRoundTopRight(20);
+
+        CER13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER13.setText("23");
+        CER13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER13MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P23Layout = new javax.swing.GroupLayout(P23);
+        P23.setLayout(P23Layout);
+        P23Layout.setHorizontalGroup(
+            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P23Layout.setVerticalGroup(
+            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P24.setBackground(new java.awt.Color(204, 255, 102));
+        P24.setPreferredSize(new java.awt.Dimension(100, 65));
+        P24.setRoundBottomLeft(20);
+        P24.setRoundBottomRight(20);
+        P24.setRoundTopLeft(20);
+        P24.setRoundTopRight(20);
+
+        CER14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER14.setText("24");
+        CER14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER14MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P24Layout = new javax.swing.GroupLayout(P24);
+        P24.setLayout(P24Layout);
+        P24Layout.setHorizontalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P24Layout.setVerticalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P25.setBackground(new java.awt.Color(204, 255, 102));
+        P25.setPreferredSize(new java.awt.Dimension(100, 65));
+        P25.setRoundBottomLeft(20);
+        P25.setRoundBottomRight(20);
+        P25.setRoundTopLeft(20);
+        P25.setRoundTopRight(20);
+
+        CER15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER15.setText("25");
+        CER15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER15MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P25Layout = new javax.swing.GroupLayout(P25);
+        P25.setLayout(P25Layout);
+        P25Layout.setHorizontalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P25Layout.setVerticalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P26.setBackground(new java.awt.Color(204, 255, 102));
+        P26.setPreferredSize(new java.awt.Dimension(100, 65));
+        P26.setRoundBottomLeft(20);
+        P26.setRoundBottomRight(20);
+        P26.setRoundTopLeft(20);
+        P26.setRoundTopRight(20);
+
+        CER16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER16.setText("26");
+        CER16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER16MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P26Layout = new javax.swing.GroupLayout(P26);
+        P26.setLayout(P26Layout);
+        P26Layout.setHorizontalGroup(
+            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P26Layout.setVerticalGroup(
+            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P27.setBackground(new java.awt.Color(204, 255, 102));
+        P27.setPreferredSize(new java.awt.Dimension(100, 65));
+        P27.setRoundBottomLeft(20);
+        P27.setRoundBottomRight(20);
+        P27.setRoundTopLeft(20);
+        P27.setRoundTopRight(20);
+
+        CER17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER17.setText("27");
+        CER17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER17MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P27Layout = new javax.swing.GroupLayout(P27);
+        P27.setLayout(P27Layout);
+        P27Layout.setHorizontalGroup(
+            P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P27Layout.setVerticalGroup(
+            P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P28.setBackground(new java.awt.Color(204, 255, 102));
+        P28.setPreferredSize(new java.awt.Dimension(100, 65));
+        P28.setRoundBottomLeft(20);
+        P28.setRoundBottomRight(20);
+        P28.setRoundTopLeft(20);
+        P28.setRoundTopRight(20);
+
+        CER18.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER18.setText("28");
+        CER18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER18MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P28Layout = new javax.swing.GroupLayout(P28);
+        P28.setLayout(P28Layout);
+        P28Layout.setHorizontalGroup(
+            P28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P28Layout.setVerticalGroup(
+            P28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P29.setBackground(new java.awt.Color(204, 255, 102));
+        P29.setPreferredSize(new java.awt.Dimension(100, 65));
+        P29.setRoundBottomLeft(20);
+        P29.setRoundBottomRight(20);
+        P29.setRoundTopLeft(20);
+        P29.setRoundTopRight(20);
+
+        CER19.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER19.setText("29");
+        CER19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER19MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P29Layout = new javax.swing.GroupLayout(P29);
+        P29.setLayout(P29Layout);
+        P29Layout.setHorizontalGroup(
+            P29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P29Layout.setVerticalGroup(
+            P29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P30.setBackground(new java.awt.Color(204, 255, 102));
+        P30.setPreferredSize(new java.awt.Dimension(100, 65));
+        P30.setRoundBottomLeft(20);
+        P30.setRoundBottomRight(20);
+        P30.setRoundTopLeft(20);
+        P30.setRoundTopRight(20);
+
+        CER20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER20.setText("30");
+        CER20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER20MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P30Layout = new javax.swing.GroupLayout(P30);
+        P30.setLayout(P30Layout);
+        P30Layout.setHorizontalGroup(
+            P30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P30Layout.setVerticalGroup(
+            P30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P31.setBackground(new java.awt.Color(204, 255, 102));
+        P31.setPreferredSize(new java.awt.Dimension(100, 65));
+        P31.setRoundBottomLeft(20);
+        P31.setRoundBottomRight(20);
+        P31.setRoundTopLeft(20);
+        P31.setRoundTopRight(20);
+
+        CER21.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER21.setText("31");
+        CER21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER21MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P31Layout = new javax.swing.GroupLayout(P31);
+        P31.setLayout(P31Layout);
+        P31Layout.setHorizontalGroup(
+            P31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P31Layout.setVerticalGroup(
+            P31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P32.setBackground(new java.awt.Color(204, 255, 102));
+        P32.setPreferredSize(new java.awt.Dimension(100, 65));
+        P32.setRoundBottomLeft(20);
+        P32.setRoundBottomRight(20);
+        P32.setRoundTopLeft(20);
+        P32.setRoundTopRight(20);
+
+        CER22.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER22.setText("32");
+        CER22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER22MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P32Layout = new javax.swing.GroupLayout(P32);
+        P32.setLayout(P32Layout);
+        P32Layout.setHorizontalGroup(
+            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P32Layout.setVerticalGroup(
+            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P33.setBackground(new java.awt.Color(204, 255, 102));
+        P33.setPreferredSize(new java.awt.Dimension(100, 65));
+        P33.setRoundBottomLeft(20);
+        P33.setRoundBottomRight(20);
+        P33.setRoundTopLeft(20);
+        P33.setRoundTopRight(20);
+
+        CER23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER23.setText("33");
+        CER23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER23MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P33Layout = new javax.swing.GroupLayout(P33);
+        P33.setLayout(P33Layout);
+        P33Layout.setHorizontalGroup(
+            P33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P33Layout.setVerticalGroup(
+            P33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P34.setBackground(new java.awt.Color(204, 255, 102));
+        P34.setPreferredSize(new java.awt.Dimension(100, 65));
+        P34.setRoundBottomLeft(20);
+        P34.setRoundBottomRight(20);
+        P34.setRoundTopLeft(20);
+        P34.setRoundTopRight(20);
+
+        CER24.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER24.setText("34");
+        CER24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER24MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P34Layout = new javax.swing.GroupLayout(P34);
+        P34.setLayout(P34Layout);
+        P34Layout.setHorizontalGroup(
+            P34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P34Layout.setVerticalGroup(
+            P34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P35.setBackground(new java.awt.Color(204, 255, 102));
+        P35.setPreferredSize(new java.awt.Dimension(100, 65));
+        P35.setRoundBottomLeft(20);
+        P35.setRoundBottomRight(20);
+        P35.setRoundTopLeft(20);
+        P35.setRoundTopRight(20);
+
+        CER25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER25.setText("35");
+        CER25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER25MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P35Layout = new javax.swing.GroupLayout(P35);
+        P35.setLayout(P35Layout);
+        P35Layout.setHorizontalGroup(
+            P35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P35Layout.setVerticalGroup(
+            P35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P36.setBackground(new java.awt.Color(204, 255, 102));
+        P36.setPreferredSize(new java.awt.Dimension(100, 65));
+        P36.setRoundBottomLeft(20);
+        P36.setRoundBottomRight(20);
+        P36.setRoundTopLeft(20);
+        P36.setRoundTopRight(20);
+
+        CER26.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        CER26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER26.setText("36");
+        CER26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CER26MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P36Layout = new javax.swing.GroupLayout(P36);
+        P36.setLayout(P36Layout);
+        P36Layout.setHorizontalGroup(
+            P36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P36Layout.setVerticalGroup(
+            P36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(CER26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -576,27 +1075,81 @@ public class ConAlcohol extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(P33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(P33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P34, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P35, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P36, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
@@ -611,7 +1164,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN1.setText("jLabel11");
+        DRIN1.setText("11");
         DRIN1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DRIN1MouseClicked(evt);
@@ -638,7 +1191,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN2.setText("jLabel12");
+        DRIN2.setText("12");
         DRIN2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DRIN2MouseClicked(evt);
@@ -665,7 +1218,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN3.setText("jLabel13");
+        DRIN3.setText("13");
         DRIN3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DRIN3MouseClicked(evt);
@@ -692,7 +1245,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN4.setText("jLabel14");
+        DRIN4.setText("14");
         DRIN4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DRIN4MouseClicked(evt);
@@ -719,7 +1272,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN5.setText("jLabel15");
+        DRIN5.setText("15");
         DRIN5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DRIN5MouseClicked(evt);
@@ -746,7 +1299,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN6.setText("jLabel16");
+        DRIN6.setText("16");
         DRIN6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DRIN6MouseClicked(evt);
@@ -773,7 +1326,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN7.setText("jLabel17");
+        DRIN7.setText("17");
         DRIN7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DRIN7MouseClicked(evt);
@@ -800,6 +1353,7 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DRIN8.setText("18");
 
         javax.swing.GroupLayout P18Layout = new javax.swing.GroupLayout(P18);
         P18.setLayout(P18Layout);
@@ -821,12 +1375,16 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DRIN9.setText("19");
 
         javax.swing.GroupLayout P19Layout = new javax.swing.GroupLayout(P19);
         P19.setLayout(P19Layout);
         P19Layout.setHorizontalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DRIN9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P19Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(DRIN9, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
+                .addContainerGap())
         );
         P19Layout.setVerticalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -842,12 +1400,13 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         DRIN10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DRIN10.setText("20");
 
         javax.swing.GroupLayout P20Layout = new javax.swing.GroupLayout(P20);
         P20.setLayout(P20Layout);
         P20Layout.setHorizontalGroup(
             P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DRIN10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(DRIN10, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P20Layout.setVerticalGroup(
             P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -860,33 +1419,33 @@ public class ConAlcohol extends javax.swing.JPanel {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -896,8 +1455,7 @@ public class ConAlcohol extends javax.swing.JPanel {
                     .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -906,19 +1464,18 @@ public class ConAlcohol extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1227,6 +1784,293 @@ public class ConAlcohol extends javax.swing.JPanel {
             timer.start();
        }
     }//GEN-LAST:event_DRIN7MouseClicked
+
+    private void CER11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER11MouseClicked
+if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo21;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P21.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo21;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P21.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }    }//GEN-LAST:event_CER11MouseClicked
+
+    private void CER12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER12MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo22;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P22.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo22;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P22.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER12MouseClicked
+
+    private void CER13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER13MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo23;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P23.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo23;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P23.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER13MouseClicked
+
+    private void CER14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER14MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo24;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P24.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo24;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P24.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER14MouseClicked
+
+    private void CER15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER15MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo25;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P25.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo25;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P25.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER15MouseClicked
+
+    private void CER16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER16MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo26;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P26.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo26;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P26.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER16MouseClicked
+
+    private void CER17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER17MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo27;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P27.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo27;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P27.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER17MouseClicked
+
+    private void CER18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER18MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo28;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P28.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo28;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P28.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER18MouseClicked
+
+    private void CER19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER19MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo29;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P29.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo29;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P29.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER19MouseClicked
+
+    private void CER20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER20MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo30;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P30.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo30;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P30.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER20MouseClicked
+
+    private void CER21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER21MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo31;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P31.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo31;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P31.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER21MouseClicked
+
+    private void CER22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER22MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo32;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P32.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo32;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P32.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER22MouseClicked
+
+    private void CER23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER23MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo33;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P33.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo33;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P33.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER23MouseClicked
+
+    private void CER24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER24MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo34;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P34.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo34;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P34.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER24MouseClicked
+
+    private void CER25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER25MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo35;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P35.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo35;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P35.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER25MouseClicked
+
+    private void CER26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER26MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo36;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P36.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo36;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P36.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_CER26MouseClicked
 private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasBebidasAlcohol();
         for (int i = 0; i < result.size(); i++) {
@@ -1283,15 +2127,63 @@ private void nombres(){
             else if (91== codigo){
              descripcion17 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_17 = result.get(i).getDescripcion2().toUpperCase(); Precio17 = result.get(i).getPrecio();codigo17 = result.get(i).getCodigo();
             }
-           /* else if (92== codigo){
+            else if (137== codigo){
              descripcion18 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_18 = result.get(i).getDescripcion2().toUpperCase(); Precio18 = result.get(i).getPrecio();codigo18 = result.get(i).getCodigo();
             }
-            else if (93== codigo){
+            else if (138== codigo){
              descripcion19 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_19 = result.get(i).getDescripcion2().toUpperCase(); Precio19 = result.get(i).getPrecio();codigo19 = result.get(i).getCodigo();
             }
-            else if (94== codigo){
+            else if (139== codigo){
              descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
-            }*/
+            }
+            else if (140== codigo){
+             descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
+            }
+            else if (141== codigo){
+             descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
+            }
+            else if (142== codigo){
+             descripcion23 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_23 = result.get(i).getDescripcion2().toUpperCase(); Precio23 = result.get(i).getPrecio();codigo23 = result.get(i).getCodigo();
+            }
+            else if (143== codigo){
+             descripcion24 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_24 = result.get(i).getDescripcion2().toUpperCase(); Precio24 = result.get(i).getPrecio();codigo24 = result.get(i).getCodigo();
+            }
+            else if (144== codigo){
+             descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
+            }
+            else if (145== codigo){
+             descripcion26 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_26 = result.get(i).getDescripcion2().toUpperCase(); Precio26 = result.get(i).getPrecio();codigo26 = result.get(i).getCodigo();
+            }
+            else if (146== codigo){
+             descripcion27 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_27 = result.get(i).getDescripcion2().toUpperCase(); Precio27 = result.get(i).getPrecio();codigo27 = result.get(i).getCodigo();
+            }
+            else if (147== codigo){
+             descripcion28 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_28 = result.get(i).getDescripcion2().toUpperCase(); Precio28 = result.get(i).getPrecio();codigo28 = result.get(i).getCodigo();
+            }
+            else if (148== codigo){
+             descripcion29 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_29 = result.get(i).getDescripcion2().toUpperCase(); Precio29 = result.get(i).getPrecio();codigo29 = result.get(i).getCodigo();
+            }
+            else if (149== codigo){
+             descripcion30 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_30 = result.get(i).getDescripcion2().toUpperCase(); Precio30 = result.get(i).getPrecio();codigo30 = result.get(i).getCodigo();
+            }
+            else if (150== codigo){
+             descripcion31 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_31 = result.get(i).getDescripcion2().toUpperCase(); Precio31 = result.get(i).getPrecio();codigo31 = result.get(i).getCodigo();
+            }
+            else if (151== codigo){
+             descripcion32 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_32 = result.get(i).getDescripcion2().toUpperCase(); Precio32 = result.get(i).getPrecio();codigo32 = result.get(i).getCodigo();
+            }
+            else if (152== codigo){
+             descripcion33 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_33 = result.get(i).getDescripcion2().toUpperCase(); Precio33 = result.get(i).getPrecio();codigo33 = result.get(i).getCodigo();
+            }
+            else if (153== codigo){
+             descripcion34 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_34 = result.get(i).getDescripcion2().toUpperCase(); Precio34 = result.get(i).getPrecio();codigo34 = result.get(i).getCodigo();
+            }
+            else if (154== codigo){
+             descripcion35 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_35 = result.get(i).getDescripcion2().toUpperCase(); Precio35 = result.get(i).getPrecio();codigo35 = result.get(i).getCodigo();
+            }
+            else if (155== codigo){
+             descripcion36 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_36 = result.get(i).getDescripcion2().toUpperCase(); Precio36 = result.get(i).getPrecio();codigo36 = result.get(i).getCodigo();
+            }
         }
   }
 
@@ -1299,7 +2191,23 @@ private void nombres(){
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel CER1;
     private javax.swing.JLabel CER10;
+    private javax.swing.JLabel CER11;
+    private javax.swing.JLabel CER12;
+    private javax.swing.JLabel CER13;
+    private javax.swing.JLabel CER14;
+    private javax.swing.JLabel CER15;
+    private javax.swing.JLabel CER16;
+    private javax.swing.JLabel CER17;
+    private javax.swing.JLabel CER18;
+    private javax.swing.JLabel CER19;
     private javax.swing.JLabel CER2;
+    private javax.swing.JLabel CER20;
+    private javax.swing.JLabel CER21;
+    private javax.swing.JLabel CER22;
+    private javax.swing.JLabel CER23;
+    private javax.swing.JLabel CER24;
+    private javax.swing.JLabel CER25;
+    private javax.swing.JLabel CER26;
     private javax.swing.JLabel CER3;
     private javax.swing.JLabel CER4;
     private javax.swing.JLabel CER5;
@@ -1330,7 +2238,23 @@ private void nombres(){
     private ClassAngels.PanelRound P19;
     private ClassAngels.PanelRound P2;
     private ClassAngels.PanelRound P20;
+    private ClassAngels.PanelRound P21;
+    private ClassAngels.PanelRound P22;
+    private ClassAngels.PanelRound P23;
+    private ClassAngels.PanelRound P24;
+    private ClassAngels.PanelRound P25;
+    private ClassAngels.PanelRound P26;
+    private ClassAngels.PanelRound P27;
+    private ClassAngels.PanelRound P28;
+    private ClassAngels.PanelRound P29;
     private ClassAngels.PanelRound P3;
+    private ClassAngels.PanelRound P30;
+    private ClassAngels.PanelRound P31;
+    private ClassAngels.PanelRound P32;
+    private ClassAngels.PanelRound P33;
+    private ClassAngels.PanelRound P34;
+    private ClassAngels.PanelRound P35;
+    private ClassAngels.PanelRound P36;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
     private ClassAngels.PanelRound P6;
@@ -1376,12 +2300,44 @@ private void Etiquetas() {
         DRIN6.setText(texto16);
          String texto17 ="<html><center><body>"+descripcion17+"<br>"+descripcion2_17+"<br><font color='RED'>Q"+Precio17+"</font></body></center></html>";
         DRIN7.setText(texto17);
-        /* String texto18 ="<html><center><body>"+descripcion18+"<br>"+descripcion2_18+"<br><font color='RED'>Q"+Precio18+"</font></body></center></html>";
+         String texto18 ="<html><center><body>"+descripcion18+"<br>"+descripcion2_18+"<br><font color='RED'>Q"+Precio18+"</font></body></center></html>";
         DRIN8.setText(texto18);
          String texto19 ="<html><center><body>"+descripcion19+"<br>"+descripcion2_19+"<br><font color='RED'>Q"+Precio19+"</font></body></center></html>";
         DRIN9.setText(texto19);
          String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
-        DRIN10.setText(texto20);*/
+        DRIN10.setText(texto20);
+         String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
+        CER11.setText(texto21);
+         String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
+        CER12.setText(texto22);
+         String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
+        CER13.setText(texto23);
+         String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
+        CER14.setText(texto24);
+         String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
+        CER15.setText(texto25);
+         String texto26 ="<html><center><body>"+descripcion26+"<br>"+descripcion2_26+"<br><font color='RED'>Q"+Precio26+"</font></body></center></html>";
+        CER16.setText(texto26);
+         String texto27 ="<html><center><body>"+descripcion27+"<br>"+descripcion2_27+"<br><font color='RED'>Q"+Precio27+"</font></body></center></html>";
+        CER17.setText(texto27);
+         String texto28 ="<html><center><body>"+descripcion28+"<br>"+descripcion2_28+"<br><font color='RED'>Q"+Precio28+"</font></body></center></html>";
+        CER18.setText(texto28);
+         String texto29 ="<html><center><body>"+descripcion29+"<br>"+descripcion2_29+"<br><font color='RED'>Q"+Precio29+"</font></body></center></html>";
+        CER19.setText(texto29);
+         String texto30 ="<html><center><body>"+descripcion30+"<br>"+descripcion2_30+"<br><font color='RED'>Q"+Precio30+"</font></body></center></html>";
+        CER20.setText(texto30);
+         String texto31 ="<html><center><body>"+descripcion31+"<br>"+descripcion2_31+"<br><font color='RED'>Q"+Precio31+"</font></body></center></html>";
+        CER21.setText(texto31);
+         String texto32 ="<html><center><body>"+descripcion32+"<br>"+descripcion2_32+"<br><font color='RED'>Q"+Precio32+"</font></body></center></html>";
+        CER22.setText(texto32);
+         String texto33 ="<html><center><body>"+descripcion33+"<br>"+descripcion2_33+"<br><font color='RED'>Q"+Precio33+"</font></body></center></html>";
+        CER23.setText(texto33);
+         String texto34 ="<html><center><body>"+descripcion34+"<br>"+descripcion2_34+"<br><font color='RED'>Q"+Precio34+"</font></body></center></html>";
+        CER24.setText(texto34);
+         String texto35 ="<html><center><body>"+descripcion35+"<br>"+descripcion2_35+"<br><font color='RED'>Q"+Precio35+"</font></body></center></html>";
+        CER25.setText(texto35);
+         String texto36 ="<html><center><body>"+descripcion36+"<br>"+descripcion2_36+"<br><font color='RED'>Q"+Precio36+"</font></body></center></html>";
+        CER26.setText(texto36);
          
     }
 

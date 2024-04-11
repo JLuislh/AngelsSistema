@@ -256,11 +256,11 @@ public class Extras extends javax.swing.JPanel {
         P12 = new ClassAngels.PanelRound();
         EX12 = new javax.swing.JLabel();
         P13 = new ClassAngels.PanelRound();
-        FUE2 = new javax.swing.JLabel();
+        EX13 = new javax.swing.JLabel();
         P14 = new ClassAngels.PanelRound();
-        FUE3 = new javax.swing.JLabel();
+        EX14 = new javax.swing.JLabel();
         P15 = new ClassAngels.PanelRound();
-        FUE4 = new javax.swing.JLabel();
+        EX15 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 102));
 
@@ -276,7 +276,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX1.setText("jLabel1");
+        EX1.setText("1");
         EX1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX1MouseClicked(evt);
@@ -303,7 +303,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX2.setText("jLabel2");
+        EX2.setText("2");
         EX2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX2MouseClicked(evt);
@@ -330,7 +330,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX3.setText("jLabel3");
+        EX3.setText("3");
         EX3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX3MouseClicked(evt);
@@ -357,7 +357,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX4.setText("jLabel4");
+        EX4.setText("4");
         EX4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX4MouseClicked(evt);
@@ -384,7 +384,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX5.setText("jLabel5");
+        EX5.setText("5");
         EX5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX5MouseClicked(evt);
@@ -411,7 +411,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX6.setText("jLabel6");
+        EX6.setText("6");
         EX6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX6MouseClicked(evt);
@@ -438,7 +438,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX7.setText("jLabel7");
+        EX7.setText("7");
         EX7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX7MouseClicked(evt);
@@ -465,7 +465,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX8.setText("jLabel8");
+        EX8.setText("8");
         EX8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX8MouseClicked(evt);
@@ -492,7 +492,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX9.setText("jLabel9");
+        EX9.setText("9");
         EX9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX9MouseClicked(evt);
@@ -520,7 +520,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX10.setText("jLabel10");
+        EX10.setText("10");
         EX10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX10MouseClicked(evt);
@@ -548,7 +548,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX11.setText("jLabel11");
+        EX11.setText("11");
         EX11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX11MouseClicked(evt);
@@ -575,7 +575,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX12.setText("jLabel12");
+        EX12.setText("12");
         EX12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX12MouseClicked(evt);
@@ -600,11 +600,12 @@ public class Extras extends javax.swing.JPanel {
         P13.setRoundTopLeft(20);
         P13.setRoundTopRight(20);
 
-        FUE2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        FUE2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FUE2.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX13.setText("13");
+        EX13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                FUE2MouseClicked(evt);
+                EX13MouseClicked(evt);
             }
         });
 
@@ -612,11 +613,11 @@ public class Extras extends javax.swing.JPanel {
         P13.setLayout(P13Layout);
         P13Layout.setHorizontalGroup(
             P13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(FUE2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(EX13, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P13Layout.setVerticalGroup(
             P13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(FUE2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX13, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P14.setBackground(new java.awt.Color(204, 255, 102));
@@ -626,11 +627,12 @@ public class Extras extends javax.swing.JPanel {
         P14.setRoundTopLeft(20);
         P14.setRoundTopRight(20);
 
-        FUE3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        FUE3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FUE3.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX14.setText("14");
+        EX14.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                FUE3MouseClicked(evt);
+                EX14MouseClicked(evt);
             }
         });
 
@@ -638,11 +640,15 @@ public class Extras extends javax.swing.JPanel {
         P14.setLayout(P14Layout);
         P14Layout.setHorizontalGroup(
             P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(FUE3, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(EX14, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
         );
         P14Layout.setVerticalGroup(
             P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(FUE3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
+            .addGroup(P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(EX14, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
         );
 
         P15.setBackground(new java.awt.Color(204, 255, 102));
@@ -652,11 +658,12 @@ public class Extras extends javax.swing.JPanel {
         P15.setRoundTopLeft(20);
         P15.setRoundTopRight(20);
 
-        FUE4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        FUE4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        FUE4.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX15.setText("15");
+        EX15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                FUE4MouseClicked(evt);
+                EX15MouseClicked(evt);
             }
         });
 
@@ -664,11 +671,15 @@ public class Extras extends javax.swing.JPanel {
         P15.setLayout(P15Layout);
         P15Layout.setHorizontalGroup(
             P15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(FUE4, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(P15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(EX15, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
         );
         P15Layout.setVerticalGroup(
             P15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(FUE4, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
+            .addGroup(P15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(EX15, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -725,7 +736,7 @@ public class Extras extends javax.swing.JPanel {
                     .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -748,7 +759,7 @@ public class Extras extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -968,111 +979,111 @@ public class Extras extends javax.swing.JPanel {
        }
     }//GEN-LAST:event_EX12MouseClicked
 
-    private void FUE2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE2MouseClicked
-         /*if ((evt.getModifiers() & 4) !=0){
+    private void EX13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX13MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo13;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             P13.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
-          }else{
+        }else{
             codigooreden = codigo13;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             P13.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
-    }//GEN-LAST:event_FUE2MouseClicked
+        }
+    }//GEN-LAST:event_EX13MouseClicked
 
-    private void FUE3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE3MouseClicked
-       /* if ((evt.getModifiers() & 4) !=0){
+    private void EX14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX14MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo14;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             P14.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
-          }else{
+        }else{
             codigooreden = codigo14;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             P14.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
-    }//GEN-LAST:event_FUE3MouseClicked
+        }
+    }//GEN-LAST:event_EX14MouseClicked
 
-    private void FUE4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE4MouseClicked
-        /* if ((evt.getModifiers() & 4) !=0){
+    private void EX15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX15MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo15;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             P15.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
-          }else{
+        }else{
             codigooreden = codigo15;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             P15.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
-    }//GEN-LAST:event_FUE4MouseClicked
+        }
+    }//GEN-LAST:event_EX15MouseClicked
  
     
     private void nombres(){
-    ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasHambuerguesas();
+    ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasExtras();
         for (int i = 0; i < result.size(); i++) {
           int codigo = result.get(i).getCodigo();
           
-            if (17 == codigo) {
+            if (157 == codigo) {
              descripcion1 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_1 = result.get(i).getDescripcion2().toUpperCase(); Precio1 = result.get(i).getPrecio();codigo1 = result.get(i).getCodigo();
             }
-            else if (18 == codigo){
+            else if (158 == codigo){
              descripcion2 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_2 = result.get(i).getDescripcion2().toUpperCase(); Precio2 = result.get(i).getPrecio();codigo2 = result.get(i).getCodigo();
             }
-             else if (19 == codigo){
+             else if (159 == codigo){
              descripcion3 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_3 = result.get(i).getDescripcion2().toUpperCase(); Precio3 = result.get(i).getPrecio();codigo3 = result.get(i).getCodigo();
             }
-             else if (20== codigo){
+             else if (160== codigo){
              descripcion4 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_4 = result.get(i).getDescripcion2().toUpperCase(); Precio4 = result.get(i).getPrecio();codigo4 = result.get(i).getCodigo();
             }
-             else if (21== codigo){
+             else if (161== codigo){
              descripcion5 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_5 = result.get(i).getDescripcion2().toUpperCase(); Precio5 = result.get(i).getPrecio();codigo5 = result.get(i).getCodigo();
             }
-             else if (22== codigo){
+             else if (162== codigo){
              descripcion6 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_6 = result.get(i).getDescripcion2().toUpperCase(); Precio6 = result.get(i).getPrecio();codigo6 = result.get(i).getCodigo();
             }
-             else if (23== codigo){
+             else if (163== codigo){
              descripcion7 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_7 = result.get(i).getDescripcion2().toUpperCase(); Precio7 = result.get(i).getPrecio();codigo7 = result.get(i).getCodigo();
             }
-             else if (24== codigo){
+             else if (164== codigo){
              descripcion8 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_8 = result.get(i).getDescripcion2().toUpperCase(); Precio8 = result.get(i).getPrecio();codigo8 = result.get(i).getCodigo();
             }
-             else if (25== codigo){
+             else if (165== codigo){
              descripcion9 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_9 = result.get(i).getDescripcion2().toUpperCase(); Precio9 = result.get(i).getPrecio();codigo9 = result.get(i).getCodigo();
             }
-             else if (26== codigo){
+             else if (166== codigo){
              descripcion10 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_10 = result.get(i).getDescripcion2().toUpperCase(); Precio10 = result.get(i).getPrecio();codigo10 = result.get(i).getCodigo();
             }
-             else if (27== codigo){
+             else if (167== codigo){
              descripcion11 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_11 = result.get(i).getDescripcion2().toUpperCase(); Precio11 = result.get(i).getPrecio();codigo11 = result.get(i).getCodigo();
             }
-             else if (28== codigo){
+             else if (168== codigo){
              descripcion12 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_12 = result.get(i).getDescripcion2().toUpperCase(); Precio12 = result.get(i).getPrecio();codigo12 = result.get(i).getCodigo();
             }
-             /*else if (29== codigo){
+             else if (169== codigo){
              descripcion13 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_13 = result.get(i).getDescripcion2().toUpperCase(); Precio13 = result.get(i).getPrecio();codigo13 = result.get(i).getCodigo();
             }
-             else if (30== codigo){
+             else if (170== codigo){
              descripcion14 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_14 = result.get(i).getDescripcion2().toUpperCase(); Precio14 = result.get(i).getPrecio();codigo14 = result.get(i).getCodigo();
             }
-             else if (31== codigo){
+             else if (171== codigo){
              descripcion15 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_15 = result.get(i).getDescripcion2().toUpperCase(); Precio15 = result.get(i).getPrecio();codigo15 = result.get(i).getCodigo();
-            }*/
+            }
         }
   }
 
@@ -1081,6 +1092,9 @@ public class Extras extends javax.swing.JPanel {
     private javax.swing.JLabel EX10;
     private javax.swing.JLabel EX11;
     private javax.swing.JLabel EX12;
+    private javax.swing.JLabel EX13;
+    private javax.swing.JLabel EX14;
+    private javax.swing.JLabel EX15;
     private javax.swing.JLabel EX2;
     private javax.swing.JLabel EX3;
     private javax.swing.JLabel EX4;
@@ -1089,9 +1103,6 @@ public class Extras extends javax.swing.JPanel {
     private javax.swing.JLabel EX7;
     private javax.swing.JLabel EX8;
     private javax.swing.JLabel EX9;
-    private javax.swing.JLabel FUE2;
-    private javax.swing.JLabel FUE3;
-    private javax.swing.JLabel FUE4;
     private ClassAngels.PanelRound P1;
     private ClassAngels.PanelRound P10;
     private ClassAngels.PanelRound P11;
@@ -1135,14 +1146,12 @@ public class Extras extends javax.swing.JPanel {
         EX11.setText(texto11);
         String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio12+"</font></body></center></html>";
         EX12.setText(texto12);
-        /*String texto13 ="<html><center><body>"+descripcion13+"<br>"+descripcion2_13+"<br><font color='RED'>Q"+Precio13+"</font></body></center></html>";
-        FUE2.setText(texto13);
+        String texto13 ="<html><center><body>"+descripcion13+"<br>"+descripcion2_13+"<br><font color='RED'>Q"+Precio13+"</font></body></center></html>";
+        EX13.setText(texto13);
         String texto14 ="<html><center><body>"+descripcion14+"<br>"+descripcion2_14+"<br><font color='RED'>Q"+Precio14+"</font></body></center></html>";
-        FUE3.setText(texto14);
+        EX14.setText(texto14);
         String texto15 ="<html><center><body>"+descripcion15+"<br>"+descripcion2_15+"<br><font color='RED'>Q"+Precio15+"</font></body></center></html>";
-        FUE4.setText(texto15);*/
-        
-        
+        EX15.setText(texto15);
     }
 
 
