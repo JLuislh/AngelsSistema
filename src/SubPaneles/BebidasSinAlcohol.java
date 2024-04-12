@@ -2013,7 +2013,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
             codigooreden = codigo25;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P21.setBackground(Color.GREEN);
+            P25.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
        }
