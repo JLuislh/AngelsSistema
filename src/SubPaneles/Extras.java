@@ -43,6 +43,17 @@ public class Extras extends javax.swing.JPanel {
  String descripcion13;	String descripcion2_13;	 String Precio13; int codigo13;
  String descripcion14;	String descripcion2_14;	 String Precio14; int codigo14;
  String descripcion15;	String descripcion2_15;	 String Precio15; int codigo15;
+ String descripcion16;	String descripcion2_16;	 String Precio16; int codigo16;
+ String descripcion17;	String descripcion2_17;	 String Precio17; int codigo17;
+ String descripcion18;	String descripcion2_18;	 String Precio18; int codigo18;
+ String descripcion19;	String descripcion2_19;	 String Precio19; int codigo19;
+ String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
+ String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
+ String descripcion22;	String descripcion2_22;	 String Precio22; int codigo22;
+ String descripcion23;	String descripcion2_23;	 String Precio23; int codigo23;
+ String descripcion24;	String descripcion2_24;	 String Precio24; int codigo24;
+ String descripcion25;	String descripcion2_25;	 String Precio25; int codigo25;
+ String descripcion26;	String descripcion2_26;	 String Precio26; int codigo26;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -82,6 +93,17 @@ public class Extras extends javax.swing.JPanel {
        P13.setBackground(Original);
        P14.setBackground(Original);
        P15.setBackground(Original);
+       P16.setBackground(Original);
+       P17.setBackground(Original);
+       P18.setBackground(Original);
+       P19.setBackground(Original);
+       P20.setBackground(Original);
+       P21.setBackground(Original);
+       P22.setBackground(Original);
+       P23.setBackground(Original);
+       P24.setBackground(Original);
+       P25.setBackground(Original);
+       P26.setBackground(Original);
       
      }
     });
@@ -1471,47 +1493,201 @@ public class Extras extends javax.swing.JPanel {
     }//GEN-LAST:event_EX15MouseClicked
 
     private void EX16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX16MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo16;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P16.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo16;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P16.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX16MouseClicked
 
     private void EX17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX17MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo17;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P17.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo17;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P17.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX17MouseClicked
 
     private void EX18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX18MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo18;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P18.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo18;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P18.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX18MouseClicked
 
     private void EX19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX19MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo19;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P19.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo19;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P19.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX19MouseClicked
 
     private void EX20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX20MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo20;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P20.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo20;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P20.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX20MouseClicked
 
     private void EX21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX21MouseClicked
-        // TODO add your handling code here:
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo21;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P21.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo21;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P21.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX21MouseClicked
 
     private void EX22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX22MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo22;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P22.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo22;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P22.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX22MouseClicked
 
     private void EX23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX23MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo23;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P23.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo24;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P24.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX23MouseClicked
 
     private void EX24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX24MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo25;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P25.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo25;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P25.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX24MouseClicked
 
     private void EX25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX25MouseClicked
-        // TODO add your handling code here:
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo26;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P26.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo26;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P26.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX25MouseClicked
 
     private void EX26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX26MouseClicked
-        // TODO add your handling code here:
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo15;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P15.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo15;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P15.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_EX26MouseClicked
 
     private void EX27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX27MouseClicked
@@ -1572,6 +1748,39 @@ public class Extras extends javax.swing.JPanel {
             }
              else if (171== codigo){
              descripcion15 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_15 = result.get(i).getDescripcion2().toUpperCase(); Precio15 = result.get(i).getPrecio();codigo15 = result.get(i).getCodigo();
+            }
+            else if (60== codigo){
+             descripcion16 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_16 = result.get(i).getDescripcion2().toUpperCase(); Precio16 = result.get(i).getPrecio();codigo16 = result.get(i).getCodigo();
+            }
+            else if (61== codigo){
+             descripcion17 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_17 = result.get(i).getDescripcion2().toUpperCase(); Precio17 = result.get(i).getPrecio();codigo17 = result.get(i).getCodigo();
+            }
+            else if (62== codigo){
+             descripcion18 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_18 = result.get(i).getDescripcion2().toUpperCase(); Precio18 = result.get(i).getPrecio();codigo18 = result.get(i).getCodigo();
+            }
+            else if (63== codigo){
+             descripcion19 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_19 = result.get(i).getDescripcion2().toUpperCase(); Precio19 = result.get(i).getPrecio();codigo19 = result.get(i).getCodigo();
+            }
+            else if (64== codigo){
+             descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
+            }
+            else if (91== codigo){
+             descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
+            }
+            else if (182== codigo){
+             descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
+            }
+            else if (183== codigo){
+             descripcion23 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_23 = result.get(i).getDescripcion2().toUpperCase(); Precio23 = result.get(i).getPrecio();codigo23 = result.get(i).getCodigo();
+            }
+            else if (184== codigo){
+             descripcion24 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_24 = result.get(i).getDescripcion2().toUpperCase(); Precio24 = result.get(i).getPrecio();codigo24 = result.get(i).getCodigo();
+            }
+            else if (185== codigo){
+             descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
+            }
+            else if (186== codigo){
+             descripcion26 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_26 = result.get(i).getDescripcion2().toUpperCase(); Precio26 = result.get(i).getPrecio();codigo26 = result.get(i).getCodigo();
             }
         }
   }
@@ -1668,6 +1877,28 @@ public class Extras extends javax.swing.JPanel {
         EX14.setText(texto14);
         String texto15 ="<html><center><body>"+descripcion15+"<br>"+descripcion2_15+"<br><font color='RED'>Q"+Precio15+"</font></body></center></html>";
         EX15.setText(texto15);
+        String texto16 ="<html><center><body>"+descripcion16+"<br>"+descripcion2_16+"<br><font color='RED'>Q"+Precio16+"</font></body></center></html>";
+        EX16.setText(texto16);
+        String texto17 ="<html><center><body>"+descripcion17+"<br>"+descripcion2_17+"<br><font color='RED'>Q"+Precio17+"</font></body></center></html>";
+        EX17.setText(texto17);
+        String texto18 ="<html><center><body>"+descripcion18+"<br>"+descripcion2_18+"<br><font color='RED'>Q"+Precio18+"</font></body></center></html>";
+        EX18.setText(texto18);
+        String texto19 ="<html><center><body>"+descripcion19+"<br>"+descripcion2_19+"<br><font color='RED'>Q"+Precio19+"</font></body></center></html>";
+        EX19.setText(texto19);
+        String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
+        EX20.setText(texto20);
+        String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
+        EX21.setText(texto21);
+        String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
+        EX22.setText(texto22);
+        String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
+        EX23.setText(texto23);
+        String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
+        EX24.setText(texto24);
+        String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
+        EX25.setText(texto25);
+        String texto26 ="<html><center><body>"+descripcion26+"<br>"+descripcion2_26+"<br><font color='RED'>Q"+Precio26+"</font></body></center></html>";
+        EX26.setText(texto26);
     }
 
 
