@@ -74,7 +74,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
             PreparedStatement p = null;
-            ps= con.prepareStatement("UPDATE ORDENES SET TOTAL = "+Total.getText()+",ESTADO = 2 where noorden="+noorden);
+            ps= con.prepareStatement("UPDATE ORDENES SET TOTAL = "+Total.getText()+" where noorden="+noorden);
             p = con.prepareStatement("UPDATE MESAS SET ESTADO = 1 WHERE id_mesa =" + nomesa);
             ps.executeUpdate();
             p.executeUpdate();
@@ -623,9 +623,9 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         int resp=JOptionPane.showConfirmDialog(null,"COBRAR Q."+Total.getText()+" PARA CERRAR ORDEN");
           if (JOptionPane.OK_OPTION == resp){ 
                 cobrarOrdenyCerrar();
-                Ordenes F = new Ordenes();
+                CobroET F = new CobroET(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
                 F.setVisible(true);
-       this.dispose();
+                this.dispose();       
           }
     }//GEN-LAST:event_jButton2ActionPerformed
 

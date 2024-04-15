@@ -295,7 +295,7 @@ public class Extras extends javax.swing.JPanel {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "EXTRAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         P1.setBackground(new java.awt.Color(204, 255, 102));
-        P1.setPreferredSize(new java.awt.Dimension(100, 75));
+        P1.setPreferredSize(new java.awt.Dimension(100, 73));
         P1.setRoundBottomLeft(20);
         P1.setRoundBottomRight(20);
         P1.setRoundTopLeft(20);
@@ -318,11 +318,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P1Layout.setVerticalGroup(
             P1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX1, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX1, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P2.setBackground(new java.awt.Color(204, 255, 102));
-        P2.setPreferredSize(new java.awt.Dimension(100, 75));
+        P2.setPreferredSize(new java.awt.Dimension(100, 73));
         P2.setRoundBottomLeft(20);
         P2.setRoundBottomRight(20);
         P2.setRoundTopLeft(20);
@@ -345,11 +345,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P2Layout.setVerticalGroup(
             P2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX2, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P3.setBackground(new java.awt.Color(204, 255, 102));
-        P3.setPreferredSize(new java.awt.Dimension(100, 75));
+        P3.setPreferredSize(new java.awt.Dimension(100, 73));
         P3.setRoundBottomLeft(20);
         P3.setRoundBottomRight(20);
         P3.setRoundTopLeft(20);
@@ -372,11 +372,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P3Layout.setVerticalGroup(
             P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX3, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P4.setBackground(new java.awt.Color(204, 255, 102));
-        P4.setPreferredSize(new java.awt.Dimension(100, 75));
+        P4.setPreferredSize(new java.awt.Dimension(100, 73));
         P4.setRoundBottomLeft(20);
         P4.setRoundBottomRight(20);
         P4.setRoundTopLeft(20);
@@ -399,11 +399,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P4Layout.setVerticalGroup(
             P4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX4, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX4, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P5.setBackground(new java.awt.Color(204, 255, 102));
-        P5.setPreferredSize(new java.awt.Dimension(100, 75));
+        P5.setPreferredSize(new java.awt.Dimension(100, 73));
         P5.setRoundBottomLeft(20);
         P5.setRoundBottomRight(20);
         P5.setRoundTopLeft(20);
@@ -426,11 +426,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P5Layout.setVerticalGroup(
             P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX5, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX5, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P6.setBackground(new java.awt.Color(204, 255, 102));
-        P6.setPreferredSize(new java.awt.Dimension(100, 75));
+        P6.setPreferredSize(new java.awt.Dimension(100, 73));
         P6.setRoundBottomLeft(20);
         P6.setRoundBottomRight(20);
         P6.setRoundTopLeft(20);
@@ -453,11 +453,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P6Layout.setVerticalGroup(
             P6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX6, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX6, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P7.setBackground(new java.awt.Color(204, 255, 102));
-        P7.setPreferredSize(new java.awt.Dimension(100, 75));
+        P7.setPreferredSize(new java.awt.Dimension(100, 73));
         P7.setRoundBottomLeft(20);
         P7.setRoundBottomRight(20);
         P7.setRoundTopLeft(20);
@@ -480,11 +480,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P7Layout.setVerticalGroup(
             P7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX7, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX7, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P8.setBackground(new java.awt.Color(204, 255, 102));
-        P8.setPreferredSize(new java.awt.Dimension(100, 75));
+        P8.setPreferredSize(new java.awt.Dimension(100, 73));
         P8.setRoundBottomLeft(20);
         P8.setRoundBottomRight(20);
         P8.setRoundTopLeft(20);
@@ -507,11 +507,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P8Layout.setVerticalGroup(
             P8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P9.setBackground(new java.awt.Color(204, 255, 102));
-        P9.setPreferredSize(new java.awt.Dimension(100, 75));
+        P9.setPreferredSize(new java.awt.Dimension(100, 73));
         P9.setRoundBottomLeft(20);
         P9.setRoundBottomRight(20);
         P9.setRoundTopLeft(20);
@@ -534,12 +534,12 @@ public class Extras extends javax.swing.JPanel {
         );
         P9Layout.setVerticalGroup(
             P9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX9, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX9, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P10.setBackground(new java.awt.Color(204, 255, 102));
         P10.setMinimumSize(new java.awt.Dimension(100, 75));
-        P10.setPreferredSize(new java.awt.Dimension(100, 75));
+        P10.setPreferredSize(new java.awt.Dimension(100, 73));
         P10.setRoundBottomLeft(20);
         P10.setRoundBottomRight(20);
         P10.setRoundTopLeft(20);
@@ -562,12 +562,12 @@ public class Extras extends javax.swing.JPanel {
         );
         P10Layout.setVerticalGroup(
             P10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         P11.setBackground(new java.awt.Color(204, 255, 102));
         P11.setMinimumSize(new java.awt.Dimension(100, 75));
-        P11.setPreferredSize(new java.awt.Dimension(100, 75));
+        P11.setPreferredSize(new java.awt.Dimension(100, 73));
         P11.setRoundBottomLeft(20);
         P11.setRoundBottomRight(20);
         P11.setRoundTopLeft(20);
@@ -590,11 +590,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P11Layout.setVerticalGroup(
             P11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         P12.setBackground(new java.awt.Color(204, 255, 102));
-        P12.setPreferredSize(new java.awt.Dimension(100, 75));
+        P12.setPreferredSize(new java.awt.Dimension(100, 73));
         P12.setRoundBottomLeft(20);
         P12.setRoundBottomRight(20);
         P12.setRoundTopLeft(20);
@@ -617,11 +617,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P12Layout.setVerticalGroup(
             P12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX12, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX12, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P13.setBackground(new java.awt.Color(204, 255, 102));
-        P13.setPreferredSize(new java.awt.Dimension(100, 75));
+        P13.setPreferredSize(new java.awt.Dimension(100, 73));
         P13.setRoundBottomLeft(20);
         P13.setRoundBottomRight(20);
         P13.setRoundTopLeft(20);
@@ -644,11 +644,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P13Layout.setVerticalGroup(
             P13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX13, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX13, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P14.setBackground(new java.awt.Color(204, 255, 102));
-        P14.setPreferredSize(new java.awt.Dimension(100, 75));
+        P14.setPreferredSize(new java.awt.Dimension(100, 73));
         P14.setRoundBottomLeft(20);
         P14.setRoundBottomRight(20);
         P14.setRoundTopLeft(20);
@@ -673,13 +673,13 @@ public class Extras extends javax.swing.JPanel {
         );
         P14Layout.setVerticalGroup(
             P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 75, Short.MAX_VALUE)
+            .addGap(0, 73, Short.MAX_VALUE)
             .addGroup(P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(EX14, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
         );
 
         P15.setBackground(new java.awt.Color(204, 255, 102));
-        P15.setPreferredSize(new java.awt.Dimension(100, 75));
+        P15.setPreferredSize(new java.awt.Dimension(100, 73));
         P15.setRoundBottomLeft(20);
         P15.setRoundBottomRight(20);
         P15.setRoundTopLeft(20);
@@ -702,7 +702,7 @@ public class Extras extends javax.swing.JPanel {
         );
         P15Layout.setVerticalGroup(
             P15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -742,7 +742,7 @@ public class Extras extends javax.swing.JPanel {
                         .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -765,14 +765,14 @@ public class Extras extends javax.swing.JPanel {
                     .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9))
+                .addContainerGap())
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 204, 102));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MICHELADAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         P16.setBackground(new java.awt.Color(204, 255, 102));
-        P16.setPreferredSize(new java.awt.Dimension(100, 75));
+        P16.setPreferredSize(new java.awt.Dimension(100, 73));
         P16.setRoundBottomLeft(20);
         P16.setRoundBottomRight(20);
         P16.setRoundTopLeft(20);
@@ -795,11 +795,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P16Layout.setVerticalGroup(
             P16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P17.setBackground(new java.awt.Color(204, 255, 102));
-        P17.setPreferredSize(new java.awt.Dimension(100, 75));
+        P17.setPreferredSize(new java.awt.Dimension(100, 73));
         P17.setRoundBottomLeft(20);
         P17.setRoundBottomRight(20);
         P17.setRoundTopLeft(20);
@@ -822,11 +822,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P17Layout.setVerticalGroup(
             P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P18.setBackground(new java.awt.Color(204, 255, 102));
-        P18.setPreferredSize(new java.awt.Dimension(100, 75));
+        P18.setPreferredSize(new java.awt.Dimension(100, 73));
         P18.setRoundBottomLeft(20);
         P18.setRoundBottomRight(20);
         P18.setRoundTopLeft(20);
@@ -849,11 +849,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P18Layout.setVerticalGroup(
             P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P19.setBackground(new java.awt.Color(204, 255, 102));
-        P19.setPreferredSize(new java.awt.Dimension(100, 75));
+        P19.setPreferredSize(new java.awt.Dimension(100, 73));
         P19.setRoundBottomLeft(20);
         P19.setRoundBottomRight(20);
         P19.setRoundTopLeft(20);
@@ -876,11 +876,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P19Layout.setVerticalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P20.setBackground(new java.awt.Color(204, 255, 102));
-        P20.setPreferredSize(new java.awt.Dimension(100, 75));
+        P20.setPreferredSize(new java.awt.Dimension(100, 73));
         P20.setRoundBottomLeft(20);
         P20.setRoundBottomRight(20);
         P20.setRoundTopLeft(20);
@@ -903,11 +903,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P20Layout.setVerticalGroup(
             P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P21.setBackground(new java.awt.Color(204, 255, 102));
-        P21.setPreferredSize(new java.awt.Dimension(100, 75));
+        P21.setPreferredSize(new java.awt.Dimension(100, 73));
         P21.setRoundBottomLeft(20);
         P21.setRoundBottomRight(20);
         P21.setRoundTopLeft(20);
@@ -930,11 +930,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P21Layout.setVerticalGroup(
             P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P22.setBackground(new java.awt.Color(204, 255, 102));
-        P22.setPreferredSize(new java.awt.Dimension(100, 75));
+        P22.setPreferredSize(new java.awt.Dimension(100, 73));
         P22.setRoundBottomLeft(20);
         P22.setRoundBottomRight(20);
         P22.setRoundTopLeft(20);
@@ -957,11 +957,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P22Layout.setVerticalGroup(
             P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P23.setBackground(new java.awt.Color(204, 255, 102));
-        P23.setPreferredSize(new java.awt.Dimension(100, 75));
+        P23.setPreferredSize(new java.awt.Dimension(100, 73));
         P23.setRoundBottomLeft(20);
         P23.setRoundBottomRight(20);
         P23.setRoundTopLeft(20);
@@ -984,11 +984,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P23Layout.setVerticalGroup(
             P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P24.setBackground(new java.awt.Color(204, 255, 102));
-        P24.setPreferredSize(new java.awt.Dimension(100, 75));
+        P24.setPreferredSize(new java.awt.Dimension(100, 73));
         P24.setRoundBottomLeft(20);
         P24.setRoundBottomRight(20);
         P24.setRoundTopLeft(20);
@@ -1011,11 +1011,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P24Layout.setVerticalGroup(
             P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P25.setBackground(new java.awt.Color(204, 255, 102));
-        P25.setPreferredSize(new java.awt.Dimension(100, 75));
+        P25.setPreferredSize(new java.awt.Dimension(100, 73));
         P25.setRoundBottomLeft(20);
         P25.setRoundBottomRight(20);
         P25.setRoundTopLeft(20);
@@ -1038,11 +1038,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P25Layout.setVerticalGroup(
             P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P26.setBackground(new java.awt.Color(204, 255, 102));
-        P26.setPreferredSize(new java.awt.Dimension(100, 75));
+        P26.setPreferredSize(new java.awt.Dimension(100, 73));
         P26.setRoundBottomLeft(20);
         P26.setRoundBottomRight(20);
         P26.setRoundTopLeft(20);
@@ -1065,11 +1065,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P26Layout.setVerticalGroup(
             P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P27.setBackground(new java.awt.Color(204, 255, 102));
-        P27.setPreferredSize(new java.awt.Dimension(100, 75));
+        P27.setPreferredSize(new java.awt.Dimension(100, 73));
         P27.setRoundBottomLeft(20);
         P27.setRoundBottomRight(20);
         P27.setRoundTopLeft(20);
@@ -1092,11 +1092,11 @@ public class Extras extends javax.swing.JPanel {
         );
         P27Layout.setVerticalGroup(
             P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         P28.setBackground(new java.awt.Color(204, 255, 102));
-        P28.setPreferredSize(new java.awt.Dimension(100, 75));
+        P28.setPreferredSize(new java.awt.Dimension(100, 73));
         P28.setRoundBottomLeft(20);
         P28.setRoundBottomRight(20);
         P28.setRoundTopLeft(20);
@@ -1119,7 +1119,7 @@ public class Extras extends javax.swing.JPanel {
         );
         P28Layout.setVerticalGroup(
             P28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(EX28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -1155,12 +1155,11 @@ public class Extras extends javax.swing.JPanel {
                         .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1172,11 +1171,12 @@ public class Extras extends javax.swing.JPanel {
                     .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(P26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(P28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -1185,19 +1185,18 @@ public class Extras extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

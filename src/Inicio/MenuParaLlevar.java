@@ -14,6 +14,7 @@ import SubPaneles.Botellas;
 import SubPaneles.CaldosAntojos;
 import SubPaneles.Ceviches;
 import SubPaneles.ConAlcohol;
+import SubPaneles.Extras;
 import SubPaneles.Hamburguesas;
 import java.awt.BorderLayout;
 import java.sql.Connection;
@@ -68,7 +69,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
-            ps= con.prepareStatement("UPDATE ORDENES SET TOTAL = "+Total.getText()+",ESTADO = 2 where noorden="+noorden);
+            ps= con.prepareStatement("UPDATE ORDENES SET TOTAL = "+Total.getText()+" where noorden="+noorden);
             ps.executeUpdate();
             con.close();
             ps.close();
@@ -608,15 +609,21 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         int resp=JOptionPane.showConfirmDialog(null,"COBRAR Q."+Total.getText()+" PARA CERRAR ORDEN");
           if (JOptionPane.OK_OPTION == resp){
               cobrarOrden();
-              imprimir();
-              Ordenes F = new Ordenes();
+              
+              CobroET F = new CobroET(Double.parseDouble(Total.getText()),noorden);
               F.setVisible(true);
               this.dispose();
           }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void Titulo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo8MouseClicked
-        // TODO add your handling code here:
+    Extras op1 = new Extras(noorden,tipomenu);
+    op1.setSize(1170, 380);
+    op1.setLocation(0, 0);
+    PanelMenu.removeAll();
+    PanelMenu.add(op1,BorderLayout.CENTER);
+    PanelMenu.revalidate();
+    PanelMenu.repaint();
     }//GEN-LAST:event_Titulo8MouseClicked
 
     /**

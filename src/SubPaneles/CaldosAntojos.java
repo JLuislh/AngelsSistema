@@ -47,6 +47,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
  String descripcion18;	String descripcion2_18;	 String Precio18; int codigo18;
  String descripcion19;	String descripcion2_19;	 String Precio19; int codigo19;
  String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
+ String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
+ String descripcion22;	String descripcion2_22;	 String Precio22; int codigo22;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -125,6 +127,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
        P18.setBackground(Original);
        P19.setBackground(Original);
        P20.setBackground(Original);
+       P21.setBackground(Original);
+       P22.setBackground(Original);
       
      }
     });
@@ -293,6 +297,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
         PAL14 = new javax.swing.JLabel();
         P20 = new ClassAngels.PanelRound();
         PAL15 = new javax.swing.JLabel();
+        P21 = new ClassAngels.PanelRound();
+        PAL16 = new javax.swing.JLabel();
+        P22 = new ClassAngels.PanelRound();
+        PAL17 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 153));
         setPreferredSize(new java.awt.Dimension(1170, 380));
@@ -873,6 +881,60 @@ public class CaldosAntojos extends javax.swing.JPanel {
             .addComponent(PAL15, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
+        P21.setBackground(new java.awt.Color(204, 255, 102));
+        P21.setPreferredSize(new java.awt.Dimension(100, 75));
+        P21.setRoundBottomLeft(20);
+        P21.setRoundBottomRight(20);
+        P21.setRoundTopLeft(20);
+        P21.setRoundTopRight(20);
+
+        PAL16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        PAL16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PAL16.setText("21");
+        PAL16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PAL16MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P21Layout = new javax.swing.GroupLayout(P21);
+        P21.setLayout(P21Layout);
+        P21Layout.setHorizontalGroup(
+            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PAL16, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P21Layout.setVerticalGroup(
+            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PAL16, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
+        P22.setBackground(new java.awt.Color(204, 255, 102));
+        P22.setPreferredSize(new java.awt.Dimension(100, 75));
+        P22.setRoundBottomLeft(20);
+        P22.setRoundBottomRight(20);
+        P22.setRoundTopLeft(20);
+        P22.setRoundTopRight(20);
+
+        PAL17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        PAL17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PAL17.setText("22");
+        PAL17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PAL17MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P22Layout = new javax.swing.GroupLayout(P22);
+        P22.setLayout(P22Layout);
+        P22Layout.setHorizontalGroup(
+            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PAL17, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P22Layout.setVerticalGroup(
+            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PAL17, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -891,7 +953,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -937,7 +1003,9 @@ public class CaldosAntojos extends javax.swing.JPanel {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
@@ -1324,6 +1392,42 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.start();
        }
     }//GEN-LAST:event_PAL15MouseClicked
+
+    private void PAL16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL16MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo21;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P21.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo21;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P21.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_PAL16MouseClicked
+
+    private void PAL17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL17MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo22;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P22.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo22;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P22.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_PAL17MouseClicked
   private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasCaldos();
         for (int i = 0; i < result.size(); i++) {
@@ -1389,6 +1493,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
              else if (114== codigo){
              descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
             }
+            else if (172== codigo){
+             descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
+            }
+            else if (173== codigo){
+             descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
+            }
         }
   }
     
@@ -1413,6 +1523,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
     private ClassAngels.PanelRound P19;
     private ClassAngels.PanelRound P2;
     private ClassAngels.PanelRound P20;
+    private ClassAngels.PanelRound P21;
+    private ClassAngels.PanelRound P22;
     private ClassAngels.PanelRound P3;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
@@ -1427,6 +1539,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
     private javax.swing.JLabel PAL13;
     private javax.swing.JLabel PAL14;
     private javax.swing.JLabel PAL15;
+    private javax.swing.JLabel PAL16;
+    private javax.swing.JLabel PAL17;
     private javax.swing.JLabel PAL2;
     private javax.swing.JLabel PAL3;
     private javax.swing.JLabel PAL4;
@@ -1481,7 +1595,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
         PAL14.setText(texto19);
         String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
         PAL15.setText(texto20);
-        
+        String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
+        PAL16.setText(texto21);
+        String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
+        PAL17.setText(texto22);
     }
 
 }

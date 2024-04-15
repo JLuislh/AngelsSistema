@@ -13,6 +13,7 @@ import SubPaneles.Botellas;
 import SubPaneles.CaldosAntojos;
 import SubPaneles.Ceviches;
 import SubPaneles.ConAlcohol;
+import SubPaneles.Extras;
 import SubPaneles.Hamburguesas;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -617,7 +618,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void Titulo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo7MouseClicked
-    Botellas op1 = new Botellas(noorden,tipomenu);
+    Extras op1 = new Extras(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
