@@ -601,7 +601,6 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER10.setText("10");
         CER10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER10MouseClicked(evt);
@@ -655,7 +654,6 @@ public class ConAlcohol extends javax.swing.JPanel {
 
         CER12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CER12.setText("22");
         CER12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER12MouseClicked(evt);
@@ -1327,6 +1325,11 @@ public class ConAlcohol extends javax.swing.JPanel {
         DRIN8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DRIN8.setText("18");
+        DRIN8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DRIN8MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout P18Layout = new javax.swing.GroupLayout(P18);
         P18.setLayout(P18Layout);
@@ -1349,6 +1352,11 @@ public class ConAlcohol extends javax.swing.JPanel {
         DRIN9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DRIN9.setText("19");
+        DRIN9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DRIN9MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout P19Layout = new javax.swing.GroupLayout(P19);
         P19.setLayout(P19Layout);
@@ -1374,6 +1382,11 @@ public class ConAlcohol extends javax.swing.JPanel {
         DRIN10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DRIN10.setText("20");
+        DRIN10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DRIN10MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout P20Layout = new javax.swing.GroupLayout(P20);
         P20.setLayout(P20Layout);
@@ -1641,7 +1654,7 @@ public class ConAlcohol extends javax.swing.JPanel {
     }//GEN-LAST:event_CER9MouseClicked
 
     private void CER10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER10MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+       /* if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo10;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1655,7 +1668,7 @@ public class ConAlcohol extends javax.swing.JPanel {
             P10.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }
+       }*/
     }//GEN-LAST:event_CER10MouseClicked
 
     private void DRIN1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN1MouseClicked
@@ -1802,7 +1815,7 @@ if ((evt.getModifiers() & 4) !=0){
        }    }//GEN-LAST:event_CER11MouseClicked
 
     private void CER12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER12MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+      /*  if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo22;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1816,7 +1829,7 @@ if ((evt.getModifiers() & 4) !=0){
             P22.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }
+       }*/
     }//GEN-LAST:event_CER12MouseClicked
 
     private void CER13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER13MouseClicked
@@ -2070,6 +2083,63 @@ if ((evt.getModifiers() & 4) !=0){
             timer.start();
        }
     }//GEN-LAST:event_CER26MouseClicked
+
+    private void DRIN10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN10MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo20;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P20.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo20;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P20.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+                        
+    }//GEN-LAST:event_DRIN10MouseClicked
+
+    private void DRIN9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN9MouseClicked
+      if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo19;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P19.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo19;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P19.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+                          
+    }//GEN-LAST:event_DRIN9MouseClicked
+
+    private void DRIN8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN8MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo18;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P18.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo18;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P18.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+                         
+    }//GEN-LAST:event_DRIN8MouseClicked
 private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasBebidasAlcohol();
         for (int i = 0; i < result.size(); i++) {
@@ -2283,8 +2353,8 @@ private void Etiquetas() {
         CER8.setText(texto8);
         String texto9 ="<html><center><body>"+descripcion9+"<br>"+descripcion2_9+"<br><font color='RED'>Q"+Precio9+"</font></body></center></html>";
         CER9.setText(texto9);
-        String texto10 ="<html><center><body>"+descripcion10+"<br>"+descripcion2_10+"<br><font color='RED'>Q"+Precio10+"</font></body></center></html>";
-        CER10.setText(texto10);
+        //String texto10 ="<html><center><body>"+descripcion10+"<br>"+descripcion2_10+"<br><font color='RED'>Q"+Precio10+"</font></body></center></html>";
+        //CER10.setText(texto10);
         String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio11+"</font></body></center></html>";
         DRIN1.setText(texto11);
         String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio12+"</font></body></center></html>";
@@ -2307,9 +2377,9 @@ private void Etiquetas() {
         DRIN10.setText(texto20);
          String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
         CER11.setText(texto21);
-         String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
-        CER12.setText(texto22);
-         String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
+        // String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
+        //CER12.setText(texto22);
+        String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
         CER13.setText(texto23);
          String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
         CER14.setText(texto24);

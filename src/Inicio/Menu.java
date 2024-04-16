@@ -65,8 +65,8 @@ public class Menu extends javax.swing.JFrame {
         Titulo5.setText(texto4);
         String texto5 = "<html><center><body>BOTELLAS</body></center></html>";
         Titulo6.setText(texto5);
-        //String texto6 = "<html><center><body>CANCELAR<br>ORDEN</body></center></html>";
-        //Titulo8.setText(texto6);
+        String texto6 = "<html><center><body>EXTRAS<br>MICHELADAS</body></center></html>";
+        Titulo7.setText(texto6);
     }
     
     private void eliminarOrden(){

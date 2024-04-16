@@ -1099,7 +1099,6 @@ public class Extras extends javax.swing.JPanel {
 
         EX27.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX27.setText("27");
         EX27.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX27MouseClicked(evt);
@@ -1126,7 +1125,6 @@ public class Extras extends javax.swing.JPanel {
 
         EX28.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX28.setText("28");
         EX28.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX28MouseClicked(evt);
