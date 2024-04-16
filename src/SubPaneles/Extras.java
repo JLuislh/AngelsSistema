@@ -1627,6 +1627,24 @@ public class Extras extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
         }else{
+            codigooreden = codigo23;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P23.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX23MouseClicked
+
+    private void EX24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX24MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo24;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P24.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
             codigooreden = codigo24;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
@@ -1634,9 +1652,9 @@ public class Extras extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
         }
-    }//GEN-LAST:event_EX23MouseClicked
+    }//GEN-LAST:event_EX24MouseClicked
 
-    private void EX24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX24MouseClicked
+    private void EX25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX25MouseClicked
         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo25;
             BuscarExistencia();
@@ -1652,10 +1670,10 @@ public class Extras extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
         }
-    }//GEN-LAST:event_EX24MouseClicked
+    }//GEN-LAST:event_EX25MouseClicked
 
-    private void EX25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX25MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+    private void EX26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX26MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo26;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1667,24 +1685,6 @@ public class Extras extends javax.swing.JPanel {
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             P26.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-        }
-    }//GEN-LAST:event_EX25MouseClicked
-
-    private void EX26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX26MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo15;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P15.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-        }else{
-            codigooreden = codigo15;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P15.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
         }
