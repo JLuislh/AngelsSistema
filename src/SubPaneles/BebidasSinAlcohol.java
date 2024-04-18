@@ -519,6 +519,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
 
         BE9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         BE9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE9.setText("9");
         BE9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BE9MouseClicked(evt);
@@ -545,6 +546,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
 
         BE10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         BE10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BE10.setText("10");
         BE10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BE10MouseClicked(evt);
@@ -1713,7 +1715,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
     }//GEN-LAST:event_BE8MouseClicked
 
     private void BE9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BE9MouseClicked
-       /* if ((evt.getModifiers() & 4) !=0){
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo9;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1727,11 +1729,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
             P9.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
+       }
     }//GEN-LAST:event_BE9MouseClicked
 
     private void BE10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BE10MouseClicked
-      /* if ((evt.getModifiers() & 4) !=0){
+       if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo10;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1745,7 +1747,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
             P10.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
+       }
     }//GEN-LAST:event_BE10MouseClicked
 
     private void BE11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BE11MouseClicked
@@ -2262,13 +2264,13 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
              else if (141== codigo){
              descripcion8 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_8 = result.get(i).getDescripcion2().toUpperCase(); Precio8 = result.get(i).getPrecio();codigo8 = result.get(i).getCodigo();
             }
-             /*else if (62== codigo){
+             else if (190== codigo){
              descripcion9 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_9 = result.get(i).getDescripcion2().toUpperCase(); Precio9 = result.get(i).getPrecio();codigo9 = result.get(i).getCodigo();
             }
-             else if (63== codigo){
+             else if (191== codigo){
              descripcion10 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_10 = result.get(i).getDescripcion2().toUpperCase(); Precio10 = result.get(i).getPrecio();codigo10 = result.get(i).getCodigo();
             }
-             else if (64== codigo){
+            /* else if (64== codigo){
              descripcion11 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_11 = result.get(i).getDescripcion2().toUpperCase(); Precio11 = result.get(i).getPrecio();codigo11 = result.get(i).getCodigo();
             }*/
              else if (65== codigo){
@@ -2448,11 +2450,11 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         BE7.setText(texto7);
         String texto8 ="<html><center><body>"+descripcion8+"<br>"+descripcion2_8+"<br><font color='RED'>Q"+Precio8+"</font></body></center></html>";
         BE8.setText(texto8);
-        /*String texto9 ="<html><center><body>"+descripcion9+"<br>"+descripcion2_9+"<br><font color='RED'>Q"+Precio9+"</font></body></center></html>";
+        String texto9 ="<html><center><body>"+descripcion9+"<br>"+descripcion2_9+"<br><font color='RED'>Q"+Precio9+"</font></body></center></html>";
         BE9.setText(texto9);
         String texto10 ="<html><center><body>"+descripcion10+"<br>"+descripcion2_10+"<br><font color='RED'>Q"+Precio10+"</font></body></center></html>";
         BE10.setText(texto10);
-        String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio11+"</font></body></center></html>";
+       /*String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio11+"</font></body></center></html>";
         BE11.setText(texto11);*/
         String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio12+"</font></body></center></html>";
         BEPRE1.setText(texto12);

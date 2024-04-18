@@ -917,7 +917,6 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         PAL17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         PAL17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL17.setText("22");
         PAL17.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PAL17MouseClicked(evt);
@@ -1412,7 +1411,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
     }//GEN-LAST:event_PAL16MouseClicked
 
     private void PAL17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL17MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+ /*       if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo22;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1426,7 +1425,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
             P22.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }
+       }*/
     }//GEN-LAST:event_PAL17MouseClicked
   private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasCaldos();
@@ -1496,9 +1495,9 @@ public class CaldosAntojos extends javax.swing.JPanel {
             else if (172== codigo){
              descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
             }
-            else if (173== codigo){
+            /*else if (173== codigo){
              descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
-            }
+            }*/
         }
   }
     
@@ -1597,8 +1596,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
         PAL15.setText(texto20);
         String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
         PAL16.setText(texto21);
-        String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
-        PAL17.setText(texto22);
+        //String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
+        //PAL17.setText(texto22);
     }
 
 }
