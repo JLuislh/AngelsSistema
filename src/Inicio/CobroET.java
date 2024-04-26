@@ -78,6 +78,20 @@ public class CobroET extends javax.swing.JFrame {
            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
         }
     }
+     
+    private void imprimirCobrodividido(){
+      BDConexion con= new BDConexion();
+         Connection conexion= con.getConexion();
+        try {
+            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuenta.jasper");
+            Map parametros= new HashMap();
+            parametros.put("ID_ORDEN", Integer.parseInt(Orden.getText()));
+            JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
+            JasperPrintManager.printReport(print, true);
+        } catch (Exception e) {System.out.println("F"+e);
+           JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
+        }
+    } 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -147,12 +161,10 @@ public class CobroET extends javax.swing.JFrame {
 
         Orden.setEditable(false);
         Orden.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        Orden.setText("80");
         Orden.setEnabled(false);
 
         total.setEditable(false);
         total.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        total.setText("350");
         total.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 totalActionPerformed(evt);

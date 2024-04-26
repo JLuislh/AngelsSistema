@@ -57,6 +57,9 @@ public class Extras extends javax.swing.JPanel {
  String descripcion27;	String descripcion2_27;	 String Precio27; int codigo27;
  String descripcion28;	String descripcion2_28;	 String Precio28; int codigo28;
  String descripcion29;	String descripcion2_29;	 String Precio29; int codigo29;
+ String descripcion30;	String descripcion2_30;	 String Precio30; int codigo30;
+ String descripcion31;	String descripcion2_31;	 String Precio31; int codigo31;
+ String descripcion32;	String descripcion2_32;	 String Precio32; int codigo32;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -110,7 +113,9 @@ public class Extras extends javax.swing.JPanel {
        P27.setBackground(Original);
        P28.setBackground(Original);
        P29.setBackground(Original);
-      
+       P30.setBackground(Original);
+       P31.setBackground(Original);
+       P32.setBackground(Original);
      }
     });
     
@@ -246,9 +251,6 @@ public class Extras extends javax.swing.JPanel {
         existe = 0;
  }
    
-    
-    
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -291,6 +293,12 @@ public class Extras extends javax.swing.JPanel {
         EX15 = new javax.swing.JLabel();
         P29 = new ClassAngels.PanelRound();
         EX29 = new javax.swing.JLabel();
+        P30 = new ClassAngels.PanelRound();
+        EX30 = new javax.swing.JLabel();
+        P31 = new ClassAngels.PanelRound();
+        EX31 = new javax.swing.JLabel();
+        P32 = new ClassAngels.PanelRound();
+        EX32 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         P16 = new ClassAngels.PanelRound();
         EX16 = new javax.swing.JLabel();
@@ -762,6 +770,93 @@ public class Extras extends javax.swing.JPanel {
             .addComponent(EX29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
+        P30.setBackground(new java.awt.Color(204, 255, 102));
+        P30.setPreferredSize(new java.awt.Dimension(100, 73));
+        P30.setRoundBottomLeft(20);
+        P30.setRoundBottomRight(20);
+        P30.setRoundTopLeft(20);
+        P30.setRoundTopRight(20);
+
+        EX30.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX30.setText("30");
+        EX30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX30MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P30Layout = new javax.swing.GroupLayout(P30);
+        P30.setLayout(P30Layout);
+        P30Layout.setHorizontalGroup(
+            P30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P30Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(EX30, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        P30Layout.setVerticalGroup(
+            P30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX30, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+        );
+
+        P31.setBackground(new java.awt.Color(204, 255, 102));
+        P31.setPreferredSize(new java.awt.Dimension(100, 73));
+        P31.setRoundBottomLeft(20);
+        P31.setRoundBottomRight(20);
+        P31.setRoundTopLeft(20);
+        P31.setRoundTopRight(20);
+
+        EX31.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX31.setText("31");
+        EX31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX31MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P31Layout = new javax.swing.GroupLayout(P31);
+        P31.setLayout(P31Layout);
+        P31Layout.setHorizontalGroup(
+            P31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P31Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(EX31, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        P31Layout.setVerticalGroup(
+            P31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+        );
+
+        P32.setBackground(new java.awt.Color(204, 255, 102));
+        P32.setPreferredSize(new java.awt.Dimension(100, 73));
+        P32.setRoundBottomLeft(20);
+        P32.setRoundBottomRight(20);
+        P32.setRoundTopLeft(20);
+        P32.setRoundTopRight(20);
+
+        EX32.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX32.setText("32");
+        EX32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX32MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P32Layout = new javax.swing.GroupLayout(P32);
+        P32.setLayout(P32Layout);
+        P32Layout.setHorizontalGroup(
+            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P32Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(EX32, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        P32Layout.setVerticalGroup(
+            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -794,11 +889,19 @@ public class Extras extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(P30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(123, Short.MAX_VALUE))
@@ -824,8 +927,11 @@ public class Extras extends javax.swing.JPanel {
                     .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 204, 102));
@@ -1217,7 +1323,7 @@ public class Extras extends javax.swing.JPanel {
                         .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(347, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1783,6 +1889,60 @@ public class Extras extends javax.swing.JPanel {
             timer.start();
         }
     }//GEN-LAST:event_EX29MouseClicked
+
+    private void EX30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX30MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo30;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P30.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo30;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P30.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX30MouseClicked
+
+    private void EX31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX31MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo31;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P31.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo31;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P31.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX31MouseClicked
+
+    private void EX32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX32MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo32;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P32.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo32;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P32.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX32MouseClicked
  
     
     private void nombres(){
@@ -1877,6 +2037,15 @@ public class Extras extends javax.swing.JPanel {
              else if (189== codigo){
              descripcion29 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_29 = result.get(i).getDescripcion2().toUpperCase(); Precio29 = result.get(i).getPrecio();codigo29 = result.get(i).getCodigo();
             }
+            else if (199== codigo){
+             descripcion30= result.get(i).getDescripcion1().toUpperCase(); descripcion2_30 = result.get(i).getDescripcion2().toUpperCase(); Precio30 = result.get(i).getPrecio();codigo30 = result.get(i).getCodigo();
+            }
+            else if (200== codigo){
+             descripcion31 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_31 = result.get(i).getDescripcion2().toUpperCase(); Precio31 = result.get(i).getPrecio();codigo31 = result.get(i).getCodigo();
+            }
+            else if (201== codigo){
+             descripcion32 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_32 = result.get(i).getDescripcion2().toUpperCase(); Precio32 = result.get(i).getPrecio();codigo32 = result.get(i).getCodigo();
+            }
         }
   }
 
@@ -1904,6 +2073,9 @@ public class Extras extends javax.swing.JPanel {
     private javax.swing.JLabel EX28;
     private javax.swing.JLabel EX29;
     private javax.swing.JLabel EX3;
+    private javax.swing.JLabel EX30;
+    private javax.swing.JLabel EX31;
+    private javax.swing.JLabel EX32;
     private javax.swing.JLabel EX4;
     private javax.swing.JLabel EX5;
     private javax.swing.JLabel EX6;
@@ -1933,6 +2105,9 @@ public class Extras extends javax.swing.JPanel {
     private ClassAngels.PanelRound P28;
     private ClassAngels.PanelRound P29;
     private ClassAngels.PanelRound P3;
+    private ClassAngels.PanelRound P30;
+    private ClassAngels.PanelRound P31;
+    private ClassAngels.PanelRound P32;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
     private ClassAngels.PanelRound P6;
@@ -2002,6 +2177,12 @@ public class Extras extends javax.swing.JPanel {
         EX28.setText(texto28);
         String texto29 ="<html><center><body>"+descripcion29+"<br>"+descripcion2_29+"<br><font color='RED'>Q"+Precio29+"</font></body></center></html>";
         EX29.setText(texto29);
+        String texto30 ="<html><center><body>"+descripcion30+"<br>"+descripcion2_30+"<br><font color='RED'>Q"+Precio30+"</font></body></center></html>";
+        EX30.setText(texto30);
+        String texto31 ="<html><center><body>"+descripcion31+"<br>"+descripcion2_31+"<br><font color='RED'>Q"+Precio31+"</font></body></center></html>";
+        EX31.setText(texto31);
+        String texto32 ="<html><center><body>"+descripcion32+"<br>"+descripcion2_32+"<br><font color='RED'>Q"+Precio32+"</font></body></center></html>";
+        EX32.setText(texto32);
     }
 
 
