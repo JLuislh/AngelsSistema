@@ -57,7 +57,7 @@ public class CobroET extends javax.swing.JFrame {
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
-         imprimir();
+         imprimirCobrodividido();
          Ordenes F = new Ordenes();
          F.setVisible(true);
          this.dispose();
@@ -83,7 +83,7 @@ public class CobroET extends javax.swing.JFrame {
       BDConexion con= new BDConexion();
          Connection conexion= con.getConexion();
         try {
-            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuenta.jasper");
+            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuentaDividida.jasper");
             Map parametros= new HashMap();
             parametros.put("ID_ORDEN", Integer.parseInt(Orden.getText()));
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
@@ -119,6 +119,7 @@ public class CobroET extends javax.swing.JFrame {
         cobrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 204));
         jPanel1.setForeground(new java.awt.Color(153, 255, 204));

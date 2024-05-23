@@ -15,17 +15,18 @@ import javax.swing.JOptionPane;
  */
 
 public class BDConexion {
-     public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
-     public static final String USER = "root";
-     public static final String CLAVE = "campana";
+    //public static final String URL = "jdbc:mysql://192.168.0.15:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
+    // public static final String USER = "root";
+     //public static final String CLAVE = "campana";
     
      //public static final String URL = "jdbc:mysql://26.178.84.253:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
      //public static final String USER = "AdminApp";
      //public static final String CLAVE = "Coast@cm";
-    //public static final String URL = "jdbc:mysql://26.84.78.101:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
-   // public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
-   // public static final String USER =  "angels";//"elrey"; 
-   // public static final String CLAVE = "Coast@cm";// "campana"; 
+   // public static final String URL = "jdbc:mysql://26.84.78.101:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
+//public static final String URL = "jdbc:mysql://192.168.0.15:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador   
+ public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
+   public static final String USER =  "angels";//"elrey"; 
+   public static final String CLAVE = "Coast@cm";// "campana"; 
      
     public Connection getConexion(){
         Connection con = null;
