@@ -23,10 +23,10 @@ public class BDConexion {
      //public static final String USER = "AdminApp";
      //public static final String CLAVE = "Coast@cm";
    // public static final String URL = "jdbc:mysql://26.84.78.101:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
-//public static final String URL = "jdbc:mysql://192.168.0.15:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador   
- public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
-   public static final String USER =  "angels";//"elrey"; 
-   public static final String CLAVE = "Coast@cm";// "campana"; 
+ //public static final String URL = "jdbc:mysql://140.84.178.126:3306/angels?useTimezone=true&serverTimezone=UTC"; //SERVIDOR ORACLE CLOUD
+   public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
+   public static final String USER = "elrey";  // "angels";//
+   public static final String CLAVE = "campana";// "Coast@cm";// 
      
     public Connection getConexion(){
         Connection con = null;

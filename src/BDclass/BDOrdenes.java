@@ -204,7 +204,44 @@ public static InsertarProducto BuscarTotal(String a) throws SQLException{
             cn.close();
             ps.close();
             return c;
-}    
+}
+
+
+
+
+
+public static ArrayList<InsertarProducto> ListarCodigosPedido (int a ) {
+        return cod(" select codigo,cantidad from ventas where NOORDEN = "+a+";");    
+ }  
+
+private static ArrayList<InsertarProducto> cod(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCodigo(rs.getInt("codigo"));
+                 t.setCantidad(rs.getInt("cantidad"));
+                 list.add(t);
+            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA TABLA "+e);
+            return null;
+        } 
+        return list;
+}  
+
+
+
+
+
+    
     
     
 }
