@@ -27,7 +27,16 @@ public class InsertarProducto {
     private int Codigo;
     private int NoOrden;
     private int Status;
+    private String UMedida;
 
+    public String getUMedida() {
+        return UMedida;
+    }
+
+    public void setUMedida(String UMedida) {
+        this.UMedida = UMedida;
+    }
+ 
     public int getStatus() {
         return Status;
     }

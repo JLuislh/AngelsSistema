@@ -31,8 +31,10 @@ public class Administracion extends javax.swing.JFrame {
         T4.setText(texto4);
          String texto5 = "<html><center><body>INVENTARIO<br>DE<br>SUMINISTROS</body></center></html>";
         T5.setText(texto5);
-        String texto6 = "<html><center><body>VOLVER<br>A<br>INICIO</body></center></html>";
+        String texto6 = "<html><center><body>DESCARGAS<br>DE<br>INVENTARIO</body></center></html>";
         T6.setText(texto6);
+        String texto7 = "<html><center><body>VOLVER<br>A<br>INICIO</body></center></html>";
+        T7.setText(texto7);
     }
     
      private void CambiarBodes(){
@@ -42,6 +44,7 @@ public class Administracion extends javax.swing.JFrame {
          P4.setBorder(BorderFactory.createEmptyBorder());
          P5.setBorder(BorderFactory.createEmptyBorder());
          P6.setBorder(BorderFactory.createEmptyBorder());
+         P7.setBorder(BorderFactory.createEmptyBorder());
     }
 
     /**
@@ -67,6 +70,8 @@ public class Administracion extends javax.swing.JFrame {
         T5 = new javax.swing.JLabel();
         P6 = new ClassAngels.PanelRound();
         T6 = new javax.swing.JLabel();
+        P7 = new ClassAngels.PanelRound();
+        T7 = new javax.swing.JLabel();
         PANEL = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -219,7 +224,7 @@ public class Administracion extends javax.swing.JFrame {
             .addComponent(T5, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
         );
 
-        P6.setBackground(new java.awt.Color(255, 51, 51));
+        P6.setBackground(new java.awt.Color(204, 255, 204));
         P6.setPreferredSize(new java.awt.Dimension(126, 59));
         P6.setRoundBottomLeft(20);
         P6.setRoundBottomRight(20);
@@ -228,7 +233,7 @@ public class Administracion extends javax.swing.JFrame {
 
         T6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         T6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        T6.setText("VOLVER A INICIO");
+        T6.setText("Descargas Inventario");
         T6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 T6MouseClicked(evt);
@@ -242,11 +247,43 @@ public class Administracion extends javax.swing.JFrame {
         P6.setLayout(P6Layout);
         P6Layout.setHorizontalGroup(
             P6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(T6, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+            .addGroup(P6Layout.createSequentialGroup()
+                .addComponent(T6, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 3, Short.MAX_VALUE))
         );
         P6Layout.setVerticalGroup(
             P6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(T6, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+        );
+
+        P7.setBackground(new java.awt.Color(255, 51, 51));
+        P7.setPreferredSize(new java.awt.Dimension(126, 59));
+        P7.setRoundBottomLeft(20);
+        P7.setRoundBottomRight(20);
+        P7.setRoundTopLeft(20);
+        P7.setRoundTopRight(20);
+
+        T7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        T7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        T7.setText("VOLVER A INICIO");
+        T7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                T7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                T7MouseEntered(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P7Layout = new javax.swing.GroupLayout(P7);
+        P7.setLayout(P7Layout);
+        P7Layout.setHorizontalGroup(
+            P7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(T7, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+        );
+        P7Layout.setVerticalGroup(
+            P7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(T7, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -266,6 +303,8 @@ public class Administracion extends javax.swing.JFrame {
                 .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -276,6 +315,7 @@ public class Administracion extends javax.swing.JFrame {
             .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         PANEL.setBackground(new java.awt.Color(255, 255, 255));
@@ -394,14 +434,31 @@ public class Administracion extends javax.swing.JFrame {
     }//GEN-LAST:event_T5MouseEntered
 
     private void T6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T6MouseClicked
-        Ordenes F = new Ordenes();
-        F.setVisible(true);
-        this.dispose();
+        AdDescargasInventario op2 = new AdDescargasInventario();
+        op2.setSize(1025, 635);
+        op2.setLocation(0, 0);
+        PANEL.removeAll();
+        PANEL.add(op2,BorderLayout.CENTER);
+        PANEL.revalidate();
+        PANEL.repaint();
+        CambiarBodes();
+        P6.setBorder(BorderFactory.createMatteBorder(0, 0, 10, 0, Color.red));
+                                   
     }//GEN-LAST:event_T6MouseClicked
 
     private void T6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T6MouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_T6MouseEntered
+
+    private void T7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T7MouseClicked
+        Ordenes F = new Ordenes();
+        F.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_T7MouseClicked
+
+    private void T7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T7MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_T7MouseEntered
 
     /**
      * @param args the command line arguments
@@ -446,6 +503,7 @@ public class Administracion extends javax.swing.JFrame {
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
     private ClassAngels.PanelRound P6;
+    private ClassAngels.PanelRound P7;
     private javax.swing.JPanel PANEL;
     private javax.swing.JLabel T1;
     private javax.swing.JLabel T2;
@@ -453,6 +511,7 @@ public class Administracion extends javax.swing.JFrame {
     private javax.swing.JLabel T4;
     private javax.swing.JLabel T5;
     private javax.swing.JLabel T6;
+    private javax.swing.JLabel T7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

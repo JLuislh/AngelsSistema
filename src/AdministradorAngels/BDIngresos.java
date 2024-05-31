@@ -226,14 +226,14 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
     
     
     public static ArrayList<InsertarProducto> BDIngresosProductosInventarioBebidas () {
-        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD,precio from productosinventario where tipo = 1");    
+        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD from productosinventario where tipo = 1");    
  }  
     public static ArrayList<InsertarProducto> BDIngresosProductosInventarioComida () {
-        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD,precio from productosinventario where tipo = 2");    
+        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD from productosinventario where tipo = 2");    
  }  
 
     public static ArrayList<InsertarProducto> BDIngresosProductosInventarioSuministros () {
-        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD,precio from productosinventario where tipo = 3");    
+        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD from productosinventario where tipo = 3");    
  }  
 
     private static ArrayList<InsertarProducto> Inven(String sql){
@@ -250,7 +250,6 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
                  t.setIdregresoPedido(rs.getInt("IDPRODUCTOSINVE"));
                  t.setDescripcion(rs.getString("descripcion").toUpperCase());
                  t.setCantidad(rs.getInt("CANTIDAD"));
-                 t.setPrecio(rs.getDouble("precio"));
                  list.add(t);
                             }
             cn.close();
@@ -384,6 +383,97 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
             ps.close();
             return c;
 }
+    
+    
+    
+    
+    
+    public static ArrayList<InsertarProducto> ListarProductosVenta () {
+        return Vent("select productos.CODIGO,concat(upper(descripcion1),' ',upper(DESCRIPCION2)) as descripcion from productos inner join productosdescargas on productos.CODIGO = productosdescargas.codigo group by productosdescargas.codigo;");    
+ }  
+
+    private static ArrayList<InsertarProducto> Vent(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCodigo(rs.getInt("codigo"));
+                 t.setDescripcion(rs.getString("descripcion").toUpperCase());
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA TABLA "+e);
+            return null;
+        } 
+        return list;
+}  
+    
+    
+    public static ArrayList<InsertarProducto> ListarProductosDescargasVentas (int a) {
+        return VentDesc("SELECT pi.DESCRIPCION,pd.cantidadout,pd.unidad_medida FROM angels.productosdescargas pd inner join productosinventario pi on pd.idproductosinve = pi.IDPRODUCTOSINVE where pd.codigo = "+a);    
+ }  
+
+    private static ArrayList<InsertarProducto> VentDesc(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setDescripcion(rs.getString("descripcion").toUpperCase());
+                 t.setCantidad(rs.getInt("cantidadout"));
+                 t.setUMedida(rs.getString("unidad_medida"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA TABLA "+e);
+            return null;
+        } 
+        return list;
+}  
+    
+    
+    
+public static ArrayList<InsertarProducto>ListadeIngresos (int a) {
+        return in ("SELECT cantidad,fecha FROM ingresosproductos where IDPRODUCTOSINVE = "+ a+" order by ID_INGRESO");    
+ }  
+
+    private static ArrayList<InsertarProducto> in(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCantidad(rs.getInt("cantidad"));
+                 t.setFecha(rs.getString("fecha").toUpperCase());
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA ATABLA "+e);
+            return null;
+        } 
+        return list;
+}      
+    
+    
 
     
 }

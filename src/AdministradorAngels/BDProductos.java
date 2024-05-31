@@ -281,11 +281,10 @@ private static ArrayList<InsertarProducto> SQL3(String sql){
         BDConexion conecta = new BDConexion();
         Connection con = conecta.getConexion();
         PreparedStatement smtp = null;
-        smtp =con.prepareStatement("insert into ingresosproductos (idproductosinve,cantidad,precio,estado,fecha) values(?,?,?,1,CURRENT_TIMESTAMP)");
+        smtp =con.prepareStatement("insert into ingresosproductos (idproductosinve,cantidad,estado,fecha) values(?,?,1,CURRENT_TIMESTAMP)");
         try {
          smtp.setInt(1,t.getIdregreso());
          smtp.setInt(2,t.getCantidad());
-         smtp.setDouble(3, t.getPrecio());
          smtp.executeUpdate();
      } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "CUAL ERROR = "+e);}

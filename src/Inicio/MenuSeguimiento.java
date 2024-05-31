@@ -170,7 +170,6 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         Total = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
@@ -495,14 +494,6 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         });
         jPanel6.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 140, 40));
 
-        jButton4.setText("jButton4");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, -1));
-
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 430, 330, 190));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -680,10 +671,6 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     PanelMenu.repaint();
     }//GEN-LAST:event_Titulo8MouseClicked
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        descargarInventario();
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -749,7 +736,6 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

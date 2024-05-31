@@ -9,6 +9,7 @@ import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import static Inicio.Menu.noorden;
+import static Inicio.MenuSeguimiento.noorden;
 import SubPaneles.BebidasSinAlcohol;
 import SubPaneles.Botellas;
 import SubPaneles.CaldosAntojos;
@@ -40,6 +41,7 @@ import net.sf.jasperreports.engine.util.JRLoader;
 public class MenuParaLlevar extends javax.swing.JFrame {
      public static int noorden;
      int tipomenu = 2;
+     String Query;
     /**
      * Creates new form Menu
      * @param a
@@ -80,6 +82,31 @@ public class MenuParaLlevar extends javax.swing.JFrame {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
  }
+    
+    private void descargarInventario(){
+     
+          ArrayList<InsertarProducto> result = BDOrdenes.ListarCodigosPedido(noorden);
+        for (int i = 0; i < result.size(); i++) {
+          int codigo = result.get(i).getCodigo();
+          int cant = result.get(i).getCantidad();
+          try {
+             System.out.println(result.get(i).getCodigo());
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            Query = "{call Descontar("+codigo+","+cant+")}"; 
+            PreparedStatement pse = null;
+            pse= con.prepareStatement(Query);
+            pse.executeUpdate();                   
+            con.close();
+            pse.close();
+        } catch (SQLException ex) {
+           JOptionPane.showMessageDialog(null,"ERROR = "+ex);
+        }
+          
+          
+        }
+     
+     }
     
 
     /**
@@ -611,6 +638,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
        
         int resp=JOptionPane.showConfirmDialog(null,"COBRAR Q."+Total.getText()+" PARA CERRAR ORDEN");
           if (JOptionPane.OK_OPTION == resp){
+              descargarInventario();
               cobrarOrden();
               
               CobroET F = new CobroET(Double.parseDouble(Total.getText()),noorden);

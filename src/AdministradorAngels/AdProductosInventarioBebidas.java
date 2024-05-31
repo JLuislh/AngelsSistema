@@ -65,13 +65,12 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
                   datos[i][0] = t.getIdregresoPedido();
                   datos[i][1] = t.getDescripcion();
                   datos[i][2] = t.getCantidad();
-                  datos[i][3] = df.format(t.getPrecio());
                   i++;
               }    
              ProInventario.setModel(new javax.swing.table.DefaultTableModel(
                 datos,
                 new String[]{
-                "CODIGO","DESCRIPCION","CANTIDAD","PRECIO"
+                "CODIGO","DESCRIPCION","CANTIDAD"
              })
              {  
                  @Override
@@ -87,8 +86,7 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
              columna2.setPreferredWidth(275);
              TableColumn columna3 = ProInventario.getColumn("CANTIDAD");
              columna3.setPreferredWidth(35);
-             TableColumn columna4 = ProInventario.getColumn("PRECIO");
-             columna4.setPreferredWidth(35);
+             
              
      }
      
@@ -99,7 +97,6 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
      try {
             
             InsertarProducto p = new InsertarProducto();
-            
             p.setIdregreso(Integer.parseInt(Codigo.getText()));
             p.setCantidad(Integer.parseInt(cantidadin.getText()));
             //p.setPrecio(Double.parseDouble(costo.getText()));
@@ -127,6 +124,47 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
             System.out.println("ERROR ="+ex);
         }}
      
+     
+     
+     
+     
+     private void ListarIngresos(){
+     int id = (int) (ProInventario.getModel().getValueAt(ProInventario.getSelectedRow(), 0));
+        ArrayList<InsertarProducto> result = BDIngresos.ListadeIngresos(id);
+        Tabla(result);  
+    }
+     private void Tabla(ArrayList<InsertarProducto> list) {
+              Object[][] datos = new Object[list.size()][2];
+              int i = 0;
+              for(InsertarProducto t : list)
+              {
+                  datos[i][0] = t.getFecha();
+                  datos[i][1] = t.getCantidad();
+                  
+                  i++;
+              }    
+             ingresos.setModel(new javax.swing.table.DefaultTableModel(
+                datos,
+                new String[]{
+                "FECHA DE INGRESO","CANTIDAD"
+             })
+             {  
+                 @Override
+                 public boolean isCellEditable(int row, int column){
+                 return false;
+
+             }
+             });
+             ingresos.getColumnModel().getColumn(1).setCellRenderer(new TextAreaRenderer());
+             TableColumn columna1 = ingresos.getColumn("CANTIDAD");
+             columna1.setPreferredWidth(20);
+             TableColumn columna2 = ingresos.getColumn("FECHA DE INGRESO");
+             columna2.setPreferredWidth(275);
+           
+             
+             
+     }
+     
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -149,7 +187,7 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
         Cargar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        ingresos = new javax.swing.JTable();
 
         setPreferredSize(new java.awt.Dimension(1024, 635));
 
@@ -158,7 +196,7 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
 
             },
             new String [] {
-                "CODIGO", "DESCRIPCION", "PRECIO", "CANTIDAD"
+                "CODIGO", "DESCRIPCION", "CANTIDAD"
             }
         ));
         ProInventario.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -224,7 +262,7 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
             }
         });
 
-        Cargar.setText("CARGAR");
+        Cargar.setText("CARGAR INVENTARIO");
         Cargar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CargarActionPerformed(evt);
@@ -239,12 +277,12 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(cantidadin)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 432, Short.MAX_VALUE))
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Cargar)
-                .addGap(181, 181, 181))
+                .addGap(121, 121, 121))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -265,7 +303,7 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        ingresos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -273,7 +311,7 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
                 "FECHA DE INGRESO", "CANTIDAD"
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(ingresos);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -287,17 +325,17 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(240, 240, 240)
                         .addComponent(jButton1)))
-                .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(15, 15, 15))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -317,6 +355,7 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
       Codigo.setText(String.valueOf(ProInventario.getModel().getValueAt(ProInventario.getSelectedRow(), 0)));
       Descri.setText(String.valueOf(ProInventario.getModel().getValueAt(ProInventario.getSelectedRow(), 1)));
       cantidadin.requestFocus();
+      ListarIngresos();
         
         
     }//GEN-LAST:event_ProInventarioMouseClicked
@@ -340,6 +379,7 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
     private javax.swing.JTextField Descri;
     private javax.swing.JTable ProInventario;
     private javax.swing.JTextField cantidadin;
+    private javax.swing.JTable ingresos;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -348,7 +388,6 @@ public class AdProductosInventarioBebidas extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 
     private void limpíar() {
