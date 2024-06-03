@@ -17,8 +17,8 @@ import javax.swing.JOptionPane;
 public class BDConexion {
 
     //public static final String URL = "jdbc:mysql://140.84.178.126:3306/angels?useTimezone=true&serverTimezone=UTC"; //SERVIDOR ORACLE CLOUD
-   // public static final String URL = "jdbc:mysql://26.84.78.101:3306/angels?useTimezone=true&serverTimezone=UTC";//Maquina Angels
-   public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
+   public static final String URL = "jdbc:mysql://26.84.78.101:3306/angels?useTimezone=true&serverTimezone=UTC";//Maquina Angels
+  // public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
    public static final String USER =   "angels";//"elrey";
    public static final String CLAVE =  "Coast@cm";// "campana";
      
