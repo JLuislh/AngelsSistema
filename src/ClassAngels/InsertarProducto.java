@@ -11,6 +11,7 @@ package ClassAngels;
 public class InsertarProducto {
     
     private int id_pedido;
+    private int id_descarga;
     private int id_producto;
     private int id_producto_pedidos;
     private int cantidad;
@@ -29,6 +30,12 @@ public class InsertarProducto {
     private int Status;
     private String UMedida;
 
+    public int getId_descarga() {
+        return id_descarga;
+    }
+    public void setId_descarga(int id_descarga) {
+        this.id_descarga = id_descarga;
+    }
     public String getUMedida() {
         return UMedida;
     }
