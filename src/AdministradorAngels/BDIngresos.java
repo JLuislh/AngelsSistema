@@ -389,7 +389,7 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
     
     
     public static ArrayList<InsertarProducto> ListarProductosVenta () {
-        return Vent("select productos.CODIGO,concat(upper(descripcion1),' ',upper(DESCRIPCION2)) as descripcion from productos inner join productosdescargas on productos.CODIGO = productosdescargas.codigo group by productosdescargas.codigo;");    
+        return Vent("select productos.CODIGO,concat(upper(descripcion1),' ',upper(DESCRIPCION2)) as descripcion from productos inner join productosdescargas on productos.CODIGO = productosdescargas.codigo group by productosdescargas.codigo ORDER BY productosdescargas.codigo;");    
  }  
 
     private static ArrayList<InsertarProducto> Vent(String sql){
