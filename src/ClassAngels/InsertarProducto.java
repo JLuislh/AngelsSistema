@@ -25,11 +25,37 @@ public class InsertarProducto {
     private String sin;
     private double precio;
     private double Total;
+    private double Efectivo;
+    private double Tarjeta;
+    private double Transferencia;
     private int Codigo;
     private int NoOrden;
     private int Status;
     private String UMedida;
 
+    public double getEfectivo() {
+        return Efectivo;
+    }
+
+    public void setEfectivo(double Efectivo) {
+        this.Efectivo = Efectivo;
+    }
+
+    public double getTarjeta() {
+        return Tarjeta;
+    }
+
+    public void setTarjeta(double Tarjeta) {
+        this.Tarjeta = Tarjeta;
+    }
+
+    public double getTransferencia() {
+        return Transferencia;
+    }
+
+    public void setTransferencia(double Transferencia) {
+        this.Transferencia = Transferencia;
+    }
     public int getId_descarga() {
         return id_descarga;
     }

@@ -191,7 +191,7 @@ public static InsertarProducto BuscarTotal(String a) throws SQLException{
             BDConexion conecta = new BDConexion();
             Connection cn = conecta.getConexion();
             PreparedStatement ps = null;
-            ps = cn.prepareStatement("select SUM(TOTAL) AS TOTAL, count(*) as ORDENES from ordenes where estado = 2 and date_format(fecha,'%d/%m/%Y' )  = '"+a+"';");
+            ps = cn.prepareStatement("select SUM(TOTAL) AS TOTAL,SUM(efectivo) AS efectivo,SUM(Tarjeta) AS Tarjeta,SUM(transferencia) AS transferencia, count(*) as ORDENES from ordenes where estado = 2 and date_format(fecha,'%d/%m/%Y' )  = '"+a+"';");
             ResultSet rs = ps.executeQuery();
             if (rs.next())
             {
@@ -199,6 +199,9 @@ public static InsertarProducto BuscarTotal(String a) throws SQLException{
                {c = new InsertarProducto(){};}
                c.setNoOrden(rs.getInt("ORDENES"));
                c.setTotal(rs.getDouble("TOTAL"));
+               c.setEfectivo(rs.getDouble("efectivo"));
+               c.setTransferencia(rs.getDouble("transferencia"));
+               c.setTarjeta(rs.getDouble("Tarjeta"));
                
             }
             cn.close();
