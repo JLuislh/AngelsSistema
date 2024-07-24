@@ -11,6 +11,7 @@ package ClassAngels;
 public class InsertarProducto {
     
     private int id_pedido;
+    private int id_descarga;
     private int id_producto;
     private int id_producto_pedidos;
     private int cantidad;
@@ -24,11 +25,43 @@ public class InsertarProducto {
     private String sin;
     private double precio;
     private double Total;
+    private double Efectivo;
+    private double Tarjeta;
+    private double Transferencia;
     private int Codigo;
     private int NoOrden;
     private int Status;
     private String UMedida;
 
+    public double getEfectivo() {
+        return Efectivo;
+    }
+
+    public void setEfectivo(double Efectivo) {
+        this.Efectivo = Efectivo;
+    }
+
+    public double getTarjeta() {
+        return Tarjeta;
+    }
+
+    public void setTarjeta(double Tarjeta) {
+        this.Tarjeta = Tarjeta;
+    }
+
+    public double getTransferencia() {
+        return Transferencia;
+    }
+
+    public void setTransferencia(double Transferencia) {
+        this.Transferencia = Transferencia;
+    }
+    public int getId_descarga() {
+        return id_descarga;
+    }
+    public void setId_descarga(int id_descarga) {
+        this.id_descarga = id_descarga;
+    }
     public String getUMedida() {
         return UMedida;
     }

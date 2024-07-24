@@ -65,12 +65,13 @@ public class AdProductosInventarioSuministros extends javax.swing.JPanel {
                   datos[i][0] = t.getIdregresoPedido();
                   datos[i][1] = t.getDescripcion();
                   datos[i][2] = t.getCantidad();
+                  datos[i][3] = t.getUMedida();
                   i++;
               }    
              ProInventario.setModel(new javax.swing.table.DefaultTableModel(
                 datos,
                 new String[]{
-                "CODIGO","DESCRIPCION","CANTIDAD"
+                "CODIGO","DESCRIPCION","CANTIDAD","UNIDAD MEDIDA"
              })
              {  
                  @Override

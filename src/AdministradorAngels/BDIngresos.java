@@ -226,14 +226,14 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
     
     
     public static ArrayList<InsertarProducto> BDIngresosProductosInventarioBebidas () {
-        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD from productosinventario where tipo = 1");    
+        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD,unidad_medida from productosinventario where tipo = 1");    
  }  
     public static ArrayList<InsertarProducto> BDIngresosProductosInventarioComida () {
-        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD from productosinventario where tipo = 2");    
+        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD,unidad_medida from productosinventario where tipo = 2");    
  }  
 
     public static ArrayList<InsertarProducto> BDIngresosProductosInventarioSuministros () {
-        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD from productosinventario where tipo = 3");    
+        return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD,unidad_medida from productosinventario where tipo = 3");    
  }  
 
     private static ArrayList<InsertarProducto> Inven(String sql){
@@ -250,6 +250,7 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
                  t.setIdregresoPedido(rs.getInt("IDPRODUCTOSINVE"));
                  t.setDescripcion(rs.getString("descripcion").toUpperCase());
                  t.setCantidad(rs.getInt("CANTIDAD"));
+                 t.setUMedida(rs.getString("unidad_medida"));
                  list.add(t);
                             }
             cn.close();
@@ -417,7 +418,7 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
     
     
     public static ArrayList<InsertarProducto> ListarProductosDescargasVentas (int a) {
-        return VentDesc("SELECT pi.DESCRIPCION,pd.cantidadout,pd.unidad_medida FROM angels.productosdescargas pd inner join productosinventario pi on pd.idproductosinve = pi.IDPRODUCTOSINVE where pd.codigo = "+a);    
+        return VentDesc("SELECT pd.id_descarga,pi.DESCRIPCION,pd.cantidadout,pd.unidad_medida FROM angels.productosdescargas pd inner join productosinventario pi on pd.idproductosinve = pi.IDPRODUCTOSINVE where pd.codigo = "+a);    
  }  
 
     private static ArrayList<InsertarProducto> VentDesc(String sql){
@@ -431,6 +432,7 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()){
                  t = new InsertarProducto();
+                 t.setId_descarga(rs.getInt("id_descarga"));
                  t.setDescripcion(rs.getString("descripcion").toUpperCase());
                  t.setCantidad(rs.getInt("cantidadout"));
                  t.setUMedida(rs.getString("unidad_medida"));

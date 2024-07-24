@@ -65,6 +65,8 @@ public class ConAlcohol extends javax.swing.JPanel {
  String descripcion36;	String descripcion2_36;	 String Precio36; int codigo36;
  String descripcion37;	String descripcion2_37;	 String Precio37; int codigo37;
  String descripcion38;	String descripcion2_38;	 String Precio38; int codigo38;
+ String descripcion39;	String descripcion2_39;	 String Precio39; int codigo39;
+ String descripcion40;	String descripcion2_40;	 String Precio40; int codigo40;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -127,7 +129,8 @@ public class ConAlcohol extends javax.swing.JPanel {
        P36.setBackground(Original);
        P37.setBackground(Original);
        P38.setBackground(Original);
-      
+       P40.setBackground(Original);
+       P41.setBackground(Original);
      }
     });
     
@@ -329,11 +332,11 @@ public class ConAlcohol extends javax.swing.JPanel {
         CER27 = new javax.swing.JLabel();
         P38 = new ClassAngels.PanelRound();
         CER28 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
         P11 = new ClassAngels.PanelRound();
         DRIN1 = new javax.swing.JLabel();
         P12 = new ClassAngels.PanelRound();
         DRIN2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         P13 = new ClassAngels.PanelRound();
         DRIN3 = new javax.swing.JLabel();
         P14 = new ClassAngels.PanelRound();
@@ -350,6 +353,10 @@ public class ConAlcohol extends javax.swing.JPanel {
         DRIN10 = new javax.swing.JLabel();
         P17 = new ClassAngels.PanelRound();
         DRIN7 = new javax.swing.JLabel();
+        P41 = new ClassAngels.PanelRound();
+        DRIN13 = new javax.swing.JLabel();
+        P40 = new ClassAngels.PanelRound();
+        DRIN12 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(204, 204, 204));
         setPreferredSize(new java.awt.Dimension(1170, 368));
@@ -1121,6 +1128,60 @@ public class ConAlcohol extends javax.swing.JPanel {
                 .addComponent(CER28, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE))
         );
 
+        P11.setBackground(new java.awt.Color(204, 255, 102));
+        P11.setPreferredSize(new java.awt.Dimension(100, 65));
+        P11.setRoundBottomLeft(20);
+        P11.setRoundBottomRight(20);
+        P11.setRoundTopLeft(20);
+        P11.setRoundTopRight(20);
+
+        DRIN1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        DRIN1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DRIN1.setText("11");
+        DRIN1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DRIN1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P11Layout = new javax.swing.GroupLayout(P11);
+        P11.setLayout(P11Layout);
+        P11Layout.setHorizontalGroup(
+            P11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DRIN1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P11Layout.setVerticalGroup(
+            P11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DRIN1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P12.setBackground(new java.awt.Color(204, 255, 102));
+        P12.setPreferredSize(new java.awt.Dimension(100, 65));
+        P12.setRoundBottomLeft(20);
+        P12.setRoundBottomRight(20);
+        P12.setRoundTopLeft(20);
+        P12.setRoundTopRight(20);
+
+        DRIN2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        DRIN2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DRIN2.setText("12");
+        DRIN2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DRIN2MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P12Layout = new javax.swing.GroupLayout(P12);
+        P12.setLayout(P12Layout);
+        P12Layout.setHorizontalGroup(
+            P12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DRIN2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P12Layout.setVerticalGroup(
+            P12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DRIN2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -1186,7 +1247,12 @@ public class ConAlcohol extends javax.swing.JPanel {
                                 .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(46, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -1228,65 +1294,14 @@ public class ConAlcohol extends javax.swing.JPanel {
                         .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DRINKS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
-
-        P11.setBackground(new java.awt.Color(204, 255, 102));
-        P11.setPreferredSize(new java.awt.Dimension(100, 65));
-        P11.setRoundBottomLeft(20);
-        P11.setRoundBottomRight(20);
-        P11.setRoundTopLeft(20);
-        P11.setRoundTopRight(20);
-
-        DRIN1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        DRIN1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN1.setText("11");
-        DRIN1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                DRIN1MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P11Layout = new javax.swing.GroupLayout(P11);
-        P11.setLayout(P11Layout);
-        P11Layout.setHorizontalGroup(
-            P11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DRIN1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P11Layout.setVerticalGroup(
-            P11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DRIN1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
-        );
-
-        P12.setBackground(new java.awt.Color(204, 255, 102));
-        P12.setPreferredSize(new java.awt.Dimension(100, 65));
-        P12.setRoundBottomLeft(20);
-        P12.setRoundBottomRight(20);
-        P12.setRoundTopLeft(20);
-        P12.setRoundTopRight(20);
-
-        DRIN2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        DRIN2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DRIN2.setText("12");
-        DRIN2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                DRIN2MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P12Layout = new javax.swing.GroupLayout(P12);
-        P12.setLayout(P12Layout);
-        P12Layout.setHorizontalGroup(
-            P12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DRIN2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P12Layout.setVerticalGroup(
-            P12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DRIN2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
-        );
 
         P13.setBackground(new java.awt.Color(204, 255, 102));
         P13.setPreferredSize(new java.awt.Dimension(100, 65));
@@ -1443,10 +1458,7 @@ public class ConAlcohol extends javax.swing.JPanel {
         P19.setLayout(P19Layout);
         P19Layout.setHorizontalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P19Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(DRIN9, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(DRIN9, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P19Layout.setVerticalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1507,16 +1519,65 @@ public class ConAlcohol extends javax.swing.JPanel {
             .addComponent(DRIN7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
         );
 
+        P41.setBackground(new java.awt.Color(204, 255, 102));
+        P41.setPreferredSize(new java.awt.Dimension(100, 65));
+        P41.setRoundBottomLeft(20);
+        P41.setRoundBottomRight(20);
+        P41.setRoundTopLeft(20);
+        P41.setRoundTopRight(20);
+
+        DRIN13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        DRIN13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DRIN13.setText("22");
+        DRIN13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DRIN13MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P41Layout = new javax.swing.GroupLayout(P41);
+        P41.setLayout(P41Layout);
+        P41Layout.setHorizontalGroup(
+            P41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DRIN13, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P41Layout.setVerticalGroup(
+            P41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DRIN13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
+        P40.setBackground(new java.awt.Color(204, 255, 102));
+        P40.setPreferredSize(new java.awt.Dimension(100, 65));
+        P40.setRoundBottomLeft(20);
+        P40.setRoundBottomRight(20);
+        P40.setRoundTopLeft(20);
+        P40.setRoundTopRight(20);
+
+        DRIN12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        DRIN12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DRIN12.setText("21");
+        DRIN12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DRIN12MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P40Layout = new javax.swing.GroupLayout(P40);
+        P40.setLayout(P40Layout);
+        P40Layout.setHorizontalGroup(
+            P40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DRIN12, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P40Layout.setVerticalGroup(
+            P40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(DRIN12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1524,7 +1585,7 @@ public class ConAlcohol extends javax.swing.JPanel {
                 .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1532,24 +1593,28 @@ public class ConAlcohol extends javax.swing.JPanel {
                 .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(P40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -1568,8 +1633,7 @@ public class ConAlcohol extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -2258,6 +2322,42 @@ if ((evt.getModifiers() & 4) !=0){
             timer.start();
        }
     }//GEN-LAST:event_CER28MouseClicked
+
+    private void DRIN12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN12MouseClicked
+   /*       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo39;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P40.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo39;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P40.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }*/
+    }//GEN-LAST:event_DRIN12MouseClicked
+
+    private void DRIN13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN13MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo40;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P41.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo40;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P41.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_DRIN13MouseClicked
 private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasBebidasAlcohol();
         for (int i = 0; i < result.size(); i++) {
@@ -2377,6 +2477,12 @@ private void nombres(){
             else if (195== codigo){
              descripcion38 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_38 = result.get(i).getDescripcion2().toUpperCase(); Precio38 = result.get(i).getPrecio();codigo38 = result.get(i).getCodigo();
             }
+            /*else if (202== codigo){
+             descripcion39 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_39 = result.get(i).getDescripcion2().toUpperCase(); Precio39 = result.get(i).getPrecio();codigo39 = result.get(i).getCodigo();
+            }*/
+            else if (203== codigo){
+             descripcion40 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_40 = result.get(i).getDescripcion2().toUpperCase(); Precio40 = result.get(i).getPrecio();codigo40 = result.get(i).getCodigo();
+            }
         }
   }
 
@@ -2412,6 +2518,8 @@ private void nombres(){
     private javax.swing.JLabel CER9;
     private javax.swing.JLabel DRIN1;
     private javax.swing.JLabel DRIN10;
+    private javax.swing.JLabel DRIN12;
+    private javax.swing.JLabel DRIN13;
     private javax.swing.JLabel DRIN2;
     private javax.swing.JLabel DRIN3;
     private javax.swing.JLabel DRIN4;
@@ -2453,6 +2561,8 @@ private void nombres(){
     private ClassAngels.PanelRound P37;
     private ClassAngels.PanelRound P38;
     private ClassAngels.PanelRound P4;
+    private ClassAngels.PanelRound P40;
+    private ClassAngels.PanelRound P41;
     private ClassAngels.PanelRound P5;
     private ClassAngels.PanelRound P6;
     private ClassAngels.PanelRound P7;
@@ -2539,6 +2649,10 @@ private void Etiquetas() {
         CER27.setText(texto37);
          String texto38 ="<html><center><body>"+descripcion38+"<br>"+descripcion2_38+"<br><font color='RED'>Q"+Precio38+"</font></body></center></html>";
         CER28.setText(texto38);
+        /*String texto39 ="<html><center><body>"+descripcion39+"<br>"+descripcion2_39+"<br><font color='RED'>Q"+Precio39+"</font></body></center></html>";
+        DRIN12.setText(texto39);*/
+        String texto40 ="<html><center><body>"+descripcion40+"<br>"+descripcion2_40+"<br><font color='RED'>Q"+Precio40+"</font></body></center></html>";
+        DRIN13.setText(texto40);
          
     }
 
