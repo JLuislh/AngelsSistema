@@ -1,4 +1,4 @@
-package SubPaneles;
+package SubPanelesSantaInes;
 
 import BDclass.BDConexion;
 import BDclass.BDOrdenes;
@@ -22,11 +22,12 @@ import javax.swing.Timer;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
+
 /**
  *
  * @author jluis
  */
-public class CaldosAntojos extends javax.swing.JPanel {
+public class Hamburguesas extends javax.swing.JPanel {
  String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
  String descripcion2;	String descripcion2_2;	 String Precio2;  int codigo2;
  String descripcion3;	String descripcion2_3;	 String Precio3;  int codigo3;
@@ -53,53 +54,19 @@ public class CaldosAntojos extends javax.swing.JPanel {
  int codigooreden;
  int existe = 0;
  int tipomenu = 0;
+
     /**
-     * Creates new form CaldosAntojos
+     * Creates new form Hamburguesas
      * @param a
      * @param b
      */
-    public CaldosAntojos(int a,int b) {
+    public Hamburguesas(int a,int b) {
         initComponents();
         nombres();
         Etiquetas();
         this.noorden = a;
         this.tipomenu = b;
     }
-    
-    
-    
-    private void InsertarProductoPedido() {
-       
-        try {
-            InsertarProducto p1 = new InsertarProducto();
-            p1.setNoOrden(noorden);
-            p1.setId_producto(codigooreden);
-            BDOrdenes.InsertarProducto_Pedido(p1);
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "QUE MIERDA PASA= "+e);
-        }
-     switch (tipomenu) {
-         case 0:
-             Menu.ListarProductosPedidos();
-             break;
-         case 1:
-             MenuSeguimiento.ListarProductosPedidos();
-             break;
-         case 2:
-              
-             MenuParaLlevar.ListarProductosPedidos();
-            
-             break;
-         default:
-             break;
-     }
-         existe = 0;
-    }
-    
-    
-    
-    
-    
     
     Timer timer = new Timer(300, new ActionListener()
     {
@@ -133,10 +100,31 @@ public class CaldosAntojos extends javax.swing.JPanel {
      }
     });
     
-    
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
-    
+    private void InsertarProductoPedido() {
+       
+        try {
+            InsertarProducto p1 = new InsertarProducto();
+            p1.setNoOrden(noorden);
+            p1.setId_producto(codigooreden);
+            BDOrdenes.InsertarProducto_Pedido(p1);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "QUE MIERDA PASA= "+e);
+        }
+     switch (tipomenu) {
+         case 0:
+             Menu.ListarProductosPedidos();
+             break;
+         case 1:
+             MenuSeguimiento.ListarProductosPedidos();
+             break;
+         case 2:
+              MenuParaLlevar.ListarProductosPedidos();
+             break;
+         default:
+             break;
+     }
+         existe = 0;
+    }
     
      private void UpdateCantidad() {
         try {
@@ -228,7 +216,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
-        switch (tipomenu) {
+         switch (tipomenu) {
          case 0:
              Menu.ListarProductosPedidos();
              break;
@@ -245,6 +233,7 @@ public class CaldosAntojos extends javax.swing.JPanel {
  }
    
     
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -257,56 +246,56 @@ public class CaldosAntojos extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         P1 = new ClassAngels.PanelRound();
-        Caldos1 = new javax.swing.JLabel();
+        HAM1 = new javax.swing.JLabel();
         P2 = new ClassAngels.PanelRound();
-        Caldos2 = new javax.swing.JLabel();
+        HAM2 = new javax.swing.JLabel();
         P3 = new ClassAngels.PanelRound();
-        Caldos3 = new javax.swing.JLabel();
+        HAM3 = new javax.swing.JLabel();
         P4 = new ClassAngels.PanelRound();
-        Caldos4 = new javax.swing.JLabel();
+        HAM4 = new javax.swing.JLabel();
         P5 = new ClassAngels.PanelRound();
-        Caldos5 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        HAM5 = new javax.swing.JLabel();
         P6 = new ClassAngels.PanelRound();
-        PAL1 = new javax.swing.JLabel();
+        HAM6 = new javax.swing.JLabel();
         P7 = new ClassAngels.PanelRound();
-        PAL2 = new javax.swing.JLabel();
+        HAM7 = new javax.swing.JLabel();
         P8 = new ClassAngels.PanelRound();
-        PAL3 = new javax.swing.JLabel();
+        HAM8 = new javax.swing.JLabel();
         P9 = new ClassAngels.PanelRound();
-        PAL4 = new javax.swing.JLabel();
+        HAM9 = new javax.swing.JLabel();
         P10 = new ClassAngels.PanelRound();
-        PAL5 = new javax.swing.JLabel();
+        HAM10 = new javax.swing.JLabel();
         P11 = new ClassAngels.PanelRound();
-        PAL6 = new javax.swing.JLabel();
+        HAM11 = new javax.swing.JLabel();
         P12 = new ClassAngels.PanelRound();
-        PAL7 = new javax.swing.JLabel();
+        HAM12 = new javax.swing.JLabel();
         P13 = new ClassAngels.PanelRound();
-        PAL8 = new javax.swing.JLabel();
+        HAM13 = new javax.swing.JLabel();
         P14 = new ClassAngels.PanelRound();
-        PAL9 = new javax.swing.JLabel();
+        HAM14 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         P15 = new ClassAngels.PanelRound();
-        PAL10 = new javax.swing.JLabel();
+        FUE1 = new javax.swing.JLabel();
         P16 = new ClassAngels.PanelRound();
-        PAL11 = new javax.swing.JLabel();
+        FUE2 = new javax.swing.JLabel();
         P17 = new ClassAngels.PanelRound();
-        PAL12 = new javax.swing.JLabel();
+        FUE3 = new javax.swing.JLabel();
         P18 = new ClassAngels.PanelRound();
-        PAL13 = new javax.swing.JLabel();
+        FUE4 = new javax.swing.JLabel();
         P19 = new ClassAngels.PanelRound();
-        PAL14 = new javax.swing.JLabel();
+        FUE5 = new javax.swing.JLabel();
         P20 = new ClassAngels.PanelRound();
-        PAL15 = new javax.swing.JLabel();
+        FUE6 = new javax.swing.JLabel();
         P21 = new ClassAngels.PanelRound();
-        PAL16 = new javax.swing.JLabel();
+        FUE7 = new javax.swing.JLabel();
         P22 = new ClassAngels.PanelRound();
-        PAL17 = new javax.swing.JLabel();
+        FUE8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 204, 153));
+        setBackground(new java.awt.Color(204, 204, 255));
         setPreferredSize(new java.awt.Dimension(1170, 380));
 
-        jPanel1.setBackground(new java.awt.Color(255, 204, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CALDOS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "HAMBURGUESAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         P1.setBackground(new java.awt.Color(204, 255, 102));
         P1.setPreferredSize(new java.awt.Dimension(100, 75));
@@ -315,12 +304,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P1.setRoundTopLeft(20);
         P1.setRoundTopRight(20);
 
-        Caldos1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Caldos1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Caldos1.setText("caldo mariscos");
-        Caldos1.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM1.setText("1");
+        HAM1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Caldos1MouseClicked(evt);
+                HAM1MouseClicked(evt);
             }
         });
 
@@ -328,11 +317,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P1.setLayout(P1Layout);
         P1Layout.setHorizontalGroup(
             P1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P1Layout.setVerticalGroup(
             P1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos1, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM1, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P2.setBackground(new java.awt.Color(204, 255, 102));
@@ -342,12 +331,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P2.setRoundTopLeft(20);
         P2.setRoundTopRight(20);
 
-        Caldos2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Caldos2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Caldos2.setText("caldo de pescado");
-        Caldos2.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM2.setText("2");
+        HAM2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Caldos2MouseClicked(evt);
+                HAM2MouseClicked(evt);
             }
         });
 
@@ -355,11 +344,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P2.setLayout(P2Layout);
         P2Layout.setHorizontalGroup(
             P2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P2Layout.setVerticalGroup(
             P2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P3.setBackground(new java.awt.Color(204, 255, 102));
@@ -369,12 +358,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P3.setRoundTopLeft(20);
         P3.setRoundTopRight(20);
 
-        Caldos3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Caldos3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Caldos3.setText("caldo de camaron");
-        Caldos3.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM3.setText("3");
+        HAM3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Caldos3MouseClicked(evt);
+                HAM3MouseClicked(evt);
             }
         });
 
@@ -382,11 +371,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P3.setLayout(P3Layout);
         P3Layout.setHorizontalGroup(
             P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos3, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM3, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P3Layout.setVerticalGroup(
             P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P4.setBackground(new java.awt.Color(204, 255, 102));
@@ -396,12 +385,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P4.setRoundTopLeft(20);
         P4.setRoundTopRight(20);
 
-        Caldos4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Caldos4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Caldos4.setText("sopa korena");
-        Caldos4.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM4.setText("4");
+        HAM4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Caldos4MouseClicked(evt);
+                HAM4MouseClicked(evt);
             }
         });
 
@@ -409,11 +398,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P4.setLayout(P4Layout);
         P4Layout.setHorizontalGroup(
             P4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos4, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM4, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P4Layout.setVerticalGroup(
             P4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos4, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM4, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P5.setBackground(new java.awt.Color(204, 255, 102));
@@ -423,12 +412,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P5.setRoundTopLeft(20);
         P5.setRoundTopRight(20);
 
-        Caldos5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Caldos5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Caldos5.setText("sopa de pollo ");
-        Caldos5.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM5.setText("5");
+        HAM5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Caldos5MouseClicked(evt);
+                HAM5MouseClicked(evt);
             }
         });
 
@@ -436,45 +425,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P5.setLayout(P5Layout);
         P5Layout.setHorizontalGroup(
             P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos5, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM5, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P5Layout.setVerticalGroup(
             P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Caldos5, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM5, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
-                .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(9, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(14, 14, 14))
-        );
-
-        jPanel2.setBackground(new java.awt.Color(255, 204, 153));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PAL ANTOJO", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         P6.setBackground(new java.awt.Color(204, 255, 102));
         P6.setPreferredSize(new java.awt.Dimension(100, 75));
@@ -483,12 +439,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P6.setRoundTopLeft(20);
         P6.setRoundTopRight(20);
 
-        PAL1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL1.setText("6");
-        PAL1.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM6.setText("6");
+        HAM6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL1MouseClicked(evt);
+                HAM6MouseClicked(evt);
             }
         });
 
@@ -496,11 +452,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P6.setLayout(P6Layout);
         P6Layout.setHorizontalGroup(
             P6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM6, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P6Layout.setVerticalGroup(
             P6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL1, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM6, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P7.setBackground(new java.awt.Color(204, 255, 102));
@@ -510,12 +466,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P7.setRoundTopLeft(20);
         P7.setRoundTopRight(20);
 
-        PAL2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL2.setText("7");
-        PAL2.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM7.setText("7");
+        HAM7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL2MouseClicked(evt);
+                HAM7MouseClicked(evt);
             }
         });
 
@@ -523,11 +479,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P7.setLayout(P7Layout);
         P7Layout.setHorizontalGroup(
             P7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM7, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P7Layout.setVerticalGroup(
             P7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL2, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM7, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P8.setBackground(new java.awt.Color(204, 255, 102));
@@ -537,12 +493,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P8.setRoundTopLeft(20);
         P8.setRoundTopRight(20);
 
-        PAL3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL3.setText("8");
-        PAL3.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM8.setText("8");
+        HAM8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL3MouseClicked(evt);
+                HAM8MouseClicked(evt);
             }
         });
 
@@ -550,11 +506,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P8.setLayout(P8Layout);
         P8Layout.setHorizontalGroup(
             P8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL3, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P8Layout.setVerticalGroup(
             P8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL3, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P9.setBackground(new java.awt.Color(204, 255, 102));
@@ -564,12 +520,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P9.setRoundTopLeft(20);
         P9.setRoundTopRight(20);
 
-        PAL4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL4.setText("9");
-        PAL4.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM9.setText("9");
+        HAM9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL4MouseClicked(evt);
+                HAM9MouseClicked(evt);
             }
         });
 
@@ -577,26 +533,27 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P9.setLayout(P9Layout);
         P9Layout.setHorizontalGroup(
             P9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL4, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P9Layout.setVerticalGroup(
             P9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL4, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM9, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P10.setBackground(new java.awt.Color(204, 255, 102));
+        P10.setMinimumSize(new java.awt.Dimension(100, 75));
         P10.setPreferredSize(new java.awt.Dimension(100, 75));
         P10.setRoundBottomLeft(20);
         P10.setRoundBottomRight(20);
         P10.setRoundTopLeft(20);
         P10.setRoundTopRight(20);
 
-        PAL5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL5.setText("10");
-        PAL5.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM10.setText("10");
+        HAM10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL5MouseClicked(evt);
+                HAM10MouseClicked(evt);
             }
         });
 
@@ -604,26 +561,27 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P10.setLayout(P10Layout);
         P10Layout.setHorizontalGroup(
             P10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL5, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P10Layout.setVerticalGroup(
             P10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL5, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P11.setBackground(new java.awt.Color(204, 255, 102));
+        P11.setMinimumSize(new java.awt.Dimension(100, 75));
         P11.setPreferredSize(new java.awt.Dimension(100, 75));
         P11.setRoundBottomLeft(20);
         P11.setRoundBottomRight(20);
         P11.setRoundTopLeft(20);
         P11.setRoundTopRight(20);
 
-        PAL6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL6.setText("11");
-        PAL6.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM11.setText("11");
+        HAM11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL6MouseClicked(evt);
+                HAM11MouseClicked(evt);
             }
         });
 
@@ -631,11 +589,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P11.setLayout(P11Layout);
         P11Layout.setHorizontalGroup(
             P11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL6, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM11, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P11Layout.setVerticalGroup(
             P11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL6, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P12.setBackground(new java.awt.Color(204, 255, 102));
@@ -645,12 +603,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P12.setRoundTopLeft(20);
         P12.setRoundTopRight(20);
 
-        PAL7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL7.setText("12");
-        PAL7.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM12.setText("12");
+        HAM12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL7MouseClicked(evt);
+                HAM12MouseClicked(evt);
             }
         });
 
@@ -658,11 +616,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P12.setLayout(P12Layout);
         P12Layout.setHorizontalGroup(
             P12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL7, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM12, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P12Layout.setVerticalGroup(
             P12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL7, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P13.setBackground(new java.awt.Color(204, 255, 102));
@@ -672,12 +630,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P13.setRoundTopLeft(20);
         P13.setRoundTopRight(20);
 
-        PAL8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL8.setText("13");
-        PAL8.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM13.setText("13");
+        HAM13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL8MouseClicked(evt);
+                HAM13MouseClicked(evt);
             }
         });
 
@@ -685,11 +643,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P13.setLayout(P13Layout);
         P13Layout.setHorizontalGroup(
             P13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL8, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM13, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P13Layout.setVerticalGroup(
             P13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL8, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P14.setBackground(new java.awt.Color(204, 255, 102));
@@ -699,12 +657,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P14.setRoundTopLeft(20);
         P14.setRoundTopRight(20);
 
-        PAL9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL9.setText("14");
-        PAL9.addMouseListener(new java.awt.event.MouseAdapter() {
+        HAM14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM14.setText("14");
+        HAM14.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL9MouseClicked(evt);
+                HAM14MouseClicked(evt);
             }
         });
 
@@ -712,12 +670,76 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P14.setLayout(P14Layout);
         P14Layout.setHorizontalGroup(
             P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL9, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(HAM14, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P14Layout.setVerticalGroup(
             P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL9, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(HAM14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "FUERA DEL MAR", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         P15.setBackground(new java.awt.Color(204, 255, 102));
         P15.setPreferredSize(new java.awt.Dimension(100, 75));
@@ -726,12 +748,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P15.setRoundTopLeft(20);
         P15.setRoundTopRight(20);
 
-        PAL10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL10.setText("15");
-        PAL10.addMouseListener(new java.awt.event.MouseAdapter() {
+        FUE1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FUE1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FUE1.setText("15");
+        FUE1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL10MouseClicked(evt);
+                FUE1MouseClicked(evt);
             }
         });
 
@@ -739,11 +761,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P15.setLayout(P15Layout);
         P15Layout.setHorizontalGroup(
             P15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL10, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(FUE1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P15Layout.setVerticalGroup(
             P15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL10, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(FUE1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P16.setBackground(new java.awt.Color(204, 255, 102));
@@ -753,12 +775,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P16.setRoundTopLeft(20);
         P16.setRoundTopRight(20);
 
-        PAL11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL11.setText("16");
-        PAL11.addMouseListener(new java.awt.event.MouseAdapter() {
+        FUE2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FUE2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FUE2.setText("16");
+        FUE2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL11MouseClicked(evt);
+                FUE2MouseClicked(evt);
             }
         });
 
@@ -766,11 +788,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P16.setLayout(P16Layout);
         P16Layout.setHorizontalGroup(
             P16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL11, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(FUE2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P16Layout.setVerticalGroup(
             P16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL11, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(FUE2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P17.setBackground(new java.awt.Color(204, 255, 102));
@@ -780,12 +802,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P17.setRoundTopLeft(20);
         P17.setRoundTopRight(20);
 
-        PAL12.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL12.setText("17");
-        PAL12.addMouseListener(new java.awt.event.MouseAdapter() {
+        FUE3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FUE3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FUE3.setText("17");
+        FUE3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL12MouseClicked(evt);
+                FUE3MouseClicked(evt);
             }
         });
 
@@ -793,11 +815,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P17.setLayout(P17Layout);
         P17Layout.setHorizontalGroup(
             P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL12, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(FUE3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P17Layout.setVerticalGroup(
             P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL12, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(FUE3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P18.setBackground(new java.awt.Color(204, 255, 102));
@@ -807,12 +829,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P18.setRoundTopLeft(20);
         P18.setRoundTopRight(20);
 
-        PAL13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL13.setText("18");
-        PAL13.addMouseListener(new java.awt.event.MouseAdapter() {
+        FUE4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FUE4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FUE4.setText("18");
+        FUE4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL13MouseClicked(evt);
+                FUE4MouseClicked(evt);
             }
         });
 
@@ -820,11 +842,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P18.setLayout(P18Layout);
         P18Layout.setHorizontalGroup(
             P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL13, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(FUE4, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P18Layout.setVerticalGroup(
             P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL13, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(FUE4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P19.setBackground(new java.awt.Color(204, 255, 102));
@@ -834,12 +856,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P19.setRoundTopLeft(20);
         P19.setRoundTopRight(20);
 
-        PAL14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL14.setText("19");
-        PAL14.addMouseListener(new java.awt.event.MouseAdapter() {
+        FUE5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FUE5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FUE5.setText("19");
+        FUE5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL14MouseClicked(evt);
+                FUE5MouseClicked(evt);
             }
         });
 
@@ -847,11 +869,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P19.setLayout(P19Layout);
         P19Layout.setHorizontalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL14, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(FUE5, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P19Layout.setVerticalGroup(
             P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL14, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(FUE5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P20.setBackground(new java.awt.Color(204, 255, 102));
@@ -861,12 +883,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P20.setRoundTopLeft(20);
         P20.setRoundTopRight(20);
 
-        PAL15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL15.setText("20");
-        PAL15.addMouseListener(new java.awt.event.MouseAdapter() {
+        FUE6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FUE6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FUE6.setText("20");
+        FUE6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL15MouseClicked(evt);
+                FUE6MouseClicked(evt);
             }
         });
 
@@ -874,11 +896,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P20.setLayout(P20Layout);
         P20Layout.setHorizontalGroup(
             P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL15, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(FUE6, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P20Layout.setVerticalGroup(
             P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL15, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(FUE6, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P21.setBackground(new java.awt.Color(204, 255, 102));
@@ -888,12 +910,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P21.setRoundTopLeft(20);
         P21.setRoundTopRight(20);
 
-        PAL16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL16.setText("21");
-        PAL16.addMouseListener(new java.awt.event.MouseAdapter() {
+        FUE7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FUE7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FUE7.setText("21");
+        FUE7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL16MouseClicked(evt);
+                FUE7MouseClicked(evt);
             }
         });
 
@@ -901,11 +923,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P21.setLayout(P21Layout);
         P21Layout.setHorizontalGroup(
             P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL16, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(FUE7, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P21Layout.setVerticalGroup(
             P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL16, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(FUE7, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         P22.setBackground(new java.awt.Color(204, 255, 102));
@@ -915,11 +937,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P22.setRoundTopLeft(20);
         P22.setRoundTopRight(20);
 
-        PAL17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PAL17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PAL17.addMouseListener(new java.awt.event.MouseAdapter() {
+        FUE8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        FUE8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        FUE8.setText("22");
+        FUE8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PAL17MouseClicked(evt);
+                FUE8MouseClicked(evt);
             }
         });
 
@@ -927,11 +950,11 @@ public class CaldosAntojos extends javax.swing.JPanel {
         P22.setLayout(P22Layout);
         P22Layout.setHorizontalGroup(
             P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL17, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(FUE8, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
         P22Layout.setVerticalGroup(
             P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(PAL17, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+            .addComponent(FUE8, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -939,73 +962,38 @@ public class CaldosAntojos extends javax.swing.JPanel {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(P11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(P10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(P6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(P7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(P8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(P9, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(P19, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P18, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(12, Short.MAX_VALUE))
+                    .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -1013,27 +1001,27 @@ public class CaldosAntojos extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(16, 16, 16)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
-        getAccessibleContext().setAccessibleName("");
+        getAccessibleContext().setAccessibleDescription("");
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Caldos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Caldos1MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
+    private void HAM1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM1MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo1;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1048,9 +1036,9 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_Caldos1MouseClicked
+    }//GEN-LAST:event_HAM1MouseClicked
 
-    private void Caldos2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Caldos2MouseClicked
+    private void HAM2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM2MouseClicked
          if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo2;
             BuscarExistencia();
@@ -1066,10 +1054,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_Caldos2MouseClicked
+    }//GEN-LAST:event_HAM2MouseClicked
 
-    private void Caldos3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Caldos3MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+    private void HAM3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM3MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo3;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1084,9 +1072,9 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_Caldos3MouseClicked
+    }//GEN-LAST:event_HAM3MouseClicked
 
-    private void Caldos4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Caldos4MouseClicked
+    private void HAM4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM4MouseClicked
          if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo4;
             BuscarExistencia();
@@ -1102,10 +1090,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_Caldos4MouseClicked
+    }//GEN-LAST:event_HAM4MouseClicked
 
-    private void Caldos5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Caldos5MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
+    private void HAM5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM5MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo5;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1120,10 +1108,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_Caldos5MouseClicked
+    }//GEN-LAST:event_HAM5MouseClicked
 
-    private void PAL1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL1MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
+    private void HAM6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM6MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo6;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1138,10 +1126,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL1MouseClicked
+    }//GEN-LAST:event_HAM6MouseClicked
 
-    private void PAL2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL2MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+    private void HAM7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM7MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo7;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1156,10 +1144,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL2MouseClicked
+    }//GEN-LAST:event_HAM7MouseClicked
 
-    private void PAL3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL3MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
+    private void HAM8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM8MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo8;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1174,9 +1162,9 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL3MouseClicked
+    }//GEN-LAST:event_HAM8MouseClicked
 
-    private void PAL4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL4MouseClicked
+    private void HAM9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM9MouseClicked
        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo9;
             BuscarExistencia();
@@ -1192,10 +1180,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL4MouseClicked
+    }//GEN-LAST:event_HAM9MouseClicked
 
-    private void PAL5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL5MouseClicked
-      if ((evt.getModifiers() & 4) !=0){
+    private void HAM10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM10MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo10;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1210,10 +1198,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL5MouseClicked
+    }//GEN-LAST:event_HAM10MouseClicked
 
-    private void PAL6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL6MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
+    private void HAM11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM11MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo11;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1228,64 +1216,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL6MouseClicked
+    }//GEN-LAST:event_HAM11MouseClicked
 
-    private void PAL7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL7MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo12;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P12.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-          }else{
-            codigooreden = codigo12;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P12.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-       }
-    }//GEN-LAST:event_PAL7MouseClicked
-
-    private void PAL8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL8MouseClicked
+    private void FUE1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE1MouseClicked
        if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo13;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P13.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-          }else{
-            codigooreden = codigo13;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P13.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-       }
-    }//GEN-LAST:event_PAL8MouseClicked
-
-    private void PAL9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL9MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo14;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P14.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-          }else{
-            codigooreden = codigo14;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P14.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-       }
-    }//GEN-LAST:event_PAL9MouseClicked
-
-    private void PAL10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL10MouseClicked
-      if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo15;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1300,10 +1234,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL10MouseClicked
+    }//GEN-LAST:event_FUE1MouseClicked
 
-    private void PAL11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL11MouseClicked
-      if ((evt.getModifiers() & 4) !=0){
+    private void FUE2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE2MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo16;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1318,9 +1252,9 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL11MouseClicked
+    }//GEN-LAST:event_FUE2MouseClicked
 
-    private void PAL12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL12MouseClicked
+    private void FUE3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE3MouseClicked
         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo17;
             BuscarExistencia();
@@ -1336,10 +1270,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL12MouseClicked
+    }//GEN-LAST:event_FUE3MouseClicked
 
-    private void PAL13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL13MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+    private void FUE4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE4MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo18;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1354,10 +1288,64 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL13MouseClicked
+    }//GEN-LAST:event_FUE4MouseClicked
 
-    private void PAL14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL14MouseClicked
-         if ((evt.getModifiers() & 4) !=0){
+    private void HAM12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM12MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo12;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P12.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo12;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P12.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_HAM12MouseClicked
+
+    private void HAM13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM13MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo13;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P13.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo13;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P13.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_HAM13MouseClicked
+
+    private void HAM14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM14MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo14;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P14.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo14;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P14.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_HAM14MouseClicked
+
+    private void FUE5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE5MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo19;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1372,10 +1360,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL14MouseClicked
+    }//GEN-LAST:event_FUE5MouseClicked
 
-    private void PAL15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL15MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+    private void FUE6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE6MouseClicked
+         if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo20;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1390,10 +1378,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL15MouseClicked
+    }//GEN-LAST:event_FUE6MouseClicked
 
-    private void PAL16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL16MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
+    private void FUE7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE7MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo21;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1408,10 +1396,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.setRepeats(false);
             timer.start();
        }
-    }//GEN-LAST:event_PAL16MouseClicked
+    }//GEN-LAST:event_FUE7MouseClicked
 
-    private void PAL17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PAL17MouseClicked
- /*       if ((evt.getModifiers() & 4) !=0){
+    private void FUE8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FUE8MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo22;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1425,90 +1413,107 @@ public class CaldosAntojos extends javax.swing.JPanel {
             P22.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
-    }//GEN-LAST:event_PAL17MouseClicked
-  private void nombres(){
-    ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasCaldos();
+       }
+    }//GEN-LAST:event_FUE8MouseClicked
+ 
+    
+    private void nombres(){
+    ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasHambuerguesas();
         for (int i = 0; i < result.size(); i++) {
           int codigo = result.get(i).getCodigo();
           
-            if (1 == codigo) {
+            if (17 == codigo) {
              descripcion1 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_1 = result.get(i).getDescripcion2().toUpperCase(); Precio1 = result.get(i).getPrecio();codigo1 = result.get(i).getCodigo();
             }
-            else if (2 == codigo){
+            else if (18 == codigo){
              descripcion2 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_2 = result.get(i).getDescripcion2().toUpperCase(); Precio2 = result.get(i).getPrecio();codigo2 = result.get(i).getCodigo();
             }
-             else if (3 == codigo){
+             else if (19 == codigo){
              descripcion3 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_3 = result.get(i).getDescripcion2().toUpperCase(); Precio3 = result.get(i).getPrecio();codigo3 = result.get(i).getCodigo();
             }
-             else if (4== codigo){
+             else if (20== codigo){
              descripcion4 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_4 = result.get(i).getDescripcion2().toUpperCase(); Precio4 = result.get(i).getPrecio();codigo4 = result.get(i).getCodigo();
             }
-             else if (5== codigo){
+             else if (21== codigo){
              descripcion5 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_5 = result.get(i).getDescripcion2().toUpperCase(); Precio5 = result.get(i).getPrecio();codigo5 = result.get(i).getCodigo();
             }
-             else if (6== codigo){
+             else if (22== codigo){
              descripcion6 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_6 = result.get(i).getDescripcion2().toUpperCase(); Precio6 = result.get(i).getPrecio();codigo6 = result.get(i).getCodigo();
             }
-             else if (7== codigo){
+             else if (23== codigo){
              descripcion7 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_7 = result.get(i).getDescripcion2().toUpperCase(); Precio7 = result.get(i).getPrecio();codigo7 = result.get(i).getCodigo();
             }
-             else if (8== codigo){
+             else if (24== codigo){
              descripcion8 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_8 = result.get(i).getDescripcion2().toUpperCase(); Precio8 = result.get(i).getPrecio();codigo8 = result.get(i).getCodigo();
             }
-             else if (9== codigo){
+             else if (25== codigo){
              descripcion9 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_9 = result.get(i).getDescripcion2().toUpperCase(); Precio9 = result.get(i).getPrecio();codigo9 = result.get(i).getCodigo();
             }
-             else if (10== codigo){
+             else if (26== codigo){
              descripcion10 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_10 = result.get(i).getDescripcion2().toUpperCase(); Precio10 = result.get(i).getPrecio();codigo10 = result.get(i).getCodigo();
             }
-             else if (11== codigo){
+             else if (27== codigo){
              descripcion11 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_11 = result.get(i).getDescripcion2().toUpperCase(); Precio11 = result.get(i).getPrecio();codigo11 = result.get(i).getCodigo();
             }
-             else if (12== codigo){
+             else if (115== codigo){
              descripcion12 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_12 = result.get(i).getDescripcion2().toUpperCase(); Precio12 = result.get(i).getPrecio();codigo12 = result.get(i).getCodigo();
             }
-             else if (13== codigo){
+             else if (116== codigo){
              descripcion13 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_13 = result.get(i).getDescripcion2().toUpperCase(); Precio13 = result.get(i).getPrecio();codigo13 = result.get(i).getCodigo();
             }
-             else if (14== codigo){
+             else if (117== codigo){
              descripcion14 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_14 = result.get(i).getDescripcion2().toUpperCase(); Precio14 = result.get(i).getPrecio();codigo14 = result.get(i).getCodigo();
             }
-             else if (15== codigo){
+             else if (28== codigo){
              descripcion15 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_15 = result.get(i).getDescripcion2().toUpperCase(); Precio15 = result.get(i).getPrecio();codigo15 = result.get(i).getCodigo();
             }
-             else if (16== codigo){
+            else if (29== codigo){
              descripcion16 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_16 = result.get(i).getDescripcion2().toUpperCase(); Precio16 = result.get(i).getPrecio();codigo16 = result.get(i).getCodigo();
             }
-             else if (111== codigo){
-             descripcion17 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_17 = result.get(i).getDescripcion2().toUpperCase(); Precio17 = result.get(i).getPrecio();codigo17 = result.get(i).getCodigo();
+            else if (30== codigo){
+             descripcion17 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_17 = result.get(i).getDescripcion2().toUpperCase(); Precio17= result.get(i).getPrecio();codigo17 = result.get(i).getCodigo();
             }
-             else if (112== codigo){
+            else if (31== codigo){
              descripcion18 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_18 = result.get(i).getDescripcion2().toUpperCase(); Precio18 = result.get(i).getPrecio();codigo18 = result.get(i).getCodigo();
             }
-             else if (113== codigo){
+            else if (174== codigo){
              descripcion19 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_19 = result.get(i).getDescripcion2().toUpperCase(); Precio19 = result.get(i).getPrecio();codigo19 = result.get(i).getCodigo();
             }
-             else if (114== codigo){
+            else if (175== codigo){
              descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
             }
-            else if (172== codigo){
-             descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
+            else if (187== codigo){
+             descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21= result.get(i).getCodigo();
             }
-            /*else if (173== codigo){
+            else if (188== codigo){
              descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
-            }*/
+            }
         }
   }
-    
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Caldos1;
-    private javax.swing.JLabel Caldos2;
-    private javax.swing.JLabel Caldos3;
-    private javax.swing.JLabel Caldos4;
-    private javax.swing.JLabel Caldos5;
+    private javax.swing.JLabel FUE1;
+    private javax.swing.JLabel FUE2;
+    private javax.swing.JLabel FUE3;
+    private javax.swing.JLabel FUE4;
+    private javax.swing.JLabel FUE5;
+    private javax.swing.JLabel FUE6;
+    private javax.swing.JLabel FUE7;
+    private javax.swing.JLabel FUE8;
+    private javax.swing.JLabel HAM1;
+    private javax.swing.JLabel HAM10;
+    private javax.swing.JLabel HAM11;
+    private javax.swing.JLabel HAM12;
+    private javax.swing.JLabel HAM13;
+    private javax.swing.JLabel HAM14;
+    private javax.swing.JLabel HAM2;
+    private javax.swing.JLabel HAM3;
+    private javax.swing.JLabel HAM4;
+    private javax.swing.JLabel HAM5;
+    private javax.swing.JLabel HAM6;
+    private javax.swing.JLabel HAM7;
+    private javax.swing.JLabel HAM8;
+    private javax.swing.JLabel HAM9;
     private ClassAngels.PanelRound P1;
     private ClassAngels.PanelRound P10;
     private ClassAngels.PanelRound P11;
@@ -1531,73 +1536,57 @@ public class CaldosAntojos extends javax.swing.JPanel {
     private ClassAngels.PanelRound P7;
     private ClassAngels.PanelRound P8;
     private ClassAngels.PanelRound P9;
-    private javax.swing.JLabel PAL1;
-    private javax.swing.JLabel PAL10;
-    private javax.swing.JLabel PAL11;
-    private javax.swing.JLabel PAL12;
-    private javax.swing.JLabel PAL13;
-    private javax.swing.JLabel PAL14;
-    private javax.swing.JLabel PAL15;
-    private javax.swing.JLabel PAL16;
-    private javax.swing.JLabel PAL17;
-    private javax.swing.JLabel PAL2;
-    private javax.swing.JLabel PAL3;
-    private javax.swing.JLabel PAL4;
-    private javax.swing.JLabel PAL5;
-    private javax.swing.JLabel PAL6;
-    private javax.swing.JLabel PAL7;
-    private javax.swing.JLabel PAL8;
-    private javax.swing.JLabel PAL9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
-
-    private void Etiquetas() {
+ private void Etiquetas() {
 
         String texto1 = "<html><center><body>"+descripcion1+"<br>"+descripcion2_1+"<br><font color='RED'>Q"+Precio1+"</font></body></center></html>";
-        Caldos1.setText(texto1);
+        HAM1.setText(texto1);
         String texto2 ="<html><center><body>"+descripcion2+"<br>"+descripcion2_2+"<br><font color='RED'>Q"+Precio2+"</font></body></center></html>";
-        Caldos2.setText(texto2);
+        HAM2.setText(texto2);
         String texto3 ="<html><center><body>"+descripcion3+"<br>"+descripcion2_3+"<br><font color='RED'>Q"+Precio3+"</font></body></center></html>";
-        Caldos3.setText(texto3);
+        HAM3.setText(texto3);
         String texto4 ="<html><center><body>"+descripcion4+"<br>"+descripcion2_4+"<br><font color='RED'>Q"+Precio4+"</font></body></center></html>";
-        Caldos4.setText(texto4);
+        HAM4.setText(texto4);
         String texto5 ="<html><center><body>"+descripcion5+"<br>"+descripcion2_5+"<br><font color='RED'>Q"+Precio5+"</font></body></center></html>";
-        Caldos5.setText(texto5);
+        HAM5.setText(texto5);
         String texto6 ="<html><center><body>"+descripcion6+"<br>"+descripcion2_6+"<br><font color='RED'>Q"+Precio6+"</font></body></center></html>";
-        PAL1.setText(texto6);
+        HAM6.setText(texto6);
         String texto7 ="<html><center><body>"+descripcion7+"<br>"+descripcion2_7+"<br><font color='RED'>Q"+Precio7+"</font></body></center></html>";
-        PAL2.setText(texto7);
+        HAM7.setText(texto7);
         String texto8 ="<html><center><body>"+descripcion8+"<br>"+descripcion2_8+"<br><font color='RED'>Q"+Precio8+"</font></body></center></html>";
-        PAL3.setText(texto8);
+        HAM8.setText(texto8);
         String texto9 ="<html><center><body>"+descripcion9+"<br>"+descripcion2_9+"<br><font color='RED'>Q"+Precio9+"</font></body></center></html>";
-        PAL4.setText(texto9);
+        HAM9.setText(texto9);
         String texto10 ="<html><center><body>"+descripcion10+"<br>"+descripcion2_10+"<br><font color='RED'>Q"+Precio10+"</font></body></center></html>";
-        PAL5.setText(texto10);
+        HAM10.setText(texto10);
         String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio11+"</font></body></center></html>";
-        PAL6.setText(texto11);
+        HAM11.setText(texto11);
         String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio12+"</font></body></center></html>";
-        PAL7.setText(texto12);
+        HAM12.setText(texto12);
         String texto13 ="<html><center><body>"+descripcion13+"<br>"+descripcion2_13+"<br><font color='RED'>Q"+Precio13+"</font></body></center></html>";
-        PAL8.setText(texto13);
+        HAM13.setText(texto13);
         String texto14 ="<html><center><body>"+descripcion14+"<br>"+descripcion2_14+"<br><font color='RED'>Q"+Precio14+"</font></body></center></html>";
-        PAL9.setText(texto14);
+        HAM14.setText(texto14);
         String texto15 ="<html><center><body>"+descripcion15+"<br>"+descripcion2_15+"<br><font color='RED'>Q"+Precio15+"</font></body></center></html>";
-        PAL10.setText(texto15);
+        FUE1.setText(texto15);
         String texto16 ="<html><center><body>"+descripcion16+"<br>"+descripcion2_16+"<br><font color='RED'>Q"+Precio16+"</font></body></center></html>";
-        PAL11.setText(texto16);
+        FUE2.setText(texto16);
         String texto17 ="<html><center><body>"+descripcion17+"<br>"+descripcion2_17+"<br><font color='RED'>Q"+Precio17+"</font></body></center></html>";
-        PAL12.setText(texto17);
+        FUE3.setText(texto17);
         String texto18 ="<html><center><body>"+descripcion18+"<br>"+descripcion2_18+"<br><font color='RED'>Q"+Precio18+"</font></body></center></html>";
-        PAL13.setText(texto18);
-        String texto19 ="<html><center><body>"+descripcion19+"<br>"+descripcion2_19+"<br><font color='RED'>Q"+Precio19+"</font></body></center></html>";
-        PAL14.setText(texto19);
-        String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
-        PAL15.setText(texto20);
+        FUE4.setText(texto18);
+         String texto19 ="<html><center><body>"+descripcion19+"<br>"+descripcion2_19+"<br><font color='RED'>Q"+Precio19+"</font></body></center></html>";
+        FUE5.setText(texto19);
+         String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
+        FUE6.setText(texto20);
         String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
-        PAL16.setText(texto21);
-        //String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
-        //PAL17.setText(texto22);
+        FUE7.setText(texto21);
+        String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
+        FUE8.setText(texto22);
     }
 
+
 }
+
