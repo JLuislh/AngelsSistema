@@ -120,6 +120,44 @@ public static ArrayList<InsertarProducto> ProductosVentas(String Fecha) {
         return list;
 } 
     
+
+    
+    
+public static ArrayList<InsertarProducto> ProductosVentasParaiso(String Fechain, String FechaFin) {
+        return ventaParaiso("SELECT v.codigo,concat(p.DESCRIPCION1 ,' ', p.DESCRIPCION2) as Descripcion,p.PRECIO,sum(v.CANTIDAD) as CANTIDAD,sum(v.TOTAL) as TOTAL\n" +
+"FROM ventas v inner join productos p on v.CODIGO = p.CODIGO join ordenes o on v.NOORDEN = o.NOORDEN where  fecha between '"+Fechain+" 02:00:00'  and  '"+FechaFin+" 02:00:00'  group by  v.codigo,p.DESCRIPCION1,p.DESCRIPCION2,p.PRECIO  order by codigo;");    
+ }  
+
+    private static ArrayList<InsertarProducto> ventaParaiso(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCodigo(rs.getInt("CODIGO"));
+                 t.setDescripcion(rs.getString("DESCRIPCION").toUpperCase());
+                 t.setCantidad(rs.getInt("CANTIDAD"));
+                 t.setPrecio(rs.getDouble("PRECIO"));
+                 t.setTotal(rs.getDouble("TOTAL"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA ATABLA "+e);
+            return null;
+        } 
+        return list;
+}     
+    
+    
+
+    
+    
 public static ArrayList<InsertarProducto> ProductosVentasDetallado(String Fecha) {
         return ventaDeta("SELECT v.codigo,concat(p.DESCRIPCION1 ,' ', p.DESCRIPCION2) as DESCRIPCION ,p.PRECIO,v.CANTIDAD,v.TOTAL,o.FECHA \n" +
 "FROM ventas v inner join productos p on v.CODIGO = p.CODIGO join ordenes o on v.NOORDEN = o.NOORDEN where  date_format(fecha,\"%d/%m/%Y\" )  = '"+Fecha+"' order by codigo;");    
@@ -151,6 +189,41 @@ public static ArrayList<InsertarProducto> ProductosVentasDetallado(String Fecha)
         } 
         return list;
 }      
+    
+    
+    
+public static ArrayList<InsertarProducto> ProductosVentasDetalladoParaiso(String Fechain, String FechaFin) {
+        return ventaDetaParaiso("SELECT v.codigo,concat(p.DESCRIPCION1 ,' ', p.DESCRIPCION2) as DESCRIPCION ,p.PRECIO,v.CANTIDAD,v.TOTAL,o.FECHA \n" +
+"FROM ventas v inner join productos p on v.CODIGO = p.CODIGO join ordenes o on v.NOORDEN = o.NOORDEN where  fecha between '"+Fechain+" 02:00:00'  and  '"+FechaFin+" 02:00:00' order by codigo;");    
+ }  
+
+    private static ArrayList<InsertarProducto> ventaDetaParaiso(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCodigo(rs.getInt("CODIGO"));
+                 t.setDescripcion(rs.getString("DESCRIPCION").toUpperCase());
+                 t.setCantidad(rs.getInt("CANTIDAD"));
+                 t.setPrecio(rs.getDouble("PRECIO"));
+                 t.setTotal(rs.getDouble("TOTAL"));
+                 t.setFecha(rs.getString("FECHA"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA ATABLA "+e);
+            return null;
+        } 
+        return list;
+}          
+    
     
  public static ArrayList<InsertarProducto> OrdenesParaiso(String Fecha1, String Fecha2) {
      System.out.println(Fecha1 +"----"+ Fecha2);

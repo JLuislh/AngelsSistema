@@ -364,7 +364,7 @@ public class Administracion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void T1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T1MouseClicked
-        AdVentasPorDia op3 = new AdVentasPorDia();
+        AdVentasPorDiaParaiso op3 = new AdVentasPorDiaParaiso();
         op3.setSize(1025, 635);
         op3.setLocation(0, 0);
         PANEL.removeAll();
