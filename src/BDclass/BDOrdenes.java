@@ -152,10 +152,15 @@ public static ArrayList<InsertarProducto> ProductosVentasDetallado(String Fecha)
         return list;
 }      
     
-  public static ArrayList<InsertarProducto> Ordenes(String Fecha) {
+ public static ArrayList<InsertarProducto> OrdenesParaiso(String Fecha1, String Fecha2) {
+     System.out.println(Fecha1 +"----"+ Fecha2);
+        return Order("select noorden,Total,Fecha from ordenes where estado = 2 and fecha between '"+Fecha1+" 02:00:00'  and  '"+Fecha2+" 02:00:00'");    
+ } 
+    
+    public static ArrayList<InsertarProducto> Ordenes(String Fecha) {
         return Order("select noorden,Total,Fecha from ordenes where estado = 2 and date_format(fecha,'%d/%m/%Y')  ='"+Fecha+"'");    
  }  
-
+ 
     private static ArrayList<InsertarProducto> Order(String sql){
     ArrayList<InsertarProducto> list = new ArrayList<InsertarProducto>();
     BDConexion conecta = new BDConexion();
@@ -182,6 +187,37 @@ public static ArrayList<InsertarProducto> ProductosVentasDetallado(String Fecha)
     
     
     
+public static InsertarProducto BuscarTotalParaiso(String a,String b) throws SQLException{
+        return buscarTotalParaiso(a,b ,null);
+    }
+
+public static InsertarProducto buscarTotalParaiso(String a,String b, InsertarProducto c) throws SQLException {
+             
+            BDConexion conecta = new BDConexion();
+            Connection cn = conecta.getConexion();
+            PreparedStatement ps = null;
+            ps = cn.prepareStatement("select SUM(TOTAL) AS TOTAL,SUM(efectivo) AS efectivo,SUM(Tarjeta) AS Tarjeta,SUM(transferencia) AS transferencia, count(*) as ORDENES from ordenes where estado = 2 and fecha between '"+a+" 02:00:00'  and  '"+b+" 02:00:00'");
+            ResultSet rs = ps.executeQuery();
+            if (rs.next())
+            {
+               if (c==null)
+               {c = new InsertarProducto(){};}
+               c.setNoOrden(rs.getInt("ORDENES"));
+               c.setTotal(rs.getDouble("TOTAL"));
+               c.setEfectivo(rs.getDouble("efectivo"));
+               c.setTransferencia(rs.getDouble("transferencia"));
+               c.setTarjeta(rs.getDouble("Tarjeta"));
+               
+            }
+            cn.close();
+            ps.close();
+            return c;
+}
+
+
+
+
+
 public static InsertarProducto BuscarTotal(String a) throws SQLException{
         return buscarTotal(a ,null);
     }

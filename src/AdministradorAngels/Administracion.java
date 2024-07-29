@@ -401,7 +401,7 @@ public class Administracion extends javax.swing.JFrame {
     }//GEN-LAST:event_T4MouseClicked
 
     private void T2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T2MouseClicked
-        AdTotalEnCaja op4 = new AdTotalEnCaja();
+        AdTotalEnCajaParaiso op4 = new AdTotalEnCajaParaiso();
         op4.setSize(1025, 635);
         op4.setLocation(0, 0);
         PANEL.removeAll();

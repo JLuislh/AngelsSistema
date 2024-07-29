@@ -2,17 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Inicio;
+package InicioElParaiso;
 
+import Inicio.*;
 import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import SubPanelesSantaInes.BebidasSinAlcohol;
 import SubPanelesParaiso.BotellasElParaiso;
-import SubPanelesParaiso.CaldosAntojosParaiso;
-import SubPanelesParaiso.ConAlcoholElParaiso;
-import SubPanelesParaiso.ExtrasParaiso;
 import SubPanelesSantaInes.CaldosAntojos;
 import SubPanelesSantaInes.Ceviches;
 import SubPanelesSantaInes.ConAlcohol;
@@ -40,7 +38,7 @@ import net.sf.jasperreports.engine.util.JRLoader;
  *
  * @author jluis
  */
-public class MenuSeguimiento extends javax.swing.JFrame {
+public class MenuSeguimientoParaiso extends javax.swing.JFrame {
      public static int noorden;
      int nomesa;
      int tipomenu = 1;
@@ -50,11 +48,11 @@ public class MenuSeguimiento extends javax.swing.JFrame {
      * @param a
      * @param b
      */
-    public MenuSeguimiento(int a,int b) {
+    public MenuSeguimientoParaiso(int a,int b) {
         initComponents();
         setLocationRelativeTo(null);
         this.nomesa = b;
-        MenuSeguimiento.noorden = a;
+        MenuSeguimientoParaiso.noorden = a;
         
         
         Ordentxt.setText(String.valueOf(a));
@@ -161,6 +159,8 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         Titulo8 = new javax.swing.JLabel();
         Menu8 = new ClassAngels.PanelRound();
         Titulo7 = new javax.swing.JLabel();
+        Menu9 = new ClassAngels.PanelRound();
+        Titulo9 = new javax.swing.JLabel();
         PanelMenu = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         Pedidos = new javax.swing.JTable();
@@ -178,7 +178,6 @@ public class MenuSeguimiento extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1170, 640));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1060, 643));
@@ -352,7 +351,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         Menu7.setLayout(Menu7Layout);
         Menu7Layout.setHorizontalGroup(
             Menu7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Titulo8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+            .addComponent(Titulo8, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         Menu7Layout.setVerticalGroup(
             Menu7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -385,6 +384,31 @@ public class MenuSeguimiento extends javax.swing.JFrame {
             .addComponent(Titulo7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
+        Menu9.setBackground(new java.awt.Color(255, 204, 102));
+        Menu9.setPreferredSize(new java.awt.Dimension(140, 50));
+        Menu9.setRoundTopLeft(20);
+        Menu9.setRoundTopRight(20);
+
+        Titulo9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Titulo9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Titulo9.setText("SHOT");
+        Titulo9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Titulo9MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Menu9Layout = new javax.swing.GroupLayout(Menu9);
+        Menu9.setLayout(Menu9Layout);
+        Menu9Layout.setHorizontalGroup(
+            Menu9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Titulo9, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        Menu9Layout.setVerticalGroup(
+            Menu9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Titulo9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -403,8 +427,10 @@ public class MenuSeguimiento extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Menu6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Menu7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Menu7, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Menu9, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Menu8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -418,6 +444,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
             .addComponent(Menu6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addComponent(Menu8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Menu9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, -1));
@@ -578,7 +605,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         
     
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    CaldosAntojosParaiso op1 = new CaldosAntojosParaiso(noorden,tipomenu);
+    CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -620,7 +647,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo4MouseClicked
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
-    ConAlcoholElParaiso op1 = new ConAlcoholElParaiso(noorden,tipomenu);
+    ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -665,7 +692,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void Titulo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo8MouseClicked
-    ExtrasParaiso op1 = new ExtrasParaiso(noorden,tipomenu);
+    Extras op1 = new Extras(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -673,6 +700,10 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     PanelMenu.revalidate();
     PanelMenu.repaint();
     }//GEN-LAST:event_Titulo8MouseClicked
+
+    private void Titulo9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo9MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Titulo9MouseClicked
 
     /**
      * @param args the command line arguments
@@ -691,14 +722,22 @@ public class MenuSeguimiento extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenuSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuSeguimientoParaiso.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenuSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuSeguimientoParaiso.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenuSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuSeguimientoParaiso.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenuSeguimiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuSeguimientoParaiso.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -725,6 +764,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     private ClassAngels.PanelRound Menu6;
     private ClassAngels.PanelRound Menu7;
     private ClassAngels.PanelRound Menu8;
+    private ClassAngels.PanelRound Menu9;
     private javax.swing.JTextField Ordentxt;
     private javax.swing.JPanel PanelMenu;
     public static javax.swing.JTable Pedidos;
@@ -735,6 +775,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     private javax.swing.JLabel Titulo6;
     private javax.swing.JLabel Titulo7;
     private javax.swing.JLabel Titulo8;
+    private javax.swing.JLabel Titulo9;
     public static javax.swing.JTextField Total;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

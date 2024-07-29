@@ -12,6 +12,9 @@ import static Inicio.Menu.noorden;
 import static Inicio.MenuSeguimiento.noorden;
 import SubPanelesSantaInes.BebidasSinAlcohol;
 import SubPanelesParaiso.BotellasElParaiso;
+import SubPanelesParaiso.CaldosAntojosParaiso;
+import SubPanelesParaiso.ConAlcoholElParaiso;
+import SubPanelesParaiso.ExtrasParaiso;
 import SubPanelesSantaInes.Botellas;
 import SubPanelesSantaInes.CaldosAntojos;
 import SubPanelesSantaInes.Ceviches;
@@ -560,7 +563,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
  }
     
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
+    CaldosAntojosParaiso op1 = new CaldosAntojosParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -602,7 +605,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo4MouseClicked
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
-    ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
+    ConAlcoholElParaiso op1 = new ConAlcoholElParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -649,7 +652,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void Titulo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo8MouseClicked
-    Extras op1 = new Extras(noorden,tipomenu);
+    ExtrasParaiso op1 = new ExtrasParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
