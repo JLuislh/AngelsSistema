@@ -8,6 +8,7 @@ import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
 import javax.swing.table.TableColumn;
 
 /**
@@ -15,8 +16,9 @@ import javax.swing.table.TableColumn;
  * @author jluis
  */
 public class AdDescargasInventario extends javax.swing.JPanel {
-     int idproductosinve;
+     int idproductosinve =0;
      int codigo;
+     String DescripcionProducto;
     /**
      * Creates new form AdDescargasInventario
      */
@@ -31,8 +33,7 @@ public class AdDescargasInventario extends javax.swing.JPanel {
         Descripcion.setText("");
         cantidaddescarga.setText("");
         medida.setText("");
-        
-    
+        idproductosinve = 0;
     
     }
     
@@ -67,7 +68,7 @@ public class AdDescargasInventario extends javax.swing.JPanel {
              TableColumn columna1 = Producto.getColumn("CODIGO");
              columna1.setPreferredWidth(-20);
              TableColumn columna2 = Producto.getColumn("DESCRIPCION");
-             columna2.setPreferredWidth(250);
+             columna2.setPreferredWidth(150);
             
      }
      
@@ -75,6 +76,7 @@ public class AdDescargasInventario extends javax.swing.JPanel {
      
      private void ListarProductosDescarga(){
         int codigo = (int) (Producto.getModel().getValueAt(Producto.getSelectedRow(), 0));
+        DescripcionProducto = (String) (Producto.getModel().getValueAt(Producto.getSelectedRow(), 1));
         ArrayList<InsertarProducto> result = BDIngresos.ListarProductosDescargasVentas(codigo);
         RecargarTablaDesc(result);  
     }
@@ -158,10 +160,10 @@ public class AdDescargasInventario extends javax.swing.JPanel {
             p.setCantidad(Integer.parseInt(cantidaddescarga.getText()));
             p.setUMedida(medida.getText());
             BDProductos.InsertarProductoDescargaInventario(p);
-            JOptionPane.showMessageDialog(null, "PRODUCTO A DESCARGAR ASIGNADO A "+Descripcion.getText());
+            JOptionPane.showMessageDialog(null, Descripcion.getText()+" AGREGADO DESCARGAS DE "+DescripcionProducto);
+            ListarProductosDescarga();
             ListarInventario();
             limpiar();
-            ListarProductosInventario();
         } catch (Exception ex) {
             //Logger.getLogger(ConsultaPedidos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, ex);
@@ -382,7 +384,9 @@ public class AdDescargasInventario extends javax.swing.JPanel {
     }//GEN-LAST:event_PROINVEMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       guardar();
+       if(idproductosinve == 0 ){JOptionPane.showMessageDialog(null, "SELECCIONES UN PRODUCTO DE INVENTARIO");}
+       else{ 
+       guardar();}
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
