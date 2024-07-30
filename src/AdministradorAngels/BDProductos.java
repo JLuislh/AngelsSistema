@@ -293,6 +293,22 @@ private static ArrayList<InsertarProducto> SQL3(String sql){
         return t;
     }
     
+     public static InsertarProducto InsertarProductoDescargaInventario(InsertarProducto t) throws SQLException{
+        BDConexion conecta = new BDConexion();
+        Connection con = conecta.getConexion();
+        PreparedStatement smtp = null;
+        smtp =con.prepareStatement("insert into productosdescargas (codigo,idproductosinve,cantidadout,unidad_medida) values(?,?,1,CURRENT_TIMESTAMP)");
+        try {
+         smtp.setInt(1,t.getCodigo());
+         smtp.setInt(2,t.getIdregreso());
+         smtp.executeUpdate();
+     } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "CUAL ERROR = "+e);}
+       con.close();
+       smtp.close(); 
+        return t;
+    }
+    
     
     
     
