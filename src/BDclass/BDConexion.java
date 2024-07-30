@@ -24,7 +24,7 @@ public class BDConexion {
    public static final String USER =   "angels";//"SuperElrey";
    public static final String CLAVE =  "Coast@cm";// 
      
-    public Connection getConexion(){
+   public Connection getConexion(){
         Connection con = null;
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
