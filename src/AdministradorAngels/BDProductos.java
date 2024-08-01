@@ -297,10 +297,12 @@ private static ArrayList<InsertarProducto> SQL3(String sql){
         BDConexion conecta = new BDConexion();
         Connection con = conecta.getConexion();
         PreparedStatement smtp = null;
-        smtp =con.prepareStatement("insert into productosdescargas (codigo,idproductosinve,cantidadout,unidad_medida) values(?,?,1,CURRENT_TIMESTAMP)");
+        smtp =con.prepareStatement("insert into productosdescargas (codigo,idproductosinve,cantidadout,unidad_medida) values(?,?,?,?)");
         try {
          smtp.setInt(1,t.getCodigo());
          smtp.setInt(2,t.getIdregreso());
+         smtp.setInt(3,t.getCantidad());
+         smtp.setString(4,t.getUMedida());
          smtp.executeUpdate();
      } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "CUAL ERROR = "+e);}
@@ -309,6 +311,24 @@ private static ArrayList<InsertarProducto> SQL3(String sql){
         return t;
     }
     
+     
+      public static InsertarProducto InsertarGastos(InsertarProducto t) throws SQLException{
+        BDConexion conecta = new BDConexion();
+        Connection con = conecta.getConexion();
+        PreparedStatement smtp = null;
+        smtp =con.prepareStatement("insert into gastosdiarios(descripciongasto,precio,fecha,cantidad) values(?,?,?,?)");
+        try {
+         smtp.setString(1,t.getDescripcion());
+         smtp.setDouble(2,t.getPrecio());
+         smtp.setString(3, t.getFecha());
+         smtp.setInt(4, t.getCantidad());
+         smtp.executeUpdate();
+     } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "CUAL ERROR = "+e);}
+       con.close();
+       smtp.close(); 
+        return t;
+    }
     
     
     

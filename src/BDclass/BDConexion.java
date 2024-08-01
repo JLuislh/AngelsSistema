@@ -18,8 +18,8 @@ public class BDConexion {
 
     //public static final String URL = "jdbc:mysql://140.84.178.126:3306/angels?useTimezone=true&serverTimezone=UTC"; //SERVIDOR ORACLE CLOUD
   // public static final String URL = "jdbc:mysql://26.84.78.101:3306/angels?useTimezone=true&serverTimezone=UTC";//Maquina Angels Santa Ines
-    //public static final String URL = "jdbc:mysql://26.74.177.186:3306/angels?useTimezone=true&serverTimezone=UTC";//Maquina Angels El Paraiso
-   public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
+   public static final String URL = "jdbc:mysql://26.74.177.186:3306/angels?useTimezone=true&serverTimezone=UTC";//Maquina Angels El Paraiso
+   //public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//administrador
    //public static final String URL = "jdbc:mysql://26.247.51.34:3306/angels?useTimezone=true&serverTimezone=UTC";// Maquina San Luis
    public static final String USER =   "angels";//"SuperElrey";
    public static final String CLAVE =  "Coast@cm";// 
@@ -31,7 +31,7 @@ public class BDConexion {
             con = (Connection) DriverManager.getConnection(URL, USER, CLAVE);
         }catch(Exception e){
             System.out.println("Error: " + e.getMessage());
-            JOptionPane.showMessageDialog(null,"ERROR GRAVE CONTACTE AL ADMINISTRADOR DEL SISTEMA");
+            JOptionPane.showMessageDialog(null,"ERROR CONTACTE CON EL ADMINISTRADOR DEL SISTEMA");
         }
         return con;
     }

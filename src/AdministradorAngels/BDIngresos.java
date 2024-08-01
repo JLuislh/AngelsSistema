@@ -503,7 +503,66 @@ public static ArrayList<InsertarProducto>ListadeIngresos (int a) {
         } 
         return list;
 }      
+  
     
+ public static ArrayList<InsertarProducto> ListarGastos (String a) {
+        return gasto("SELECT DESCRIPCIONGASTO,PRECIO,CANTIDAD,FECHA FROM GASTOSDIARIOS WHERE date_format(FECHA,'%d/%m/%Y') = '"+a+"'");    
+ }  
+
+    private static ArrayList<InsertarProducto> gasto(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setDescripcion(rs.getString("DESCRIPCIONGASTO").toUpperCase());
+                 t.setTotal(rs.getDouble("PRECIO"));
+                 t.setCantidad(rs.getInt("CANTIDAD"));
+                 t.setFecha(rs.getString("FECHA"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA TABLA "+e);
+            return null;
+        } 
+        return list;
+}     
+    
+    
+
+ public static ArrayList<InsertarProducto> ListarGastosTotal (String a) {
+        return gastototal("SELECT DESCRIPCIONGASTO,PRECIO FROM GASTOSDIARIOS WHERE date_format(FECHA,'%d/%m/%Y') = '"+a+"'");    
+ }  
+
+    private static ArrayList<InsertarProducto> gastototal(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setDescripcion(rs.getString("DESCRIPCIONGASTO").toUpperCase());
+                 t.setTotal(rs.getDouble("PRECIO"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA TABLA "+e);
+            return null;
+        } 
+        return list;
+}      
+        
     
 
     
