@@ -314,7 +314,12 @@ public class AdGastos extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      GuardarGastos();
+     
+        if(DESCRIPCION.getText().compareTo("")!=0 && CANTIDAD.getText().compareTo("")!=0 && 
+                TOTAL.getText().compareTo("")!=0 && FECHAIN != null){
+            GuardarGastos();
+        }else{ JOptionPane.showMessageDialog(null, "INGRESE TODO LOS DATOS");}
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void DESCRIPCIONActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DESCRIPCIONActionPerformed
