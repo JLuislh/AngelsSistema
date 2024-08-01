@@ -1107,6 +1107,7 @@ public class ConAlcoholElParaiso extends javax.swing.JPanel {
 
         CER28.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CER28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CER28.setText("38");
         CER28.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CER28MouseClicked(evt);
@@ -1137,6 +1138,7 @@ public class ConAlcoholElParaiso extends javax.swing.JPanel {
 
         DRIN1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DRIN1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DRIN1.setText("11");
         DRIN1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DRIN1MouseClicked(evt);
@@ -1816,7 +1818,7 @@ public class ConAlcoholElParaiso extends javax.swing.JPanel {
     }//GEN-LAST:event_CER10MouseClicked
 
     private void DRIN1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN1MouseClicked
-/*        if ((evt.getModifiers() & 4) !=0){
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo11;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1830,7 +1832,7 @@ public class ConAlcoholElParaiso extends javax.swing.JPanel {
             P11.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
+       }
     }//GEN-LAST:event_DRIN1MouseClicked
 
     private void DRIN2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN2MouseClicked
@@ -2304,7 +2306,7 @@ if ((evt.getModifiers() & 4) !=0){
     }//GEN-LAST:event_CER27MouseClicked
 
     private void CER28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CER28MouseClicked
-     /*     if ((evt.getModifiers() & 4) !=0){
+          if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo38;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -2318,7 +2320,7 @@ if ((evt.getModifiers() & 4) !=0){
             P38.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
+       }
     }//GEN-LAST:event_CER28MouseClicked
 
     private void DRIN12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN12MouseClicked
@@ -2391,12 +2393,12 @@ private void nombres(){
              else if (192== codigo){
              descripcion10 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_10 = result.get(i).getDescripcion2().toUpperCase(); Precio10 = result.get(i).getPrecio();codigo10 = result.get(i).getCodigo();
             }
-             else if (85== codigo){
+             else if (220== codigo){
              descripcion11 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_11 = result.get(i).getDescripcion2().toUpperCase(); Precio11 = result.get(i).getPrecio();codigo11 = result.get(i).getCodigo();
             }
-             else if (86== codigo){
+            /* else if (86== codigo){
              descripcion12 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_12 = result.get(i).getDescripcion2().toUpperCase(); Precio12 = result.get(i).getPrecio();codigo12 = result.get(i).getCodigo();
-            }
+            }*/
              else if (87== codigo){
              descripcion13 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_13 = result.get(i).getDescripcion2().toUpperCase(); Precio13 = result.get(i).getPrecio();codigo13 = result.get(i).getCodigo();
             }
@@ -2472,7 +2474,7 @@ private void nombres(){
             else if (221== codigo){
              descripcion37 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_37 = result.get(i).getDescripcion2().toUpperCase(); Precio37 = result.get(i).getPrecio();codigo37= result.get(i).getCodigo();
             }
-            else if (195== codigo){
+            else if (219== codigo){
              descripcion38 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_38 = result.get(i).getDescripcion2().toUpperCase(); Precio38 = result.get(i).getPrecio();codigo38 = result.get(i).getCodigo();
             }
             else if (222== codigo){
@@ -2591,9 +2593,9 @@ private void Etiquetas() {
         CER9.setText(texto9);
         String texto10 ="<html><center><body>"+descripcion10+"<br>"+descripcion2_10+"<br><font color='RED'>Q"+Precio10+"</font></body></center></html>";
         CER10.setText(texto10);
-        /*String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio11+"</font></body></center></html>";
+        String texto11 ="<html><center><body>"+descripcion11+"<br>"+descripcion2_11+"<br><font color='RED'>Q"+Precio11+"</font></body></center></html>";
         DRIN1.setText(texto11);
-        String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio12+"</font></body></center></html>";
+        /*String texto12 ="<html><center><body>"+descripcion12+"<br>"+descripcion2_12+"<br><font color='RED'>Q"+Precio12+"</font></body></center></html>";
         DRIN2.setText(texto12);*/
         String texto13 ="<html><center><body>"+descripcion13+"<br>"+descripcion2_13+"<br><font color='RED'>Q"+Precio13+"</font></body></center></html>";
         DRIN3.setText(texto13);
@@ -2645,8 +2647,8 @@ private void Etiquetas() {
         CER26.setText(texto36);
          String texto37 ="<html><center><body>"+descripcion37+"<br>"+descripcion2_37+"<br><font color='RED'>Q"+Precio37+"</font></body></center></html>";
         CER27.setText(texto37);
-         /*String texto38 ="<html><center><body>"+descripcion38+"<br>"+descripcion2_38+"<br><font color='RED'>Q"+Precio38+"</font></body></center></html>";
-        CER28.setText(texto38);*/
+         String texto38 ="<html><center><body>"+descripcion38+"<br>"+descripcion2_38+"<br><font color='RED'>Q"+Precio38+"</font></body></center></html>";
+        CER28.setText(texto38);
         String texto39 ="<html><center><body>"+descripcion39+"<br>"+descripcion2_39+"<br><font color='RED'>Q"+Precio39+"</font></body></center></html>";
         DRIN12.setText(texto39);
         String texto40 ="<html><center><body>"+descripcion40+"<br>"+descripcion2_40+"<br><font color='RED'>Q"+Precio40+"</font></body></center></html>";

@@ -65,6 +65,13 @@ public class ExtrasParaiso extends javax.swing.JPanel {
  String descripcion35;	String descripcion2_35;	 String Precio35; int codigo35;
  String descripcion36;	String descripcion2_36;	 String Precio36; int codigo36;
  String descripcion37;	String descripcion2_37;	 String Precio37; int codigo37;
+ String descripcion38;	String descripcion2_38;	 String Precio38; int codigo38;
+ String descripcion39;	String descripcion2_39;	 String Precio39; int codigo39;
+ String descripcion40;	String descripcion2_40;	 String Precio40; int codigo40;
+ String descripcion41;	String descripcion2_41;	 String Precio41; int codigo41;
+ String descripcion42;	String descripcion2_42;	 String Precio42; int codigo42;
+ String descripcion43;	String descripcion2_43;	 String Precio43; int codigo43;
+ String descripcion44;	String descripcion2_44;	 String Precio44; int codigo44;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -126,6 +133,13 @@ public class ExtrasParaiso extends javax.swing.JPanel {
        P35.setBackground(Original);
        P36.setBackground(Original);
        P37.setBackground(Original);
+       P38.setBackground(Original);
+       P39.setBackground(Original);
+       P40.setBackground(Original);
+       P41.setBackground(Original);
+       P42.setBackground(Original);
+       P43.setBackground(Original);
+       P44.setBackground(Original);
      }
     });
     
@@ -315,6 +329,18 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         EX35 = new javax.swing.JLabel();
         P37 = new ClassAngels.PanelRound();
         EX37 = new javax.swing.JLabel();
+        P38 = new ClassAngels.PanelRound();
+        EX38 = new javax.swing.JLabel();
+        P39 = new ClassAngels.PanelRound();
+        EX39 = new javax.swing.JLabel();
+        P40 = new ClassAngels.PanelRound();
+        EX40 = new javax.swing.JLabel();
+        P41 = new ClassAngels.PanelRound();
+        EX41 = new javax.swing.JLabel();
+        P42 = new ClassAngels.PanelRound();
+        EX42 = new javax.swing.JLabel();
+        P43 = new ClassAngels.PanelRound();
+        EX43 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         P16 = new ClassAngels.PanelRound();
         EX16 = new javax.swing.JLabel();
@@ -346,8 +372,11 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         EX33 = new javax.swing.JLabel();
         P36 = new ClassAngels.PanelRound();
         EX36 = new javax.swing.JLabel();
+        P44 = new ClassAngels.PanelRound();
+        EX44 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 102));
+        setPreferredSize(new java.awt.Dimension(1170, 393));
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "EXTRAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
@@ -954,12 +983,174 @@ public class ExtrasParaiso extends javax.swing.JPanel {
             .addComponent(EX37, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
+        P38.setBackground(new java.awt.Color(204, 255, 102));
+        P38.setPreferredSize(new java.awt.Dimension(75, 70));
+        P38.setRoundBottomLeft(20);
+        P38.setRoundBottomRight(20);
+        P38.setRoundTopLeft(20);
+        P38.setRoundTopRight(20);
+
+        EX38.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX38.setText("38");
+        EX38.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX38MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P38Layout = new javax.swing.GroupLayout(P38);
+        P38.setLayout(P38Layout);
+        P38Layout.setHorizontalGroup(
+            P38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX38, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P38Layout.setVerticalGroup(
+            P38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX38, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P39.setBackground(new java.awt.Color(204, 255, 102));
+        P39.setPreferredSize(new java.awt.Dimension(75, 70));
+        P39.setRoundBottomLeft(20);
+        P39.setRoundBottomRight(20);
+        P39.setRoundTopLeft(20);
+        P39.setRoundTopRight(20);
+
+        EX39.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX39.setText("39");
+        EX39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX39MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P39Layout = new javax.swing.GroupLayout(P39);
+        P39.setLayout(P39Layout);
+        P39Layout.setHorizontalGroup(
+            P39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX39, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P39Layout.setVerticalGroup(
+            P39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX39, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P40.setBackground(new java.awt.Color(204, 255, 102));
+        P40.setPreferredSize(new java.awt.Dimension(75, 70));
+        P40.setRoundBottomLeft(20);
+        P40.setRoundBottomRight(20);
+        P40.setRoundTopLeft(20);
+        P40.setRoundTopRight(20);
+
+        EX40.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX40.setText("40");
+        EX40.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX40MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P40Layout = new javax.swing.GroupLayout(P40);
+        P40.setLayout(P40Layout);
+        P40Layout.setHorizontalGroup(
+            P40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX40, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P40Layout.setVerticalGroup(
+            P40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX40, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P41.setBackground(new java.awt.Color(204, 255, 102));
+        P41.setPreferredSize(new java.awt.Dimension(75, 70));
+        P41.setRoundBottomLeft(20);
+        P41.setRoundBottomRight(20);
+        P41.setRoundTopLeft(20);
+        P41.setRoundTopRight(20);
+
+        EX41.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX41.setText("41");
+        EX41.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX41MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P41Layout = new javax.swing.GroupLayout(P41);
+        P41.setLayout(P41Layout);
+        P41Layout.setHorizontalGroup(
+            P41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX41, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P41Layout.setVerticalGroup(
+            P41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX41, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P42.setBackground(new java.awt.Color(204, 255, 102));
+        P42.setPreferredSize(new java.awt.Dimension(75, 70));
+        P42.setRoundBottomLeft(20);
+        P42.setRoundBottomRight(20);
+        P42.setRoundTopLeft(20);
+        P42.setRoundTopRight(20);
+
+        EX42.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX42.setText("42");
+        EX42.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX42MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P42Layout = new javax.swing.GroupLayout(P42);
+        P42.setLayout(P42Layout);
+        P42Layout.setHorizontalGroup(
+            P42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX42, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P42Layout.setVerticalGroup(
+            P42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX42, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P43.setBackground(new java.awt.Color(204, 255, 102));
+        P43.setPreferredSize(new java.awt.Dimension(75, 70));
+        P43.setRoundBottomLeft(20);
+        P43.setRoundBottomRight(20);
+        P43.setRoundTopLeft(20);
+        P43.setRoundTopRight(20);
+
+        EX43.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX43.setText("43");
+        EX43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX43MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P43Layout = new javax.swing.GroupLayout(P43);
+        P43.setLayout(P43Layout);
+        P43Layout.setHorizontalGroup(
+            P43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX43, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P43Layout.setVerticalGroup(
+            P43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX43, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -986,7 +1177,10 @@ public class ExtrasParaiso extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1004,39 +1198,60 @@ public class ExtrasParaiso extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(P35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(P42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(P13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(P14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(P30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(P31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(P32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(P34, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(P35, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(P43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(P42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(P13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(P14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(P30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(P31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(P32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(P34, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(P35, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(P41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
@@ -1454,6 +1669,35 @@ public class ExtrasParaiso extends javax.swing.JPanel {
             .addComponent(EX36, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
         );
 
+        P44.setBackground(new java.awt.Color(204, 255, 102));
+        P44.setPreferredSize(new java.awt.Dimension(100, 73));
+        P44.setRoundBottomLeft(20);
+        P44.setRoundBottomRight(20);
+        P44.setRoundTopLeft(20);
+        P44.setRoundTopRight(20);
+
+        EX44.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        EX44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX44.setText("44");
+        EX44.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX44MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P44Layout = new javax.swing.GroupLayout(P44);
+        P44.setLayout(P44Layout);
+        P44Layout.setHorizontalGroup(
+            P44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P44Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(EX44, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        P44Layout.setVerticalGroup(
+            P44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX44, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -1474,7 +1718,9 @@ public class ExtrasParaiso extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(P36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1491,7 +1737,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
                         .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(163, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1513,7 +1759,8 @@ public class ExtrasParaiso extends javax.swing.JPanel {
                     .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
@@ -1523,10 +1770,12 @@ public class ExtrasParaiso extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2203,6 +2452,132 @@ public class ExtrasParaiso extends javax.swing.JPanel {
             timer.start();
         }
     }//GEN-LAST:event_EX37MouseClicked
+
+    private void EX38MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX38MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo38;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P38.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo38;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P38.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX38MouseClicked
+
+    private void EX39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX39MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo39;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P39.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo39;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P39.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX39MouseClicked
+
+    private void EX40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX40MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo40;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P40.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo40;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P40.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX40MouseClicked
+
+    private void EX41MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX41MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo41;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P41.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo41;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P41.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX41MouseClicked
+
+    private void EX42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX42MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo42;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P42.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo42;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P42.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX42MouseClicked
+
+    private void EX43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX43MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo43;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P43.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo43;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P43.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX43MouseClicked
+
+    private void EX44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX44MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo44;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P44.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo44;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P44.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX44MouseClicked
  
     
     private void nombres(){
@@ -2321,6 +2696,27 @@ public class ExtrasParaiso extends javax.swing.JPanel {
             else if (231== codigo){
              descripcion37 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_37 = result.get(i).getDescripcion2().toUpperCase(); Precio37 = result.get(i).getPrecio();codigo37 = result.get(i).getCodigo();
             }
+            else if (240== codigo){
+             descripcion38 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_38 = result.get(i).getDescripcion2().toUpperCase(); Precio38 = result.get(i).getPrecio();codigo38 = result.get(i).getCodigo();
+            }
+            else if (238== codigo){
+             descripcion39 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_39 = result.get(i).getDescripcion2().toUpperCase(); Precio39 = result.get(i).getPrecio();codigo39 = result.get(i).getCodigo();
+            }
+            else if (239== codigo){
+             descripcion40 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_40 = result.get(i).getDescripcion2().toUpperCase(); Precio40 = result.get(i).getPrecio();codigo40 = result.get(i).getCodigo();
+            }
+            else if (241== codigo){
+             descripcion41 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_41 = result.get(i).getDescripcion2().toUpperCase(); Precio41 = result.get(i).getPrecio();codigo41 = result.get(i).getCodigo();
+            }
+            else if (245== codigo){
+             descripcion42 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_42 = result.get(i).getDescripcion2().toUpperCase(); Precio42 = result.get(i).getPrecio();codigo42 = result.get(i).getCodigo();
+            }
+            else if (243== codigo){
+             descripcion43 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_43 = result.get(i).getDescripcion2().toUpperCase(); Precio43 = result.get(i).getPrecio();codigo43 = result.get(i).getCodigo();
+            }
+            else if (244== codigo){
+             descripcion44 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_44 = result.get(i).getDescripcion2().toUpperCase(); Precio44 = result.get(i).getPrecio();codigo44 = result.get(i).getCodigo();
+            }
         }
   }
 
@@ -2356,7 +2752,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
     private javax.swing.JLabel EX35;
     private javax.swing.JLabel EX36;
     private javax.swing.JLabel EX37;
+    private javax.swing.JLabel EX38;
+    private javax.swing.JLabel EX39;
     private javax.swing.JLabel EX4;
+    private javax.swing.JLabel EX40;
+    private javax.swing.JLabel EX41;
+    private javax.swing.JLabel EX42;
+    private javax.swing.JLabel EX43;
+    private javax.swing.JLabel EX44;
     private javax.swing.JLabel EX5;
     private javax.swing.JLabel EX6;
     private javax.swing.JLabel EX7;
@@ -2393,7 +2796,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
     private ClassAngels.PanelRound P35;
     private ClassAngels.PanelRound P36;
     private ClassAngels.PanelRound P37;
+    private ClassAngels.PanelRound P38;
+    private ClassAngels.PanelRound P39;
     private ClassAngels.PanelRound P4;
+    private ClassAngels.PanelRound P40;
+    private ClassAngels.PanelRound P41;
+    private ClassAngels.PanelRound P42;
+    private ClassAngels.PanelRound P43;
+    private ClassAngels.PanelRound P44;
     private ClassAngels.PanelRound P5;
     private ClassAngels.PanelRound P6;
     private ClassAngels.PanelRound P7;
@@ -2478,6 +2888,20 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         EX36.setText(texto36);
         String texto37 ="<html><center><body>"+descripcion37+"<br>"+descripcion2_37+"<br><font color='RED'>Q"+Precio37+"</font></body></center></html>";
         EX37.setText(texto37);
+        String texto38 ="<html><center><body>"+descripcion38+"<br>"+descripcion2_38+"<br><font color='RED'>Q"+Precio38+"</font></body></center></html>";
+        EX38.setText(texto38);
+        String texto39 ="<html><center><body>"+descripcion39+"<br>"+descripcion2_39+"<br><font color='RED'>Q"+Precio39+"</font></body></center></html>";
+        EX39.setText(texto39);
+        String texto40 ="<html><center><body>"+descripcion40+"<br>"+descripcion2_40+"<br><font color='RED'>Q"+Precio40+"</font></body></center></html>";
+        EX40.setText(texto40);
+        String texto41 ="<html><center><body>"+descripcion41+"<br>"+descripcion2_41+"<br><font color='RED'>Q"+Precio41+"</font></body></center></html>";
+        EX41.setText(texto41);
+        String texto42 ="<html><center><body>"+descripcion42+"<br>"+descripcion2_42+"<br><font color='RED'>Q"+Precio42+"</font></body></center></html>";
+        EX42.setText(texto42);
+        String texto43 ="<html><center><body>"+descripcion43+"<br>"+descripcion2_43+"<br><font color='RED'>Q"+Precio43+"</font></body></center></html>";
+        EX43.setText(texto43);
+        String texto44 ="<html><center><body>"+descripcion44+"<br>"+descripcion2_44+"<br><font color='RED'>Q"+Precio44+"</font></body></center></html>";
+        EX44.setText(texto44);
     }
 
 

@@ -13,6 +13,7 @@ import static Inicio.MenuSeguimiento.noorden;
 import SubPanelesSantaInes.BebidasSinAlcohol;
 import SubPanelesParaiso.BotellasElParaiso;
 import SubPanelesParaiso.CaldosAntojosParaiso;
+import SubPanelesParaiso.CevichesParaiso;
 import SubPanelesParaiso.ConAlcoholElParaiso;
 import SubPanelesParaiso.ExtrasParaiso;
 import SubPanelesSantaInes.Botellas;
@@ -585,7 +586,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo2MouseClicked
 
     private void Titulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo3MouseClicked
-    Ceviches op1 = new Ceviches(noorden,tipomenu);
+    CevichesParaiso op1 = new CevichesParaiso(noorden,tipomenu);
+    //Ceviches op1 = new Ceviches(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();

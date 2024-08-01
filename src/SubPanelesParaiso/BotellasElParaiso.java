@@ -341,12 +341,11 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
         BO29 = new javax.swing.JLabel();
         P30 = new ClassAngels.PanelRound();
         BO30 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        P32 = new ClassAngels.PanelRound();
-        BO32 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         P31 = new ClassAngels.PanelRound();
         BO31 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        P32 = new ClassAngels.PanelRound();
+        BO32 = new javax.swing.JLabel();
         P33 = new ClassAngels.PanelRound();
         BO33 = new javax.swing.JLabel();
         P34 = new ClassAngels.PanelRound();
@@ -1325,48 +1324,18 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2.setBackground(new java.awt.Color(51, 153, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PROMOCIONES EXCLUSIVAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
-        jPanel2.setForeground(new java.awt.Color(51, 153, 255));
-        jPanel2.setToolTipText("");
-
-        P32.setBackground(new java.awt.Color(204, 255, 102));
-        P32.setMinimumSize(new java.awt.Dimension(100, 75));
-        P32.setPreferredSize(new java.awt.Dimension(100, 65));
-        P32.setRoundBottomLeft(20);
-        P32.setRoundBottomRight(20);
-        P32.setRoundTopLeft(20);
-        P32.setRoundTopRight(20);
-
-        BO32.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        BO32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        BO32.setText("32");
-        BO32.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BO32MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P32Layout = new javax.swing.GroupLayout(P32);
-        P32.setLayout(P32Layout);
-        P32Layout.setHorizontalGroup(
-            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(BO32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P32Layout.setVerticalGroup(
-            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(BO32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jPanel3.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SHOTS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
 
         P31.setBackground(new java.awt.Color(204, 255, 102));
         P31.setMinimumSize(new java.awt.Dimension(100, 75));
-        P31.setPreferredSize(new java.awt.Dimension(100, 65));
+        P31.setPreferredSize(new java.awt.Dimension(75, 70));
         P31.setRoundBottomLeft(20);
         P31.setRoundBottomRight(20);
         P31.setRoundTopLeft(20);
         P31.setRoundTopRight(20);
 
-        BO31.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BO31.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         BO31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BO31.setText("31");
         BO31.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1379,35 +1348,40 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
         P31.setLayout(P31Layout);
         P31Layout.setHorizontalGroup(
             P31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(BO31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(BO31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         P31Layout.setVerticalGroup(
             P31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(BO31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        P32.setBackground(new java.awt.Color(204, 255, 102));
+        P32.setMinimumSize(new java.awt.Dimension(100, 75));
+        P32.setPreferredSize(new java.awt.Dimension(75, 70));
+        P32.setRoundBottomLeft(20);
+        P32.setRoundBottomRight(20);
+        P32.setRoundTopLeft(20);
+        P32.setRoundTopRight(20);
 
-        jPanel3.setBackground(new java.awt.Color(51, 153, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SHOTS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
+        BO32.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        BO32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BO32.setText("32");
+        BO32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BO32MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P32Layout = new javax.swing.GroupLayout(P32);
+        P32.setLayout(P32Layout);
+        P32Layout.setHorizontalGroup(
+            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        P32Layout.setVerticalGroup(
+            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         P33.setBackground(new java.awt.Color(204, 255, 102));
         P33.setMinimumSize(new java.awt.Dimension(100, 75));
@@ -1721,8 +1695,12 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1744,7 +1722,7 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
                 .addComponent(P42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1760,8 +1738,10 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
                     .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 6, Short.MAX_VALUE))
+                    .addComponent(P40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -1773,10 +1753,8 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(6, 6, 6)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -1784,13 +1762,9 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        jPanel2.getAccessibleContext().setAccessibleName("PROMOCIONES EXCLUSIVAS");
 
         getAccessibleContext().setAccessibleName("");
     }// </editor-fold>//GEN-END:initComponents
@@ -2635,10 +2609,10 @@ private void nombres(){
             else if (218== codigo){
              descripcion30 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_28 = result.get(i).getDescripcion2().toUpperCase(); Precio28 = result.get(i).getPrecio();codigo28 = result.get(i).getCodigo();
             }*/
-            else if (219== codigo){
+            else if (233== codigo){
              descripcion31 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_31 = result.get(i).getDescripcion2().toUpperCase(); Precio31 = result.get(i).getPrecio();codigo31 = result.get(i).getCodigo();
             }
-            else if (220== codigo){
+            else if (234== codigo){
              descripcion32 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_32 = result.get(i).getDescripcion2().toUpperCase(); Precio32 = result.get(i).getPrecio();codigo32 = result.get(i).getCodigo();
             }
             else if (85== codigo){
@@ -2765,7 +2739,6 @@ private void nombres(){
     private ClassAngels.PanelRound P8;
     private ClassAngels.PanelRound P9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
      private void Etiquetas() {   
