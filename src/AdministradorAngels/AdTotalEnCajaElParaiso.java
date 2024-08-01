@@ -30,37 +30,32 @@ import net.sf.jasperreports.engine.util.JRLoader;
  *
  * @author jluis
  */
-public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
-    String Fechain;
+public class AdTotalEnCajaElParaiso extends javax.swing.JPanel {
     String Fecha;
-    String Fechafin;
-    Double SUMATOTAL;
     int cantidadOrdenes;
+    Double SUMATOTAL;
+    String Fechagastos;
+    String Fechain;
+    String Fechafin;
     /**
      * Creates new form TotalEnCaja
      */
-    public AdTotalEnCajaParaiso() {
+    public AdTotalEnCajaElParaiso() {
         initComponents();
     }
     
-    private void generarFechas(){
+     private void generarFechas(){
     
          ////////SUMAR UN DIA A FECHA
          DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
          Fechain = df.format(Fe.getDate());
          Date Fecha = Fe.getDate();
          
-         
-         
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(Fecha);
         calendar.add(Calendar.DAY_OF_MONTH, 1);
         SimpleDateFormat fe = new SimpleDateFormat("yyyy/MM/dd");
         Fechafin = fe.format(calendar.getTime());
-        
-        
-         
-         
         ////////FIN DE SUMAR UN DIA A FECHA
     
     }
@@ -90,10 +85,10 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
         TARJETA = new javax.swing.JTextField();
         EFECTIVO = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
-        GASTOS = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        GASTOS = new javax.swing.JTextField();
         EFECTIVOMENOSGASTOS = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         Gast = new javax.swing.JTable();
 
@@ -160,7 +155,7 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(85, 85, 85)
+                .addGap(89, 89, 89)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -171,22 +166,24 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(TARJETA)
                     .addComponent(TRANFERENCIA)
+                    .addComponent(GASTOS)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel6)
                             .addComponent(jLabel2)
                             .addComponent(jLabel4)
                             .addComponent(jLabel5)
+                            .addComponent(jLabel6))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(EFECTIVO, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(EFECTIVOMENOSGASTOS)))
-                            .addComponent(GASTOS, javax.swing.GroupLayout.PREFERRED_SIZE, 294, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 1, Short.MAX_VALUE)))
+                                .addComponent(jLabel3)
+                                .addGap(0, 72, Short.MAX_VALUE))
+                            .addComponent(EFECTIVO))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(EFECTIVOMENOSGASTOS, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -199,14 +196,16 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(GASTOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(EFECTIVO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(GASTOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel3)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(EFECTIVO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(EFECTIVOMENOSGASTOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
@@ -220,9 +219,9 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Total, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(45, 45, 45)
+                .addGap(18, 18, 18)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
+                .addGap(64, 64, 64))
         );
 
         Gast.setModel(new javax.swing.table.DefaultTableModel(
@@ -248,10 +247,10 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
                         .addComponent(jButton1))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -263,10 +262,10 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
                     .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -280,22 +279,17 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton1ActionPerformed
   
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
         ValidarOrdenes();
-        generarFechas();
         if(Fe.getDate() != null){ 
         if(cantidadOrdenes>0){JOptionPane.showMessageDialog(null, "Imprimira un total parcial, ya que aun hay Ordenes de Mesas Pendientes de cerrar, cerrar todas para tener un TOTAL FINAL");}
-        /*DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
-         Fechain = df.format(Fe.getDate());*/
-       BDConexion con= new BDConexion();
+        DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+         Fecha = df.format(Fe.getDate());
+            BDConexion con= new BDConexion();
        Connection conexion= con.getConexion();
         try {
-            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\ENCAJAParaiso.jasper");
+            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\ENCAJA.jasper");
             Map parametros= new HashMap();
-            parametros.put("FECHAFIN", Fechafin+" 02:00:00");
-            parametros.put("FECHAIN", Fechain+" 02:00:00");
-           
-            System.out.println(parametros);
+            parametros.put("FECHA", Fecha);
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
             JasperPrintManager.printReport(print, true);
         } catch (Exception e) {System.out.println("F"+e);
@@ -310,10 +304,11 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
 
 
      private void ListarOrdenes(){
-       
-        generarFechas();
         
-        ArrayList<InsertarProducto> result = BDOrdenes.OrdenesParaiso(Fechain,Fechafin);
+         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+         Fecha = df.format(Fe.getDate());
+     
+        ArrayList<InsertarProducto> result = BDOrdenes.Ordenes(Fecha);
         RecargarTablaDetallado(result);  
     }
      private void RecargarTablaDetallado(ArrayList<InsertarProducto> list) {
@@ -346,15 +341,15 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
              columna2.setPreferredWidth(275);
              TableColumn columna3 = OrdenesDia.getColumn("TOTAL");
              columna3.setPreferredWidth(35);
-           BuscarTotal();
+             BuscarTotal();
      }
      
      private void BuscarTotal(){
-         SumaTotalGastos();
-     DecimalFormat df = new DecimalFormat("#0.00");
+            SumaTotalGastos();
+            DecimalFormat df = new DecimalFormat("#0.00");
         
 try {
-            InsertarProducto c = BDOrdenes.BuscarTotalParaiso(Fechain,Fechafin);
+            InsertarProducto c = BDOrdenes.BuscarTotal(Fecha);
             Noordenes.setText(String.valueOf(c.getNoOrden()));
             EFECTIVO.setText(String.valueOf(df.format(c.getEfectivo())));
             Double e = (Double.parseDouble(df.format(c.getEfectivo())));
@@ -368,7 +363,6 @@ try {
             Double b = (Double.parseDouble(df.format(SUMATOTAL)));   
             Double Resultado = a-b;
             Total.setText((df.format(Resultado)));
-          
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "error mas"+e);
         } 
@@ -395,8 +389,7 @@ try {
       
       public void SumaTotalGastos() {
           
-         DateFormat f = new SimpleDateFormat("dd/MM/yyyy");
-         Fecha = f.format(Fe.getDate());
+         
             try {
                 BDConexion conecta = new BDConexion();
                 Connection cn = conecta.getConexion();
@@ -414,10 +407,11 @@ try {
             }
             ListarGastos();
         }
-      
-       private void ListarGastos(){
+    
+      private void ListarGastos(){
         
         
+          System.out.println(Fecha);
         ArrayList<InsertarProducto> result = BDIngresos.ListarGastosTotal(Fecha);
         RecargarGas(result);  
     }
@@ -449,8 +443,6 @@ try {
              TableColumn columna2 = Gast.getColumn("TOTAL");
              columna2.setPreferredWidth(25);
      }
-    
-    
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
