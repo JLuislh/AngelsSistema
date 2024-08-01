@@ -287,7 +287,7 @@ public class AdTotalEnCajaElParaiso extends javax.swing.JPanel {
             BDConexion con= new BDConexion();
        Connection conexion= con.getConexion();
         try {
-            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\ENCAJA.jasper");
+            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\ENCAJAELPARAISO.jasper");
             Map parametros= new HashMap();
             parametros.put("FECHA", Fecha);
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
