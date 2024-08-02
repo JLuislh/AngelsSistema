@@ -402,7 +402,8 @@ public class Administracion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void T1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T1MouseClicked
-        AdVentasPorDiaParaiso op3 = new AdVentasPorDiaParaiso();
+        //AdVentasPorDiaParaiso op3 = new AdVentasPorDiaParaiso();
+        AdVentasPorDia op3 = new AdVentasPorDia();
         op3.setSize(1025, 635);
         op3.setLocation(0, 0);
         PANEL.removeAll();
@@ -439,8 +440,8 @@ public class Administracion extends javax.swing.JFrame {
     }//GEN-LAST:event_T4MouseClicked
 
     private void T2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T2MouseClicked
-        AdTotalEnCajaParaiso op4 = new AdTotalEnCajaParaiso();
-        //AdTotalEnCaja op4 = new AdTotalEnCaja();
+        //AdTotalEnCajaParaiso op4 = new AdTotalEnCajaParaiso();
+        AdTotalEnCaja op4 = new AdTotalEnCaja();
         op4.setSize(1025, 635);
         op4.setLocation(0, 0);
         PANEL.removeAll();
