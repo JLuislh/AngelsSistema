@@ -292,7 +292,7 @@ public class AdTotalEnCajaParaiso extends javax.swing.JPanel {
             Map parametros= new HashMap();
             parametros.put("FECHAFIN", Fechafin+" 02:00:00");
             parametros.put("FECHAIN", Fechain+" 02:00:00");
-              parametros.put("FECHA", Fechain);
+              parametros.put("FECHA", Fecha);
             System.out.println(parametros);
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
             JasperPrintManager.printReport(print, true);
