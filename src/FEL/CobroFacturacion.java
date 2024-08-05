@@ -463,7 +463,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(318, 318, 318)
+                .addGap(295, 295, 295)
                 .addComponent(facturar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -566,7 +566,8 @@ public class CobroFacturacion extends javax.swing.JFrame {
             else{JOptionPane.showMessageDialog(null, "EL COBRO TIENE QUE ESTAR DIVIDIDO");}
         }else{
             
-         if(cobro ==4){cobrarOrdenTT();}else{   
+         if(cobro ==4){crearXMLAngels();
+          Certificar();cobrarOrdenTT();}else{   
           
           crearXMLAngels();
           Certificar();}
@@ -742,7 +743,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
     public  void NitValidar() {
       //  DecimalFormat df = new DecimalFormat("#.00");
             try {
-                 BDConexion conecta = new BDConexion();
+                BDConexion conecta = new BDConexion();
                 Connection cn = conecta.getConexion();
                 java.sql.Statement stmt = cn.createStatement();
                 ResultSet rs = stmt.executeQuery("select count(nit) from compradornit where nit ='"+nit.getText()+"'");
@@ -832,10 +833,10 @@ public class CobroFacturacion extends javax.swing.JFrame {
             //lote.setText(lot);
             //seriee.setText(serie);
            // fechaout.setText(fecha);
-            System.out.println("No. Autorizacion = "+autoriza);
-            System.out.println("No. Lote = "+numero);
-            System.out.println("No. Serie = "+serie);
-            System.out.println("Fecha = "+FechaCerti);
+            //System.out.println("No. Autorizacion = "+autoriza);
+            //System.out.println("No. Lote = "+numero);
+            //System.out.println("No. Serie = "+serie);
+            //System.out.println("Fecha = "+FechaCerti);
         } catch (IOException e) {
             System.err.println("Error: " + e.getMessage());
             JOptionPane.showMessageDialog(null, "ERROR DE COMUNICACION PARA EMITIR LA FACTURA INTENTAR DE NUEVO");
@@ -869,7 +870,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
   
 
     private void imprimirFel(){
- 
+     id_orden = Integer.parseInt(Orden.getText());
       BDConexion con= new BDConexion();
       Connection conexion= con.getConexion();
         try {
@@ -881,7 +882,6 @@ public class CobroFacturacion extends javax.swing.JFrame {
         } catch (Exception e) {System.out.println("F"+e);
            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
         }
-        
     }
     
 

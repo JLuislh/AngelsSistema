@@ -8,6 +8,7 @@ import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
+import FEL.CobroFacturacion;
 import static Inicio.Menu.noorden;
 import static Inicio.MenuSeguimiento.noorden;
 import SubPanelesSantaInes.BebidasSinAlcohol;
@@ -647,7 +648,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
               descargarInventario();
               cobrarOrden();
               
-              CobroET F = new CobroET(Double.parseDouble(Total.getText()),noorden);
+              //CobroET F = new CobroET(Double.parseDouble(Total.getText()),noorden);
+              CobroFacturacion F = new CobroFacturacion(Double.parseDouble(Total.getText()),noorden);
               F.setVisible(true);
               this.dispose();
           }

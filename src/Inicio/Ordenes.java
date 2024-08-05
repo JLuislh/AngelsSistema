@@ -315,7 +315,7 @@ public class Ordenes extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
       private void token(){
-          System.out.println("llega token");
+         // System.out.println("llega token");
        String res = "";
        //String URL = "https://felgttestaws.digifact.com.gt/gt.com.apinuc/api/login/get_token";
        String URL = "https://felgtaws.digifact.com.gt/gt.com.apinuc/api/login/get_token";
