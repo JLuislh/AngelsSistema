@@ -6,7 +6,7 @@ package FEL;
 
 import Inicio.*;
 import BDclass.BDConexion;
-import FELclass.CrearXML_Encuentro;
+import FELclass.CrearXML_Angels;
 import FELclass.CrearXML_Zona4;
 import FELclass.FELclas;
 import FELclass.NumeroLetras;
@@ -71,6 +71,8 @@ public class CobroFacturacion extends javax.swing.JFrame {
         Canttarjeta.setEditable(false);
         total.setText(String.valueOf(a));
         Orden.setText(String.valueOf(b));
+        TokenLocal();
+        sumaTotal();
         
     }
     
@@ -86,7 +88,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
-         imprimirCobrodividido();
+         imprimirFel();
          Ordenes F = new Ordenes();
          F.setVisible(true);
          this.dispose();
@@ -106,7 +108,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
-         imprimirCobrodividido();
+         imprimirFel();
          Ordenes F = new Ordenes();
          F.setVisible(true);
          this.dispose();
@@ -114,7 +116,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
         
  }
     
-     private void imprimir(){
+    /* private void imprimir(){
       BDConexion con= new BDConexion();
          Connection conexion= con.getConexion();
         try {
@@ -126,7 +128,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
         } catch (Exception e) {System.out.println("F"+e);
            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
         }
-    }
+    }*/
      
     private void imprimirCobrodividido(){
       BDConexion con= new BDConexion();
@@ -248,7 +250,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -401,7 +403,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
+                .addContainerGap(26, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7)
@@ -428,8 +430,8 @@ public class CobroFacturacion extends javax.swing.JFrame {
         );
 
         facturar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        facturar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Dollar.png"))); // NOI18N
-        facturar.setText("COBRAR");
+        facturar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/unnamed (2).png"))); // NOI18N
+        facturar.setText("FACTURAR");
         facturar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 facturarActionPerformed(evt);
@@ -458,12 +460,12 @@ public class CobroFacturacion extends javax.swing.JFrame {
                                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 2, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(facturar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(312, 312, 312))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(318, 318, 318)
+                .addComponent(facturar)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -483,8 +485,8 @@ public class CobroFacturacion extends javax.swing.JFrame {
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addComponent(facturar, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-                .addGap(11, 11, 11))
+                .addComponent(facturar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -559,15 +561,16 @@ public class CobroFacturacion extends javax.swing.JFrame {
     private void facturarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_facturarActionPerformed
        if(cobro > 0){
         if(cobro == 3){
-            if(Double.parseDouble(Canttarjeta.getText())>0 && Double.parseDouble(CantEfectivo.getText())>0){cobrarOrdenET();  crearXMLEncuentro();
-                Certificar();}
+            if(Double.parseDouble(Canttarjeta.getText())>0 && Double.parseDouble(CantEfectivo.getText())>0){  crearXMLAngels();
+                Certificar(); cobrarOrdenET();}
             else{JOptionPane.showMessageDialog(null, "EL COBRO TIENE QUE ESTAR DIVIDIDO");}
         }else{
             
          if(cobro ==4){cobrarOrdenTT();}else{   
-          cobrarOrdenET();
-          crearXMLEncuentro();
+          
+          crearXMLAngels();
           Certificar();}
+         cobrarOrdenET();
         }
        }else{JOptionPane.showMessageDialog(null, "SELECCIONAR UN METODO DE PAGO");}
              
@@ -610,6 +613,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
 
     private void nitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nitActionPerformed
         NitValidar();
+        
         if(validarnit==1){
             NitLocal();
             facturar.requestFocus();
@@ -702,10 +706,10 @@ public class CobroFacturacion extends javax.swing.JFrame {
                 BDConexion conecta = new BDConexion();
                 Connection cn = conecta.getConexion();
                 java.sql.Statement stmt = cn.createStatement();
-                ResultSet rs = stmt.executeQuery("select token,usuario  from TOKEN where idToken = 1");
+                ResultSet rs = stmt.executeQuery("select token  from TOKEN where idToken = 1");
                 while (rs.next()) {
                       Token = rs.getString("token");
-                      Usuario = rs.getString("usuario");
+                      //Usuario = rs.getString("usuario");
                 }
                 rs.close();
                 stmt.close();
@@ -760,7 +764,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
                  BDConexion conecta = new BDConexion();
                 Connection cn = conecta.getConexion();
                 java.sql.Statement stmt = cn.createStatement();
-                ResultSet rs = stmt.executeQuery("select sum(precio) as Total from PRODUCTOS_PEDIDO where id_pedido =" + Orden.getText());
+                ResultSet rs = stmt.executeQuery("SELECT sum(total) as Total FROM ventas where NOORDEN =" + Orden.getText());
                 while (rs.next()) {
                       grantotal = rs.getString(1);
                       total.setText(grantotal);
@@ -769,7 +773,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
                 stmt.close();
                 cn.close();
             } catch (Exception error) {
-                System.out.print(error);
+                System.out.print("ERROR DE SUMA TOTAL"+error);
             }
         }
     
@@ -824,14 +828,14 @@ public class CobroFacturacion extends javax.swing.JFrame {
             numero = object2.get("serial").toString();
             FechaCerti = object2.get("enrolledTimeStamp").toString();
             InsertarDatosFEL();
-            /*autorizacion.setText(auto);
-            lote.setText(lot);
-            seriee.setText(serie);
-            fechaout.setText(fecha);
-            System.out.println("No. Autorizacion = "+auto);
-            System.out.println("No. Lote = "+lot);
+            //String autorizacion.setText(auto);
+            //lote.setText(lot);
+            //seriee.setText(serie);
+           // fechaout.setText(fecha);
+            System.out.println("No. Autorizacion = "+autoriza);
+            System.out.println("No. Lote = "+numero);
             System.out.println("No. Serie = "+serie);
-            System.out.println("Fecha = "+fecha);*/
+            System.out.println("Fecha = "+FechaCerti);
         } catch (IOException e) {
             System.err.println("Error: " + e.getMessage());
             JOptionPane.showMessageDialog(null, "ERROR DE COMUNICACION PARA EMITIR LA FACTURA INTENTAR DE NUEVO");
@@ -839,14 +843,14 @@ public class CobroFacturacion extends javax.swing.JFrame {
         
     }
     
-    private void crearXMLEncuentro(){
+    private void crearXMLAngels(){
         
         NumeroLetras NumLetra  = new NumeroLetras();
         String numero = total.getText();
         TotalLetras =  (NumLetra .Convertir(numero,true));
     
          try {
-             CrearXML_Encuentro ejemploXML = new CrearXML_Encuentro(nombre.getText(),nit.getText(),Orden.getText(),grantotal,TotalLetras);
+             CrearXML_Angels ejemploXML = new CrearXML_Angels(nombre.getText(),nit.getText(),Orden.getText(),grantotal,TotalLetras);
             Document documento = ejemploXML.crearDocumento();
             
             //System.out.println(ejemploXML.convertirString(documento));
@@ -869,7 +873,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
       BDConexion con= new BDConexion();
       Connection conexion= con.getConexion();
         try {
-            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\FEL\\FELZona4.jasper");
+            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\FELAngels.jasper");
             Map parametros= new HashMap();
             parametros.put("ID_ORDEN", id_orden);
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);

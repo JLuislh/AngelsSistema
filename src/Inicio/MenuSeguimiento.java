@@ -8,6 +8,7 @@ import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
+import FEL.CobroFacturacion;
 import SubPanelesSantaInes.BebidasSinAlcohol;
 import SubPanelesParaiso.BotellasElParaiso;
 import SubPanelesParaiso.CaldosAntojosParaiso;
@@ -660,7 +661,8 @@ public class MenuSeguimiento extends javax.swing.JFrame {
           if (JOptionPane.OK_OPTION == resp){ 
                 descargarInventario();
                 cobrarOrdenyCerrar();
-                CobroET F = new CobroET(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
+                //CobroET F = new CobroET(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
+                CobroFacturacion F = new CobroFacturacion(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
                 F.setVisible(true);
                 this.dispose();       
           }

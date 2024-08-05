@@ -5,15 +5,35 @@
 package Inicio;
 
 import AdministradorAngels.Contraseña;
+import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.OrdenesClass;
+import FELclass.Token;
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
+//import com.mysql.cj.xdevapi.Client;
+//mport jakarta.ws.rs.client.ClientBuilder;
+//import jakarta.ws.rs.client.Entity;
+//import jakarta.ws.rs.client.Invocation;
+//import jakarta.ws.rs.client.WebTarget;
 import java.awt.Image;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Properties;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+//import okhttp3.Response;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.Entity;
+import javax.ws.rs.client.Invocation;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.Response;
+
 
 /**
  *
@@ -21,6 +41,8 @@ import javax.swing.UnsupportedLookAndFeelException;
  */
 public class Ordenes extends javax.swing.JFrame {
    int noorden;
+    String Token;
+    String FechaExp;
     /**
      * Creates new form Ordenes
      */
@@ -31,6 +53,7 @@ public class Ordenes extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
         }
         initComponents();
+        token();
         imagen();
         setLocationRelativeTo(null);
         String texto1 = "<html><center><body>NUEVA ORDEN<br>PARA LLEVAR</body></center></html>";
@@ -291,6 +314,47 @@ public class Ordenes extends javax.swing.JFrame {
         this.dispose(); 
     }//GEN-LAST:event_jLabel2MouseClicked
 
+      private void token(){
+          System.out.println("llega token");
+       String res = "";
+       //String URL = "https://felgttestaws.digifact.com.gt/gt.com.apinuc/api/login/get_token";
+       String URL = "https://felgtaws.digifact.com.gt/gt.com.apinuc/api/login/get_token";
+        
+        try {
+            Client client = ClientBuilder.newClient();
+            WebTarget target = client.target(URL );
+            Invocation.Builder solicitud = target.request();
+            Token req = new Token();
+            req.setUsername("GT.000120011662.120011662");//NIT EMPRESA y USUARIO DIGIFAC
+            req.setPassword("Factur4$Fel");//CONTRASEÑA DIGIFAC
+            Gson gson = new Gson();
+            String jsonString = gson.toJson(req);
+            Response post = solicitud.post(Entity.json(jsonString));
+            String resJson = post.readEntity(String.class);
+            res = resJson;
+            String fichero = "";
+            fichero = resJson;
+            Properties properties = gson.fromJson(fichero, Properties.class);
+            Token = (String) properties.get("Token");
+            FechaExp = (String) properties.get("expira_en");
+        } catch (JsonSyntaxException e) {
+            System.out.println("ERROR" );res = e.toString();
+        }
+    
+        BDConexion conecta = new BDConexion();
+        Connection con = conecta.getConexion();
+        PreparedStatement sm = null;
+        try {
+            sm = con.prepareStatement("update token set Token = '"+Token+"',fecha = '"+FechaExp+"' where idToken = 1");
+            sm.executeUpdate();
+            con.close();
+            sm.close();
+        } catch (SQLException ex) {
+            System.out.println("ERROR =" + ex);
+        }
+    }
+    
+    
     /**
      * @param args the command line arguments
      */

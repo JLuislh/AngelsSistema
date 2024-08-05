@@ -155,7 +155,7 @@ public class ObtenerProductosFactura {
     }
 
     public static ArrayList<ObtenerProductosFactura> ListaProductosFactura(String a) {
-        return SQLP("SELECT pe.cantidad,p.Descripcion,p.precio,pe.PRECIO as total FROM productos_pedido pe inner join productosFEL p on pe.ID_PRODUCTO = p.ID_PRODUCTO where ID_PEDIDO =" + a);
+        return SQLP("SELECT v.CANTIDAD,concat(concat_ws(p.DESCRIPCION1,' ',p.DESCRIPCION2)) as DESCRIPCION,p.PRECIO,v.TOTAL FROM ventas v inner join productos p ON v.CODIGO = p.CODIGO WHERE v.NOORDEN =" + a);
     }
 
     private static ArrayList<ObtenerProductosFactura> SQLP(String sql) {

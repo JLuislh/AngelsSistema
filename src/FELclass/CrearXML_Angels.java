@@ -29,14 +29,14 @@ import org.w3c.dom.Element;
  *
  * @author david
  */
-public class CrearXML_Encuentro {
+public class CrearXML_Angels {
     
      private String nombre;
      private String nit;
      private String orden;
      private String grantotal;
      private String totalletras;
-     public CrearXML_Encuentro(String Nombre,String Nit,String Orden,String Grantotal, String TotalLetras){
+     public CrearXML_Angels(String Nombre,String Nit,String Orden,String Grantotal, String TotalLetras){
      
          this.nombre = Nombre;
          this.nit = Nit;
