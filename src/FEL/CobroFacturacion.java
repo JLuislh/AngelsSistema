@@ -867,7 +867,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
     private void imprimirFel(){
  
       BDConexion con= new BDConexion();
-         Connection conexion= con.getConexion();
+      Connection conexion= con.getConexion();
         try {
             JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\FEL\\FELZona4.jasper");
             Map parametros= new HashMap();
