@@ -53,7 +53,7 @@ public class Ordenes extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
         }
         initComponents();
-        token();
+        //token();
         imagen();
         setLocationRelativeTo(null);
         String texto1 = "<html><center><body>NUEVA ORDEN<br>PARA LLEVAR</body></center></html>";

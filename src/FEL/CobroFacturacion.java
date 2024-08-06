@@ -54,6 +54,7 @@ public class CobroFacturacion extends javax.swing.JFrame {
      String numero;
      String autoriza;
      String FechaCerti;
+     int impresion = 0;
     /**
      * Creates new form CobroET
      */
@@ -88,15 +89,17 @@ public class CobroFacturacion extends javax.swing.JFrame {
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
-         imprimirFel();
-         Ordenes F = new Ordenes();
-         F.setVisible(true);
-         this.dispose();
+        
+        if(impresion ==1){
+        imprimirCobrodividido();
+        Ordenes F = new Ordenes();
+        F.setVisible(true);
+        this.dispose();}else{}
         
         
  }
     
-    private void cobrarOrdenTT(){
+    private void cobrarOrdenETT(){
         try {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
@@ -108,10 +111,12 @@ public class CobroFacturacion extends javax.swing.JFrame {
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
-         imprimirFel();
-         Ordenes F = new Ordenes();
-         F.setVisible(true);
-         this.dispose();
+        
+       if(impresion ==1){
+        imprimirCobrodividido();
+        Ordenes F = new Ordenes();
+        F.setVisible(true);
+        this.dispose();}
         
         
  }
@@ -561,20 +566,13 @@ public class CobroFacturacion extends javax.swing.JFrame {
     private void facturarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_facturarActionPerformed
        if(cobro > 0){
         if(cobro == 3){
-            if(Double.parseDouble(Canttarjeta.getText())>0 && Double.parseDouble(CantEfectivo.getText())>0){  crearXMLAngels();
-                Certificar(); cobrarOrdenET();}
+            if(Double.parseDouble(Canttarjeta.getText())>0 && Double.parseDouble(CantEfectivo.getText())>0){  crearXMLAngels();Certificar(); cobrarOrdenET();}
             else{JOptionPane.showMessageDialog(null, "EL COBRO TIENE QUE ESTAR DIVIDIDO");}
         }else{
             
-         if(cobro ==4){crearXMLAngels();
-          Certificar();cobrarOrdenTT();}else{   
-          
-          crearXMLAngels();
-          Certificar();}
-         cobrarOrdenET();
+         if(cobro ==4){crearXMLAngels();Certificar();cobrarOrdenETT();}else{crearXMLAngels(); Certificar(); cobrarOrdenET();}
         }
        }else{JOptionPane.showMessageDialog(null, "SELECCIONAR UN METODO DE PAGO");}
-             
     }//GEN-LAST:event_facturarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -600,13 +598,14 @@ public class CobroFacturacion extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-          if(cobro > 0){
+        impresion = 1;
+        if(cobro > 0){
         if(cobro == 3){
             if(Double.parseDouble(Canttarjeta.getText())>0 && Double.parseDouble(CantEfectivo.getText())>0){cobrarOrdenET();}
             else{JOptionPane.showMessageDialog(null, "EL COBRO TIENE QUE ESTAR DIVIDIDO");}
         }else{
             
-         if(cobro ==4){cobrarOrdenTT();}else{   
+         if(cobro ==4){cobrarOrdenETT();}else{   
         cobrarOrdenET();}
         }
        }else{JOptionPane.showMessageDialog(null, "SELECCIONAR UN METODO DE PAGO");}
@@ -882,6 +881,9 @@ public class CobroFacturacion extends javax.swing.JFrame {
         } catch (Exception e) {System.out.println("F"+e);
            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
         }
+        Ordenes F = new Ordenes();
+        F.setVisible(true);
+        this.dispose();
     }
     
 

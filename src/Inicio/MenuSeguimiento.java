@@ -580,6 +580,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         
     
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    //CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
     CaldosAntojosParaiso op1 = new CaldosAntojosParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
@@ -623,6 +624,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo4MouseClicked
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
+    //ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
     ConAlcoholElParaiso op1 = new ConAlcoholElParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
@@ -634,6 +636,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
 
     private void Titulo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo6MouseClicked
     BotellasElParaiso op1 = new BotellasElParaiso(noorden,tipomenu);
+    //Botellas op1 = new Botellas(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -661,15 +664,16 @@ public class MenuSeguimiento extends javax.swing.JFrame {
           if (JOptionPane.OK_OPTION == resp){ 
                 descargarInventario();
                 cobrarOrdenyCerrar();
-                //CobroET F = new CobroET(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
-                CobroFacturacion F = new CobroFacturacion(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
+                CobroET F = new CobroET(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
+                //CobroFacturacion F = new CobroFacturacion(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
                 F.setVisible(true);
                 this.dispose();       
           }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void Titulo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo8MouseClicked
-    ExtrasParaiso op1 = new ExtrasParaiso(noorden,tipomenu);
+    Extras op1 = new Extras(noorden,tipomenu);
+    //ExtrasParaiso op1 = new ExtrasParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();

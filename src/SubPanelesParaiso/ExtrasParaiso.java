@@ -72,6 +72,34 @@ public class ExtrasParaiso extends javax.swing.JPanel {
  String descripcion42;	String descripcion2_42;	 String Precio42; int codigo42;
  String descripcion43;	String descripcion2_43;	 String Precio43; int codigo43;
  String descripcion44;	String descripcion2_44;	 String Precio44; int codigo44;
+ 
+ String MICHE1_1;String MICHE2_1;String PrecioM1; int codigoM1;
+ String MICHE1_2;String MICHE2_2;String PrecioM2; int codigoM2;
+ String MICHE1_3;String MICHE2_3;String PrecioM3; int codigoM3;
+ String MICHE1_4;String MICHE2_4;String PrecioM4; int codigoM4;
+ String MICHE1_5;String MICHE2_5;String PrecioM5; int codigoM5;
+ String MICHE1_6;String MICHE2_6;String PrecioM6; int codigoM6;
+ String MICHE1_7;String MICHE2_7;String PrecioM7; int codigoM7;
+ String MICHE1_8;String MICHE2_8;String PrecioM8; int codigoM8;
+ String MICHE1_9;String MICHE2_9;String PrecioM9; int codigoM9;
+ String MICHE1_10;String MICHE2_10;String PrecioM10; int codigoM10;
+ String MICHE1_11;String MICHE2_11;String PrecioM11; int codigoM11;
+ String MICHE1_12;String MICHE2_12;String PrecioM12; int codigoM12;
+ String MICHE1_13;String MICHE2_13;String PrecioM13; int codigoM13;
+ String MICHE1_14;String MICHE2_14;String PrecioM14; int codigoM14;
+ String MICHE1_15;String MICHE2_15;String PrecioM15; int codigoM15;
+ String MICHE1_16;String MICHE2_16;String PrecioM16; int codigoM16;
+ String MICHE1_17;String MICHE2_17;String PrecioM17; int codigoM17;
+ String MICHE1_18;String MICHE2_18;String PrecioM18; int codigoM18;
+ String MICHE1_19;String MICHE2_19;String PrecioM19; int codigoM19;
+ String MICHE1_20;String MICHE2_20;String PrecioM20; int codigoM20;
+ String MICHE1_21;String MICHE2_21;String PrecioM21; int codigoM21;
+ String MICHE1_22;String MICHE2_22;String PrecioM22; int codigoM22;
+ String MICHE1_23;String MICHE2_23;String PrecioM23; int codigoM23;
+ String MICHE1_24;String MICHE2_24;String PrecioM24; int codigoM24;
+ String MICHE1_25;String MICHE2_25;String PrecioM25; int codigoM25;
+ String MICHE1_26;String MICHE2_26;String PrecioM26; int codigoM26;
+ 
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -111,27 +139,12 @@ public class ExtrasParaiso extends javax.swing.JPanel {
        P13.setBackground(Original);
        P14.setBackground(Original);
        P15.setBackground(Original);
-       MICHE9.setBackground(Original);
-       MICHE1.setBackground(Original);
-       MICHE10.setBackground(Original);
-       MICHE11.setBackground(Original);
-       MICHE2.setBackground(Original);
-       MICHE3.setBackground(Original);
-       MICHE4.setBackground(Original);
-       MICHE5.setBackground(Original);
-       MICHE6.setBackground(Original);
-       MICHE7.setBackground(Original);
-       MICHE8.setBackground(Original);
-       MICHE12.setBackground(Original);
-       MICHE13.setBackground(Original);
        P29.setBackground(Original);
        P30.setBackground(Original);
        P31.setBackground(Original);
        P32.setBackground(Original);
-       MICHE14.setBackground(Original);
        P34.setBackground(Original);
        P35.setBackground(Original);
-       MICHE15.setBackground(Original);
        P37.setBackground(Original);
        P38.setBackground(Original);
        P39.setBackground(Original);
@@ -139,7 +152,35 @@ public class ExtrasParaiso extends javax.swing.JPanel {
        P41.setBackground(Original);
        P42.setBackground(Original);
        P43.setBackground(Original);
+       
+       
+       MICHE1.setBackground(Original);
+       MICHE2.setBackground(Original);
+       MICHE3.setBackground(Original);
+       MICHE4.setBackground(Original);
+       MICHE5.setBackground(Original);
+       MICHE6.setBackground(Original);
+       MICHE7.setBackground(Original);
+       MICHE8.setBackground(Original);
+       MICHE9.setBackground(Original);
+       MICHE10.setBackground(Original);
+       MICHE11.setBackground(Original);
+       MICHE12.setBackground(Original);
+       MICHE13.setBackground(Original);
+       MICHE14.setBackground(Original);
+       MICHE15.setBackground(Original);
        MICHE16.setBackground(Original);
+       MICHE17.setBackground(Original);
+       MICHE18.setBackground(Original);
+       MICHE19.setBackground(Original);
+       MICHE20.setBackground(Original);
+       MICHE21.setBackground(Original);
+       MICHE22.setBackground(Original);
+       MICHE23.setBackground(Original);
+       MICHE24.setBackground(Original);
+       MICHE25.setBackground(Original);
+       MICHE26.setBackground(Original);
+      
      }
     });
     
@@ -1285,7 +1326,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE1.setRoundTopLeft(20);
         MICHE1.setRoundTopRight(20);
 
-        MI1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        MI1.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI1.setText("MI1");
         MI1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1312,7 +1353,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE2.setRoundTopLeft(20);
         MICHE2.setRoundTopRight(20);
 
-        MI2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        MI2.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI2.setText("MI2");
         MI2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1339,7 +1380,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE3.setRoundTopLeft(20);
         MICHE3.setRoundTopRight(20);
 
-        MI3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        MI3.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI3.setText("MI3");
         MI3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1366,7 +1407,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE4.setRoundTopLeft(20);
         MICHE4.setRoundTopRight(20);
 
-        MI4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        MI4.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI4.setText("MI4");
         MI4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1393,7 +1434,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE5.setRoundTopLeft(20);
         MICHE5.setRoundTopRight(20);
 
-        MI5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        MI5.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI5.setText("MI5");
         MI5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1420,7 +1461,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE6.setRoundTopLeft(20);
         MICHE6.setRoundTopRight(20);
 
-        MI6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        MI6.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI6.setText("MI6");
         MI6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1447,7 +1488,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE7.setRoundTopLeft(20);
         MICHE7.setRoundTopRight(20);
 
-        MI7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        MI7.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI7.setText("MI7");
         MI7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1474,7 +1515,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE8.setRoundTopLeft(20);
         MICHE8.setRoundTopRight(20);
 
-        MI8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        MI8.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI8.setText("MI8");
         MI8.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1501,7 +1542,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE9.setRoundTopLeft(20);
         MICHE9.setRoundTopRight(20);
 
-        MI9.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI9.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI9.setText("MI9");
         MI9.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1528,7 +1569,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE10.setRoundTopLeft(20);
         MICHE10.setRoundTopRight(20);
 
-        MI10.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI10.setText("MI10");
         MI10.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1555,7 +1596,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE11.setRoundTopLeft(20);
         MICHE11.setRoundTopRight(20);
 
-        MI11.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI11.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI11.setText("MI11");
         MI11.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1582,7 +1623,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE12.setRoundTopLeft(20);
         MICHE12.setRoundTopRight(20);
 
-        MI12.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI12.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI12.setText("MI12");
         MI12.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1609,7 +1650,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE13.setRoundTopLeft(20);
         MICHE13.setRoundTopRight(20);
 
-        MI13.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI13.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI13.setText("MI13");
         MI13.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1636,7 +1677,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE14.setRoundTopLeft(20);
         MICHE14.setRoundTopRight(20);
 
-        MI14.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI14.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI14.setText("MI14");
         MI14.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1663,7 +1704,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE15.setRoundTopLeft(20);
         MICHE15.setRoundTopRight(20);
 
-        MI15.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI15.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI15.setText("MI15");
         MI15.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1690,7 +1731,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE16.setRoundTopLeft(20);
         MICHE16.setRoundTopRight(20);
 
-        MI16.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI16.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI16.setText("MI16");
         MI16.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1717,7 +1758,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE17.setRoundTopLeft(20);
         MICHE17.setRoundTopRight(20);
 
-        MI17.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI17.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI17.setText("MI17");
         MI17.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1744,7 +1785,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE18.setRoundTopLeft(20);
         MICHE18.setRoundTopRight(20);
 
-        MI18.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI18.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI18.setText("MI18");
         MI18.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1771,7 +1812,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE19.setRoundTopLeft(20);
         MICHE19.setRoundTopRight(20);
 
-        MI19.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI19.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI19.setText("MI19");
         MI19.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1798,7 +1839,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE20.setRoundTopLeft(20);
         MICHE20.setRoundTopRight(20);
 
-        MI20.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI20.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI20.setText("MI20");
         MI20.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1825,7 +1866,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE21.setRoundTopLeft(20);
         MICHE21.setRoundTopRight(20);
 
-        MI21.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI21.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI21.setText("MI21");
         MI21.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1852,7 +1893,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE22.setRoundTopLeft(20);
         MICHE22.setRoundTopRight(20);
 
-        MI22.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI22.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI22.setText("MI22");
         MI22.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1879,7 +1920,7 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE23.setRoundTopLeft(20);
         MICHE23.setRoundTopRight(20);
 
-        MI23.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI23.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         MI23.setText("MI23");
         MI23.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1906,9 +1947,8 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE24.setRoundTopLeft(20);
         MICHE24.setRoundTopRight(20);
 
-        MI24.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI24.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MI24.setText("MI24");
         MI24.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MI24MouseClicked(evt);
@@ -1933,9 +1973,8 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE25.setRoundTopLeft(20);
         MICHE25.setRoundTopRight(20);
 
-        MI25.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI25.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MI25.setText("MI25");
         MI25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MI25MouseClicked(evt);
@@ -1960,9 +1999,8 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         MICHE26.setRoundTopLeft(20);
         MICHE26.setRoundTopRight(20);
 
-        MI26.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        MI26.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        MI26.setText("MI26");
         MI26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MI26MouseClicked(evt);
@@ -2091,9 +2129,9 @@ public class ExtrasParaiso extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -2369,14 +2407,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI9MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo16;
+            codigooreden= codigoM9;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE9.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo16;
+            codigooreden = codigoM9;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE9.setBackground(Color.GREEN);
@@ -2387,14 +2425,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI1MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo17;
+            codigooreden= codigoM1;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE1.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo17;
+            codigooreden = codigoM1;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE1.setBackground(Color.GREEN);
@@ -2405,14 +2443,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI10MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo18;
+            codigooreden= codigoM10;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE10.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo18;
+            codigooreden = codigoM10;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE10.setBackground(Color.GREEN);
@@ -2423,14 +2461,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI11MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo19;
+            codigooreden= codigoM11;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE11.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo19;
+            codigooreden = codigoM11;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE11.setBackground(Color.GREEN);
@@ -2441,14 +2479,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI2MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo20;
+            codigooreden= codigoM2;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE2.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo20;
+            codigooreden = codigoM2;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE2.setBackground(Color.GREEN);
@@ -2459,14 +2497,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI3MouseClicked
        if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo21;
+            codigooreden= codigoM3;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE3.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo21;
+            codigooreden = codigoM3;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE3.setBackground(Color.GREEN);
@@ -2477,14 +2515,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI4MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo22;
+            codigooreden= codigoM4;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE4.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo22;
+            codigooreden = codigoM4;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE4.setBackground(Color.GREEN);
@@ -2495,14 +2533,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI5MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo23;
+            codigooreden= codigoM5;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE5.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo23;
+            codigooreden = codigoM5;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE5.setBackground(Color.GREEN);
@@ -2513,14 +2551,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI6MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo24;
+            codigooreden= codigoM6;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE6.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo24;
+            codigooreden = codigoM6;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE6.setBackground(Color.GREEN);
@@ -2531,14 +2569,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI7MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo25;
+            codigooreden= codigoM7;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE7.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo25;
+            codigooreden = codigoM7;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE7.setBackground(Color.GREEN);
@@ -2549,14 +2587,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI8MouseClicked
        if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo26;
+            codigooreden= codigoM8;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE8.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo26;
+            codigooreden = codigoM8;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE8.setBackground(Color.GREEN);
@@ -2567,14 +2605,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI12MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo27;
+            codigooreden= codigoM12;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE12.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo27;
+            codigooreden = codigoM12;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE12.setBackground(Color.GREEN);
@@ -2585,14 +2623,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI13MouseClicked
        if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo28;
+            codigooreden= codigoM13;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE13.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo28;
+            codigooreden = codigoM13;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE13.setBackground(Color.GREEN);
@@ -2675,14 +2713,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI14MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo33;
+            codigooreden= codigoM14;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE14.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo33;
+            codigooreden = codigoM14;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE14.setBackground(Color.GREEN);
@@ -2729,14 +2767,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI15MouseClicked
        if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo36;
+            codigooreden= codigoM15;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE15.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo36;
+            codigooreden = codigoM15;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE15.setBackground(Color.GREEN);
@@ -2873,14 +2911,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
 
     private void MI16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI16MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo44;
+            codigooreden= codigoM16;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
             MICHE16.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo44;
+            codigooreden = codigoM16;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
             MICHE16.setBackground(Color.GREEN);
@@ -2890,43 +2928,183 @@ public class ExtrasParaiso extends javax.swing.JPanel {
     }//GEN-LAST:event_MI16MouseClicked
 
     private void MI17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI17MouseClicked
-        // TODO add your handling code here:
+         if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM17;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE17.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM17;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE17.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_MI17MouseClicked
 
     private void MI18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI18MouseClicked
-        // TODO add your handling code here:
+         if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM18;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE18.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM18;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE18.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_MI18MouseClicked
 
     private void MI19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI19MouseClicked
-        // TODO add your handling code here:
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM19;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE19.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM19;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE19.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_MI19MouseClicked
 
     private void MI20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI20MouseClicked
-        // TODO add your handling code here:
+         if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM20;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE20.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM20;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE20.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_MI20MouseClicked
 
     private void MI21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI21MouseClicked
-        // TODO add your handling code here:
+         if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM21;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE21.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM21;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE21.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_MI21MouseClicked
 
     private void MI22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI22MouseClicked
-        // TODO add your handling code here:
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM22;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE22.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM22;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE22.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_MI22MouseClicked
 
     private void MI23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI23MouseClicked
-        // TODO add your handling code here:
+         if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM23;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE23.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM23;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE23.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
     }//GEN-LAST:event_MI23MouseClicked
 
     private void MI24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI24MouseClicked
-        // TODO add your handling code here:
+     /*  if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM24;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE24.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM24;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE24.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }*/
     }//GEN-LAST:event_MI24MouseClicked
 
     private void MI25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI25MouseClicked
-        // TODO add your handling code here:
+       /* if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM25;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE25.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM25;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE25.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }*/
     }//GEN-LAST:event_MI25MouseClicked
 
     private void MI26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI26MouseClicked
-        // TODO add your handling code here:
+        /*if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM26;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE26.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM26;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE26.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }*/
     }//GEN-LAST:event_MI26MouseClicked
  
     
@@ -2980,7 +3158,137 @@ public class ExtrasParaiso extends javax.swing.JPanel {
              else if (171== codigo){
              descripcion15 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_15 = result.get(i).getDescripcion2().toUpperCase(); Precio15 = result.get(i).getPrecio();codigo15 = result.get(i).getCodigo();
             }
-            else if (60== codigo){
+             else if (189== codigo){
+             descripcion29 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_29 = result.get(i).getDescripcion2().toUpperCase(); Precio29 = result.get(i).getPrecio();codigo29 = result.get(i).getCodigo();
+            }
+            else if (199== codigo){
+             descripcion30= result.get(i).getDescripcion1().toUpperCase(); descripcion2_30 = result.get(i).getDescripcion2().toUpperCase(); Precio30 = result.get(i).getPrecio();codigo30 = result.get(i).getCodigo();
+            }
+            else if (200== codigo){
+             descripcion31 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_31 = result.get(i).getDescripcion2().toUpperCase(); Precio31 = result.get(i).getPrecio();codigo31 = result.get(i).getCodigo();
+            }
+            else if (201== codigo){
+             descripcion32 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_32 = result.get(i).getDescripcion2().toUpperCase(); Precio32 = result.get(i).getPrecio();codigo32 = result.get(i).getCodigo();
+            }
+            else if (205== codigo){
+             descripcion34 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_34 = result.get(i).getDescripcion2().toUpperCase(); Precio34 = result.get(i).getPrecio();codigo34 = result.get(i).getCodigo();
+            }
+            else if (206== codigo){
+             descripcion35 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_35 = result.get(i).getDescripcion2().toUpperCase(); Precio35 = result.get(i).getPrecio();codigo35 = result.get(i).getCodigo();
+            }
+            else if (231== codigo){
+             descripcion37 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_37 = result.get(i).getDescripcion2().toUpperCase(); Precio37 = result.get(i).getPrecio();codigo37 = result.get(i).getCodigo();
+            }
+            else if (240== codigo){
+             descripcion38 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_38 = result.get(i).getDescripcion2().toUpperCase(); Precio38 = result.get(i).getPrecio();codigo38 = result.get(i).getCodigo();
+            }
+            else if (238== codigo){
+             descripcion39 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_39 = result.get(i).getDescripcion2().toUpperCase(); Precio39 = result.get(i).getPrecio();codigo39 = result.get(i).getCodigo();
+            }
+            else if (239== codigo){
+             descripcion40 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_40 = result.get(i).getDescripcion2().toUpperCase(); Precio40 = result.get(i).getPrecio();codigo40 = result.get(i).getCodigo();
+            }
+            else if (241== codigo){
+             descripcion41 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_41 = result.get(i).getDescripcion2().toUpperCase(); Precio41 = result.get(i).getPrecio();codigo41 = result.get(i).getCodigo();
+            }
+            else if (245== codigo){
+             descripcion42 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_42 = result.get(i).getDescripcion2().toUpperCase(); Precio42 = result.get(i).getPrecio();codigo42 = result.get(i).getCodigo();
+            }
+            else if (243== codigo){
+             descripcion43 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_43 = result.get(i).getDescripcion2().toUpperCase(); Precio43 = result.get(i).getPrecio();codigo43 = result.get(i).getCodigo();
+            }
+            else if (244== codigo){
+             descripcion44 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_44 = result.get(i).getDescripcion2().toUpperCase(); Precio44 = result.get(i).getPrecio();codigo44 = result.get(i).getCodigo();
+            }
+            ///////////////////////////MICHE
+            else if (246== codigo){
+             MICHE1_1 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_1 = result.get(i).getDescripcion2().toUpperCase(); PrecioM1 = result.get(i).getPrecio(); codigoM1 = result.get(i).getCodigo();
+            }
+            else if (247== codigo){
+             MICHE1_2 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_2 = result.get(i).getDescripcion2().toUpperCase(); PrecioM2 = result.get(i).getPrecio();codigoM2 = result.get(i).getCodigo();
+            }
+            else if (248== codigo){
+             MICHE1_3 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_3 = result.get(i).getDescripcion2().toUpperCase(); PrecioM3 = result.get(i).getPrecio();codigoM3 = result.get(i).getCodigo();
+            }
+            else if (249== codigo){
+             MICHE1_4 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_4 = result.get(i).getDescripcion2().toUpperCase(); PrecioM4 = result.get(i).getPrecio();codigoM4 = result.get(i).getCodigo();
+            }
+            else if (250== codigo){
+             MICHE1_5 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_5 = result.get(i).getDescripcion2().toUpperCase(); PrecioM5 = result.get(i).getPrecio();codigoM5 = result.get(i).getCodigo();
+            }
+            else if (251== codigo){
+             MICHE1_6 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_6 = result.get(i).getDescripcion2().toUpperCase(); PrecioM6 = result.get(i).getPrecio();codigoM6 = result.get(i).getCodigo();
+            }
+            else if (252== codigo){
+             MICHE1_7 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_7 = result.get(i).getDescripcion2().toUpperCase(); PrecioM7 = result.get(i).getPrecio();codigoM7 = result.get(i).getCodigo();
+            }
+            else if (253== codigo){
+             MICHE1_8 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_8 = result.get(i).getDescripcion2().toUpperCase(); PrecioM8 = result.get(i).getPrecio();codigoM8 = result.get(i).getCodigo();
+            }
+            else if (254== codigo){
+             MICHE1_9 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_9 = result.get(i).getDescripcion2().toUpperCase(); PrecioM9 = result.get(i).getPrecio();codigoM9 = result.get(i).getCodigo();
+            }
+            else if (255== codigo){
+             MICHE1_10 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_10 = result.get(i).getDescripcion2().toUpperCase(); PrecioM10 = result.get(i).getPrecio();codigoM10 = result.get(i).getCodigo();
+            }
+            else if (256== codigo){
+             MICHE1_11 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_11 = result.get(i).getDescripcion2().toUpperCase(); PrecioM11 = result.get(i).getPrecio();codigoM11 = result.get(i).getCodigo();
+            }
+            else if (257== codigo){
+             MICHE1_12 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_12 = result.get(i).getDescripcion2().toUpperCase(); PrecioM12 = result.get(i).getPrecio();codigoM12 = result.get(i).getCodigo();
+            }
+            else if (258== codigo){
+             MICHE1_13 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_13 = result.get(i).getDescripcion2().toUpperCase(); PrecioM13 = result.get(i).getPrecio();codigoM13 = result.get(i).getCodigo();
+            }
+            else if (259== codigo){
+             MICHE1_14 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_14 = result.get(i).getDescripcion2().toUpperCase(); PrecioM14 = result.get(i).getPrecio();codigoM14 = result.get(i).getCodigo();
+            }
+            else if (260== codigo){
+             MICHE1_15 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_15 = result.get(i).getDescripcion2().toUpperCase(); PrecioM15 = result.get(i).getPrecio();codigoM15 = result.get(i).getCodigo();
+            }
+            else if (261== codigo){
+             MICHE1_16 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_16 = result.get(i).getDescripcion2().toUpperCase(); PrecioM16 = result.get(i).getPrecio();codigoM16 = result.get(i).getCodigo();
+            }
+            else if (262== codigo){
+             MICHE1_17 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_17 = result.get(i).getDescripcion2().toUpperCase(); PrecioM17 = result.get(i).getPrecio();codigoM17 = result.get(i).getCodigo();
+            }
+            else if (263== codigo){
+             MICHE1_18 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_18 = result.get(i).getDescripcion2().toUpperCase(); PrecioM18 = result.get(i).getPrecio();codigoM18 = result.get(i).getCodigo();
+            }
+             else if (264== codigo){
+             MICHE1_19 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_19 = result.get(i).getDescripcion2().toUpperCase(); PrecioM19 = result.get(i).getPrecio();codigoM19 = result.get(i).getCodigo();
+            }
+             else if (265== codigo){
+             MICHE1_20 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_20 = result.get(i).getDescripcion2().toUpperCase(); PrecioM20 = result.get(i).getPrecio();codigoM20 = result.get(i).getCodigo();
+            }
+             else if (266== codigo){
+             MICHE1_21 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_21 = result.get(i).getDescripcion2().toUpperCase(); PrecioM21 = result.get(i).getPrecio();codigoM21 = result.get(i).getCodigo();
+            }
+             else if (267== codigo){
+             MICHE1_22 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_22 = result.get(i).getDescripcion2().toUpperCase(); PrecioM22 = result.get(i).getPrecio();codigoM22 = result.get(i).getCodigo();
+            }
+             else if (268== codigo){
+             MICHE1_23 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_23 = result.get(i).getDescripcion2().toUpperCase(); PrecioM23 = result.get(i).getPrecio();codigoM23 = result.get(i).getCodigo();
+            }
+           /*  else if (== codigo){
+             MICHE1_24 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_24 = result.get(i).getDescripcion2().toUpperCase(); PrecioM24 = result.get(i).getPrecio();codigoM24 = result.get(i).getCodigo();
+            }
+             else if (== codigo){
+             MICHE1_25 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_25 = result.get(i).getDescripcion2().toUpperCase(); PrecioM25 = result.get(i).getPrecio();codigoM25 = result.get(i).getCodigo();
+            }
+             else if (== codigo){
+             MICHE1_26 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_26 = result.get(i).getDescripcion2().toUpperCase(); PrecioM26 = result.get(i).getPrecio();codigoM26 = result.get(i).getCodigo();
+            }*/
+             
+             
+             
+             
+             
+             
+             
+             //////////////////////CODIGOS ELIMINADOS PARAISO
+             
+           /* else if (60== codigo){
              descripcion16 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_16 = result.get(i).getDescripcion2().toUpperCase(); Precio16 = result.get(i).getPrecio();codigo16 = result.get(i).getCodigo();
             }
             else if (61== codigo){
@@ -3019,54 +3327,14 @@ public class ExtrasParaiso extends javax.swing.JPanel {
              else if (198== codigo){
              descripcion28 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_28 = result.get(i).getDescripcion2().toUpperCase(); Precio28 = result.get(i).getPrecio();codigo28 = result.get(i).getCodigo();
             }
-             else if (189== codigo){
-             descripcion29 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_29 = result.get(i).getDescripcion2().toUpperCase(); Precio29 = result.get(i).getPrecio();codigo29 = result.get(i).getCodigo();
-            }
-            else if (199== codigo){
-             descripcion30= result.get(i).getDescripcion1().toUpperCase(); descripcion2_30 = result.get(i).getDescripcion2().toUpperCase(); Precio30 = result.get(i).getPrecio();codigo30 = result.get(i).getCodigo();
-            }
-            else if (200== codigo){
-             descripcion31 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_31 = result.get(i).getDescripcion2().toUpperCase(); Precio31 = result.get(i).getPrecio();codigo31 = result.get(i).getCodigo();
-            }
-            else if (201== codigo){
-             descripcion32 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_32 = result.get(i).getDescripcion2().toUpperCase(); Precio32 = result.get(i).getPrecio();codigo32 = result.get(i).getCodigo();
-            }
+             
             else if (204== codigo){
              descripcion33 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_33 = result.get(i).getDescripcion2().toUpperCase(); Precio33 = result.get(i).getPrecio();codigo33 = result.get(i).getCodigo();
             }
-            else if (205== codigo){
-             descripcion34 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_34 = result.get(i).getDescripcion2().toUpperCase(); Precio34 = result.get(i).getPrecio();codigo34 = result.get(i).getCodigo();
-            }
-            else if (206== codigo){
-             descripcion35 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_35 = result.get(i).getDescripcion2().toUpperCase(); Precio35 = result.get(i).getPrecio();codigo35 = result.get(i).getCodigo();
-            }
+            
             else if (223== codigo){
              descripcion36 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_36 = result.get(i).getDescripcion2().toUpperCase(); Precio36 = result.get(i).getPrecio();codigo36 = result.get(i).getCodigo();
-            }
-            else if (231== codigo){
-             descripcion37 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_37 = result.get(i).getDescripcion2().toUpperCase(); Precio37 = result.get(i).getPrecio();codigo37 = result.get(i).getCodigo();
-            }
-            else if (240== codigo){
-             descripcion38 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_38 = result.get(i).getDescripcion2().toUpperCase(); Precio38 = result.get(i).getPrecio();codigo38 = result.get(i).getCodigo();
-            }
-            else if (238== codigo){
-             descripcion39 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_39 = result.get(i).getDescripcion2().toUpperCase(); Precio39 = result.get(i).getPrecio();codigo39 = result.get(i).getCodigo();
-            }
-            else if (239== codigo){
-             descripcion40 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_40 = result.get(i).getDescripcion2().toUpperCase(); Precio40 = result.get(i).getPrecio();codigo40 = result.get(i).getCodigo();
-            }
-            else if (241== codigo){
-             descripcion41 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_41 = result.get(i).getDescripcion2().toUpperCase(); Precio41 = result.get(i).getPrecio();codigo41 = result.get(i).getCodigo();
-            }
-            else if (245== codigo){
-             descripcion42 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_42 = result.get(i).getDescripcion2().toUpperCase(); Precio42 = result.get(i).getPrecio();codigo42 = result.get(i).getCodigo();
-            }
-            else if (243== codigo){
-             descripcion43 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_43 = result.get(i).getDescripcion2().toUpperCase(); Precio43 = result.get(i).getPrecio();codigo43 = result.get(i).getCodigo();
-            }
-            else if (244== codigo){
-             descripcion44 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_44 = result.get(i).getDescripcion2().toUpperCase(); Precio44 = result.get(i).getPrecio();codigo44 = result.get(i).getCodigo();
-            }
+            }*/
         }
   }
 
@@ -3214,32 +3482,6 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         EX14.setText(texto14);
         String texto15 ="<html><center><body>"+descripcion15+"<br>"+descripcion2_15+"<br><font color='RED'>Q"+Precio15+"</font></body></center></html>";
         EX15.setText(texto15);
-        String texto16 ="<html><center><body>"+descripcion16+"<br>"+descripcion2_16+"<br><font color='RED'>Q"+Precio16+"</font></body></center></html>";
-        MI9.setText(texto16);
-        String texto17 ="<html><center><body>"+descripcion17+"<br>"+descripcion2_17+"<br><font color='RED'>Q"+Precio17+"</font></body></center></html>";
-        MI1.setText(texto17);
-        String texto18 ="<html><center><body>"+descripcion18+"<br>"+descripcion2_18+"<br><font color='RED'>Q"+Precio18+"</font></body></center></html>";
-        MI10.setText(texto18);
-        String texto19 ="<html><center><body>"+descripcion19+"<br>"+descripcion2_19+"<br><font color='RED'>Q"+Precio19+"</font></body></center></html>";
-        MI11.setText(texto19);
-        String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
-        MI2.setText(texto20);
-        String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
-        MI3.setText(texto21);
-        String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
-        MI4.setText(texto22);
-        String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
-        MI5.setText(texto23);
-        String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
-        MI6.setText(texto24);
-        String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
-        MI7.setText(texto25);
-        String texto26 ="<html><center><body>"+descripcion26+"<br>"+descripcion2_26+"<br><font color='RED'>Q"+Precio26+"</font></body></center></html>";
-        MI8.setText(texto26);
-        String texto27 ="<html><center><body>"+descripcion27+"<br>"+descripcion2_27+"<br><font color='RED'>Q"+Precio27+"</font></body></center></html>";
-        MI12.setText(texto27);
-        String texto28 ="<html><center><body>"+descripcion28+"<br>"+descripcion2_28+"<br><font color='RED'>Q"+Precio28+"</font></body></center></html>";
-        MI13.setText(texto28);
         String texto29 ="<html><center><body>"+descripcion29+"<br>"+descripcion2_29+"<br><font color='RED'>Q"+Precio29+"</font></body></center></html>";
         EX29.setText(texto29);
         String texto30 ="<html><center><body>"+descripcion30+"<br>"+descripcion2_30+"<br><font color='RED'>Q"+Precio30+"</font></body></center></html>";
@@ -3248,14 +3490,10 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         EX31.setText(texto31);
         String texto32 ="<html><center><body>"+descripcion32+"<br>"+descripcion2_32+"<br><font color='RED'>Q"+Precio32+"</font></body></center></html>";
         EX32.setText(texto32);
-        String texto33 ="<html><center><body>"+descripcion33+"<br>"+descripcion2_33+"<br><font color='RED'>Q"+Precio33+"</font></body></center></html>";
-        MI14.setText(texto33);
         String texto34 ="<html><center><body>"+descripcion34+"<br>"+descripcion2_34+"<br><font color='RED'>Q"+Precio34+"</font></body></center></html>";
         EX34.setText(texto34);
         String texto35 ="<html><center><body>"+descripcion35+"<br>"+descripcion2_35+"<br><font color='RED'>Q"+Precio35+"</font></body></center></html>";
         EX35.setText(texto35);
-        String texto36 ="<html><center><body>"+descripcion36+"<br>"+descripcion2_36+"<br><font color='RED'>Q"+Precio36+"</font></body></center></html>";
-        MI15.setText(texto36);
         String texto37 ="<html><center><body>"+descripcion37+"<br>"+descripcion2_37+"<br><font color='RED'>Q"+Precio37+"</font></body></center></html>";
         EX37.setText(texto37);
         String texto38 ="<html><center><body>"+descripcion38+"<br>"+descripcion2_38+"<br><font color='RED'>Q"+Precio38+"</font></body></center></html>";
@@ -3270,8 +3508,61 @@ public class ExtrasParaiso extends javax.swing.JPanel {
         EX42.setText(texto42);
         String texto43 ="<html><center><body>"+descripcion43+"<br>"+descripcion2_43+"<br><font color='RED'>Q"+Precio43+"</font></body></center></html>";
         EX43.setText(texto43);
-        String texto44 ="<html><center><body>"+descripcion44+"<br>"+descripcion2_44+"<br><font color='RED'>Q"+Precio44+"</font></body></center></html>";
-        MI16.setText(texto44);
+        
+        //////////////////////////////////MICHE/////////////////////////////////////////
+        
+        String M1 ="<html><center><body>"+MICHE1_1+"<br>"+MICHE2_1+"<br><font color='RED'>Q"+PrecioM1+"</font></body></center></html>";
+        MI1.setText(M1);
+        String M2 ="<html><center><body>"+MICHE1_2+"<br>"+MICHE2_2+"<br><font color='RED'>Q"+PrecioM2+"</font></body></center></html>";
+        MI2.setText(M2);
+        String M3="<html><center><body>"+MICHE1_3+"<br>"+MICHE2_3+"<br><font color='RED'>Q"+PrecioM3+"</font></body></center></html>";
+        MI3.setText(M3);
+        String M4 ="<html><center><body>"+MICHE1_4+"<br>"+MICHE2_4+"<br><font color='RED'>Q"+PrecioM4+"</font></body></center></html>";
+        MI4.setText(M4);
+        String M5 ="<html><center><body>"+MICHE1_5+"<br>"+MICHE2_5+"<br><font color='RED'>Q"+PrecioM5+"</font></body></center></html>";
+        MI5.setText(M5);
+        String M6 ="<html><center><body>"+MICHE1_6+"<br>"+MICHE2_6+"<br><font color='RED'>Q"+PrecioM6+"</font></body></center></html>";
+        MI6.setText(M6);
+        String M7 ="<html><center><body>"+MICHE1_7+"<br>"+MICHE2_7+"<br><font color='RED'>Q"+PrecioM7+"</font></body></center></html>";
+        MI7.setText(M7);
+        String M8 ="<html><center><body>"+MICHE1_8+"<br>"+MICHE2_8+"<br><font color='RED'>Q"+PrecioM8+"</font></body></center></html>";
+        MI8.setText(M8);
+        String M9 ="<html><center><body>"+MICHE1_9+"<br>"+MICHE2_9+"<br><font color='RED'>Q"+PrecioM9+"</font></body></center></html>";
+        MI9.setText(M9);
+        String M10 ="<html><center><body>"+MICHE1_10+"<br>"+MICHE2_10+"<br><font color='RED'>Q"+PrecioM10+"</font></body></center></html>";
+        MI10.setText(M10);
+        String M11 ="<html><center><body>"+MICHE1_11+"<br>"+MICHE2_11+"<br><font color='RED'>Q"+PrecioM11+"</font></body></center></html>";
+        MI11.setText(M11);
+        String M12 ="<html><center><body>"+MICHE1_12+"<br>"+MICHE2_12+"<br><font color='RED'>Q"+PrecioM12+"</font></body></center></html>";
+        MI12.setText(M12);
+        String M13 ="<html><center><body>"+MICHE1_13+"<br>"+MICHE2_13+"<br><font color='RED'>Q"+PrecioM13+"</font></body></center></html>";
+        MI13.setText(M13);
+        String M14 ="<html><center><body>"+MICHE1_14+"<br>"+MICHE2_14+"<br><font color='RED'>Q"+PrecioM14+"</font></body></center></html>";
+        MI14.setText(M14);
+        String M15 ="<html><center><body>"+MICHE1_15+"<br>"+MICHE2_15+"<br><font color='RED'>Q"+PrecioM15+"</font></body></center></html>";
+        MI15.setText(M15);
+        String M16 ="<html><center><body>"+MICHE1_16+"<br>"+MICHE2_16+"<br><font color='RED'>Q"+PrecioM16+"</font></body></center></html>";
+        MI16.setText(M16);
+        String M17 ="<html><center><body>"+MICHE1_17+"<br>"+MICHE2_17+"<br><font color='RED'>Q"+PrecioM17+"</font></body></center></html>";
+        MI17.setText(M17);
+        String M18 ="<html><center><body>"+MICHE1_18+"<br>"+MICHE2_18+"<br><font color='RED'>Q"+PrecioM18+"</font></body></center></html>";
+        MI18.setText(M18);
+        String M19 ="<html><center><body>"+MICHE1_19+"<br>"+MICHE2_19+"<br><font color='RED'>Q"+PrecioM19+"</font></body></center></html>";
+        MI19.setText(M19);
+        String M20 ="<html><center><body>"+MICHE1_20+"<br>"+MICHE2_20+"<br><font color='RED'>Q"+PrecioM20+"</font></body></center></html>";
+        MI20.setText(M20);
+        String M21 ="<html><center><body>"+MICHE1_21+"<br>"+MICHE2_21+"<br><font color='RED'>Q"+PrecioM21+"</font></body></center></html>";
+        MI21.setText(M21);
+        String M22 ="<html><center><body>"+MICHE1_22+"<br>"+MICHE2_22+"<br><font color='RED'>Q"+PrecioM22+"</font></body></center></html>";
+        MI22.setText(M22);
+        String M23 ="<html><center><body>"+MICHE1_23+"<br>"+MICHE2_23+"<br><font color='RED'>Q"+PrecioM23+"</font></body></center></html>";
+        MI23.setText(M23);
+        String M24 ="<html><center><body>"+MICHE1_24+"<br>"+MICHE2_24+"<br><font color='RED'>Q"+PrecioM24+"</font></body></center></html>";
+       /*MI24.setText(M24);
+        String M25 ="<html><center><body>"+MICHE1_25+"<br>"+MICHE2_25+"<br><font color='RED'>Q"+PrecioM25+"</font></body></center></html>";
+        MI25.setText(M25);
+        String M26 ="<html><center><body>"+MICHE1_26+"<br>"+MICHE2_26+"<br><font color='RED'>Q"+PrecioM26+"</font></body></center></html>";
+        MI26.setText(M26);*/
     }
 
 
