@@ -232,7 +232,7 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
         return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD,unidad_medida from productosinventario where tipo = 2");    
  }  
 
-    public static ArrayList<InsertarProducto> BDIngresosProductosInventarioSuministros () {
+ public static ArrayList<InsertarProducto> BDIngresosProductosInventarioSuministros () {
         return Inven("select IDPRODUCTOSINVE,descripcion,CANTIDAD,unidad_medida from productosinventario where tipo = 3");    
  }  
 
@@ -553,6 +553,42 @@ public static ArrayList<InsertarProducto>ListadeIngresos (int a) {
                  t = new InsertarProducto();
                  t.setDescripcion(rs.getString("DESCRIPCIONGASTO").toUpperCase());
                  t.setTotal(rs.getDouble("PRECIO"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA TABLA "+e);
+            return null;
+        } 
+        return list;
+}
+    
+    
+    
+    
+////////////////////////////////////////////////////////INGRESOS DESCARGAS CUARTO FRIO////////////////////////////////////////////////
+
+public static ArrayList<InsertarProducto>ListaProductosBodegaPrincipal () {
+        return BP("call ListaProductos"); 
+        
+ }  
+
+    private static ArrayList<InsertarProducto> BP(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCodigo(rs.getInt("CODIGOBP"));
+                 t.setDescripcion(rs.getString("DESCRIPCION").toUpperCase());
+                 t.setNota(rs.getString("NOTA").toUpperCase());
+                 t.setUMedida(rs.getString("UNIDADMEDIDA"));
+                 t.setCantidad(rs.getInt("CANTIDAD"));
                  list.add(t);
                             }
             cn.close();

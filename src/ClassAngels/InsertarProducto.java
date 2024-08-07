@@ -32,7 +32,16 @@ public class InsertarProducto {
     private int NoOrden;
     private int Status;
     private String UMedida;
+    private String Nota;
 
+    public String getNota() {
+        return Nota;
+    }
+
+    public void setNota(String Nota) {
+        this.Nota = Nota;
+    }
+    
     public double getEfectivo() {
         return Efectivo;
     }
