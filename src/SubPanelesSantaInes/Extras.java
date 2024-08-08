@@ -63,6 +63,32 @@ public class Extras extends javax.swing.JPanel {
  String descripcion33;	String descripcion2_33;	 String Precio33; int codigo33;
  String descripcion34;	String descripcion2_34;	 String Precio34; int codigo34;
  String descripcion35;	String descripcion2_35;	 String Precio35; int codigo35;
+ String MICHE1_1;String MICHE2_1;String PrecioM1; int codigoM1;
+ String MICHE1_2;String MICHE2_2;String PrecioM2; int codigoM2;
+ String MICHE1_3;String MICHE2_3;String PrecioM3; int codigoM3;
+ String MICHE1_4;String MICHE2_4;String PrecioM4; int codigoM4;
+ String MICHE1_5;String MICHE2_5;String PrecioM5; int codigoM5;
+ String MICHE1_6;String MICHE2_6;String PrecioM6; int codigoM6;
+ String MICHE1_7;String MICHE2_7;String PrecioM7; int codigoM7;
+ String MICHE1_8;String MICHE2_8;String PrecioM8; int codigoM8;
+ String MICHE1_9;String MICHE2_9;String PrecioM9; int codigoM9;
+ String MICHE1_10;String MICHE2_10;String PrecioM10; int codigoM10;
+ String MICHE1_11;String MICHE2_11;String PrecioM11; int codigoM11;
+ String MICHE1_12;String MICHE2_12;String PrecioM12; int codigoM12;
+ String MICHE1_13;String MICHE2_13;String PrecioM13; int codigoM13;
+ String MICHE1_14;String MICHE2_14;String PrecioM14; int codigoM14;
+ String MICHE1_15;String MICHE2_15;String PrecioM15; int codigoM15;
+ String MICHE1_16;String MICHE2_16;String PrecioM16; int codigoM16;
+ String MICHE1_17;String MICHE2_17;String PrecioM17; int codigoM17;
+ String MICHE1_18;String MICHE2_18;String PrecioM18; int codigoM18;
+ String MICHE1_19;String MICHE2_19;String PrecioM19; int codigoM19;
+ String MICHE1_20;String MICHE2_20;String PrecioM20; int codigoM20;
+ String MICHE1_21;String MICHE2_21;String PrecioM21; int codigoM21;
+ String MICHE1_22;String MICHE2_22;String PrecioM22; int codigoM22;
+ String MICHE1_23;String MICHE2_23;String PrecioM23; int codigoM23;
+ String MICHE1_24;String MICHE2_24;String PrecioM24; int codigoM24;
+ String MICHE1_25;String MICHE2_25;String PrecioM25; int codigoM25;
+ String MICHE1_26;String MICHE2_26;String PrecioM26; int codigoM26;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -113,15 +139,33 @@ public class Extras extends javax.swing.JPanel {
        P24.setBackground(Original);
        P25.setBackground(Original);
        P26.setBackground(Original);
-       P27.setBackground(Original);
-       P28.setBackground(Original);
-       P29.setBackground(Original);
-       P30.setBackground(Original);
-       P31.setBackground(Original);
-       P32.setBackground(Original);
-       P33.setBackground(Original);
-       P34.setBackground(Original);
-       P35.setBackground(Original);
+      
+       MICHE1.setBackground(Original);
+       MICHE2.setBackground(Original);
+       MICHE3.setBackground(Original);
+       MICHE4.setBackground(Original);
+       MICHE5.setBackground(Original);
+       MICHE6.setBackground(Original);
+       MICHE7.setBackground(Original);
+       MICHE8.setBackground(Original);
+       MICHE9.setBackground(Original);
+       MICHE10.setBackground(Original);
+       MICHE11.setBackground(Original);
+       MICHE12.setBackground(Original);
+       MICHE13.setBackground(Original);
+       MICHE14.setBackground(Original);
+       MICHE15.setBackground(Original);
+       MICHE16.setBackground(Original);
+       MICHE17.setBackground(Original);
+       MICHE18.setBackground(Original);
+       MICHE19.setBackground(Original);
+       MICHE20.setBackground(Original);
+       MICHE21.setBackground(Original);
+       MICHE22.setBackground(Original);
+       MICHE23.setBackground(Original);
+       MICHE24.setBackground(Original);
+       MICHE25.setBackground(Original);
+       MICHE26.setBackground(Original);
      }
     });
     
@@ -297,19 +341,6 @@ public class Extras extends javax.swing.JPanel {
         EX14 = new javax.swing.JLabel();
         P15 = new ClassAngels.PanelRound();
         EX15 = new javax.swing.JLabel();
-        P29 = new ClassAngels.PanelRound();
-        EX29 = new javax.swing.JLabel();
-        P30 = new ClassAngels.PanelRound();
-        EX30 = new javax.swing.JLabel();
-        P31 = new ClassAngels.PanelRound();
-        EX31 = new javax.swing.JLabel();
-        P32 = new ClassAngels.PanelRound();
-        EX32 = new javax.swing.JLabel();
-        P34 = new ClassAngels.PanelRound();
-        EX34 = new javax.swing.JLabel();
-        P35 = new ClassAngels.PanelRound();
-        EX35 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
         P16 = new ClassAngels.PanelRound();
         EX16 = new javax.swing.JLabel();
         P17 = new ClassAngels.PanelRound();
@@ -332,12 +363,59 @@ public class Extras extends javax.swing.JPanel {
         EX25 = new javax.swing.JLabel();
         P26 = new ClassAngels.PanelRound();
         EX26 = new javax.swing.JLabel();
-        P27 = new ClassAngels.PanelRound();
-        EX27 = new javax.swing.JLabel();
-        P28 = new ClassAngels.PanelRound();
-        EX28 = new javax.swing.JLabel();
-        P33 = new ClassAngels.PanelRound();
-        EX33 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        MICHE1 = new ClassAngels.PanelRound();
+        MI1 = new javax.swing.JLabel();
+        MICHE2 = new ClassAngels.PanelRound();
+        MI2 = new javax.swing.JLabel();
+        MICHE3 = new ClassAngels.PanelRound();
+        MI3 = new javax.swing.JLabel();
+        MICHE4 = new ClassAngels.PanelRound();
+        MI4 = new javax.swing.JLabel();
+        MICHE5 = new ClassAngels.PanelRound();
+        MI5 = new javax.swing.JLabel();
+        MICHE6 = new ClassAngels.PanelRound();
+        MI6 = new javax.swing.JLabel();
+        MICHE7 = new ClassAngels.PanelRound();
+        MI7 = new javax.swing.JLabel();
+        MICHE8 = new ClassAngels.PanelRound();
+        MI8 = new javax.swing.JLabel();
+        MICHE9 = new ClassAngels.PanelRound();
+        MI9 = new javax.swing.JLabel();
+        MICHE10 = new ClassAngels.PanelRound();
+        MI10 = new javax.swing.JLabel();
+        MICHE11 = new ClassAngels.PanelRound();
+        MI11 = new javax.swing.JLabel();
+        MICHE12 = new ClassAngels.PanelRound();
+        MI12 = new javax.swing.JLabel();
+        MICHE13 = new ClassAngels.PanelRound();
+        MI13 = new javax.swing.JLabel();
+        MICHE14 = new ClassAngels.PanelRound();
+        MI14 = new javax.swing.JLabel();
+        MICHE15 = new ClassAngels.PanelRound();
+        MI15 = new javax.swing.JLabel();
+        MICHE16 = new ClassAngels.PanelRound();
+        MI16 = new javax.swing.JLabel();
+        MICHE17 = new ClassAngels.PanelRound();
+        MI17 = new javax.swing.JLabel();
+        MICHE18 = new ClassAngels.PanelRound();
+        MI18 = new javax.swing.JLabel();
+        MICHE19 = new ClassAngels.PanelRound();
+        MI19 = new javax.swing.JLabel();
+        MICHE20 = new ClassAngels.PanelRound();
+        MI20 = new javax.swing.JLabel();
+        MICHE21 = new ClassAngels.PanelRound();
+        MI21 = new javax.swing.JLabel();
+        MICHE22 = new ClassAngels.PanelRound();
+        MI22 = new javax.swing.JLabel();
+        MICHE23 = new ClassAngels.PanelRound();
+        MI23 = new javax.swing.JLabel();
+        MICHE24 = new ClassAngels.PanelRound();
+        MI24 = new javax.swing.JLabel();
+        MICHE25 = new ClassAngels.PanelRound();
+        MI25 = new javax.swing.JLabel();
+        MICHE26 = new ClassAngels.PanelRound();
+        MI26 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 102));
 
@@ -696,7 +774,7 @@ public class Extras extends javax.swing.JPanel {
         );
         P13Layout.setVerticalGroup(
             P13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(EX13, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
         P14.setBackground(new java.awt.Color(204, 255, 102));
@@ -757,166 +835,299 @@ public class Extras extends javax.swing.JPanel {
             .addComponent(EX15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
-        P29.setBackground(new java.awt.Color(204, 255, 102));
-        P29.setPreferredSize(new java.awt.Dimension(75, 70));
-        P29.setRoundBottomLeft(20);
-        P29.setRoundBottomRight(20);
-        P29.setRoundTopLeft(20);
-        P29.setRoundTopRight(20);
+        P16.setBackground(new java.awt.Color(204, 255, 102));
+        P16.setPreferredSize(new java.awt.Dimension(75, 70));
+        P16.setRoundBottomLeft(20);
+        P16.setRoundBottomRight(20);
+        P16.setRoundTopLeft(20);
+        P16.setRoundTopRight(20);
 
-        EX29.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX29.setText("29");
-        EX29.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX16.setText("16");
+        EX16.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX29MouseClicked(evt);
+                EX16MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout P29Layout = new javax.swing.GroupLayout(P29);
-        P29.setLayout(P29Layout);
-        P29Layout.setHorizontalGroup(
-            P29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX29, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        javax.swing.GroupLayout P16Layout = new javax.swing.GroupLayout(P16);
+        P16.setLayout(P16Layout);
+        P16Layout.setHorizontalGroup(
+            P16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX16, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
-        P29Layout.setVerticalGroup(
-            P29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX29, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        P16Layout.setVerticalGroup(
+            P16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
-        P30.setBackground(new java.awt.Color(204, 255, 102));
-        P30.setPreferredSize(new java.awt.Dimension(75, 70));
-        P30.setRoundBottomLeft(20);
-        P30.setRoundBottomRight(20);
-        P30.setRoundTopLeft(20);
-        P30.setRoundTopRight(20);
+        P17.setBackground(new java.awt.Color(204, 255, 102));
+        P17.setPreferredSize(new java.awt.Dimension(75, 70));
+        P17.setRoundBottomLeft(20);
+        P17.setRoundBottomRight(20);
+        P17.setRoundTopLeft(20);
+        P17.setRoundTopRight(20);
 
-        EX30.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX30.setText("30");
-        EX30.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX17.setText("17");
+        EX17.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX30MouseClicked(evt);
+                EX17MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout P30Layout = new javax.swing.GroupLayout(P30);
-        P30.setLayout(P30Layout);
-        P30Layout.setHorizontalGroup(
-            P30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX30, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        javax.swing.GroupLayout P17Layout = new javax.swing.GroupLayout(P17);
+        P17.setLayout(P17Layout);
+        P17Layout.setHorizontalGroup(
+            P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX17, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
-        P30Layout.setVerticalGroup(
-            P30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        P17Layout.setVerticalGroup(
+            P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
-        P31.setBackground(new java.awt.Color(204, 255, 102));
-        P31.setPreferredSize(new java.awt.Dimension(75, 70));
-        P31.setRoundBottomLeft(20);
-        P31.setRoundBottomRight(20);
-        P31.setRoundTopLeft(20);
-        P31.setRoundTopRight(20);
+        P18.setBackground(new java.awt.Color(204, 255, 102));
+        P18.setPreferredSize(new java.awt.Dimension(75, 70));
+        P18.setRoundBottomLeft(20);
+        P18.setRoundBottomRight(20);
+        P18.setRoundTopLeft(20);
+        P18.setRoundTopRight(20);
 
-        EX31.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX31.setText("31");
-        EX31.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX18.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX18.setText("18");
+        EX18.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX31MouseClicked(evt);
+                EX18MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout P31Layout = new javax.swing.GroupLayout(P31);
-        P31.setLayout(P31Layout);
-        P31Layout.setHorizontalGroup(
-            P31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX31, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        javax.swing.GroupLayout P18Layout = new javax.swing.GroupLayout(P18);
+        P18.setLayout(P18Layout);
+        P18Layout.setHorizontalGroup(
+            P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX18, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
-        P31Layout.setVerticalGroup(
-            P31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        P18Layout.setVerticalGroup(
+            P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
-        P32.setBackground(new java.awt.Color(204, 255, 102));
-        P32.setPreferredSize(new java.awt.Dimension(75, 70));
-        P32.setRoundBottomLeft(20);
-        P32.setRoundBottomRight(20);
-        P32.setRoundTopLeft(20);
-        P32.setRoundTopRight(20);
+        P19.setBackground(new java.awt.Color(204, 255, 102));
+        P19.setPreferredSize(new java.awt.Dimension(75, 70));
+        P19.setRoundBottomLeft(20);
+        P19.setRoundBottomRight(20);
+        P19.setRoundTopLeft(20);
+        P19.setRoundTopRight(20);
 
-        EX32.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX32.setText("32");
-        EX32.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX19.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX19.setText("19");
+        EX19.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX32MouseClicked(evt);
+                EX19MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout P32Layout = new javax.swing.GroupLayout(P32);
-        P32.setLayout(P32Layout);
-        P32Layout.setHorizontalGroup(
-            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX32, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        javax.swing.GroupLayout P19Layout = new javax.swing.GroupLayout(P19);
+        P19.setLayout(P19Layout);
+        P19Layout.setHorizontalGroup(
+            P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX19, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
-        P32Layout.setVerticalGroup(
-            P32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        P19Layout.setVerticalGroup(
+            P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
-        P34.setBackground(new java.awt.Color(204, 255, 102));
-        P34.setPreferredSize(new java.awt.Dimension(75, 70));
-        P34.setRoundBottomLeft(20);
-        P34.setRoundBottomRight(20);
-        P34.setRoundTopLeft(20);
-        P34.setRoundTopRight(20);
+        P20.setBackground(new java.awt.Color(204, 255, 102));
+        P20.setPreferredSize(new java.awt.Dimension(75, 70));
+        P20.setRoundBottomLeft(20);
+        P20.setRoundBottomRight(20);
+        P20.setRoundTopLeft(20);
+        P20.setRoundTopRight(20);
 
-        EX34.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX34.setText("34");
-        EX34.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX20.setText("20");
+        EX20.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX34MouseClicked(evt);
+                EX20MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout P34Layout = new javax.swing.GroupLayout(P34);
-        P34.setLayout(P34Layout);
-        P34Layout.setHorizontalGroup(
-            P34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX34, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        javax.swing.GroupLayout P20Layout = new javax.swing.GroupLayout(P20);
+        P20.setLayout(P20Layout);
+        P20Layout.setHorizontalGroup(
+            P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX20, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
-        P34Layout.setVerticalGroup(
-            P34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        P20Layout.setVerticalGroup(
+            P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
-        P35.setBackground(new java.awt.Color(204, 255, 102));
-        P35.setPreferredSize(new java.awt.Dimension(75, 70));
-        P35.setRoundBottomLeft(20);
-        P35.setRoundBottomRight(20);
-        P35.setRoundTopLeft(20);
-        P35.setRoundTopRight(20);
+        P21.setBackground(new java.awt.Color(204, 255, 102));
+        P21.setPreferredSize(new java.awt.Dimension(75, 70));
+        P21.setRoundBottomLeft(20);
+        P21.setRoundBottomRight(20);
+        P21.setRoundTopLeft(20);
+        P21.setRoundTopRight(20);
 
-        EX35.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX35.setText("35");
-        EX35.addMouseListener(new java.awt.event.MouseAdapter() {
+        EX21.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX21.setText("21");
+        EX21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX35MouseClicked(evt);
+                EX21MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout P35Layout = new javax.swing.GroupLayout(P35);
-        P35.setLayout(P35Layout);
-        P35Layout.setHorizontalGroup(
-            P35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX35, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        javax.swing.GroupLayout P21Layout = new javax.swing.GroupLayout(P21);
+        P21.setLayout(P21Layout);
+        P21Layout.setHorizontalGroup(
+            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX21, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
-        P35Layout.setVerticalGroup(
-            P35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX35, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        P21Layout.setVerticalGroup(
+            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P22.setBackground(new java.awt.Color(204, 255, 102));
+        P22.setPreferredSize(new java.awt.Dimension(75, 70));
+        P22.setRoundBottomLeft(20);
+        P22.setRoundBottomRight(20);
+        P22.setRoundTopLeft(20);
+        P22.setRoundTopRight(20);
+
+        EX22.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX22.setText("22");
+        EX22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX22MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P22Layout = new javax.swing.GroupLayout(P22);
+        P22.setLayout(P22Layout);
+        P22Layout.setHorizontalGroup(
+            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX22, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P22Layout.setVerticalGroup(
+            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P23.setBackground(new java.awt.Color(204, 255, 102));
+        P23.setPreferredSize(new java.awt.Dimension(75, 70));
+        P23.setRoundBottomLeft(20);
+        P23.setRoundBottomRight(20);
+        P23.setRoundTopLeft(20);
+        P23.setRoundTopRight(20);
+
+        EX23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX23.setText("23");
+        EX23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX23MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P23Layout = new javax.swing.GroupLayout(P23);
+        P23.setLayout(P23Layout);
+        P23Layout.setHorizontalGroup(
+            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX23, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P23Layout.setVerticalGroup(
+            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P24.setBackground(new java.awt.Color(204, 255, 102));
+        P24.setPreferredSize(new java.awt.Dimension(75, 70));
+        P24.setRoundBottomLeft(20);
+        P24.setRoundBottomRight(20);
+        P24.setRoundTopLeft(20);
+        P24.setRoundTopRight(20);
+
+        EX24.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX24.setText("24");
+        EX24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX24MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P24Layout = new javax.swing.GroupLayout(P24);
+        P24.setLayout(P24Layout);
+        P24Layout.setHorizontalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX24, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P24Layout.setVerticalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P25.setBackground(new java.awt.Color(204, 255, 102));
+        P25.setPreferredSize(new java.awt.Dimension(75, 70));
+        P25.setRoundBottomLeft(20);
+        P25.setRoundBottomRight(20);
+        P25.setRoundTopLeft(20);
+        P25.setRoundTopRight(20);
+
+        EX25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX25MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P25Layout = new javax.swing.GroupLayout(P25);
+        P25.setLayout(P25Layout);
+        P25Layout.setHorizontalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX25, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P25Layout.setVerticalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P26.setBackground(new java.awt.Color(204, 255, 102));
+        P26.setPreferredSize(new java.awt.Dimension(75, 70));
+        P26.setRoundBottomLeft(20);
+        P26.setRoundBottomRight(20);
+        P26.setRoundTopLeft(20);
+        P26.setRoundTopRight(20);
+
+        EX26.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX26MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P26Layout = new javax.swing.GroupLayout(P26);
+        P26.setLayout(P26Layout);
+        P26Layout.setHorizontalGroup(
+            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX26, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P26Layout.setVerticalGroup(
+            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -924,8 +1135,8 @@ public class Extras extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -951,23 +1162,35 @@ public class Extras extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(P30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(P31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(P32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(P34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(P35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(70, 70, 70))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -987,462 +1210,821 @@ public class Extras extends javax.swing.JPanel {
                         .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(P13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(P14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(P30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(P31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(P32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P34, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(P35, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(8, Short.MAX_VALUE))
-        );
-
-        jPanel2.setBackground(new java.awt.Color(255, 204, 102));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MICHELADAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
-
-        P16.setBackground(new java.awt.Color(204, 255, 102));
-        P16.setPreferredSize(new java.awt.Dimension(100, 73));
-        P16.setRoundBottomLeft(20);
-        P16.setRoundBottomRight(20);
-        P16.setRoundTopLeft(20);
-        P16.setRoundTopRight(20);
-
-        EX16.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        EX16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX16.setText("16");
-        EX16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX16MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P16Layout = new javax.swing.GroupLayout(P16);
-        P16.setLayout(P16Layout);
-        P16Layout.setHorizontalGroup(
-            P16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX16, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P16Layout.setVerticalGroup(
-            P16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P17.setBackground(new java.awt.Color(204, 255, 102));
-        P17.setPreferredSize(new java.awt.Dimension(100, 73));
-        P17.setRoundBottomLeft(20);
-        P17.setRoundBottomRight(20);
-        P17.setRoundTopLeft(20);
-        P17.setRoundTopRight(20);
-
-        EX17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX17.setText("17");
-        EX17.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX17MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P17Layout = new javax.swing.GroupLayout(P17);
-        P17.setLayout(P17Layout);
-        P17Layout.setHorizontalGroup(
-            P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX17, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P17Layout.setVerticalGroup(
-            P17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P18.setBackground(new java.awt.Color(204, 255, 102));
-        P18.setPreferredSize(new java.awt.Dimension(100, 73));
-        P18.setRoundBottomLeft(20);
-        P18.setRoundBottomRight(20);
-        P18.setRoundTopLeft(20);
-        P18.setRoundTopRight(20);
-
-        EX18.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        EX18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX18.setText("18");
-        EX18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX18MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P18Layout = new javax.swing.GroupLayout(P18);
-        P18.setLayout(P18Layout);
-        P18Layout.setHorizontalGroup(
-            P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX18, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P18Layout.setVerticalGroup(
-            P18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P19.setBackground(new java.awt.Color(204, 255, 102));
-        P19.setPreferredSize(new java.awt.Dimension(100, 73));
-        P19.setRoundBottomLeft(20);
-        P19.setRoundBottomRight(20);
-        P19.setRoundTopLeft(20);
-        P19.setRoundTopRight(20);
-
-        EX19.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        EX19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX19.setText("19");
-        EX19.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX19MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P19Layout = new javax.swing.GroupLayout(P19);
-        P19.setLayout(P19Layout);
-        P19Layout.setHorizontalGroup(
-            P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX19, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P19Layout.setVerticalGroup(
-            P19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P20.setBackground(new java.awt.Color(204, 255, 102));
-        P20.setPreferredSize(new java.awt.Dimension(100, 73));
-        P20.setRoundBottomLeft(20);
-        P20.setRoundBottomRight(20);
-        P20.setRoundTopLeft(20);
-        P20.setRoundTopRight(20);
-
-        EX20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX20.setText("20");
-        EX20.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX20MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P20Layout = new javax.swing.GroupLayout(P20);
-        P20.setLayout(P20Layout);
-        P20Layout.setHorizontalGroup(
-            P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX20, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P20Layout.setVerticalGroup(
-            P20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P21.setBackground(new java.awt.Color(204, 255, 102));
-        P21.setPreferredSize(new java.awt.Dimension(100, 73));
-        P21.setRoundBottomLeft(20);
-        P21.setRoundBottomRight(20);
-        P21.setRoundTopLeft(20);
-        P21.setRoundTopRight(20);
-
-        EX21.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX21.setText("21");
-        EX21.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX21MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P21Layout = new javax.swing.GroupLayout(P21);
-        P21.setLayout(P21Layout);
-        P21Layout.setHorizontalGroup(
-            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX21, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P21Layout.setVerticalGroup(
-            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P22.setBackground(new java.awt.Color(204, 255, 102));
-        P22.setPreferredSize(new java.awt.Dimension(100, 73));
-        P22.setRoundBottomLeft(20);
-        P22.setRoundBottomRight(20);
-        P22.setRoundTopLeft(20);
-        P22.setRoundTopRight(20);
-
-        EX22.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX22.setText("22");
-        EX22.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX22MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P22Layout = new javax.swing.GroupLayout(P22);
-        P22.setLayout(P22Layout);
-        P22Layout.setHorizontalGroup(
-            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX22, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P22Layout.setVerticalGroup(
-            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P23.setBackground(new java.awt.Color(204, 255, 102));
-        P23.setPreferredSize(new java.awt.Dimension(100, 73));
-        P23.setRoundBottomLeft(20);
-        P23.setRoundBottomRight(20);
-        P23.setRoundTopLeft(20);
-        P23.setRoundTopRight(20);
-
-        EX23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX23.setText("23");
-        EX23.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX23MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P23Layout = new javax.swing.GroupLayout(P23);
-        P23.setLayout(P23Layout);
-        P23Layout.setHorizontalGroup(
-            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX23, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P23Layout.setVerticalGroup(
-            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P24.setBackground(new java.awt.Color(204, 255, 102));
-        P24.setPreferredSize(new java.awt.Dimension(100, 73));
-        P24.setRoundBottomLeft(20);
-        P24.setRoundBottomRight(20);
-        P24.setRoundTopLeft(20);
-        P24.setRoundTopRight(20);
-
-        EX24.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX24.setText("24");
-        EX24.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX24MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P24Layout = new javax.swing.GroupLayout(P24);
-        P24.setLayout(P24Layout);
-        P24Layout.setHorizontalGroup(
-            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX24, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P24Layout.setVerticalGroup(
-            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P25.setBackground(new java.awt.Color(204, 255, 102));
-        P25.setPreferredSize(new java.awt.Dimension(100, 73));
-        P25.setRoundBottomLeft(20);
-        P25.setRoundBottomRight(20);
-        P25.setRoundTopLeft(20);
-        P25.setRoundTopRight(20);
-
-        EX25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX25.setText("25");
-        EX25.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX25MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P25Layout = new javax.swing.GroupLayout(P25);
-        P25.setLayout(P25Layout);
-        P25Layout.setHorizontalGroup(
-            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX25, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P25Layout.setVerticalGroup(
-            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P26.setBackground(new java.awt.Color(204, 255, 102));
-        P26.setPreferredSize(new java.awt.Dimension(100, 73));
-        P26.setRoundBottomLeft(20);
-        P26.setRoundBottomRight(20);
-        P26.setRoundTopLeft(20);
-        P26.setRoundTopRight(20);
-
-        EX26.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        EX26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX26.setText("26");
-        EX26.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX26MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P26Layout = new javax.swing.GroupLayout(P26);
-        P26.setLayout(P26Layout);
-        P26Layout.setHorizontalGroup(
-            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX26, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P26Layout.setVerticalGroup(
-            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P27.setBackground(new java.awt.Color(204, 255, 102));
-        P27.setPreferredSize(new java.awt.Dimension(100, 73));
-        P27.setRoundBottomLeft(20);
-        P27.setRoundBottomRight(20);
-        P27.setRoundTopLeft(20);
-        P27.setRoundTopRight(20);
-
-        EX27.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        EX27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX27.setText("27");
-        EX27.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX27MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P27Layout = new javax.swing.GroupLayout(P27);
-        P27.setLayout(P27Layout);
-        P27Layout.setHorizontalGroup(
-            P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX27, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-        );
-        P27Layout.setVerticalGroup(
-            P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P28.setBackground(new java.awt.Color(204, 255, 102));
-        P28.setPreferredSize(new java.awt.Dimension(100, 73));
-        P28.setRoundBottomLeft(20);
-        P28.setRoundBottomRight(20);
-        P28.setRoundTopLeft(20);
-        P28.setRoundTopRight(20);
-
-        EX28.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        EX28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX28.setText("28");
-        EX28.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX28MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P28Layout = new javax.swing.GroupLayout(P28);
-        P28.setLayout(P28Layout);
-        P28Layout.setHorizontalGroup(
-            P28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P28Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(EX28, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        P28Layout.setVerticalGroup(
-            P28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        P33.setBackground(new java.awt.Color(204, 255, 102));
-        P33.setPreferredSize(new java.awt.Dimension(100, 73));
-        P33.setRoundBottomLeft(20);
-        P33.setRoundBottomRight(20);
-        P33.setRoundTopLeft(20);
-        P33.setRoundTopRight(20);
-
-        EX33.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
-        EX33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EX33.setText("28");
-        EX33.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EX33MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout P33Layout = new javax.swing.GroupLayout(P33);
-        P33.setLayout(P33Layout);
-        P33Layout.setHorizontalGroup(
-            P33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, P33Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(EX33, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        P33Layout.setVerticalGroup(
-            P33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(EX33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 73, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(P14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(8, Short.MAX_VALUE))
+        );
+
+        jPanel3.setBackground(new java.awt.Color(255, 204, 102));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MICHELADAS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
+
+        MICHE1.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE1.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE1.setRoundBottomLeft(20);
+        MICHE1.setRoundBottomRight(20);
+        MICHE1.setRoundTopLeft(20);
+        MICHE1.setRoundTopRight(20);
+
+        MI1.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI1.setText("MI1");
+        MI1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI1MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE1Layout = new javax.swing.GroupLayout(MICHE1);
+        MICHE1.setLayout(MICHE1Layout);
+        MICHE1Layout.setHorizontalGroup(
+            MICHE1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI1, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE1Layout.setVerticalGroup(
+            MICHE1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE2.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE2.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE2.setRoundBottomLeft(20);
+        MICHE2.setRoundBottomRight(20);
+        MICHE2.setRoundTopLeft(20);
+        MICHE2.setRoundTopRight(20);
+
+        MI2.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI2.setText("MI2");
+        MI2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI2MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE2Layout = new javax.swing.GroupLayout(MICHE2);
+        MICHE2.setLayout(MICHE2Layout);
+        MICHE2Layout.setHorizontalGroup(
+            MICHE2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI2, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE2Layout.setVerticalGroup(
+            MICHE2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE3.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE3.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE3.setRoundBottomLeft(20);
+        MICHE3.setRoundBottomRight(20);
+        MICHE3.setRoundTopLeft(20);
+        MICHE3.setRoundTopRight(20);
+
+        MI3.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI3.setText("MI3");
+        MI3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI3MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE3Layout = new javax.swing.GroupLayout(MICHE3);
+        MICHE3.setLayout(MICHE3Layout);
+        MICHE3Layout.setHorizontalGroup(
+            MICHE3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI3, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE3Layout.setVerticalGroup(
+            MICHE3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE4.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE4.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE4.setRoundBottomLeft(20);
+        MICHE4.setRoundBottomRight(20);
+        MICHE4.setRoundTopLeft(20);
+        MICHE4.setRoundTopRight(20);
+
+        MI4.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI4.setText("MI4");
+        MI4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI4MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE4Layout = new javax.swing.GroupLayout(MICHE4);
+        MICHE4.setLayout(MICHE4Layout);
+        MICHE4Layout.setHorizontalGroup(
+            MICHE4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI4, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE4Layout.setVerticalGroup(
+            MICHE4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE5.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE5.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE5.setRoundBottomLeft(20);
+        MICHE5.setRoundBottomRight(20);
+        MICHE5.setRoundTopLeft(20);
+        MICHE5.setRoundTopRight(20);
+
+        MI5.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI5.setText("MI5");
+        MI5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI5MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE5Layout = new javax.swing.GroupLayout(MICHE5);
+        MICHE5.setLayout(MICHE5Layout);
+        MICHE5Layout.setHorizontalGroup(
+            MICHE5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI5, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE5Layout.setVerticalGroup(
+            MICHE5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE6.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE6.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE6.setRoundBottomLeft(20);
+        MICHE6.setRoundBottomRight(20);
+        MICHE6.setRoundTopLeft(20);
+        MICHE6.setRoundTopRight(20);
+
+        MI6.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI6.setText("MI6");
+        MI6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI6MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE6Layout = new javax.swing.GroupLayout(MICHE6);
+        MICHE6.setLayout(MICHE6Layout);
+        MICHE6Layout.setHorizontalGroup(
+            MICHE6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI6, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE6Layout.setVerticalGroup(
+            MICHE6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE7.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE7.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE7.setRoundBottomLeft(20);
+        MICHE7.setRoundBottomRight(20);
+        MICHE7.setRoundTopLeft(20);
+        MICHE7.setRoundTopRight(20);
+
+        MI7.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI7.setText("MI7");
+        MI7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI7MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE7Layout = new javax.swing.GroupLayout(MICHE7);
+        MICHE7.setLayout(MICHE7Layout);
+        MICHE7Layout.setHorizontalGroup(
+            MICHE7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI7, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE7Layout.setVerticalGroup(
+            MICHE7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE8.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE8.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE8.setRoundBottomLeft(20);
+        MICHE8.setRoundBottomRight(20);
+        MICHE8.setRoundTopLeft(20);
+        MICHE8.setRoundTopRight(20);
+
+        MI8.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI8.setText("MI8");
+        MI8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI8MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE8Layout = new javax.swing.GroupLayout(MICHE8);
+        MICHE8.setLayout(MICHE8Layout);
+        MICHE8Layout.setHorizontalGroup(
+            MICHE8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI8, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE8Layout.setVerticalGroup(
+            MICHE8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE9.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE9.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE9.setRoundBottomLeft(20);
+        MICHE9.setRoundBottomRight(20);
+        MICHE9.setRoundTopLeft(20);
+        MICHE9.setRoundTopRight(20);
+
+        MI9.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI9.setText("MI9");
+        MI9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI9MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE9Layout = new javax.swing.GroupLayout(MICHE9);
+        MICHE9.setLayout(MICHE9Layout);
+        MICHE9Layout.setHorizontalGroup(
+            MICHE9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI9, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE9Layout.setVerticalGroup(
+            MICHE9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE10.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE10.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE10.setRoundBottomLeft(20);
+        MICHE10.setRoundBottomRight(20);
+        MICHE10.setRoundTopLeft(20);
+        MICHE10.setRoundTopRight(20);
+
+        MI10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI10.setText("MI10");
+        MI10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI10MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE10Layout = new javax.swing.GroupLayout(MICHE10);
+        MICHE10.setLayout(MICHE10Layout);
+        MICHE10Layout.setHorizontalGroup(
+            MICHE10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI10, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE10Layout.setVerticalGroup(
+            MICHE10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE11.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE11.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE11.setRoundBottomLeft(20);
+        MICHE11.setRoundBottomRight(20);
+        MICHE11.setRoundTopLeft(20);
+        MICHE11.setRoundTopRight(20);
+
+        MI11.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI11.setText("MI11");
+        MI11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI11MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE11Layout = new javax.swing.GroupLayout(MICHE11);
+        MICHE11.setLayout(MICHE11Layout);
+        MICHE11Layout.setHorizontalGroup(
+            MICHE11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI11, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE11Layout.setVerticalGroup(
+            MICHE11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE12.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE12.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE12.setRoundBottomLeft(20);
+        MICHE12.setRoundBottomRight(20);
+        MICHE12.setRoundTopLeft(20);
+        MICHE12.setRoundTopRight(20);
+
+        MI12.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI12.setText("MI12");
+        MI12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI12MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE12Layout = new javax.swing.GroupLayout(MICHE12);
+        MICHE12.setLayout(MICHE12Layout);
+        MICHE12Layout.setHorizontalGroup(
+            MICHE12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI12, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE12Layout.setVerticalGroup(
+            MICHE12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE13.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE13.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE13.setRoundBottomLeft(20);
+        MICHE13.setRoundBottomRight(20);
+        MICHE13.setRoundTopLeft(20);
+        MICHE13.setRoundTopRight(20);
+
+        MI13.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI13.setText("MI13");
+        MI13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI13MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE13Layout = new javax.swing.GroupLayout(MICHE13);
+        MICHE13.setLayout(MICHE13Layout);
+        MICHE13Layout.setHorizontalGroup(
+            MICHE13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI13, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE13Layout.setVerticalGroup(
+            MICHE13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE14.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE14.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE14.setRoundBottomLeft(20);
+        MICHE14.setRoundBottomRight(20);
+        MICHE14.setRoundTopLeft(20);
+        MICHE14.setRoundTopRight(20);
+
+        MI14.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI14.setText("MI14");
+        MI14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI14MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE14Layout = new javax.swing.GroupLayout(MICHE14);
+        MICHE14.setLayout(MICHE14Layout);
+        MICHE14Layout.setHorizontalGroup(
+            MICHE14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI14, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE14Layout.setVerticalGroup(
+            MICHE14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE15.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE15.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE15.setRoundBottomLeft(20);
+        MICHE15.setRoundBottomRight(20);
+        MICHE15.setRoundTopLeft(20);
+        MICHE15.setRoundTopRight(20);
+
+        MI15.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI15.setText("MI15");
+        MI15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI15MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE15Layout = new javax.swing.GroupLayout(MICHE15);
+        MICHE15.setLayout(MICHE15Layout);
+        MICHE15Layout.setHorizontalGroup(
+            MICHE15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI15, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE15Layout.setVerticalGroup(
+            MICHE15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE16.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE16.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE16.setRoundBottomLeft(20);
+        MICHE16.setRoundBottomRight(20);
+        MICHE16.setRoundTopLeft(20);
+        MICHE16.setRoundTopRight(20);
+
+        MI16.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI16.setText("MI16");
+        MI16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI16MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE16Layout = new javax.swing.GroupLayout(MICHE16);
+        MICHE16.setLayout(MICHE16Layout);
+        MICHE16Layout.setHorizontalGroup(
+            MICHE16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI16, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE16Layout.setVerticalGroup(
+            MICHE16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE17.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE17.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE17.setRoundBottomLeft(20);
+        MICHE17.setRoundBottomRight(20);
+        MICHE17.setRoundTopLeft(20);
+        MICHE17.setRoundTopRight(20);
+
+        MI17.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI17.setText("MI17");
+        MI17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI17MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE17Layout = new javax.swing.GroupLayout(MICHE17);
+        MICHE17.setLayout(MICHE17Layout);
+        MICHE17Layout.setHorizontalGroup(
+            MICHE17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI17, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE17Layout.setVerticalGroup(
+            MICHE17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE18.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE18.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE18.setRoundBottomLeft(20);
+        MICHE18.setRoundBottomRight(20);
+        MICHE18.setRoundTopLeft(20);
+        MICHE18.setRoundTopRight(20);
+
+        MI18.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI18.setText("MI18");
+        MI18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI18MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE18Layout = new javax.swing.GroupLayout(MICHE18);
+        MICHE18.setLayout(MICHE18Layout);
+        MICHE18Layout.setHorizontalGroup(
+            MICHE18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI18, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE18Layout.setVerticalGroup(
+            MICHE18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE19.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE19.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE19.setRoundBottomLeft(20);
+        MICHE19.setRoundBottomRight(20);
+        MICHE19.setRoundTopLeft(20);
+        MICHE19.setRoundTopRight(20);
+
+        MI19.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI19.setText("MI19");
+        MI19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI19MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE19Layout = new javax.swing.GroupLayout(MICHE19);
+        MICHE19.setLayout(MICHE19Layout);
+        MICHE19Layout.setHorizontalGroup(
+            MICHE19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI19, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE19Layout.setVerticalGroup(
+            MICHE19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE20.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE20.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE20.setRoundBottomLeft(20);
+        MICHE20.setRoundBottomRight(20);
+        MICHE20.setRoundTopLeft(20);
+        MICHE20.setRoundTopRight(20);
+
+        MI20.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI20.setText("MI20");
+        MI20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI20MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE20Layout = new javax.swing.GroupLayout(MICHE20);
+        MICHE20.setLayout(MICHE20Layout);
+        MICHE20Layout.setHorizontalGroup(
+            MICHE20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI20, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE20Layout.setVerticalGroup(
+            MICHE20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE21.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE21.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE21.setRoundBottomLeft(20);
+        MICHE21.setRoundBottomRight(20);
+        MICHE21.setRoundTopLeft(20);
+        MICHE21.setRoundTopRight(20);
+
+        MI21.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI21.setText("MI21");
+        MI21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI21MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE21Layout = new javax.swing.GroupLayout(MICHE21);
+        MICHE21.setLayout(MICHE21Layout);
+        MICHE21Layout.setHorizontalGroup(
+            MICHE21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI21, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE21Layout.setVerticalGroup(
+            MICHE21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE22.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE22.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE22.setRoundBottomLeft(20);
+        MICHE22.setRoundBottomRight(20);
+        MICHE22.setRoundTopLeft(20);
+        MICHE22.setRoundTopRight(20);
+
+        MI22.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI22.setText("MI22");
+        MI22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI22MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE22Layout = new javax.swing.GroupLayout(MICHE22);
+        MICHE22.setLayout(MICHE22Layout);
+        MICHE22Layout.setHorizontalGroup(
+            MICHE22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI22, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE22Layout.setVerticalGroup(
+            MICHE22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE23.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE23.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE23.setRoundBottomLeft(20);
+        MICHE23.setRoundBottomRight(20);
+        MICHE23.setRoundTopLeft(20);
+        MICHE23.setRoundTopRight(20);
+
+        MI23.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI23.setText("MI23");
+        MI23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI23MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE23Layout = new javax.swing.GroupLayout(MICHE23);
+        MICHE23.setLayout(MICHE23Layout);
+        MICHE23Layout.setHorizontalGroup(
+            MICHE23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI23, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE23Layout.setVerticalGroup(
+            MICHE23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE24.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE24.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE24.setRoundBottomLeft(20);
+        MICHE24.setRoundBottomRight(20);
+        MICHE24.setRoundTopLeft(20);
+        MICHE24.setRoundTopRight(20);
+
+        MI24.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI24MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE24Layout = new javax.swing.GroupLayout(MICHE24);
+        MICHE24.setLayout(MICHE24Layout);
+        MICHE24Layout.setHorizontalGroup(
+            MICHE24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI24, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE24Layout.setVerticalGroup(
+            MICHE24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE25.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE25.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE25.setRoundBottomLeft(20);
+        MICHE25.setRoundBottomRight(20);
+        MICHE25.setRoundTopLeft(20);
+        MICHE25.setRoundTopRight(20);
+
+        MI25.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI25MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE25Layout = new javax.swing.GroupLayout(MICHE25);
+        MICHE25.setLayout(MICHE25Layout);
+        MICHE25Layout.setHorizontalGroup(
+            MICHE25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI25, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE25Layout.setVerticalGroup(
+            MICHE25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        MICHE26.setBackground(new java.awt.Color(204, 255, 102));
+        MICHE26.setPreferredSize(new java.awt.Dimension(80, 70));
+        MICHE26.setRoundBottomLeft(20);
+        MICHE26.setRoundBottomRight(20);
+        MICHE26.setRoundTopLeft(20);
+        MICHE26.setRoundTopRight(20);
+
+        MI26.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MI26MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MICHE26Layout = new javax.swing.GroupLayout(MICHE26);
+        MICHE26.setLayout(MICHE26Layout);
+        MICHE26Layout.setHorizontalGroup(
+            MICHE26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI26, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        );
+        MICHE26Layout.setVerticalGroup(
+            MICHE26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MI26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(MICHE14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(MICHE1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MICHE13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(MICHE7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(MICHE15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1451,16 +2033,20 @@ public class Extras extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1900,7 +2486,7 @@ public class Extras extends javax.swing.JPanel {
     }//GEN-LAST:event_EX24MouseClicked
 
     private void EX25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX25MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+/*        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo25;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1914,11 +2500,11 @@ public class Extras extends javax.swing.JPanel {
             P25.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }
+        }*/
     }//GEN-LAST:event_EX25MouseClicked
 
     private void EX26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX26MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
+     /*  if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo26;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1932,170 +2518,476 @@ public class Extras extends javax.swing.JPanel {
             P26.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }
+        }*/
     }//GEN-LAST:event_EX26MouseClicked
 
-    private void EX27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX27MouseClicked
+    private void MI1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI1MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo27;
+            codigooreden= codigoM1;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P27.setBackground(Color.darkGray);
+            MICHE1.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo27;
+            codigooreden = codigoM1;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P27.setBackground(Color.GREEN);
+            MICHE1.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
         }
-    }//GEN-LAST:event_EX27MouseClicked
+    }//GEN-LAST:event_MI1MouseClicked
 
-    private void EX28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX28MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo28;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P28.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-        }else{
-            codigooreden = codigo28;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P28.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-        }
-    }//GEN-LAST:event_EX28MouseClicked
-
-    private void EX29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX29MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo29;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P29.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-        }else{
-            codigooreden = codigo29;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P29.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-        }
-    }//GEN-LAST:event_EX29MouseClicked
-
-    private void EX30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX30MouseClicked
-         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo30;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P30.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-        }else{
-            codigooreden = codigo30;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P30.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-        }
-    }//GEN-LAST:event_EX30MouseClicked
-
-    private void EX31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX31MouseClicked
-         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo31;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P31.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-        }else{
-            codigooreden = codigo31;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P31.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-        }
-    }//GEN-LAST:event_EX31MouseClicked
-
-    private void EX32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX32MouseClicked
-       if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo32;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P32.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-        }else{
-            codigooreden = codigo32;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P32.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-        }
-    }//GEN-LAST:event_EX32MouseClicked
-
-    private void EX33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX33MouseClicked
+    private void MI2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI2MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo33;
+            codigooreden= codigoM2;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P33.setBackground(Color.darkGray);
+            MICHE2.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo33;
+            codigooreden = codigoM2;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P33.setBackground(Color.GREEN);
+            MICHE2.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
         }
-    }//GEN-LAST:event_EX33MouseClicked
+    }//GEN-LAST:event_MI2MouseClicked
 
-    private void EX34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX34MouseClicked
+    private void MI3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI3MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo34;
+            codigooreden= codigoM3;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P34.setBackground(Color.darkGray);
+            MICHE3.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo34;
+            codigooreden = codigoM3;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P34.setBackground(Color.GREEN);
+            MICHE3.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
         }
-    }//GEN-LAST:event_EX34MouseClicked
+    }//GEN-LAST:event_MI3MouseClicked
 
-    private void EX35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX35MouseClicked
+    private void MI4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI4MouseClicked
         if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigo35;
+            codigooreden= codigoM4;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            P35.setBackground(Color.darkGray);
+            MICHE4.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
-            codigooreden = codigo35;
+            codigooreden = codigoM4;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            P35.setBackground(Color.GREEN);
+            MICHE4.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
         }
-    }//GEN-LAST:event_EX35MouseClicked
+    }//GEN-LAST:event_MI4MouseClicked
+
+    private void MI5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI5MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM5;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE5.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM5;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE5.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI5MouseClicked
+
+    private void MI6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI6MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM6;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE6.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM6;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE6.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI6MouseClicked
+
+    private void MI7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI7MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM7;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE7.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM7;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE7.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI7MouseClicked
+
+    private void MI8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI8MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM8;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE8.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM8;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE8.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI8MouseClicked
+
+    private void MI9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI9MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM9;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE9.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM9;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE9.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI9MouseClicked
+
+    private void MI10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI10MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM10;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE10.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM10;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE10.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI10MouseClicked
+
+    private void MI11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI11MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM11;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE11.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM11;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE11.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI11MouseClicked
+
+    private void MI12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI12MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM12;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE12.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM12;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE12.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI12MouseClicked
+
+    private void MI13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI13MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM13;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE13.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM13;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE13.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI13MouseClicked
+
+    private void MI14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI14MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM14;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE14.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM14;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE14.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI14MouseClicked
+
+    private void MI15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI15MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM15;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE15.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM15;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE15.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI15MouseClicked
+
+    private void MI16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI16MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM16;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE16.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM16;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE16.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI16MouseClicked
+
+    private void MI17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI17MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM17;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE17.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM17;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE17.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI17MouseClicked
+
+    private void MI18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI18MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM18;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE18.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM18;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE18.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI18MouseClicked
+
+    private void MI19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI19MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM19;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE19.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM19;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE19.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI19MouseClicked
+
+    private void MI20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI20MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM20;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE20.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM20;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE20.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI20MouseClicked
+
+    private void MI21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI21MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM21;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE21.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM21;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE21.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI21MouseClicked
+
+    private void MI22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI22MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM22;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE22.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM22;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE22.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI22MouseClicked
+
+    private void MI23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI23MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM23;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE23.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM23;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE23.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI23MouseClicked
+
+    private void MI24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI24MouseClicked
+          if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM24;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE24.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM24;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE24.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_MI24MouseClicked
+
+    private void MI25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI25MouseClicked
+        /* if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM25;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE25.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM25;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE25.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }*/
+    }//GEN-LAST:event_MI25MouseClicked
+
+    private void MI26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI26MouseClicked
+        /*if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigoM26;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            MICHE26.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigoM26;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            MICHE26.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }*/
+    }//GEN-LAST:event_MI26MouseClicked
  
     
     private void nombres(){
@@ -2114,99 +3006,172 @@ public class Extras extends javax.swing.JPanel {
             }
              else if (160== codigo){
              descripcion4 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_4 = result.get(i).getDescripcion2().toUpperCase(); Precio4 = result.get(i).getPrecio();codigo4 = result.get(i).getCodigo();
-            }
-             else if (161== codigo){
+            } ////////LLLEGA AQUI
+             else if (202== codigo){
              descripcion5 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_5 = result.get(i).getDescripcion2().toUpperCase(); Precio5 = result.get(i).getPrecio();codigo5 = result.get(i).getCodigo();
             }
-             else if (162== codigo){
+             else if (94== codigo){
              descripcion6 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_6 = result.get(i).getDescripcion2().toUpperCase(); Precio6 = result.get(i).getPrecio();codigo6 = result.get(i).getCodigo();
             }
-             else if (163== codigo){
+             else if (182== codigo){
              descripcion7 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_7 = result.get(i).getDescripcion2().toUpperCase(); Precio7 = result.get(i).getPrecio();codigo7 = result.get(i).getCodigo();
             }
-             else if (164== codigo){
+             else if (161== codigo){
              descripcion8 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_8 = result.get(i).getDescripcion2().toUpperCase(); Precio8 = result.get(i).getPrecio();codigo8 = result.get(i).getCodigo();
             }
-             else if (165== codigo){
+             else if (162== codigo){
              descripcion9 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_9 = result.get(i).getDescripcion2().toUpperCase(); Precio9 = result.get(i).getPrecio();codigo9 = result.get(i).getCodigo();
             }
-             else if (166== codigo){
+             else if (163== codigo){
              descripcion10 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_10 = result.get(i).getDescripcion2().toUpperCase(); Precio10 = result.get(i).getPrecio();codigo10 = result.get(i).getCodigo();
             }
-             else if (167== codigo){
+             else if (164== codigo){
              descripcion11 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_11 = result.get(i).getDescripcion2().toUpperCase(); Precio11 = result.get(i).getPrecio();codigo11 = result.get(i).getCodigo();
             }
-             else if (168== codigo){
+             else if (165== codigo){
              descripcion12 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_12 = result.get(i).getDescripcion2().toUpperCase(); Precio12 = result.get(i).getPrecio();codigo12 = result.get(i).getCodigo();
             }
-             else if (169== codigo){
+             else if (166== codigo){
              descripcion13 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_13 = result.get(i).getDescripcion2().toUpperCase(); Precio13 = result.get(i).getPrecio();codigo13 = result.get(i).getCodigo();
             }
-             else if (170== codigo){
+             else if (167== codigo){
              descripcion14 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_14 = result.get(i).getDescripcion2().toUpperCase(); Precio14 = result.get(i).getPrecio();codigo14 = result.get(i).getCodigo();
             }
-             else if (171== codigo){
+             else if (168== codigo){
              descripcion15 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_15 = result.get(i).getDescripcion2().toUpperCase(); Precio15 = result.get(i).getPrecio();codigo15 = result.get(i).getCodigo();
             }
-            else if (60== codigo){
+            else if (189== codigo){
              descripcion16 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_16 = result.get(i).getDescripcion2().toUpperCase(); Precio16 = result.get(i).getPrecio();codigo16 = result.get(i).getCodigo();
             }
-            else if (61== codigo){
+            else if (169== codigo){
              descripcion17 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_17 = result.get(i).getDescripcion2().toUpperCase(); Precio17 = result.get(i).getPrecio();codigo17 = result.get(i).getCodigo();
             }
-            else if (62== codigo){
+            else if (170== codigo){
              descripcion18 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_18 = result.get(i).getDescripcion2().toUpperCase(); Precio18 = result.get(i).getPrecio();codigo18 = result.get(i).getCodigo();
             }
-            else if (63== codigo){
+            else if (171== codigo){
              descripcion19 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_19 = result.get(i).getDescripcion2().toUpperCase(); Precio19 = result.get(i).getPrecio();codigo19 = result.get(i).getCodigo();
             }
-            else if (64== codigo){
+            else if (199== codigo){
              descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
             }
-            else if (91== codigo){
+            else if (200== codigo){
              descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
             }
-            else if (182== codigo){
+            else if (206== codigo){
              descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
             }
-            else if (183== codigo){
+            else if (205== codigo){
              descripcion23 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_23 = result.get(i).getDescripcion2().toUpperCase(); Precio23 = result.get(i).getPrecio();codigo23 = result.get(i).getCodigo();
             }
-            else if (184== codigo){
+            else if (201== codigo){
              descripcion24 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_24 = result.get(i).getDescripcion2().toUpperCase(); Precio24 = result.get(i).getPrecio();codigo24 = result.get(i).getCodigo();
             }
-            else if (185== codigo){
+            else if (0== codigo){
              descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
             }
-            else if (186== codigo){
+            else if (0== codigo){
              descripcion26 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_26 = result.get(i).getDescripcion2().toUpperCase(); Precio26 = result.get(i).getPrecio();codigo26 = result.get(i).getCodigo();
             }
-             else if (197== codigo){
+             else if (0== codigo){
              descripcion27 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_27 = result.get(i).getDescripcion2().toUpperCase(); Precio27 = result.get(i).getPrecio();codigo27 = result.get(i).getCodigo();
             }
-             else if (198== codigo){
+             else if (0== codigo){
              descripcion28 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_28 = result.get(i).getDescripcion2().toUpperCase(); Precio28 = result.get(i).getPrecio();codigo28 = result.get(i).getCodigo();
             }
-             else if (189== codigo){
+             else if (0== codigo){
              descripcion29 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_29 = result.get(i).getDescripcion2().toUpperCase(); Precio29 = result.get(i).getPrecio();codigo29 = result.get(i).getCodigo();
             }
-            else if (199== codigo){
+            else if (0== codigo){
              descripcion30= result.get(i).getDescripcion1().toUpperCase(); descripcion2_30 = result.get(i).getDescripcion2().toUpperCase(); Precio30 = result.get(i).getPrecio();codigo30 = result.get(i).getCodigo();
             }
-            else if (200== codigo){
+            else if (0== codigo){
              descripcion31 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_31 = result.get(i).getDescripcion2().toUpperCase(); Precio31 = result.get(i).getPrecio();codigo31 = result.get(i).getCodigo();
             }
-            else if (201== codigo){
+            else if (0== codigo){
              descripcion32 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_32 = result.get(i).getDescripcion2().toUpperCase(); Precio32 = result.get(i).getPrecio();codigo32 = result.get(i).getCodigo();
             }
             else if (204== codigo){
              descripcion33 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_33 = result.get(i).getDescripcion2().toUpperCase(); Precio33 = result.get(i).getPrecio();codigo33 = result.get(i).getCodigo();
             }
-            else if (205== codigo){
+            else if (0== codigo){
              descripcion34 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_34 = result.get(i).getDescripcion2().toUpperCase(); Precio34 = result.get(i).getPrecio();codigo34 = result.get(i).getCodigo();
             }
-            else if (206== codigo){
+            else if (0== codigo){
              descripcion35 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_35 = result.get(i).getDescripcion2().toUpperCase(); Precio35 = result.get(i).getPrecio();codigo35 = result.get(i).getCodigo();
+            }
+            
+            else if (246== codigo){
+             MICHE1_1 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_1 = result.get(i).getDescripcion2().toUpperCase(); PrecioM1 = result.get(i).getPrecio(); codigoM1 = result.get(i).getCodigo();
+            }
+            else if (247== codigo){
+             MICHE1_2 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_2 = result.get(i).getDescripcion2().toUpperCase(); PrecioM2 = result.get(i).getPrecio();codigoM2 = result.get(i).getCodigo();
+            }
+            else if (248== codigo){
+             MICHE1_3 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_3 = result.get(i).getDescripcion2().toUpperCase(); PrecioM3 = result.get(i).getPrecio();codigoM3 = result.get(i).getCodigo();
+            }
+            else if (249== codigo){
+             MICHE1_4 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_4 = result.get(i).getDescripcion2().toUpperCase(); PrecioM4 = result.get(i).getPrecio();codigoM4 = result.get(i).getCodigo();
+            }
+            else if (250== codigo){
+             MICHE1_5 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_5 = result.get(i).getDescripcion2().toUpperCase(); PrecioM5 = result.get(i).getPrecio();codigoM5 = result.get(i).getCodigo();
+            }
+            else if (251== codigo){
+             MICHE1_6 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_6 = result.get(i).getDescripcion2().toUpperCase(); PrecioM6 = result.get(i).getPrecio();codigoM6 = result.get(i).getCodigo();
+            }
+            else if (252== codigo){
+             MICHE1_7 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_7 = result.get(i).getDescripcion2().toUpperCase(); PrecioM7 = result.get(i).getPrecio();codigoM7 = result.get(i).getCodigo();
+            }
+            else if (253== codigo){
+             MICHE1_8 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_8 = result.get(i).getDescripcion2().toUpperCase(); PrecioM8 = result.get(i).getPrecio();codigoM8 = result.get(i).getCodigo();
+            }
+            else if (254== codigo){
+             MICHE1_9 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_9 = result.get(i).getDescripcion2().toUpperCase(); PrecioM9 = result.get(i).getPrecio();codigoM9 = result.get(i).getCodigo();
+            }
+            else if (255== codigo){
+             MICHE1_10 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_10 = result.get(i).getDescripcion2().toUpperCase(); PrecioM10 = result.get(i).getPrecio();codigoM10 = result.get(i).getCodigo();
+            }
+            else if (256== codigo){
+             MICHE1_11 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_11 = result.get(i).getDescripcion2().toUpperCase(); PrecioM11 = result.get(i).getPrecio();codigoM11 = result.get(i).getCodigo();
+            }
+            else if (257== codigo){
+             MICHE1_12 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_12 = result.get(i).getDescripcion2().toUpperCase(); PrecioM12 = result.get(i).getPrecio();codigoM12 = result.get(i).getCodigo();
+            }
+            else if (258== codigo){
+             MICHE1_13 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_13 = result.get(i).getDescripcion2().toUpperCase(); PrecioM13 = result.get(i).getPrecio();codigoM13 = result.get(i).getCodigo();
+            }
+            else if (259== codigo){
+             MICHE1_14 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_14 = result.get(i).getDescripcion2().toUpperCase(); PrecioM14 = result.get(i).getPrecio();codigoM14 = result.get(i).getCodigo();
+            }
+            else if (260== codigo){
+             MICHE1_15 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_15 = result.get(i).getDescripcion2().toUpperCase(); PrecioM15 = result.get(i).getPrecio();codigoM15 = result.get(i).getCodigo();
+            }
+            else if (261== codigo){
+             MICHE1_16 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_16 = result.get(i).getDescripcion2().toUpperCase(); PrecioM16 = result.get(i).getPrecio();codigoM16 = result.get(i).getCodigo();
+            }
+            else if (262== codigo){
+             MICHE1_17 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_17 = result.get(i).getDescripcion2().toUpperCase(); PrecioM17 = result.get(i).getPrecio();codigoM17 = result.get(i).getCodigo();
+            }
+            else if (263== codigo){
+             MICHE1_18 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_18 = result.get(i).getDescripcion2().toUpperCase(); PrecioM18 = result.get(i).getPrecio();codigoM18 = result.get(i).getCodigo();
+            }
+             else if (264== codigo){
+             MICHE1_19 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_19 = result.get(i).getDescripcion2().toUpperCase(); PrecioM19 = result.get(i).getPrecio();codigoM19 = result.get(i).getCodigo();
+            }
+             else if (265== codigo){
+             MICHE1_20 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_20 = result.get(i).getDescripcion2().toUpperCase(); PrecioM20 = result.get(i).getPrecio();codigoM20 = result.get(i).getCodigo();
+            }
+             else if (266== codigo){
+             MICHE1_21 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_21 = result.get(i).getDescripcion2().toUpperCase(); PrecioM21 = result.get(i).getPrecio();codigoM21 = result.get(i).getCodigo();
+            }
+             else if (267== codigo){
+             MICHE1_22 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_22 = result.get(i).getDescripcion2().toUpperCase(); PrecioM22 = result.get(i).getPrecio();codigoM22 = result.get(i).getCodigo();
+            }
+             else if (268== codigo){
+             MICHE1_23 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_23 = result.get(i).getDescripcion2().toUpperCase(); PrecioM23 = result.get(i).getPrecio();codigoM23 = result.get(i).getCodigo();
+            }
+             else if (91== codigo){
+             MICHE1_24 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_24 = result.get(i).getDescripcion2().toUpperCase(); PrecioM24 = result.get(i).getPrecio();codigoM24 = result.get(i).getCodigo();
             }
         }
   }
@@ -2231,22 +3196,65 @@ public class Extras extends javax.swing.JPanel {
     private javax.swing.JLabel EX24;
     private javax.swing.JLabel EX25;
     private javax.swing.JLabel EX26;
-    private javax.swing.JLabel EX27;
-    private javax.swing.JLabel EX28;
-    private javax.swing.JLabel EX29;
     private javax.swing.JLabel EX3;
-    private javax.swing.JLabel EX30;
-    private javax.swing.JLabel EX31;
-    private javax.swing.JLabel EX32;
-    private javax.swing.JLabel EX33;
-    private javax.swing.JLabel EX34;
-    private javax.swing.JLabel EX35;
     private javax.swing.JLabel EX4;
     private javax.swing.JLabel EX5;
     private javax.swing.JLabel EX6;
     private javax.swing.JLabel EX7;
     private javax.swing.JLabel EX8;
     private javax.swing.JLabel EX9;
+    private javax.swing.JLabel MI1;
+    private javax.swing.JLabel MI10;
+    private javax.swing.JLabel MI11;
+    private javax.swing.JLabel MI12;
+    private javax.swing.JLabel MI13;
+    private javax.swing.JLabel MI14;
+    private javax.swing.JLabel MI15;
+    private javax.swing.JLabel MI16;
+    private javax.swing.JLabel MI17;
+    private javax.swing.JLabel MI18;
+    private javax.swing.JLabel MI19;
+    private javax.swing.JLabel MI2;
+    private javax.swing.JLabel MI20;
+    private javax.swing.JLabel MI21;
+    private javax.swing.JLabel MI22;
+    private javax.swing.JLabel MI23;
+    private javax.swing.JLabel MI24;
+    private javax.swing.JLabel MI25;
+    private javax.swing.JLabel MI26;
+    private javax.swing.JLabel MI3;
+    private javax.swing.JLabel MI4;
+    private javax.swing.JLabel MI5;
+    private javax.swing.JLabel MI6;
+    private javax.swing.JLabel MI7;
+    private javax.swing.JLabel MI8;
+    private javax.swing.JLabel MI9;
+    private ClassAngels.PanelRound MICHE1;
+    private ClassAngels.PanelRound MICHE10;
+    private ClassAngels.PanelRound MICHE11;
+    private ClassAngels.PanelRound MICHE12;
+    private ClassAngels.PanelRound MICHE13;
+    private ClassAngels.PanelRound MICHE14;
+    private ClassAngels.PanelRound MICHE15;
+    private ClassAngels.PanelRound MICHE16;
+    private ClassAngels.PanelRound MICHE17;
+    private ClassAngels.PanelRound MICHE18;
+    private ClassAngels.PanelRound MICHE19;
+    private ClassAngels.PanelRound MICHE2;
+    private ClassAngels.PanelRound MICHE20;
+    private ClassAngels.PanelRound MICHE21;
+    private ClassAngels.PanelRound MICHE22;
+    private ClassAngels.PanelRound MICHE23;
+    private ClassAngels.PanelRound MICHE24;
+    private ClassAngels.PanelRound MICHE25;
+    private ClassAngels.PanelRound MICHE26;
+    private ClassAngels.PanelRound MICHE3;
+    private ClassAngels.PanelRound MICHE4;
+    private ClassAngels.PanelRound MICHE5;
+    private ClassAngels.PanelRound MICHE6;
+    private ClassAngels.PanelRound MICHE7;
+    private ClassAngels.PanelRound MICHE8;
+    private ClassAngels.PanelRound MICHE9;
     private ClassAngels.PanelRound P1;
     private ClassAngels.PanelRound P10;
     private ClassAngels.PanelRound P11;
@@ -2266,16 +3274,7 @@ public class Extras extends javax.swing.JPanel {
     private ClassAngels.PanelRound P24;
     private ClassAngels.PanelRound P25;
     private ClassAngels.PanelRound P26;
-    private ClassAngels.PanelRound P27;
-    private ClassAngels.PanelRound P28;
-    private ClassAngels.PanelRound P29;
     private ClassAngels.PanelRound P3;
-    private ClassAngels.PanelRound P30;
-    private ClassAngels.PanelRound P31;
-    private ClassAngels.PanelRound P32;
-    private ClassAngels.PanelRound P33;
-    private ClassAngels.PanelRound P34;
-    private ClassAngels.PanelRound P35;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
     private ClassAngels.PanelRound P6;
@@ -2283,7 +3282,7 @@ public class Extras extends javax.swing.JPanel {
     private ClassAngels.PanelRound P8;
     private ClassAngels.PanelRound P9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
  private void Etiquetas() {
 
@@ -2335,11 +3334,11 @@ public class Extras extends javax.swing.JPanel {
         EX23.setText(texto23);
         String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
         EX24.setText(texto24);
-        String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
+        /*String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
         EX25.setText(texto25);
         String texto26 ="<html><center><body>"+descripcion26+"<br>"+descripcion2_26+"<br><font color='RED'>Q"+Precio26+"</font></body></center></html>";
         EX26.setText(texto26);
-        String texto27 ="<html><center><body>"+descripcion27+"<br>"+descripcion2_27+"<br><font color='RED'>Q"+Precio27+"</font></body></center></html>";
+        /*String texto27 ="<html><center><body>"+descripcion27+"<br>"+descripcion2_27+"<br><font color='RED'>Q"+Precio27+"</font></body></center></html>";
         EX27.setText(texto27);
         String texto28 ="<html><center><body>"+descripcion28+"<br>"+descripcion2_28+"<br><font color='RED'>Q"+Precio28+"</font></body></center></html>";
         EX28.setText(texto28);
@@ -2356,9 +3355,61 @@ public class Extras extends javax.swing.JPanel {
         String texto34 ="<html><center><body>"+descripcion34+"<br>"+descripcion2_34+"<br><font color='RED'>Q"+Precio34+"</font></body></center></html>";
         EX34.setText(texto34);
         String texto35 ="<html><center><body>"+descripcion35+"<br>"+descripcion2_35+"<br><font color='RED'>Q"+Precio35+"</font></body></center></html>";
-        EX35.setText(texto35);
+        EX35.setText(texto35);*/
+    //////////////////////////////////MICHE/////////////////////////////////////////
+        
+        String M1 ="<html><center><body>"+MICHE1_1+"<br>"+MICHE2_1+"<br><font color='RED'>Q"+PrecioM1+"</font></body></center></html>";
+        MI1.setText(M1);
+        String M2 ="<html><center><body>"+MICHE1_2+"<br>"+MICHE2_2+"<br><font color='RED'>Q"+PrecioM2+"</font></body></center></html>";
+        MI2.setText(M2);
+        String M3="<html><center><body>"+MICHE1_3+"<br>"+MICHE2_3+"<br><font color='RED'>Q"+PrecioM3+"</font></body></center></html>";
+        MI3.setText(M3);
+        String M4 ="<html><center><body>"+MICHE1_4+"<br>"+MICHE2_4+"<br><font color='RED'>Q"+PrecioM4+"</font></body></center></html>";
+        MI4.setText(M4);
+        String M5 ="<html><center><body>"+MICHE1_5+"<br>"+MICHE2_5+"<br><font color='RED'>Q"+PrecioM5+"</font></body></center></html>";
+        MI5.setText(M5);
+        String M6 ="<html><center><body>"+MICHE1_6+"<br>"+MICHE2_6+"<br><font color='RED'>Q"+PrecioM6+"</font></body></center></html>";
+        MI6.setText(M6);
+        String M7 ="<html><center><body>"+MICHE1_7+"<br>"+MICHE2_7+"<br><font color='RED'>Q"+PrecioM7+"</font></body></center></html>";
+        MI7.setText(M7);
+        String M8 ="<html><center><body>"+MICHE1_8+"<br>"+MICHE2_8+"<br><font color='RED'>Q"+PrecioM8+"</font></body></center></html>";
+        MI8.setText(M8);
+        String M9 ="<html><center><body>"+MICHE1_9+"<br>"+MICHE2_9+"<br><font color='RED'>Q"+PrecioM9+"</font></body></center></html>";
+        MI9.setText(M9);
+        String M10 ="<html><center><body>"+MICHE1_10+"<br>"+MICHE2_10+"<br><font color='RED'>Q"+PrecioM10+"</font></body></center></html>";
+        MI10.setText(M10);
+        String M11 ="<html><center><body>"+MICHE1_11+"<br>"+MICHE2_11+"<br><font color='RED'>Q"+PrecioM11+"</font></body></center></html>";
+        MI11.setText(M11);
+        String M12 ="<html><center><body>"+MICHE1_12+"<br>"+MICHE2_12+"<br><font color='RED'>Q"+PrecioM12+"</font></body></center></html>";
+        MI12.setText(M12);
+        String M13 ="<html><center><body>"+MICHE1_13+"<br>"+MICHE2_13+"<br><font color='RED'>Q"+PrecioM13+"</font></body></center></html>";
+        MI13.setText(M13);
+        String M14 ="<html><center><body>"+MICHE1_14+"<br>"+MICHE2_14+"<br><font color='RED'>Q"+PrecioM14+"</font></body></center></html>";
+        MI14.setText(M14);
+        String M15 ="<html><center><body>"+MICHE1_15+"<br>"+MICHE2_15+"<br><font color='RED'>Q"+PrecioM15+"</font></body></center></html>";
+        MI15.setText(M15);
+        String M16 ="<html><center><body>"+MICHE1_16+"<br>"+MICHE2_16+"<br><font color='RED'>Q"+PrecioM16+"</font></body></center></html>";
+        MI16.setText(M16);
+        String M17 ="<html><center><body>"+MICHE1_17+"<br>"+MICHE2_17+"<br><font color='RED'>Q"+PrecioM17+"</font></body></center></html>";
+        MI17.setText(M17);
+        String M18 ="<html><center><body>"+MICHE1_18+"<br>"+MICHE2_18+"<br><font color='RED'>Q"+PrecioM18+"</font></body></center></html>";
+        MI18.setText(M18);
+        String M19 ="<html><center><body>"+MICHE1_19+"<br>"+MICHE2_19+"<br><font color='RED'>Q"+PrecioM19+"</font></body></center></html>";
+        MI19.setText(M19);
+        String M20 ="<html><center><body>"+MICHE1_20+"<br>"+MICHE2_20+"<br><font color='RED'>Q"+PrecioM20+"</font></body></center></html>";
+        MI20.setText(M20);
+        String M21 ="<html><center><body>"+MICHE1_21+"<br>"+MICHE2_21+"<br><font color='RED'>Q"+PrecioM21+"</font></body></center></html>";
+        MI21.setText(M21);
+        String M22 ="<html><center><body>"+MICHE1_22+"<br>"+MICHE2_22+"<br><font color='RED'>Q"+PrecioM22+"</font></body></center></html>";
+        MI22.setText(M22);
+        String M23 ="<html><center><body>"+MICHE1_23+"<br>"+MICHE2_23+"<br><font color='RED'>Q"+PrecioM23+"</font></body></center></html>";
+        MI23.setText(M23);
+        String M24 ="<html><center><body>"+MICHE1_24+"<br>"+MICHE2_24+"<br><font color='RED'>Q"+PrecioM24+"</font></body></center></html>";
+       MI24.setText(M24);
+        String M25 ="<html><center><body>"+MICHE1_25+"<br>"+MICHE2_25+"<br><font color='RED'>Q"+PrecioM25+"</font></body></center></html>";
+        /*MI25.setText(M25);
+        String M26 ="<html><center><body>"+MICHE1_26+"<br>"+MICHE2_26+"<br><font color='RED'>Q"+PrecioM26+"</font></body></center></html>";
+        MI26.setText(M26);*/
     }
-
-
 }
 
