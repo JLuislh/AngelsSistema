@@ -17,6 +17,10 @@ public class CuartoFrio extends javax.swing.JPanel {
      */
     public CuartoFrio() {
         initComponents();
+        String texto = "<html><center><body>INGRESO<br>DE<br>PRODUCTOS</body></center></html>";
+        L2.setText(texto);
+        String texto2 = "<html><center><body>DESCARGA<br>DE<br>PRODUCTOS</body></center></html>";
+        L3.setText(texto2);
     }
 
     /**
@@ -28,125 +32,125 @@ public class CuartoFrio extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelRound1 = new ClassAngels.PanelRound();
-        jLabel1 = new javax.swing.JLabel();
-        panelRound2 = new ClassAngels.PanelRound();
-        jLabel2 = new javax.swing.JLabel();
-        panelRound3 = new ClassAngels.PanelRound();
-        jLabel3 = new javax.swing.JLabel();
-        panelRound4 = new ClassAngels.PanelRound();
-        jLabel4 = new javax.swing.JLabel();
-        PanelProductos = new javax.swing.JPanel();
+        P1 = new ClassAngels.PanelRound();
+        L1 = new javax.swing.JLabel();
+        T2 = new ClassAngels.PanelRound();
+        L2 = new javax.swing.JLabel();
+        P3 = new ClassAngels.PanelRound();
+        L3 = new javax.swing.JLabel();
+        P4 = new ClassAngels.PanelRound();
+        L4 = new javax.swing.JLabel();
+        P5 = new javax.swing.JPanel();
 
         setPreferredSize(new java.awt.Dimension(1024, 635));
 
-        panelRound1.setBackground(new java.awt.Color(255, 255, 102));
+        P1.setBackground(new java.awt.Color(255, 255, 102));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("PRODUCTO NUEVO");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        L1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        L1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        L1.setText("PRODUCTO NUEVO");
+        L1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                L1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
-        panelRound1.setLayout(panelRound1Layout);
-        panelRound1Layout.setHorizontalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout P1Layout = new javax.swing.GroupLayout(P1);
+        P1.setLayout(P1Layout);
+        P1Layout.setHorizontalGroup(
+            P1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(P1Layout.createSequentialGroup()
+                .addComponent(L1, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        panelRound1Layout.setVerticalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        P1Layout.setVerticalGroup(
+            P1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(L1, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
         );
 
-        panelRound2.setBackground(new java.awt.Color(255, 255, 51));
-        panelRound2.setPreferredSize(new java.awt.Dimension(200, 80));
+        T2.setBackground(new java.awt.Color(255, 255, 102));
+        T2.setPreferredSize(new java.awt.Dimension(200, 80));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("INGRESO DE PRODUCTO");
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        L2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        L2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        L2.setText("INGRESO DE PRODUCTO");
+        L2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
+                L2MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout panelRound2Layout = new javax.swing.GroupLayout(panelRound2);
-        panelRound2.setLayout(panelRound2Layout);
-        panelRound2Layout.setHorizontalGroup(
-            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound2Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout T2Layout = new javax.swing.GroupLayout(T2);
+        T2.setLayout(T2Layout);
+        T2Layout.setHorizontalGroup(
+            T2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(T2Layout.createSequentialGroup()
+                .addComponent(L2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        panelRound2Layout.setVerticalGroup(
-            panelRound2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        T2Layout.setVerticalGroup(
+            T2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(L2, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
         );
 
-        panelRound3.setBackground(new java.awt.Color(255, 255, 102));
-        panelRound3.setPreferredSize(new java.awt.Dimension(200, 80));
+        P3.setBackground(new java.awt.Color(255, 255, 102));
+        P3.setPreferredSize(new java.awt.Dimension(200, 80));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("DESCARGA DE PRODUCTO");
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        L3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        L3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        L3.setText("DESCARGA DE PRODUCTO");
+        L3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel3MouseClicked(evt);
+                L3MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
-        panelRound3.setLayout(panelRound3Layout);
-        panelRound3Layout.setHorizontalGroup(
-            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound3Layout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout P3Layout = new javax.swing.GroupLayout(P3);
+        P3.setLayout(P3Layout);
+        P3Layout.setHorizontalGroup(
+            P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(P3Layout.createSequentialGroup()
+                .addComponent(L3, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        panelRound3Layout.setVerticalGroup(
-            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        P3Layout.setVerticalGroup(
+            P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(L3, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
         );
 
-        panelRound4.setBackground(new java.awt.Color(255, 255, 102));
-        panelRound4.setPreferredSize(new java.awt.Dimension(200, 80));
+        P4.setBackground(new java.awt.Color(255, 255, 102));
+        P4.setPreferredSize(new java.awt.Dimension(200, 80));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("HISTORIAL");
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        L4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        L4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        L4.setText("HISTORIAL");
+        L4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel4MouseClicked(evt);
+                L4MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout panelRound4Layout = new javax.swing.GroupLayout(panelRound4);
-        panelRound4.setLayout(panelRound4Layout);
-        panelRound4Layout.setHorizontalGroup(
-            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout P4Layout = new javax.swing.GroupLayout(P4);
+        P4.setLayout(P4Layout);
+        P4Layout.setHorizontalGroup(
+            P4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(L4, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-        panelRound4Layout.setVerticalGroup(
-            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+        P4Layout.setVerticalGroup(
+            P4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(L4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
         );
 
-        PanelProductos.setBackground(new java.awt.Color(255, 255, 255));
+        P5.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout PanelProductosLayout = new javax.swing.GroupLayout(PanelProductos);
-        PanelProductos.setLayout(PanelProductosLayout);
-        PanelProductosLayout.setHorizontalGroup(
-            PanelProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout P5Layout = new javax.swing.GroupLayout(P5);
+        P5.setLayout(P5Layout);
+        P5Layout.setHorizontalGroup(
+            P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 921, Short.MAX_VALUE)
         );
-        PanelProductosLayout.setVerticalGroup(
-            PanelProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        P5Layout.setVerticalGroup(
+            P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -157,74 +161,74 @@ public class CuartoFrio extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(panelRound2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
-                    .addComponent(panelRound3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
-                    .addComponent(panelRound4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
-                    .addComponent(panelRound1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(T2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                    .addComponent(P3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                    .addComponent(P4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                    .addComponent(P1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PanelProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(P5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(79, 79, 79)
-                .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(panelRound2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(T2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(panelRound3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(P3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(panelRound4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(200, Short.MAX_VALUE))
-            .addComponent(PanelProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(P5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void L1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L1MouseClicked
         ProductoNuevo op2 = new ProductoNuevo();
         op2.setSize(920, 635);
         op2.setLocation(0, 0);
-        PanelProductos.removeAll();
-        PanelProductos.add(op2,BorderLayout.CENTER);
-        PanelProductos.revalidate();
-        PanelProductos.repaint();
+        P5.removeAll();
+        P5.add(op2,BorderLayout.CENTER);
+        P5.revalidate();
+        P5.repaint();
        
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_L1MouseClicked
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+    private void L2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L2MouseClicked
         IngresoProducto op2 = new IngresoProducto();
         op2.setSize(920, 635);
         op2.setLocation(0, 0);
-        PanelProductos.removeAll();
-        PanelProductos.add(op2,BorderLayout.CENTER);
-        PanelProductos.revalidate();
-        PanelProductos.repaint();
-    }//GEN-LAST:event_jLabel2MouseClicked
+        P5.removeAll();
+        P5.add(op2,BorderLayout.CENTER);
+        P5.revalidate();
+        P5.repaint();
+    }//GEN-LAST:event_L2MouseClicked
 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+    private void L3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L3MouseClicked
        DescargaProducto op2 = new DescargaProducto();
         op2.setSize(920, 635);
         op2.setLocation(0, 0);
-        PanelProductos.removeAll();
-        PanelProductos.add(op2,BorderLayout.CENTER);
-        PanelProductos.revalidate();
-        PanelProductos.repaint();
-    }//GEN-LAST:event_jLabel3MouseClicked
+        P5.removeAll();
+        P5.add(op2,BorderLayout.CENTER);
+        P5.revalidate();
+        P5.repaint();
+    }//GEN-LAST:event_L3MouseClicked
 
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+    private void L4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L4MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel4MouseClicked
+    }//GEN-LAST:event_L4MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel PanelProductos;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private ClassAngels.PanelRound panelRound1;
-    private ClassAngels.PanelRound panelRound2;
-    private ClassAngels.PanelRound panelRound3;
-    private ClassAngels.PanelRound panelRound4;
+    private javax.swing.JLabel L1;
+    private javax.swing.JLabel L2;
+    private javax.swing.JLabel L3;
+    private javax.swing.JLabel L4;
+    private ClassAngels.PanelRound P1;
+    private ClassAngels.PanelRound P3;
+    private ClassAngels.PanelRound P4;
+    private javax.swing.JPanel P5;
+    private ClassAngels.PanelRound T2;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,9 +4,16 @@
  */
 package AdministradorAngels;
 
+import BDclass.BDConexion;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.table.TableColumn;
 
 /**
@@ -63,6 +70,30 @@ public class DescargaProducto extends javax.swing.JPanel {
              columna4.setPreferredWidth(35);
              
      }
+     
+     public void limpiar(){
+     CODIGO.setText("");
+     DESCRI.setText("");
+     MEDIDA.setText("");
+     CANTIDAD.setText("");
+     CANTIDADIN.setText("");
+     NOTA.setText("");
+     }
+     
+      public void Descarga() throws SQLException{
+    
+        BDConexion conecta = new BDConexion();
+        PreparedStatement smtp;
+        try (Connection con = conecta.getConexion()) {
+            smtp = null;
+            smtp =con.prepareStatement("call DESCARGACANTIDADBP('"+CODIGO.getText()+"','"+CANTIDADIN.getText()+"','"+NOTA.getText()+"')");
+            smtp.executeUpdate();
+        }
+        smtp.close(); 
+        JOptionPane.showMessageDialog(null, "CANTIDAD AGREGADA");
+        ListarProductos();
+        limpiar();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -118,18 +149,21 @@ public class DescargaProducto extends javax.swing.JPanel {
         jLabel2.setText("CODIGO");
 
         CODIGO.setEditable(false);
+        CODIGO.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CODIGO.setForeground(new java.awt.Color(51, 51, 255));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText("DESCRIPCION");
 
         DESCRI.setEditable(false);
+        DESCRI.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         DESCRI.setForeground(new java.awt.Color(51, 51, 255));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setText("UNIDAD DE MEDIDA");
 
         MEDIDA.setEditable(false);
+        MEDIDA.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         MEDIDA.setForeground(new java.awt.Color(51, 51, 255));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -185,7 +219,7 @@ public class DescargaProducto extends javax.swing.JPanel {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DESCARGA DE CANTIDAD Y ANOTACIONES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
 
-        CANTIDADIN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        CANTIDADIN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         CANTIDADIN.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -200,6 +234,11 @@ public class DescargaProducto extends javax.swing.JPanel {
         jScrollPane2.setViewportView(NOTA);
 
         jButton1.setText("DESCARGA");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -269,7 +308,16 @@ public class DescargaProducto extends javax.swing.JPanel {
         DESCRI.setText(String.valueOf(PRO.getModel().getValueAt(PRO.getSelectedRow(), 1)));
         MEDIDA.setText(String.valueOf(PRO.getModel().getValueAt(PRO.getSelectedRow(), 2)));
         CANTIDAD.setText(String.valueOf(PRO.getModel().getValueAt(PRO.getSelectedRow(), 3)));
+        CANTIDADIN.requestFocus();
     }//GEN-LAST:event_PROMouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+         try {
+            Descarga();
+        } catch (SQLException ex) {
+            Logger.getLogger(IngresoProducto.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -70,6 +70,15 @@ public class IngresoProducto extends javax.swing.JPanel {
              columna4.setPreferredWidth(35);
              
      }
+     public void limpiar(){
+     CODIGO.setText("");
+     DESCRI.setText("");
+     MEDIDA.setText("");
+     CANTIDAD.setText("");
+     CANTIDADIN.setText("");
+     NOTA.setText("");
+     
+     }
      
      public void ingresonuevo() throws SQLException{
     
@@ -83,6 +92,7 @@ public class IngresoProducto extends javax.swing.JPanel {
         smtp.close(); 
         JOptionPane.showMessageDialog(null, "CANTIDAD AGREGADA");
         ListarProductos();
+        limpiar();
     }
 
     /**
@@ -209,7 +219,7 @@ public class IngresoProducto extends javax.swing.JPanel {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "INGRESO DE CANTIDAD Y ANOTACIONES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
 
-        CANTIDADIN.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        CANTIDADIN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         CANTIDADIN.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -306,6 +316,7 @@ public class IngresoProducto extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
             ingresonuevo();
+            
             
         } catch (SQLException ex) {
             Logger.getLogger(IngresoProducto.class.getName()).log(Level.SEVERE, null, ex);

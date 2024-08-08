@@ -565,8 +565,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
  }
     
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
-    //CaldosAntojosParaiso op1 = new CaldosAntojosParaiso(noorden,tipomenu);
+    //CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
+    CaldosAntojosParaiso op1 = new CaldosAntojosParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -588,8 +588,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo2MouseClicked
 
     private void Titulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo3MouseClicked
-    //CevichesParaiso op1 = new CevichesParaiso(noorden,tipomenu);
-    Ceviches op1 = new Ceviches(noorden,tipomenu);
+    CevichesParaiso op1 = new CevichesParaiso(noorden,tipomenu);
+    //Ceviches op1 = new Ceviches(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -609,8 +609,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo4MouseClicked
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
-    ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
-    //ConAlcoholElParaiso op1 = new ConAlcoholElParaiso(noorden,tipomenu);
+    //ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
+    ConAlcoholElParaiso op1 = new ConAlcoholElParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -620,8 +620,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo5MouseClicked
 
     private void Titulo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo6MouseClicked
-    Botellas op1 = new Botellas(noorden,tipomenu);
-    //BotellasElParaiso op1 = new BotellasElParaiso(noorden,tipomenu);
+    //Botellas op1 = new Botellas(noorden,tipomenu);
+    BotellasElParaiso op1 = new BotellasElParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
@@ -659,8 +659,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void Titulo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo8MouseClicked
-    Extras op1 = new Extras(noorden,tipomenu);
-    //ExtrasParaiso op1 = new ExtrasParaiso(noorden,tipomenu);
+    //Extras op1 = new Extras(noorden,tipomenu);
+    ExtrasParaiso op1 = new ExtrasParaiso(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
     PanelMenu.removeAll();
