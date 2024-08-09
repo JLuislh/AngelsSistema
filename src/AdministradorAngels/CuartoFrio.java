@@ -216,7 +216,13 @@ public class CuartoFrio extends javax.swing.JPanel {
     }//GEN-LAST:event_L3MouseClicked
 
     private void L4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_L4MouseClicked
-        // TODO add your handling code here:
+        HistorialBP op2 = new HistorialBP();
+        op2.setSize(920, 635);
+        op2.setLocation(0, 0);
+        P5.removeAll();
+        P5.add(op2,BorderLayout.CENTER);
+        P5.revalidate();
+        P5.repaint();
     }//GEN-LAST:event_L4MouseClicked
 
 

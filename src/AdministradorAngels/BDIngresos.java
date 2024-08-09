@@ -569,11 +569,11 @@ public static ArrayList<InsertarProducto>ListadeIngresos (int a) {
 ////////////////////////////////////////////////////////INGRESOS DESCARGAS CUARTO FRIO////////////////////////////////////////////////
 
 public static ArrayList<InsertarProducto>ListaProductosBodegaPrincipal () {
-        return BP("call ListaProductos"); 
+        return BPin("call ListaProductos"); 
         
  }  
 
-    private static ArrayList<InsertarProducto> BP(String sql){
+    private static ArrayList<InsertarProducto> BPin(String sql){
     ArrayList<InsertarProducto> list = new ArrayList<>();
     BDConexion conecta = new BDConexion();
     Connection cn = conecta.getConexion();
@@ -597,7 +597,36 @@ public static ArrayList<InsertarProducto>ListaProductosBodegaPrincipal () {
             return null;
         } 
         return list;
-}      
+}   
+    
+public static ArrayList<InsertarProducto>ListaHistorialIngresosDescargas (int a,int b) {
+        return BPout("call HistorialIngresosDescargas("+a+","+b+")"); 
+        
+ }  
+
+    private static ArrayList<InsertarProducto> BPout(String sql){
+    ArrayList<InsertarProducto> list = new ArrayList<>();
+    BDConexion conecta = new BDConexion();
+    Connection cn = conecta.getConexion();
+    
+        try {
+            InsertarProducto t;
+            Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()){
+                 t = new InsertarProducto();
+                 t.setCantidad(rs.getInt("cantidad"));
+                 t.setNota(rs.getString("NOTA").toUpperCase());
+                 t.setFecha(rs.getString("fecha"));
+                 list.add(t);
+                            }
+            cn.close();
+        } catch (Exception e) {
+            System.out.println("error consulta DE LA TABLA "+e);
+            return null;
+        } 
+        return list;
+}          
         
     
 
