@@ -9,11 +9,6 @@ import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import SubPanelesSantaInes.BebidasSinAlcohol;
-import SubPanelesParaiso.BotellasElParaiso;
-import SubPanelesParaiso.CaldosAntojosParaiso;
-import SubPanelesParaiso.CevichesParaiso;
-import SubPanelesParaiso.ConAlcoholElParaiso;
-import SubPanelesParaiso.ExtrasParaiso;
 import SubPanelesSantaInes.Botellas;
 import SubPanelesSantaInes.CaldosAntojos;
 import SubPanelesSantaInes.Ceviches;
@@ -542,7 +537,6 @@ public class Menu extends javax.swing.JFrame {
     
     
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    //CaldosAntojosParaiso op1 = new CaldosAntojosParaiso(noorden,tipomenu);
     CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
@@ -565,7 +559,6 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo2MouseClicked
 
     private void Titulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo3MouseClicked
-    //CevichesParaiso op1 = new CevichesParaiso(noorden,tipomenu);
     Ceviches op1 = new Ceviches(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
@@ -586,7 +579,6 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo4MouseClicked
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
-    //ConAlcoholElParaiso op1 = new ConAlcoholElParaiso(noorden,tipomenu);
     ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
@@ -597,7 +589,6 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo5MouseClicked
 
     private void Titulo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo6MouseClicked
-    //BotellasElParaiso op1 = new BotellasElParaiso(noorden,tipomenu);
     Botellas op1 = new Botellas(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
@@ -627,7 +618,6 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void Titulo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo7MouseClicked
-    //ExtrasParaiso op1 = new ExtrasParaiso(noorden,tipomenu);
     Extras op1 = new Extras(noorden,tipomenu);
     op1.setSize(1170, 380);
     op1.setLocation(0, 0);
