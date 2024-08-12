@@ -723,7 +723,6 @@ public class Ceviches extends javax.swing.JPanel {
 
         AMA15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         AMA15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        AMA15.setText("31");
         AMA15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AMA15MouseClicked(evt);
@@ -1873,7 +1872,7 @@ public class Ceviches extends javax.swing.JPanel {
     }//GEN-LAST:event_AMA14MouseClicked
 
     private void AMA15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AMA15MouseClicked
-        if ((evt.getModifiers() & 4) !=0){
+       /* if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo31;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1887,45 +1886,45 @@ public class Ceviches extends javax.swing.JPanel {
             P31.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }
+        }*/
     }//GEN-LAST:event_AMA15MouseClicked
 
     private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasCeviches();
         for (int i = 0; i < result.size(); i++) {
           int codigo = result.get(i).getCodigo();
-          
-            if (32 == codigo) {
+          //32
+            if ( 34== codigo) {
              descripcion1 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_1 = result.get(i).getDescripcion2().toUpperCase(); Precio1 = result.get(i).getPrecio();codigo1 = result.get(i).getCodigo();
             }
             //else if (33 == codigo){
             // descripcion2 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_2 = result.get(i).getDescripcion2().toUpperCase(); Precio2 = result.get(i).getPrecio();codigo2 = result.get(i).getCodigo();
             //}
-             else if (34 == codigo){
+             else if ( 35== codigo){
              descripcion3 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_3 = result.get(i).getDescripcion2().toUpperCase(); Precio3 = result.get(i).getPrecio();codigo3 = result.get(i).getCodigo();
             }
-             else if (35== codigo){
+             else if (36== codigo){
              descripcion4 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_4 = result.get(i).getDescripcion2().toUpperCase(); Precio4 = result.get(i).getPrecio();codigo4 = result.get(i).getCodigo();
             }
-             else if (36== codigo){
+             else if (37== codigo){
              descripcion5 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_5 = result.get(i).getDescripcion2().toUpperCase(); Precio5 = result.get(i).getPrecio();codigo5 = result.get(i).getCodigo();
             }
-             else if (37== codigo){
+             else if (38== codigo){
              descripcion6 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_6 = result.get(i).getDescripcion2().toUpperCase(); Precio6 = result.get(i).getPrecio();codigo6 = result.get(i).getCodigo();
             }
-             else if (38== codigo){
+             else if (39== codigo){
              descripcion7 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_7 = result.get(i).getDescripcion2().toUpperCase(); Precio7 = result.get(i).getPrecio();codigo7 = result.get(i).getCodigo();
             }
-             else if (39== codigo){
+             else if (40== codigo){
              descripcion8 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_8 = result.get(i).getDescripcion2().toUpperCase(); Precio8 = result.get(i).getPrecio();codigo8 = result.get(i).getCodigo();
             }
-             else if (40== codigo){
+             else if (41== codigo){
              descripcion9 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_9 = result.get(i).getDescripcion2().toUpperCase(); Precio9 = result.get(i).getPrecio();codigo9 = result.get(i).getCodigo();
             }
-             else if (41== codigo){
+             else if (42== codigo){
              descripcion10 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_10 = result.get(i).getDescripcion2().toUpperCase(); Precio10 = result.get(i).getPrecio();codigo10 = result.get(i).getCodigo();
             }
-             else if (42== codigo){
+             else if (178== codigo){
              descripcion11 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_11 = result.get(i).getDescripcion2().toUpperCase(); Precio11 = result.get(i).getPrecio();codigo11 = result.get(i).getCodigo();
             }
              else if (43== codigo){
@@ -1976,18 +1975,18 @@ public class Ceviches extends javax.swing.JPanel {
              else if (177== codigo){
              descripcion27 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_27 = result.get(i).getDescripcion2().toUpperCase(); Precio27 = result.get(i).getPrecio();codigo27 = result.get(i).getCodigo();
             }
-             else if (178== codigo){
+             else if (179== codigo){
              descripcion28 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_28 = result.get(i).getDescripcion2().toUpperCase(); Precio28 = result.get(i).getPrecio();codigo28 = result.get(i).getCodigo();
             }
-             else if (179== codigo){
+             else if (180== codigo){
              descripcion29 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_29 = result.get(i).getDescripcion2().toUpperCase(); Precio29 = result.get(i).getPrecio();codigo29 = result.get(i).getCodigo();
             }
-             else if (180== codigo){
+             else if (181== codigo){
              descripcion30 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_30 = result.get(i).getDescripcion2().toUpperCase(); Precio30 = result.get(i).getPrecio();codigo30 = result.get(i).getCodigo();
             }
-             else if (181== codigo){
+           /*  else if (== codigo){
              descripcion31 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_31 = result.get(i).getDescripcion2().toUpperCase(); Precio31 = result.get(i).getPrecio();codigo31 = result.get(i).getCodigo();
-            }
+            }*/
         }
   }
 
@@ -2119,7 +2118,7 @@ public class Ceviches extends javax.swing.JPanel {
         AMA13.setText(texto29);
         String texto30 ="<html><center><body>"+descripcion30+"<br>"+descripcion2_30+"<br><font color='RED'>Q"+Precio30+"</font></body></center></html>";
         AMA14.setText(texto30);
-        String texto31 ="<html><center><body>"+descripcion31+"<br>"+descripcion2_31+"<br><font color='RED'>Q"+Precio31+"</font></body></center></html>";
-        AMA15.setText(texto31);
+       // String texto31 ="<html><center><body>"+descripcion31+"<br>"+descripcion2_31+"<br><font color='RED'>Q"+Precio31+"</font></body></center></html>";
+        //AMA15.setText(texto31);
     }
 }
