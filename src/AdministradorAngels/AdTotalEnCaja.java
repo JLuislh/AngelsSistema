@@ -9,13 +9,17 @@ import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableColumn;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -32,6 +36,7 @@ public class AdTotalEnCaja extends javax.swing.JPanel {
     String Fecha;
     int cantidadOrdenes;
     Double SUMATOTAL;
+    int ID_TOTAL;
     String Fechagastos;
     /**
      * Creates new form TotalEnCaja
@@ -246,7 +251,13 @@ public class AdTotalEnCaja extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
       
          if(Fe.getDate() != null){ 
-        ListarOrdenes();}
+        ListarOrdenes();
+             try {
+                 IngresoVentaDia();
+             } catch (SQLException ex) {
+                 Logger.getLogger(AdTotalEnCaja.class.getName()).log(Level.SEVERE, null, ex);
+             }
+         }
          else{
         JOptionPane.showMessageDialog(null, "INGRESE UNA FECHA...");
         }
@@ -281,7 +292,7 @@ public class AdTotalEnCaja extends javax.swing.JPanel {
         
          DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
          Fecha = df.format(Fe.getDate());
-     
+         
         ArrayList<InsertarProducto> result = BDOrdenes.Ordenes(Fecha);
         RecargarTablaDetallado(result);  
     }
@@ -417,6 +428,48 @@ try {
              TableColumn columna2 = Gast.getColumn("TOTAL");
              columna2.setPreferredWidth(25);
      }
+     
+     
+      public void IngresoVentaDia() throws SQLException{
+        DateFormat f = new SimpleDateFormat("yyyy/MM/dd");
+        String F = f.format(Fe.getDate());
+        ValidarVentaDia();
+        BDConexion conecta = new BDConexion();
+        PreparedStatement smtp;
+        try (Connection con = conecta.getConexion()) {
+            smtp = null;
+            if(ID_TOTAL == 0){
+            smtp =con.prepareStatement("CALL CUENTADIARIA2('"+F+"',1,0)");
+            smtp.executeUpdate();
+            }
+            else{
+            smtp =con.prepareStatement("CALL CUENTADIARIA2('"+F+"',2,"+ID_TOTAL+")");
+            smtp.executeUpdate();
+            }
+        }
+        smtp.close(); 
+    }
+     
+    public void ValidarVentaDia() {
+          
+         DateFormat f = new SimpleDateFormat("dd/MM/yyyy");
+         Fecha = f.format(Fe.getDate());
+         System.out.println("FECHA DIA "+Fecha);
+            try {
+                BDConexion conecta = new BDConexion();
+                Connection cn = conecta.getConexion();
+                java.sql.Statement stmt = cn.createStatement();
+                ResultSet rs = stmt.executeQuery("SELECT ID_TOTAL FROM angels.totaldiario where date_format(fecha,'%d/%m/%Y') = '"+Fecha+"'");
+                while (rs.next()) {
+                      ID_TOTAL = rs.getInt(1);
+                }
+                rs.close();
+                stmt.close();
+                cn.close();
+            } catch (SQLException error) {
+                System.out.print(error);
+            }
+        } 
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -4,15 +4,24 @@
  */
 package AdministradorAngels;
 
+import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
+import java.sql.Connection;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableColumn;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperPrintManager;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.util.JRLoader;
 
 /**
  *
@@ -120,6 +129,49 @@ public class AdVentasPorDia extends javax.swing.JPanel {
              columna4.setPreferredWidth(35);
              
      }
+     
+     private void imprimirventa(){
+            
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+            Fecha = df.format(Fe.getDate());
+         
+            BDConexion con = new BDConexion();
+            Connection conexion = con.getConexion();
+            try {
+                JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\ReporteVentasResumen.jasper");
+                Map parametros = new HashMap();
+                parametros.put("FECHA", Fecha );
+                System.out.println(parametros);
+                JasperPrint print = JasperFillManager.fillReport(jasperReport, parametros, conexion);
+                JasperPrintManager.printReport(print, true);
+            } catch (Exception e) {
+                System.out.println("F" + e);
+                JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  " + e);
+            }
+        } 
+
+    
+    
+    
+    private void imprimirventadetallado(){
+        
+           DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+           Fecha = df.format(Fe.getDate());
+    
+            BDConexion con = new BDConexion();
+            Connection conexion = con.getConexion();
+            try {
+                JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\ReporteVentasTodo.jasper");
+                Map parametros = new HashMap();
+                parametros.put("FECHA", Fecha );
+                System.out.println(parametros);
+                JasperPrint print = JasperFillManager.fillReport(jasperReport, parametros, conexion);
+                JasperPrintManager.printReport(print, true);
+            } catch (Exception e) {
+                System.out.println("F" + e);
+                JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  " + e);
+            }
+        } 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -135,6 +187,7 @@ public class AdVentasPorDia extends javax.swing.JPanel {
         Fe = new com.toedter.calendar.JDateChooser();
         jButton1 = new javax.swing.JButton();
         detalle = new javax.swing.JCheckBox();
+        jButton2 = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(1024, 635));
 
@@ -160,6 +213,13 @@ public class AdVentasPorDia extends javax.swing.JPanel {
 
         detalle.setText("DETALLADO");
 
+        jButton2.setText("IMPRIMIR");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -175,8 +235,11 @@ public class AdVentasPorDia extends javax.swing.JPanel {
                         .addComponent(jButton1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 893, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 893, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(349, 349, 349)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,7 +252,9 @@ public class AdVentasPorDia extends javax.swing.JPanel {
                         .addComponent(detalle)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(34, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -206,12 +271,26 @@ public class AdVentasPorDia extends javax.swing.JPanel {
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        if (Fe.getDate() != null) {
+            if (detalle.isSelected()) {
+                imprimirventadetallado();
+            } else {
+                imprimirventa();
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "INGRESE UNA FECHA...");
+
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.toedter.calendar.JDateChooser Fe;
     private javax.swing.JTable Ventas;
     private javax.swing.JCheckBox detalle;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
