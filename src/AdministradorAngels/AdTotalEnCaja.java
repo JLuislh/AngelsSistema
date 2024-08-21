@@ -439,11 +439,11 @@ try {
         try (Connection con = conecta.getConexion()) {
             smtp = null;
             if(ID_TOTAL == 0){
-            smtp =con.prepareStatement("CALL CUENTADIARIA2('"+F+"',1,0)");
+            smtp =con.prepareStatement("CALL CUENTADIARIA('"+F+"',1,0)");
             smtp.executeUpdate();
             }
             else{
-            smtp =con.prepareStatement("CALL CUENTADIARIA2('"+F+"',2,"+ID_TOTAL+")");
+            smtp =con.prepareStatement("CALL CUENTADIARIA('"+F+"',2,"+ID_TOTAL+")");
             smtp.executeUpdate();
             }
         }
