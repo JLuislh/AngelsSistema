@@ -33,6 +33,15 @@ public class InsertarProducto {
     private int Status;
     private String UMedida;
     private String Nota;
+    private String nofactura;
+
+    public String getNofactura() {
+        return nofactura;
+    }
+
+    public void setNofactura(String nofactura) {
+        this.nofactura = nofactura;
+    }
 
     public String getNota() {
         return Nota;

@@ -316,12 +316,14 @@ private static ArrayList<InsertarProducto> SQL3(String sql){
         BDConexion conecta = new BDConexion();
         Connection con = conecta.getConexion();
         PreparedStatement smtp = null;
-        smtp =con.prepareStatement("insert into gastosdiarios(descripciongasto,precio,fecha,cantidad) values(?,?,?,?)");
+        smtp =con.prepareStatement("insert into gastosdiarios(descripciongasto,precio,fecha,cantidad,factura) values(?,?,?,?,?)");
         try {
          smtp.setString(1,t.getDescripcion());
          smtp.setDouble(2,t.getPrecio());
          smtp.setString(3, t.getFecha());
          smtp.setInt(4, t.getCantidad());
+         smtp.setString(5, t.getNofactura());
+         
          smtp.executeUpdate();
      } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "CUAL ERROR = "+e);}
