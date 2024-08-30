@@ -2486,7 +2486,7 @@ public class Extras extends javax.swing.JPanel {
     }//GEN-LAST:event_EX24MouseClicked
 
     private void EX25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX25MouseClicked
-/*        if ((evt.getModifiers() & 4) !=0){
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo25;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -2500,11 +2500,11 @@ public class Extras extends javax.swing.JPanel {
             P25.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }*/
+        }
     }//GEN-LAST:event_EX25MouseClicked
 
     private void EX26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX26MouseClicked
-     /*  if ((evt.getModifiers() & 4) !=0){
+       if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo26;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -2518,7 +2518,7 @@ public class Extras extends javax.swing.JPanel {
             P26.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }*/
+        }
     }//GEN-LAST:event_EX26MouseClicked
 
     private void MI1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI1MouseClicked
@@ -3067,10 +3067,10 @@ public class Extras extends javax.swing.JPanel {
             else if (201== codigo){
              descripcion24 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_24 = result.get(i).getDescripcion2().toUpperCase(); Precio24 = result.get(i).getPrecio();codigo24 = result.get(i).getCodigo();
             }
-            else if (0== codigo){
+            else if (269== codigo){
              descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
             }
-            else if (0== codigo){
+            else if (270== codigo){
              descripcion26 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_26 = result.get(i).getDescripcion2().toUpperCase(); Precio26 = result.get(i).getPrecio();codigo26 = result.get(i).getCodigo();
             }
              else if (0== codigo){
@@ -3334,7 +3334,7 @@ public class Extras extends javax.swing.JPanel {
         EX23.setText(texto23);
         String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
         EX24.setText(texto24);
-        /*String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
+        String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
         EX25.setText(texto25);
         String texto26 ="<html><center><body>"+descripcion26+"<br>"+descripcion2_26+"<br><font color='RED'>Q"+Precio26+"</font></body></center></html>";
         EX26.setText(texto26);
