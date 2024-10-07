@@ -2324,7 +2324,7 @@ if ((evt.getModifiers() & 4) !=0){
     }//GEN-LAST:event_CER28MouseClicked
 
     private void DRIN12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN12MouseClicked
-   /*       if ((evt.getModifiers() & 4) !=0){
+          if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo39;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -2338,7 +2338,7 @@ if ((evt.getModifiers() & 4) !=0){
             P40.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
+       }
     }//GEN-LAST:event_DRIN12MouseClicked
 
     private void DRIN13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DRIN13MouseClicked
@@ -2477,9 +2477,9 @@ private void nombres(){
             else if (195== codigo){
              descripcion38 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_38 = result.get(i).getDescripcion2().toUpperCase(); Precio38 = result.get(i).getPrecio();codigo38 = result.get(i).getCodigo();
             }
-            /*else if (202== codigo){
+            else if (275== codigo){
              descripcion39 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_39 = result.get(i).getDescripcion2().toUpperCase(); Precio39 = result.get(i).getPrecio();codigo39 = result.get(i).getCodigo();
-            }*/
+            }
             else if (203== codigo){
              descripcion40 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_40 = result.get(i).getDescripcion2().toUpperCase(); Precio40 = result.get(i).getPrecio();codigo40 = result.get(i).getCodigo();
             }
@@ -2649,8 +2649,8 @@ private void Etiquetas() {
         CER27.setText(texto37);
          String texto38 ="<html><center><body>"+descripcion38+"<br>"+descripcion2_38+"<br><font color='RED'>Q"+Precio38+"</font></body></center></html>";
         CER28.setText(texto38);
-        /*String texto39 ="<html><center><body>"+descripcion39+"<br>"+descripcion2_39+"<br><font color='RED'>Q"+Precio39+"</font></body></center></html>";
-        DRIN12.setText(texto39);*/
+        String texto39 ="<html><center><body>"+descripcion39+"<br>"+descripcion2_39+"<br><font color='RED'>Q"+Precio39+"</font></body></center></html>";
+        DRIN12.setText(texto39);
         String texto40 ="<html><center><body>"+descripcion40+"<br>"+descripcion2_40+"<br><font color='RED'>Q"+Precio40+"</font></body></center></html>";
         DRIN13.setText(texto40);
          
