@@ -8,6 +8,8 @@ import Inicio.Ordenes;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.BorderFactory;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  *
@@ -19,6 +21,11 @@ public class Administracion extends javax.swing.JFrame {
      * Creates new form Administracion
      */
     public Administracion() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
+        }
         initComponents();
         setLocationRelativeTo(null);
         String texto1 = "<html><center><body>REPORTE<br>VENTAS</body></center></html>";

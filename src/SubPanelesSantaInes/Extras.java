@@ -139,7 +139,8 @@ public class Extras extends javax.swing.JPanel {
        P24.setBackground(Original);
        P25.setBackground(Original);
        P26.setBackground(Original);
-      
+       P27.setBackground(Original);
+       P28.setBackground(Original);
        MICHE1.setBackground(Original);
        MICHE2.setBackground(Original);
        MICHE3.setBackground(Original);
@@ -363,6 +364,10 @@ public class Extras extends javax.swing.JPanel {
         EX25 = new javax.swing.JLabel();
         P26 = new ClassAngels.PanelRound();
         EX26 = new javax.swing.JLabel();
+        P27 = new ClassAngels.PanelRound();
+        EX27 = new javax.swing.JLabel();
+        P28 = new ClassAngels.PanelRound();
+        EX28 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         MICHE1 = new ClassAngels.PanelRound();
         MI1 = new javax.swing.JLabel();
@@ -803,7 +808,7 @@ public class Extras extends javax.swing.JPanel {
         );
         P14Layout.setVerticalGroup(
             P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 70, Short.MAX_VALUE)
             .addGroup(P14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(EX14, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE))
         );
@@ -1087,6 +1092,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX25.setText("25");
         EX25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX25MouseClicked(evt);
@@ -1113,6 +1119,7 @@ public class Extras extends javax.swing.JPanel {
 
         EX26.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         EX26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX26.setText("26");
         EX26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 EX26MouseClicked(evt);
@@ -1130,13 +1137,67 @@ public class Extras extends javax.swing.JPanel {
             .addComponent(EX26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
         );
 
+        P27.setBackground(new java.awt.Color(204, 255, 102));
+        P27.setPreferredSize(new java.awt.Dimension(75, 70));
+        P27.setRoundBottomLeft(20);
+        P27.setRoundBottomRight(20);
+        P27.setRoundTopLeft(20);
+        P27.setRoundTopRight(20);
+
+        EX27.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX27.setText("27");
+        EX27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX27MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P27Layout = new javax.swing.GroupLayout(P27);
+        P27.setLayout(P27Layout);
+        P27Layout.setHorizontalGroup(
+            P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX27, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P27Layout.setVerticalGroup(
+            P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
+        P28.setBackground(new java.awt.Color(204, 255, 102));
+        P28.setPreferredSize(new java.awt.Dimension(75, 70));
+        P28.setRoundBottomLeft(20);
+        P28.setRoundBottomRight(20);
+        P28.setRoundTopLeft(20);
+        P28.setRoundTopRight(20);
+
+        EX28.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EX28.setText("28");
+        EX28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EX28MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P28Layout = new javax.swing.GroupLayout(P28);
+        P28.setLayout(P28Layout);
+        P28Layout.setHorizontalGroup(
+            P28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX28, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+        P28Layout.setVerticalGroup(
+            P28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(EX28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(P1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1163,10 +1224,9 @@ public class Extras extends javax.swing.JPanel {
                         .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1190,7 +1250,11 @@ public class Extras extends javax.swing.JPanel {
                         .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(70, 70, 70))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(P28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1210,12 +1274,11 @@ public class Extras extends javax.swing.JPanel {
                         .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(P11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(P14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1226,8 +1289,10 @@ public class Extras extends javax.swing.JPanel {
                     .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(8, Short.MAX_VALUE))
+                    .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(255, 204, 102));
@@ -2038,7 +2103,7 @@ public class Extras extends javax.swing.JPanel {
                         .addContainerGap()
                         .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
+                        .addContainerGap()
                         .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -2988,6 +3053,42 @@ public class Extras extends javax.swing.JPanel {
             timer.start();
         }*/
     }//GEN-LAST:event_MI26MouseClicked
+
+    private void EX27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX27MouseClicked
+      if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo27;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P27.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo27;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P27.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX27MouseClicked
+
+    private void EX28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX28MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo28;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P28.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+        }else{
+            codigooreden = codigo28;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P28.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+        }
+    }//GEN-LAST:event_EX28MouseClicked
  
     
     private void nombres(){
@@ -3073,10 +3174,10 @@ public class Extras extends javax.swing.JPanel {
             else if (270== codigo){
              descripcion26 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_26 = result.get(i).getDescripcion2().toUpperCase(); Precio26 = result.get(i).getPrecio();codigo26 = result.get(i).getCodigo();
             }
-             else if (0== codigo){
+             else if (276== codigo){
              descripcion27 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_27 = result.get(i).getDescripcion2().toUpperCase(); Precio27 = result.get(i).getPrecio();codigo27 = result.get(i).getCodigo();
             }
-             else if (0== codigo){
+            else if (277== codigo){
              descripcion28 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_28 = result.get(i).getDescripcion2().toUpperCase(); Precio28 = result.get(i).getPrecio();codigo28 = result.get(i).getCodigo();
             }
              else if (0== codigo){
@@ -3196,6 +3297,8 @@ public class Extras extends javax.swing.JPanel {
     private javax.swing.JLabel EX24;
     private javax.swing.JLabel EX25;
     private javax.swing.JLabel EX26;
+    private javax.swing.JLabel EX27;
+    private javax.swing.JLabel EX28;
     private javax.swing.JLabel EX3;
     private javax.swing.JLabel EX4;
     private javax.swing.JLabel EX5;
@@ -3274,6 +3377,8 @@ public class Extras extends javax.swing.JPanel {
     private ClassAngels.PanelRound P24;
     private ClassAngels.PanelRound P25;
     private ClassAngels.PanelRound P26;
+    private ClassAngels.PanelRound P27;
+    private ClassAngels.PanelRound P28;
     private ClassAngels.PanelRound P3;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
@@ -3338,11 +3443,11 @@ public class Extras extends javax.swing.JPanel {
         EX25.setText(texto25);
         String texto26 ="<html><center><body>"+descripcion26+"<br>"+descripcion2_26+"<br><font color='RED'>Q"+Precio26+"</font></body></center></html>";
         EX26.setText(texto26);
-        /*String texto27 ="<html><center><body>"+descripcion27+"<br>"+descripcion2_27+"<br><font color='RED'>Q"+Precio27+"</font></body></center></html>";
+        String texto27 ="<html><center><body>"+descripcion27+"<br>"+descripcion2_27+"<br><font color='RED'>Q"+Precio27+"</font></body></center></html>";
         EX27.setText(texto27);
         String texto28 ="<html><center><body>"+descripcion28+"<br>"+descripcion2_28+"<br><font color='RED'>Q"+Precio28+"</font></body></center></html>";
         EX28.setText(texto28);
-        String texto29 ="<html><center><body>"+descripcion29+"<br>"+descripcion2_29+"<br><font color='RED'>Q"+Precio29+"</font></body></center></html>";
+        /*String texto29 ="<html><center><body>"+descripcion29+"<br>"+descripcion2_29+"<br><font color='RED'>Q"+Precio29+"</font></body></center></html>";
         EX29.setText(texto29);
         String texto30 ="<html><center><body>"+descripcion30+"<br>"+descripcion2_30+"<br><font color='RED'>Q"+Precio30+"</font></body></center></html>";
         EX30.setText(texto30);

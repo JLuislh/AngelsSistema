@@ -64,6 +64,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
  String descripcion35;	String descripcion2_35;	 String Precio35; int codigo35;
  String descripcion36;	String descripcion2_36;	 String Precio36; int codigo36;
  String descripcion37;	String descripcion2_37;	 String Precio37; int codigo37;
+ String descripcion38;	String descripcion2_38;	 String Precio38; int codigo38;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -121,6 +122,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
        P35.setBackground(Original);
        P36.setBackground(Original);
        P37.setBackground(Original);
+       P38.setBackground(Original);
      }
     });
     
@@ -341,6 +343,8 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         BEPRE17 = new javax.swing.JLabel();
         P37 = new ClassAngels.PanelRound();
         BEPRE18 = new javax.swing.JLabel();
+        P38 = new ClassAngels.PanelRound();
+        BEPRE19 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(153, 255, 204));
         setPreferredSize(new java.awt.Dimension(1170, 380));
@@ -1474,6 +1478,35 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
+        P38.setBackground(new java.awt.Color(204, 255, 102));
+        P38.setPreferredSize(new java.awt.Dimension(100, 65));
+        P38.setRoundBottomLeft(20);
+        P38.setRoundBottomRight(20);
+        P38.setRoundTopLeft(20);
+        P38.setRoundTopRight(20);
+
+        BEPRE19.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BEPRE19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BEPRE19.setText("38");
+        BEPRE19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BEPRE19MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P38Layout = new javax.swing.GroupLayout(P38);
+        P38.setLayout(P38Layout);
+        P38Layout.setHorizontalGroup(
+            P38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BEPRE19, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P38Layout.setVerticalGroup(
+            P38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(P38Layout.createSequentialGroup()
+                .addComponent(BEPRE19, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -1516,7 +1549,9 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -1542,8 +1577,9 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
                     .addComponent(P34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(P37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -1564,7 +1600,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         getAccessibleContext().setAccessibleName("");
@@ -2235,6 +2271,24 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
             timer.start();
        }
     }//GEN-LAST:event_BEPRE18MouseClicked
+
+    private void BEPRE19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BEPRE19MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo38;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P38.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo38;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P38.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_BEPRE19MouseClicked
    private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasBebidas();
         for (int i = 0; i < result.size(); i++) {
@@ -2351,6 +2405,9 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
             else if (136== codigo){
              descripcion37 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_37 = result.get(i).getDescripcion2().toUpperCase(); Precio37 = result.get(i).getPrecio();codigo37 = result.get(i).getCodigo();
             }
+            else if (278== codigo){
+             descripcion38 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_38 = result.get(i).getDescripcion2().toUpperCase(); Precio38 = result.get(i).getPrecio();codigo38 = result.get(i).getCodigo();
+            }
         }
   }
 
@@ -2384,6 +2441,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
     private javax.swing.JLabel BEPRE16;
     private javax.swing.JLabel BEPRE17;
     private javax.swing.JLabel BEPRE18;
+    private javax.swing.JLabel BEPRE19;
     private javax.swing.JLabel BEPRE2;
     private javax.swing.JLabel BEPRE3;
     private javax.swing.JLabel BEPRE4;
@@ -2423,6 +2481,7 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
     private ClassAngels.PanelRound P35;
     private ClassAngels.PanelRound P36;
     private ClassAngels.PanelRound P37;
+    private ClassAngels.PanelRound P38;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
     private ClassAngels.PanelRound P6;
@@ -2508,6 +2567,8 @@ public class BebidasSinAlcohol extends javax.swing.JPanel {
         BEPRE17.setText(texto36);
         String texto37 ="<html><center><body>"+descripcion37+"<br>"+descripcion2_37+"<br><font color='RED'>Q"+Precio37+"</font></body></center></html>";
         BEPRE18.setText(texto37);
+        String texto38 ="<html><center><body>"+descripcion38+"<br>"+descripcion2_38+"<br><font color='RED'>Q"+Precio38+"</font></body></center></html>";
+        BEPRE19.setText(texto38);
     }
 
 }

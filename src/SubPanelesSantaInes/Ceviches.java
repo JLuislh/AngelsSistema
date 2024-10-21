@@ -1872,7 +1872,7 @@ public class Ceviches extends javax.swing.JPanel {
     }//GEN-LAST:event_AMA14MouseClicked
 
     private void AMA15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AMA15MouseClicked
-       /* if ((evt.getModifiers() & 4) !=0){
+          if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo31;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1886,7 +1886,7 @@ public class Ceviches extends javax.swing.JPanel {
             P31.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }*/
+        }
     }//GEN-LAST:event_AMA15MouseClicked
 
     private void nombres(){
@@ -1984,9 +1984,9 @@ public class Ceviches extends javax.swing.JPanel {
              else if (181== codigo){
              descripcion30 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_30 = result.get(i).getDescripcion2().toUpperCase(); Precio30 = result.get(i).getPrecio();codigo30 = result.get(i).getCodigo();
             }
-           /*  else if (== codigo){
+             else if (32 == codigo){
              descripcion31 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_31 = result.get(i).getDescripcion2().toUpperCase(); Precio31 = result.get(i).getPrecio();codigo31 = result.get(i).getCodigo();
-            }*/
+            }
         }
   }
 
@@ -2118,7 +2118,7 @@ public class Ceviches extends javax.swing.JPanel {
         AMA13.setText(texto29);
         String texto30 ="<html><center><body>"+descripcion30+"<br>"+descripcion2_30+"<br><font color='RED'>Q"+Precio30+"</font></body></center></html>";
         AMA14.setText(texto30);
-       // String texto31 ="<html><center><body>"+descripcion31+"<br>"+descripcion2_31+"<br><font color='RED'>Q"+Precio31+"</font></body></center></html>";
-        //AMA15.setText(texto31);
+        String texto31 ="<html><center><body>"+descripcion31+"<br>"+descripcion2_31+"<br><font color='RED'>Q"+Precio31+"</font></body></center></html>";
+        AMA15.setText(texto31);
     }
 }
