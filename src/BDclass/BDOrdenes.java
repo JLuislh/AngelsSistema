@@ -28,9 +28,8 @@ public class BDOrdenes {
         smtp =con.prepareStatement("insert into Ordenes (FECHA,ESTADO) values(CURRENT_TIMESTAMP,1)",Statement.RETURN_GENERATED_KEYS);
         try {
          smtp.executeUpdate();
-     } catch (Exception e) {
+     } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e);}
-        
         ResultSet rs = smtp.getGeneratedKeys();
         if(rs.next()){int id = rs.getInt(1);
           t.setIdregresoPedido(id);
