@@ -105,7 +105,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
  }
        
     
-     private void descargarInventario(){
+    /* private void descargarInventario(){
      
           ArrayList<InsertarProducto> result = BDOrdenes.ListarCodigosPedido(noorden);
         for (int i = 0; i < result.size(); i++) {
@@ -125,10 +125,9 @@ public class MenuSeguimiento extends javax.swing.JFrame {
            JOptionPane.showMessageDialog(null,"ERROR = "+ex);
         }
           
-          
         }
      
-     }
+     }*/
     
 
     /**
@@ -654,7 +653,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
        
         int resp=JOptionPane.showConfirmDialog(null,"COBRAR Q."+Total.getText()+" PARA CERRAR ORDEN");
           if (JOptionPane.OK_OPTION == resp){ 
-                descargarInventario();
+                //descargarInventario();
                 cobrarOrdenyCerrar();
                 CobroET F = new CobroET(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
                 //CobroFacturacion F = new CobroFacturacion(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));

@@ -84,14 +84,14 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         }
  }
     
-    private void descargarInventario(){
+  /*  private void descargarInventario(){
      
           ArrayList<InsertarProducto> result = BDOrdenes.ListarCodigosPedido(noorden);
         for (int i = 0; i < result.size(); i++) {
           int codigo = result.get(i).getCodigo();
           int cant = result.get(i).getCantidad();
           try {
-             System.out.println(result.get(i).getCodigo());
+            System.out.println(result.get(i).getCodigo());
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             Query = "{call Descontar("+codigo+","+cant+")}"; 
@@ -107,7 +107,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
           
         }
      
-     }
+     }*/
     
 
     /**
@@ -639,9 +639,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
        
         int resp=JOptionPane.showConfirmDialog(null,"COBRAR Q."+Total.getText()+" PARA CERRAR ORDEN");
           if (JOptionPane.OK_OPTION == resp){
-              descargarInventario();
+              //descargarInventario();
               cobrarOrden();
-              
               CobroET F = new CobroET(Double.parseDouble(Total.getText()),noorden);
               //CobroFacturacion F = new CobroFacturacion(Double.parseDouble(Total.getText()),noorden);
               F.setVisible(true);

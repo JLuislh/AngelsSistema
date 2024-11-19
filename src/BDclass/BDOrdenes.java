@@ -322,7 +322,7 @@ public static InsertarProducto BuscarTotal(String a) throws SQLException{
 
 
 public static ArrayList<InsertarProducto> ListarCodigosPedido (int a ) {
-        return cod(" select codigo,cantidad from ventas where NOORDEN = "+a+";");    
+        return cod("select codigo,cantidad from ventas where NOORDEN = "+a+";");    
  }  
 
 private static ArrayList<InsertarProducto> cod(String sql){

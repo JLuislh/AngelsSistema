@@ -5,11 +5,15 @@
 package Inicio;
 
 import BDclass.BDConexion;
+import BDclass.BDOrdenes;
+import ClassAngels.InsertarProducto;
+import com.mysql.cj.Query;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JOptionPane;
@@ -25,6 +29,8 @@ import net.sf.jasperreports.engine.util.JRLoader;
  */
 public class CobroET extends javax.swing.JFrame {
      int cobro;
+     int noorden;
+     String Query;
     /**
      * Creates new form CobroET
      */
@@ -42,6 +48,7 @@ public class CobroET extends javax.swing.JFrame {
         Canttarjeta.setEditable(false);
         total.setText(String.valueOf(a));
         Orden.setText(String.valueOf(b));
+        noorden = b;
         
     }
     
@@ -111,7 +118,31 @@ public class CobroET extends javax.swing.JFrame {
         } catch (Exception e) {System.out.println("F"+e);
            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
         }
-    } 
+    }
+    
+    private void descargarInventario(){
+     
+          ArrayList<InsertarProducto> result = BDOrdenes.ListarCodigosPedido(noorden);
+        for (int i = 0; i < result.size(); i++) {
+          int codigo = result.get(i).getCodigo();
+          int cant = result.get(i).getCantidad();
+          try {
+             System.out.println(result.get(i).getCodigo());
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            Query = "{call Descontar("+codigo+","+cant+")}"; 
+            PreparedStatement pse = null;
+            pse= con.prepareStatement(Query);
+            pse.executeUpdate();                   
+            con.close();
+            pse.close();
+        } catch (SQLException ex) {
+           JOptionPane.showMessageDialog(null,"ERROR = "+ex);
+        }
+          
+        }
+     
+     }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -411,14 +442,17 @@ public class CobroET extends javax.swing.JFrame {
     private void cobrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cobrarActionPerformed
        if(cobro > 0){
         if(cobro == 3){
-            if(Double.parseDouble(Canttarjeta.getText())>0 && Double.parseDouble(CantEfectivo.getText())>0){cobrarOrdenET();}
+            if(Double.parseDouble(Canttarjeta.getText())>0 && Double.parseDouble(CantEfectivo.getText())>0){cobrarOrdenET();descargarInventario();}
             else{JOptionPane.showMessageDialog(null, "EL COBRO TIENE QUE ESTAR DIVIDIDO");}
         }else{
             
-         if(cobro ==4){cobrarOrdenTT();}else{   
-        cobrarOrdenET();}
+         if(cobro ==4){cobrarOrdenTT();descargarInventario();}else{   
+        cobrarOrdenET();descargarInventario();}
         }
        }else{JOptionPane.showMessageDialog(null, "SELECCIONAR UN METODO DE PAGO");}
+       
+       
+       
              
     }//GEN-LAST:event_cobrarActionPerformed
 
