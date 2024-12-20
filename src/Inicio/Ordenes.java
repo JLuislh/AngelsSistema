@@ -9,6 +9,8 @@ import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.OrdenesClass;
 import FELclass.Token;
+import Pedidos.AceptarPedido;
+import Pedidos.InicioPedido;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 //import com.mysql.cj.xdevapi.Client;
@@ -58,8 +60,10 @@ public class Ordenes extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         String texto1 = "<html><center><body>NUEVA ORDEN<br>PARA LLEVAR</body></center></html>";
         llevar.setText(texto1);
-        /* String texto2 = "<html><center><body>BEBIDAS<br>SIN LICOR</body></center></html>";
-        T3.setText(texto2);*/
+        String texto2 = "<html><center><body>REALIZAR<br>PEDIDO</body></center></html>";
+        jLabel5.setText(texto2);
+        String texto3 = "<html><center><body>ACEPTAR<br>PEDIDO</body></center></html>";
+        jLabel6.setText(texto3);
     }
     
     public void crear() {
@@ -116,6 +120,10 @@ public class Ordenes extends javax.swing.JFrame {
         imagen = new javax.swing.JLabel();
         GASTOS = new ClassAngels.PanelRound();
         jLabel4 = new javax.swing.JLabel();
+        PEDIDO = new ClassAngels.PanelRound();
+        jLabel5 = new javax.swing.JLabel();
+        RECIBIR = new ClassAngels.PanelRound();
+        jLabel6 = new javax.swing.JLabel();
 
         jRadioButton1.setText("jRadioButton1");
 
@@ -178,7 +186,7 @@ public class Ordenes extends javax.swing.JFrame {
         );
 
         ADMINISTRAR.setBackground(new java.awt.Color(153, 255, 153));
-        ADMINISTRAR.setPreferredSize(new java.awt.Dimension(201, 83));
+        ADMINISTRAR.setPreferredSize(new java.awt.Dimension(201, 49));
         ADMINISTRAR.setRoundBottomLeft(20);
         ADMINISTRAR.setRoundBottomRight(20);
         ADMINISTRAR.setRoundTopLeft(20);
@@ -201,7 +209,9 @@ public class Ordenes extends javax.swing.JFrame {
         );
         ADMINISTRARLayout.setVerticalGroup(
             ADMINISTRARLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ADMINISTRARLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         NUEVAPARALLEVAR.setBackground(new java.awt.Color(153, 255, 153));
@@ -234,7 +244,7 @@ public class Ordenes extends javax.swing.JFrame {
         imagen.setText("jLabel1");
 
         GASTOS.setBackground(new java.awt.Color(153, 255, 153));
-        GASTOS.setPreferredSize(new java.awt.Dimension(201, 83));
+        GASTOS.setPreferredSize(new java.awt.Dimension(201, 49));
         GASTOS.setRoundBottomLeft(20);
         GASTOS.setRoundBottomRight(20);
         GASTOS.setRoundTopLeft(20);
@@ -253,11 +263,65 @@ public class Ordenes extends javax.swing.JFrame {
         GASTOS.setLayout(GASTOSLayout);
         GASTOSLayout.setHorizontalGroup(
             GASTOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         GASTOSLayout.setVerticalGroup(
             GASTOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+        );
+
+        PEDIDO.setBackground(new java.awt.Color(153, 255, 153));
+        PEDIDO.setPreferredSize(new java.awt.Dimension(98, 49));
+        PEDIDO.setRoundBottomLeft(20);
+        PEDIDO.setRoundBottomRight(20);
+        PEDIDO.setRoundTopLeft(20);
+        PEDIDO.setRoundTopRight(20);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("PEDIDO");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PEDIDOLayout = new javax.swing.GroupLayout(PEDIDO);
+        PEDIDO.setLayout(PEDIDOLayout);
+        PEDIDOLayout.setHorizontalGroup(
+            PEDIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+        );
+        PEDIDOLayout.setVerticalGroup(
+            PEDIDOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+        );
+
+        RECIBIR.setBackground(new java.awt.Color(153, 255, 153));
+        RECIBIR.setPreferredSize(new java.awt.Dimension(98, 49));
+        RECIBIR.setRoundBottomLeft(20);
+        RECIBIR.setRoundBottomRight(20);
+        RECIBIR.setRoundTopLeft(20);
+        RECIBIR.setRoundTopRight(20);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("ACEPTAR");
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout RECIBIRLayout = new javax.swing.GroupLayout(RECIBIR);
+        RECIBIR.setLayout(RECIBIRLayout);
+        RECIBIRLayout.setHorizontalGroup(
+            RECIBIRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+        );
+        RECIBIRLayout.setVerticalGroup(
+            RECIBIRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -276,8 +340,13 @@ public class Ordenes extends javax.swing.JFrame {
                         .addComponent(imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GASTOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ADMINISTRAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(GASTOS, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(ADMINISTRAR, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(PEDIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(RECIBIR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -295,7 +364,11 @@ public class Ordenes extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 142, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(RECIBIR, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PEDIDO, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(GASTOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ADMINISTRAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -352,6 +425,18 @@ public class Ordenes extends javax.swing.JFrame {
         F.setVisible(true);
         this.dispose(); 
     }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        InicioPedido F = new InicioPedido();
+        F.setVisible(true);
+        this.dispose(); 
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        AceptarPedido F = new AceptarPedido();
+        F.setVisible(true);
+        this.dispose(); 
+    }//GEN-LAST:event_jLabel6MouseClicked
 
       private void token(){
          // System.out.println("llega token");
@@ -435,10 +520,14 @@ public class Ordenes extends javax.swing.JFrame {
     private ClassAngels.PanelRound MESAS;
     private ClassAngels.PanelRound NEWORDER;
     private ClassAngels.PanelRound NUEVAPARALLEVAR;
+    private ClassAngels.PanelRound PEDIDO;
+    private ClassAngels.PanelRound RECIBIR;
     private javax.swing.JLabel imagen;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JLabel llevar;

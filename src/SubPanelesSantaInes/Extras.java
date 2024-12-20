@@ -1928,6 +1928,7 @@ public class Extras extends javax.swing.JPanel {
 
         MI24.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI24.setText("MI24");
         MI24.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MI24MouseClicked(evt);
@@ -1980,6 +1981,7 @@ public class Extras extends javax.swing.JPanel {
 
         MI26.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         MI26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI26.setText("MI26");
         MI26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MI26MouseClicked(evt);
@@ -2098,13 +2100,10 @@ public class Extras extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -3037,7 +3036,7 @@ public class Extras extends javax.swing.JPanel {
     }//GEN-LAST:event_MI25MouseClicked
 
     private void MI26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI26MouseClicked
-        /*if ((evt.getModifiers() & 4) !=0){
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigoM26;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -3051,7 +3050,7 @@ public class Extras extends javax.swing.JPanel {
             MICHE26.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }*/
+        }
     }//GEN-LAST:event_MI26MouseClicked
 
     private void EX27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EX27MouseClicked
@@ -3273,6 +3272,12 @@ public class Extras extends javax.swing.JPanel {
             }
              else if (91== codigo){
              MICHE1_24 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_24 = result.get(i).getDescripcion2().toUpperCase(); PrecioM24 = result.get(i).getPrecio();codigoM24 = result.get(i).getCodigo();
+            }
+            /*else if (91== codigo){
+             MICHE1_25 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_24 = result.get(i).getDescripcion2().toUpperCase(); PrecioM24 = result.get(i).getPrecio();codigoM24 = result.get(i).getCodigo();
+            }*/
+            else if (285== codigo){
+             MICHE1_26 = result.get(i).getDescripcion1().toUpperCase(); MICHE2_26 = result.get(i).getDescripcion2().toUpperCase(); PrecioM26 = result.get(i).getPrecio();codigoM26 = result.get(i).getCodigo();
             }
         }
   }
@@ -3511,10 +3516,10 @@ public class Extras extends javax.swing.JPanel {
         MI23.setText(M23);
         String M24 ="<html><center><body>"+MICHE1_24+"<br>"+MICHE2_24+"<br><font color='RED'>Q"+PrecioM24+"</font></body></center></html>";
        MI24.setText(M24);
-        String M25 ="<html><center><body>"+MICHE1_25+"<br>"+MICHE2_25+"<br><font color='RED'>Q"+PrecioM25+"</font></body></center></html>";
-        /*MI25.setText(M25);
+        /*String M25 ="<html><center><body>"+MICHE1_25+"<br>"+MICHE2_25+"<br><font color='RED'>Q"+PrecioM25+"</font></body></center></html>";
+        MI25.setText(M25);*/
         String M26 ="<html><center><body>"+MICHE1_26+"<br>"+MICHE2_26+"<br><font color='RED'>Q"+PrecioM26+"</font></body></center></html>";
-        MI26.setText(M26);*/
+        MI26.setText(M26);
     }
 }
 

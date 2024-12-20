@@ -14,14 +14,11 @@ import javax.swing.JOptionPane;
  * @author jluis
  */
 
-public class BDConexion {
+public class BDConexionPedidos {
 
-     //public static final String URL = "jdbc:mysql://192.168.0.14:3306/angels?useTimezone=true&serverTimezone=UTC"; //LOCAL TRABAJO
-     public static final String URL = "jdbc:mysql://localhost:3306/angels?useTimezone=true&serverTimezone=UTC";//LocaLHOST
-   //public static final String URL = "jdbc:mysql://26.247.51.34:3306/angels?useTimezone=true&serverTimezone=UTC";//Maquina Angels San Luis
-  // public static final String URL = "jdbc:mysql://26.102.114.50:3306/angels?useTimezone=true&serverTimezone=UTC";//Maquina Angels Santa ines
-   public static final String USER =   "angels";//"SuperElrey";
-   public static final String CLAVE =  "Coast@cm";// 
+   public static final String URL = "jdbc:mysql://26.49.11.7:3306/PedidosProductos?useTimezone=true&serverTimezone=UTC";
+   public static final String USER =   "PedidosProductos";//
+   public static final String CLAVE =  "Coast@cm";//  
      
    public Connection getConexion(){
         Connection con = null;

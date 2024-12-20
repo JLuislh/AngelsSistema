@@ -450,10 +450,7 @@ public class CobroET extends javax.swing.JFrame {
         cobrarOrdenET();descargarInventario();}
         }
        }else{JOptionPane.showMessageDialog(null, "SELECCIONAR UN METODO DE PAGO");}
-       
-       
-       
-             
+
     }//GEN-LAST:event_cobrarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
