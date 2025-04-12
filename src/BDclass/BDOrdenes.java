@@ -45,10 +45,11 @@ public class BDOrdenes {
         BDConexion conecta = new BDConexion();
         Connection con = conecta.getConexion();
         PreparedStatement smtp = null;
-        smtp =con.prepareStatement("insert into ventas (noorden,codigo,cantidad,total,estado) values(?,?,1,(select precio from productos where codigo =  "+t.getId_producto()+" ),1) ");
+        smtp =con.prepareStatement("insert into ventas (noorden,codigo,cantidad,total,estado,tipo) values(?,?,1,(select precio from productos where codigo =  "+t.getId_producto()+" ),1,?) ");
         try {
          smtp.setInt(1,t.getNoOrden());
          smtp.setInt(2,t.getId_producto());
+         smtp.setInt(3, t.getTipo());
          smtp.executeUpdate();
      } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "QUE MIERDA PASA ADENTRO =  "+e);}
@@ -226,11 +227,11 @@ public static ArrayList<InsertarProducto> ProductosVentasDetalladoParaiso(String
     
  public static ArrayList<InsertarProducto> OrdenesParaiso(String Fecha1, String Fecha2) {
      System.out.println(Fecha1 +"----"+ Fecha2);
-        return Order("select noorden,Total,Fecha from ordenes where estado = 2 and fecha between '"+Fecha1+" 02:00:00'  and  '"+Fecha2+" 02:00:00'");    
+        return Order("select ordendia,Total,Fecha from ordenes where estado = 2 and fecha between '"+Fecha1+" 02:00:00'  and  '"+Fecha2+" 02:00:00'");    
  } 
     
     public static ArrayList<InsertarProducto> Ordenes(String Fecha) {
-        return Order("select noorden,Total,Fecha from ordenes where estado = 2 and date_format(fecha,'%d/%m/%Y')  ='"+Fecha+"'");    
+        return Order("select ordendia,Total,Fecha from ordenes where estado = 2 and date_format(fecha,'%d/%m/%Y')  ='"+Fecha+"'");    
  }  
  
     private static ArrayList<InsertarProducto> Order(String sql){
@@ -244,7 +245,7 @@ public static ArrayList<InsertarProducto> ProductosVentasDetalladoParaiso(String
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()){
                  t = new InsertarProducto();
-                 t.setNoOrden(rs.getInt("noorden"));
+                 t.setNoOrden(rs.getInt("ordendia"));
                  t.setTotal(rs.getDouble("TOTAL"));
                  t.setFecha(rs.getString("FECHA"));
                  list.add(t);

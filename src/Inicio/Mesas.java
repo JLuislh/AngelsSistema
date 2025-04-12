@@ -228,7 +228,7 @@ public final class Mesas extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1060, 643));
 
-        Mesa1.setBackground(new java.awt.Color(255, 255, 204));
+        Mesa1.setBackground(new java.awt.Color(255, 153, 153));
         Mesa1.setRoundBottomLeft(20);
         Mesa1.setRoundBottomRight(20);
         Mesa1.setRoundTopLeft(20);

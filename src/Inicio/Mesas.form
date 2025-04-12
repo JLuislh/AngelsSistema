@@ -164,7 +164,7 @@
         <Container class="ClassAngels.PanelRound" name="Mesa1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="ff" red="ff" type="rgb"/>
+              <Color blue="99" green="99" red="ff" type="rgb"/>
             </Property>
             <Property name="roundBottomLeft" type="int" value="20"/>
             <Property name="roundBottomRight" type="int" value="20"/>

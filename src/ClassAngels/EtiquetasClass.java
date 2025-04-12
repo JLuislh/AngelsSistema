@@ -74,6 +74,9 @@ public class EtiquetasClass {
  public static ArrayList<EtiquetasClass> ListaEtiquetasExtras() {
         return SQLP("SELECT codigo,DESCRIPCION1,DESCRIPCION2,precio FROM productos where tipo = 7 order by codigo");    
  }  
+ public static ArrayList<EtiquetasClass> ListaEtiquetasHelados() {
+        return SQLP("SELECT codigo,DESCRIPCION1,DESCRIPCION2,precio FROM productos where tipo = 8 order by codigo");    
+ }
 private static ArrayList<EtiquetasClass> SQLP(String sql){
     ArrayList<EtiquetasClass> list = new ArrayList<EtiquetasClass>();
     BDConexion conecta = new BDConexion();

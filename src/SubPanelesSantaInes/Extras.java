@@ -6,7 +6,11 @@ import ClassAngels.EtiquetasClass;
 import ClassAngels.InsertarProducto;
 import Inicio.Menu;
 import Inicio.MenuParaLlevar;
+import static Inicio.Menu.PanelMenu;
+import static Inicio.MenuParaLlevar.PanelMenu;
+import static Inicio.MenuSeguimiento.PanelMenu;
 import Inicio.MenuSeguimiento;
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,6 +22,8 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
+
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
@@ -28,6 +34,7 @@ import javax.swing.Timer;
  * @author jluis
  */
 public class Extras extends javax.swing.JPanel {
+    
  String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
  String descripcion2;	String descripcion2_2;	 String Precio2;  int codigo2;
  String descripcion3;	String descripcion2_3;	 String Precio3;  int codigo3;
@@ -93,6 +100,7 @@ public class Extras extends javax.swing.JPanel {
  int codigooreden;
  int existe = 0;
  int tipomenu = 0;
+ int tipo;
 
     /**
      * Creates new form Hamburguesas
@@ -170,12 +178,31 @@ public class Extras extends javax.swing.JPanel {
      }
     });
     
+     public  void BuscarTipo() {
+            try {
+                BDConexion conecta = new BDConexion();
+                Connection cn = conecta.getConexion();
+                java.sql.Statement stmt = cn.createStatement();
+                ResultSet rs = stmt.executeQuery("SELECT COMBEB  FROM PRODUCTOS  WHERE  CODIGO ="+codigooreden );
+                while (rs.next()) {
+                    tipo = rs.getInt(1);
+                }
+                rs.close();
+                stmt.close();
+                cn.close();
+            } catch (Exception error) {
+                System.out.print(error);
+            }
+            
+        } 
+    
     private void InsertarProductoPedido() {
-       
+        BuscarTipo();
         try {
             InsertarProducto p1 = new InsertarProducto();
             p1.setNoOrden(noorden);
             p1.setId_producto(codigooreden);
+            p1.setTipo(tipo);
             BDOrdenes.InsertarProducto_Pedido(p1);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "QUE MIERDA PASA= "+e);
@@ -183,6 +210,7 @@ public class Extras extends javax.swing.JPanel {
      switch (tipomenu) {
          case 0:
              Menu.ListarProductosPedidos();
+             
              break;
          case 1:
              MenuSeguimiento.ListarProductosPedidos();
@@ -201,7 +229,7 @@ public class Extras extends javax.swing.JPanel {
                  BDConexion conecta = new BDConexion();
                  Connection con = conecta.getConexion();
                  PreparedStatement smtp = null;
-                 smtp = con.prepareStatement("update VENTAS SET CANTIDAD = CANTIDAD+1, TOTAL = CANTIDAD*(SELECT PRECIO FROM productos WHERE CODIGO = "+codigooreden+") WHERE NOORDEN = "+noorden+" AND CODIGO = "+codigooreden);
+                 smtp = con.prepareStatement("update VENTAS SET CANTIDAD = CANTIDAD+1, TOTAL = CANTIDAD*(SELECT PRECIO FROM productos WHERE CODIGO = "+codigooreden+") WHERE NOORDEN = "+noorden+" and estado = 1 AND CODIGO = "+codigooreden);
                  smtp.executeUpdate();
                  con.close();
                  smtp.close();
@@ -231,7 +259,7 @@ public class Extras extends javax.swing.JPanel {
                 BDConexion conecta = new BDConexion();
                 Connection cn = conecta.getConexion();
                 java.sql.Statement stmt = cn.createStatement();
-                ResultSet rs = stmt.executeQuery("SELECT cantidad as EXISTE FROM ventas  WHERE NOORDEN =  "+noorden+" AND CODIGO ="+codigooreden );
+                ResultSet rs = stmt.executeQuery("SELECT cantidad as EXISTE FROM ventas  WHERE NOORDEN =  "+noorden+" and estado = 1 AND CODIGO ="+codigooreden );
                 while (rs.next()) {
                     existe = rs.getInt(1);
                 }
@@ -249,7 +277,7 @@ public class Extras extends javax.swing.JPanel {
                  BDConexion conecta = new BDConexion();
                  Connection con = conecta.getConexion();
                  PreparedStatement smtp = null;
-                 smtp = con.prepareStatement("update VENTAS SET CANTIDAD = CANTIDAD-1,Total = TOTAL-(SELECT PRECIO FROM productos WHERE CODIGO = "+codigooreden+") WHERE NOORDEN = "+noorden+" AND CODIGO = "+codigooreden);
+                 smtp = con.prepareStatement("update VENTAS SET CANTIDAD = CANTIDAD-1,Total = TOTAL-(SELECT PRECIO FROM productos WHERE CODIGO = "+codigooreden+") WHERE NOORDEN = "+noorden+" and estado = 1 AND CODIGO = "+codigooreden);
                  smtp.executeUpdate();
                  con.close();
                  smtp.close();
@@ -279,7 +307,7 @@ public class Extras extends javax.swing.JPanel {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
-            ps= con.prepareStatement("delete from Ventas where noorden="+noorden+" and codigo = "+codigooreden);
+            ps= con.prepareStatement("delete from Ventas where noorden="+noorden+" and estado = 1 and codigo = "+codigooreden);
             ps.executeUpdate();
             con.close();
             ps.close();
@@ -1953,8 +1981,9 @@ public class Extras extends javax.swing.JPanel {
         MICHE25.setRoundTopLeft(20);
         MICHE25.setRoundTopRight(20);
 
-        MI25.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        MI25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         MI25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        MI25.setText("HELADOS");
         MI25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MI25MouseClicked(evt);
@@ -2029,9 +2058,9 @@ public class Extras extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(MICHE24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(MICHE25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(MICHE26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(MICHE26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(MICHE25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(MICHE1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2090,8 +2119,8 @@ public class Extras extends javax.swing.JPanel {
                     .addComponent(MICHE22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(MICHE23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(MICHE24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(MICHE25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(MICHE26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(MICHE26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MICHE25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -3018,21 +3047,35 @@ public class Extras extends javax.swing.JPanel {
     }//GEN-LAST:event_MI24MouseClicked
 
     private void MI25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI25MouseClicked
-        /* if ((evt.getModifiers() & 4) !=0){
-            codigooreden= codigoM25;
-            BuscarExistencia();
-            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            MICHE25.setBackground(Color.darkGray);
-            timer.setRepeats(false);
-            timer.start();
-        }else{
-            codigooreden = codigoM25;
-            BuscarExistencia();
-            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            MICHE25.setBackground(Color.GREEN);
-            timer.setRepeats(false);
-            timer.start();
-        }*/
+    Helados op1 = new Helados(noorden,tipomenu);
+    op1.setSize(1170, 380);
+    op1.setLocation(0, 0);
+    switch (tipomenu) {
+         case 0:
+            Inicio.Menu.PanelMenu.removeAll();
+            Inicio.Menu.PanelMenu.add(op1,BorderLayout.CENTER);
+            Inicio.Menu.PanelMenu.revalidate();
+            Inicio.Menu.PanelMenu.repaint();
+            Menu.ListarProductosPedidos();
+             break;
+         case 1:
+            Inicio.MenuSeguimiento.PanelMenu.removeAll();
+            Inicio.MenuSeguimiento.PanelMenu.add(op1,BorderLayout.CENTER);
+            Inicio.MenuSeguimiento.PanelMenu.revalidate();
+            Inicio.MenuSeguimiento.PanelMenu.repaint();
+             MenuSeguimiento.ListarProductosPedidos();
+             break;
+         case 2:
+             Inicio.MenuParaLlevar.PanelMenu.removeAll();
+             Inicio.MenuParaLlevar.PanelMenu.add(op1,BorderLayout.CENTER);
+             Inicio.MenuParaLlevar.PanelMenu.revalidate();
+             Inicio.MenuParaLlevar.PanelMenu.repaint();
+             MenuParaLlevar.ListarProductosPedidos();
+             break;
+         default:
+             break;
+     }
+    
     }//GEN-LAST:event_MI25MouseClicked
 
     private void MI26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MI26MouseClicked

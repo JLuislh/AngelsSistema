@@ -42,6 +42,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
      public static int noorden;
      int nomesa;
      int tipomenu = 1;
+     int ordendia;
      String Query;
     /**
      * Creates new form Menu
@@ -53,9 +54,9 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         this.nomesa = b;
         MenuSeguimiento.noorden = a;
+        BuscarOrdenDia();
         
-        
-        Ordentxt.setText(String.valueOf(a));
+        Ordentxt.setText(String.valueOf(ordendia));
         mesatxt.setText(String.valueOf(b));
         String texto1 = "<html><center><body>HAMBURGUEZAS<br>FUERA DEL MAR</body></center></html>";
         Titulo2.setText(texto1);
@@ -103,6 +104,24 @@ public class MenuSeguimiento extends javax.swing.JFrame {
            JOptionPane.showMessageDialog(null,"ERROr = "+ex);
         }
  }
+    
+    private void BuscarOrdenDia() {
+            try {
+                BDConexion conecta = new BDConexion();
+                Connection cn = conecta.getConexion();
+                java.sql.Statement stmt = cn.createStatement();
+                ResultSet rs = stmt.executeQuery("select ordendia  from ordenes where date_format(fecha,'%d/%m/%Y') = date_format(now(),'%d/%m/%Y') and NOORDEN = "+noorden);
+                while (rs.next()) {
+                      ordendia = (rs.getInt(1));
+                }
+                rs.close();
+                stmt.close();
+                cn.close();
+            } catch (Exception error) {
+                System.out.print(error);
+            }
+            System.out.println("ORDEN = "+ordendia+" NO"+noorden);
+        }
        
     
     /* private void descargarInventario(){
@@ -166,16 +185,17 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         Ordentxt = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         mesatxt = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        Total = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        Total = new javax.swing.JTextField();
 
         jButton1.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1170, 640));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1060, 643));
@@ -445,30 +465,15 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(Pedidos);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 840, 190));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 720, 190));
 
         jPanel6.setBackground(new java.awt.Color(153, 204, 255));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText(" NO. ORDEN");
-        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, -1));
-        jPanel6.add(Ordentxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 130, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setText(" NO. MESA");
-        jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 70, 20));
-        jPanel6.add(mesatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 140, -1));
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("TOTAL");
-        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 300, -1));
-
-        Total.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        Total.setForeground(new java.awt.Color(255, 0, 0));
-        Total.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel6.add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 170, -1));
 
         jButton2.setBackground(new java.awt.Color(102, 255, 102));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -480,7 +485,6 @@ public class MenuSeguimiento extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 150, 40));
 
         jButton3.setBackground(new java.awt.Color(255, 255, 153));
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -492,9 +496,102 @@ public class MenuSeguimiento extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 140, 40));
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 430, 330, 190));
+        jButton4.setBackground(new java.awt.Color(255, 255, 153));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/Print.png"))); // NOI18N
+        jButton4.setText("AGREGAR");
+        jButton4.setPreferredSize(new java.awt.Dimension(75, 40));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("TOTAL");
+
+        Total.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        Total.setForeground(new java.awt.Color(255, 0, 0));
+        Total.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(Total, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(Total, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(mesatxt, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(Ordentxt, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Ordentxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(mesatxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27))
+        );
+
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 430, 450, 190));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -637,7 +734,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo6MouseClicked
 
     private void Titulo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo7MouseClicked
-     
+           CambiarVentaImprimir();
            Ordenes F = new Ordenes();
            F.setVisible(true);
            this.dispose();
@@ -654,8 +751,9 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         int resp=JOptionPane.showConfirmDialog(null,"COBRAR Q."+Total.getText()+" PARA CERRAR ORDEN");
           if (JOptionPane.OK_OPTION == resp){ 
                 //descargarInventario();
+                CambiarVentaImprimir();
                 cobrarOrdenyCerrar();
-                CobroET F = new CobroET(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
+                CobroET F = new CobroET(Double.parseDouble(Total.getText()),noorden);
                 //CobroFacturacion F = new CobroFacturacion(Double.parseDouble(Total.getText()),Integer.parseInt(Ordentxt.getText()));
                 F.setVisible(true);
                 this.dispose();       
@@ -671,6 +769,14 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     PanelMenu.revalidate();
     PanelMenu.repaint();
     }//GEN-LAST:event_Titulo8MouseClicked
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        imprimirMas();
+        CambiarVentaImprimir();
+        Ordenes F = new Ordenes();
+        F.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -724,7 +830,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     private ClassAngels.PanelRound Menu7;
     private ClassAngels.PanelRound Menu8;
     private javax.swing.JTextField Ordentxt;
-    private javax.swing.JPanel PanelMenu;
+    public static javax.swing.JPanel PanelMenu;
     public static javax.swing.JTable Pedidos;
     private javax.swing.JLabel Titulo2;
     private javax.swing.JLabel Titulo3;
@@ -737,27 +843,59 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField mesatxt;
     // End of variables declaration//GEN-END:variables
  private void imprimir(){
+      CambiarVentaImprimir();
       BDConexion con= new BDConexion();
          Connection conexion= con.getConexion();
         try {
             JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuenta.jasper");
             Map parametros= new HashMap();
-            parametros.put("ID_ORDEN", Integer.parseInt(Ordentxt.getText()));
+            parametros.put("ID_ORDEN", noorden);
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
             JasperPrintManager.printReport(print, true);
         } catch (Exception e) {System.out.println("F"+e);
            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
         }
     }
+ 
+ private void imprimirMas(){
+      BDConexion con= new BDConexion();
+         Connection conexion= con.getConexion();
+        try {
+            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngels.jasper");
+            Map parametros= new HashMap();
+            parametros.put("ID_ORDEN", noorden);
+            JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
+            JasperPrintManager.printReport(print, true);
+        } catch (Exception e) {System.out.println("F"+e);
+           JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
+        }
+    }
+ 
+ private void CambiarVentaImprimir(){
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            PreparedStatement ps = null;
+            ps= con.prepareStatement("UPDATE ventas SET estado = 2 where noorden="+noorden);
+            ps.executeUpdate();
+            con.close();
+            ps.close();
+        } catch (SQLException ex) {
+           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+        }
+ }
+ 
 }

@@ -7,7 +7,6 @@ package Inicio;
 import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
-import com.mysql.cj.Query;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import java.sql.Connection;
@@ -22,7 +21,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperPrintManager;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
-
+import java.sql.ResultSet;
 /**
  *
  * @author jluis
@@ -31,33 +30,51 @@ public class CobroET extends javax.swing.JFrame {
      int cobro;
      int noorden;
      String Query;
+     int ordendia;
     /**
      * Creates new form CobroET
      */
     public CobroET(double a,int b) {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
         }
         initComponents();
         setLocationRelativeTo(null);
+        noorden = b;
+        BuscarOrdenDia();
         String texto1 = "<html><center><body>TARJETA<br>EFECTIVO</body></center></html>";
         TYE.setText(texto1);
         CantEfectivo.setEditable(false);
         Canttarjeta.setEditable(false);
         total.setText(String.valueOf(a));
-        Orden.setText(String.valueOf(b));
-        noorden = b;
-        
+        Orden.setText(String.valueOf(ordendia));
     }
+    
+    
+     private void BuscarOrdenDia() {
+            try {
+                BDConexion conecta = new BDConexion();
+                Connection cn = conecta.getConexion();
+                java.sql.Statement stmt = cn.createStatement();
+                ResultSet rs = stmt.executeQuery("select ordendia  from ordenes where date_format(fecha,'%d/%m/%Y') = date_format(now(),'%d/%m/%Y') and NOORDEN = "+noorden);
+                while (rs.next()) {
+                      ordendia= (rs.getInt(1));
+                }
+                rs.close();
+                stmt.close();
+                cn.close();
+            } catch (Exception error) {
+                System.out.print(error);
+            }
+        }
     
     private void cobrarOrdenET(){
         try {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
-            ps= con.prepareStatement("UPDATE ORDENES SET efectivo = "+CantEfectivo.getText()+",tarjeta = "+Canttarjeta.getText()+",ESTADO = 2,transferencia = 0.00 where noorden="+Orden.getText());
+            ps= con.prepareStatement("UPDATE ORDENES SET efectivo = "+CantEfectivo.getText()+",tarjeta = "+Canttarjeta.getText()+",ESTADO = 2,transferencia = 0.00 where noorden="+noorden);
             ps.executeUpdate();
             con.close();
             ps.close();
@@ -68,8 +85,6 @@ public class CobroET extends javax.swing.JFrame {
          Ordenes F = new Ordenes();
          F.setVisible(true);
          this.dispose();
-        
-        
  }
     
     private void cobrarOrdenTT(){
@@ -77,7 +92,7 @@ public class CobroET extends javax.swing.JFrame {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
-            ps= con.prepareStatement("UPDATE ORDENES SET efectivo = "+CantEfectivo.getText()+",tarjeta = 0.00,transferencia = "+Canttarjeta.getText()+",ESTADO = 2 where noorden="+Orden.getText());
+            ps= con.prepareStatement("UPDATE ORDENES SET efectivo = "+CantEfectivo.getText()+",tarjeta = 0.00,transferencia = "+Canttarjeta.getText()+",ESTADO = 2 where noorden="+noorden);
             ps.executeUpdate();
             con.close();
             ps.close();
@@ -92,7 +107,7 @@ public class CobroET extends javax.swing.JFrame {
         
  }
     
-     private void imprimir(){
+    /* private void imprimir(){
       BDConexion con= new BDConexion();
          Connection conexion= con.getConexion();
         try {
@@ -104,7 +119,7 @@ public class CobroET extends javax.swing.JFrame {
         } catch (Exception e) {System.out.println("F"+e);
            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
         }
-    }
+    }*/
      
     private void imprimirCobrodividido(){
       BDConexion con= new BDConexion();
@@ -112,7 +127,7 @@ public class CobroET extends javax.swing.JFrame {
         try {
             JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuentaDividida.jasper");
             Map parametros= new HashMap();
-            parametros.put("ID_ORDEN", Integer.parseInt(Orden.getText()));
+            parametros.put("ID_ORDEN", noorden);
             JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
             JasperPrintManager.printReport(print, true);
         } catch (Exception e) {System.out.println("F"+e);

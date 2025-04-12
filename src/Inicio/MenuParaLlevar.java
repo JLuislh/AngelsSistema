@@ -43,6 +43,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
      public static int noorden;
      int tipomenu = 2;
      String Query;
+     int ordendia;
     /**
      * Creates new form Menu
      * @param a
@@ -52,8 +53,8 @@ public class MenuParaLlevar extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         MenuParaLlevar.noorden = a;
-        
-        Ordentxt.setText(String.valueOf(a));
+        BuscarOrdenDia();
+        Ordentxt.setText(String.valueOf(ordendia));
         String texto1 = "<html><center><body>HAMBURGUEZAS<br>FUERA DEL MAR</body></center></html>";
         Titulo2.setText(texto1);
         String texto2 = "<html><center><body>AMANTES DEL CEVICHE<br>SABORES DEL MAR</body></center></html>";
@@ -76,6 +77,22 @@ public class MenuParaLlevar extends javax.swing.JFrame {
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
             ps= con.prepareStatement("UPDATE ORDENES SET TOTAL = "+Total.getText()+" where noorden="+noorden);
+            ps.executeUpdate();
+            con.close();
+            ps.close();
+        } catch (SQLException ex) {
+           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+        }
+        CambiarVentaImprimir();
+ }
+    
+  
+    private void CambiarVentaImprimir(){
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            PreparedStatement ps = null;
+            ps= con.prepareStatement("UPDATE ventas SET estado = 2 where noorden="+noorden);
             ps.executeUpdate();
             con.close();
             ps.close();
@@ -154,7 +171,6 @@ public class MenuParaLlevar extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1170, 640));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(1060, 643));
@@ -525,6 +541,23 @@ public class MenuParaLlevar extends javax.swing.JFrame {
              columna4.setPreferredWidth(55);
              sumaTotal();
      }
+     
+     private void BuscarOrdenDia() {
+            try {
+                BDConexion conecta = new BDConexion();
+                Connection cn = conecta.getConexion();
+                java.sql.Statement stmt = cn.createStatement();
+                ResultSet rs = stmt.executeQuery("select ordendia  from ordenes where date_format(fecha,'%d/%m/%Y') = date_format(now(),'%d/%m/%Y') and NOORDEN = "+noorden);
+                while (rs.next()) {
+                      ordendia= (rs.getInt(1));
+                }
+                rs.close();
+                stmt.close();
+                cn.close();
+            } catch (Exception error) {
+                System.out.print(error);
+            }
+        }
     
     
     public static void sumaTotal() {
@@ -718,7 +751,7 @@ public class MenuParaLlevar extends javax.swing.JFrame {
     private ClassAngels.PanelRound Menu7;
     private ClassAngels.PanelRound Menu8;
     private javax.swing.JTextField Ordentxt;
-    private javax.swing.JPanel PanelMenu;
+    public static javax.swing.JPanel PanelMenu;
     public static javax.swing.JTable Pedidos;
     private javax.swing.JLabel Titulo2;
     private javax.swing.JLabel Titulo3;

@@ -1381,9 +1381,9 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="MICHE24" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="MICHE25" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="MICHE26" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="MICHE25" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="MICHE1" min="-2" max="-2" attributes="0"/>
@@ -1448,8 +1448,8 @@
                       <Component id="MICHE22" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Component id="MICHE23" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Component id="MICHE24" alignment="1" min="-2" max="-2" attributes="0"/>
-                      <Component id="MICHE25" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Component id="MICHE26" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="MICHE25" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -2471,9 +2471,10 @@
             <Component class="javax.swing.JLabel" name="MI25">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="10" style="1"/>
+                  <Font name="Segoe UI" size="12" style="1"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="HELADOS"/>
               </Properties>
               <Events>
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="MI25MouseClicked"/>
