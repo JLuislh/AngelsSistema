@@ -48,7 +48,11 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
  String descripcion18;	String descripcion2_18;	 String Precio18; int codigo18;
  String descripcion19;	String descripcion2_19;	 String Precio19; int codigo19;
  String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
- 
+ String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
+ String descripcion22;	String descripcion2_22;	 String Precio22; int codigo22;
+ String descripcion23;	String descripcion2_23;	 String Precio23; int codigo23;
+ String descripcion24;	String descripcion2_24;	 String Precio24; int codigo24;
+ String descripcion25;	String descripcion2_25;	 String Precio25; int codigo25;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -91,8 +95,11 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
        P18.setBackground(Original);
        P19.setBackground(Original);
        P20.setBackground(Original);
-       
-      
+       P21.setBackground(Original);
+       P22.setBackground(Original);
+       P23.setBackground(Original);
+       P24.setBackground(Original);
+       P25.setBackground(Original);
      }
     });
      
@@ -299,6 +306,16 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
         BO19 = new javax.swing.JLabel();
         P20 = new ClassAngels.PanelRound();
         BO20 = new javax.swing.JLabel();
+        P21 = new ClassAngels.PanelRound();
+        BO21 = new javax.swing.JLabel();
+        P22 = new ClassAngels.PanelRound();
+        BO22 = new javax.swing.JLabel();
+        P23 = new ClassAngels.PanelRound();
+        BO23 = new javax.swing.JLabel();
+        P24 = new ClassAngels.PanelRound();
+        BO24 = new javax.swing.JLabel();
+        P25 = new ClassAngels.PanelRound();
+        BO25 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(51, 153, 255));
         setPreferredSize(new java.awt.Dimension(1170, 380));
@@ -932,6 +949,141 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
             .addComponent(BO20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
+        P21.setBackground(new java.awt.Color(204, 255, 102));
+        P21.setMinimumSize(new java.awt.Dimension(100, 75));
+        P21.setRoundBottomLeft(20);
+        P21.setRoundBottomRight(20);
+        P21.setRoundTopLeft(20);
+        P21.setRoundTopRight(20);
+
+        BO21.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BO21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BO21.setText("21");
+        BO21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BO21MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P21Layout = new javax.swing.GroupLayout(P21);
+        P21.setLayout(P21Layout);
+        P21Layout.setHorizontalGroup(
+            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P21Layout.setVerticalGroup(
+            P21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
+        P22.setBackground(new java.awt.Color(204, 255, 102));
+        P22.setMinimumSize(new java.awt.Dimension(100, 75));
+        P22.setRoundBottomLeft(20);
+        P22.setRoundBottomRight(20);
+        P22.setRoundTopLeft(20);
+        P22.setRoundTopRight(20);
+
+        BO22.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BO22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BO22.setText("22");
+        BO22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BO22MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P22Layout = new javax.swing.GroupLayout(P22);
+        P22.setLayout(P22Layout);
+        P22Layout.setHorizontalGroup(
+            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P22Layout.setVerticalGroup(
+            P22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
+        P23.setBackground(new java.awt.Color(204, 255, 102));
+        P23.setMinimumSize(new java.awt.Dimension(100, 75));
+        P23.setRoundBottomLeft(20);
+        P23.setRoundBottomRight(20);
+        P23.setRoundTopLeft(20);
+        P23.setRoundTopRight(20);
+
+        BO23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BO23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BO23.setText("23");
+        BO23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BO23MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P23Layout = new javax.swing.GroupLayout(P23);
+        P23.setLayout(P23Layout);
+        P23Layout.setHorizontalGroup(
+            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P23Layout.setVerticalGroup(
+            P23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
+        P24.setBackground(new java.awt.Color(204, 255, 102));
+        P24.setMinimumSize(new java.awt.Dimension(100, 75));
+        P24.setRoundBottomLeft(20);
+        P24.setRoundBottomRight(20);
+        P24.setRoundTopLeft(20);
+        P24.setRoundTopRight(20);
+
+        BO24.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BO24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BO24.setText("24");
+        BO24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BO24MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P24Layout = new javax.swing.GroupLayout(P24);
+        P24.setLayout(P24Layout);
+        P24Layout.setHorizontalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P24Layout.setVerticalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
+        P25.setBackground(new java.awt.Color(204, 255, 102));
+        P25.setMinimumSize(new java.awt.Dimension(100, 75));
+        P25.setRoundBottomLeft(20);
+        P25.setRoundBottomRight(20);
+        P25.setRoundTopLeft(20);
+        P25.setRoundTopRight(20);
+
+        BO25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BO25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BO25.setText("25");
+        BO25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BO25MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P25Layout = new javax.swing.GroupLayout(P25);
+        P25.setLayout(P25Layout);
+        P25Layout.setHorizontalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P25Layout.setVerticalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(BO25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -939,12 +1091,22 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -952,11 +1114,16 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -977,7 +1144,7 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         getAccessibleContext().setAccessibleName("");
@@ -1342,6 +1509,96 @@ String descripcion1;	String descripcion2_1;	 String Precio1;  int codigo1;
             timer.start();
        }
     }//GEN-LAST:event_BO20MouseClicked
+
+    private void BO21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BO21MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo21;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P21.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo21;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P21.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_BO21MouseClicked
+
+    private void BO22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BO22MouseClicked
+      if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo22;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P22.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo22;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P22.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_BO22MouseClicked
+
+    private void BO23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BO23MouseClicked
+      if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo23;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P23.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo23;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P23.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_BO23MouseClicked
+
+    private void BO24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BO24MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo24;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P24.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo24;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P24.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_BO24MouseClicked
+
+    private void BO25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BO25MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo25;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P25.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo25;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P25.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_BO25MouseClicked
 private void nombres(){
     ArrayList<EtiquetasClass> result = EtiquetasClass.ListaEtiquetasBotellas();
         for (int i = 0; i < result.size(); i++) {
@@ -1407,6 +1664,22 @@ private void nombres(){
             else if (274== codigo){
              descripcion20 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_20 = result.get(i).getDescripcion2().toUpperCase(); Precio20 = result.get(i).getPrecio();codigo20 = result.get(i).getCodigo();
             }
+             else if (313== codigo){
+             descripcion21 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_21 = result.get(i).getDescripcion2().toUpperCase(); Precio21 = result.get(i).getPrecio();codigo21 = result.get(i).getCodigo();
+            }
+             else if (314== codigo){
+             descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
+            }
+             else if (315== codigo){
+             descripcion23 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_23 = result.get(i).getDescripcion2().toUpperCase(); Precio23 = result.get(i).getPrecio();codigo23 = result.get(i).getCodigo();
+            }
+             else if (316== codigo){
+             descripcion24 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_24 = result.get(i).getDescripcion2().toUpperCase(); Precio24 = result.get(i).getPrecio();codigo24 = result.get(i).getCodigo();
+            }
+             else if (317== codigo){
+             descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
+            }
+            
         }
   }
 
@@ -1424,6 +1697,11 @@ private void nombres(){
     private javax.swing.JLabel BO19;
     private javax.swing.JLabel BO2;
     private javax.swing.JLabel BO20;
+    private javax.swing.JLabel BO21;
+    private javax.swing.JLabel BO22;
+    private javax.swing.JLabel BO23;
+    private javax.swing.JLabel BO24;
+    private javax.swing.JLabel BO25;
     private javax.swing.JLabel BO3;
     private javax.swing.JLabel BO4;
     private javax.swing.JLabel BO5;
@@ -1444,6 +1722,11 @@ private void nombres(){
     private ClassAngels.PanelRound P19;
     private ClassAngels.PanelRound P2;
     private ClassAngels.PanelRound P20;
+    private ClassAngels.PanelRound P21;
+    private ClassAngels.PanelRound P22;
+    private ClassAngels.PanelRound P23;
+    private ClassAngels.PanelRound P24;
+    private ClassAngels.PanelRound P25;
     private ClassAngels.PanelRound P3;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
@@ -1495,6 +1778,15 @@ private void nombres(){
         BO19.setText(texto19);
          String texto20 ="<html><center><body>"+descripcion20+"<br>"+descripcion2_20+"<br><font color='RED'>Q"+Precio20+"</font></body></center></html>";
         BO20.setText(texto20);
-        
+        String texto21 ="<html><center><body>"+descripcion21+"<br>"+descripcion2_21+"<br><font color='RED'>Q"+Precio21+"</font></body></center></html>";
+        BO21.setText(texto21);
+        String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
+        BO22.setText(texto22);
+        String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
+        BO23.setText(texto23);
+        String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
+        BO24.setText(texto24);
+        String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
+        BO25.setText(texto25);
 }
 }

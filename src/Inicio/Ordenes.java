@@ -12,6 +12,8 @@ import ClassAngels.OrdenesClass;
 import FELclass.Token;
 import Pedidos.AceptarPedido;
 import Pedidos.InicioPedido;
+import PedidosApi.AceptarPedidoApi;
+import PedidosApi.InicioPedidoApi;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 //import com.mysql.cj.xdevapi.Client;
@@ -25,6 +27,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -461,15 +465,28 @@ public class Ordenes extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-        InicioPedido F = new InicioPedido();
-        F.setVisible(true);
-        this.dispose(); 
+       // InicioPedido F = new InicioPedido();
+        InicioPedidoApi F;
+       try {
+           F = new InicioPedidoApi();
+           F.setVisible(true);
+           this.dispose(); 
+       } catch (Exception ex) {
+           Logger.getLogger(Ordenes.class.getName()).log(Level.SEVERE, null, ex);
+       }
+        
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-        AceptarPedido F = new AceptarPedido();
-        F.setVisible(true);
-        this.dispose(); 
+        AceptarPedidoApi F;
+       try {
+           F = new AceptarPedidoApi();
+           F.setVisible(true);
+           this.dispose(); 
+       } catch (Exception ex) {
+           Logger.getLogger(Ordenes.class.getName()).log(Level.SEVERE, null, ex);
+       }
+       
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked

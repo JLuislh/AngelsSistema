@@ -2,16 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Pedidos;
+package PedidosApi;
+
+import Pedidos.*;
 
 /**
  *
  * @author it
  */
-public class ClassProductos {
+public class ClassProductosApi {
     
     private int id_producto;
-    //private String Descripcion; 
     private String Unidad;
     private int id_pedido;
     private String Fechain;
@@ -32,7 +33,7 @@ public class ClassProductos {
     public void setFecha(String Fecha) {
         this.Fecha = Fecha;
     }
-    
+
     public String getMedida() {
         return medida;
     }
@@ -41,8 +42,6 @@ public class ClassProductos {
         this.medida = medida;
     }
     
-    
-
     public String getCantidad() {
         return Cantidad;
     }
@@ -127,11 +126,8 @@ public class ClassProductos {
         return descripcion;
     }
 
-    public void setDescripcion(String Descripcion) {
-        this.descripcion = Descripcion;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
-    
-    
-    
-    
+
 }

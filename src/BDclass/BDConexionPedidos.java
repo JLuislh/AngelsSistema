@@ -15,10 +15,10 @@ import javax.swing.JOptionPane;
  */
 
 public class BDConexionPedidos {
-
-   public static final String URL = "jdbc:mysql://26.49.11.7:3306/PedidosProductos?useTimezone=true&serverTimezone=UTC";
+   public static final String URL = "jdbc:mysql://140.84.178.126:3306/pedidosproductos?useTimezone=true&serverTimezone=UTC";
+   //public static final String URL = "jdbc:mysql://26.49.11.7:3306/PedidosProductos?useTimezone=true&serverTimezone=UTC";
    public static final String USER =   "PedidosProductos";//
-   public static final String CLAVE =  "Coast@cm";//  
+   public static final String CLAVE =  "Coast@cm86";//  
      
    public Connection getConexion(){
         Connection con = null;
