@@ -6,6 +6,7 @@ package Inicio;
 
 import BDclass.BDConexion;
 import BDclass.BDOrdenes;
+import ClassAngels.Buscasucursal;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import FEL.CobroFacturacion;
@@ -14,6 +15,7 @@ import SubPanelesSantaInes.Botellas;
 import SubPanelesSantaInes.CaldosAntojos;
 import SubPanelesSantaInes.Ceviches;
 import SubPanelesSantaInes.ConAlcohol;
+import SubPanelesSantaInes.ConAlcoholSanLuis;
 import SubPanelesSantaInes.Extras;
 import SubPanelesSantaInes.Hamburguesas;
 import java.awt.BorderLayout;
@@ -27,6 +29,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.table.TableColumn;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -44,6 +47,8 @@ public class MenuSeguimiento extends javax.swing.JFrame {
      int tipomenu = 1;
      int ordendia;
      String Query;
+     int Sucursal = 0;
+     String sede;
     /**
      * Creates new form Menu
      * @param a
@@ -55,7 +60,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
         this.nomesa = b;
         MenuSeguimiento.noorden = a;
         BuscarOrdenDia();
-        
+        Sucursal = Buscasucursal.obtenerSucursal();
         Ordentxt.setText(String.valueOf(ordendia));
         mesatxt.setText(String.valueOf(b));
         String texto1 = "<html><center><body>HAMBURGUEZAS<br>FUERA DEL MAR</body></center></html>";
@@ -714,13 +719,18 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     }//GEN-LAST:event_Titulo4MouseClicked
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
-    ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
-    op1.setSize(1170, 380);
-    op1.setLocation(0, 0);
-    PanelMenu.removeAll();
-    PanelMenu.add(op1,BorderLayout.CENTER);
-    PanelMenu.revalidate();
-    PanelMenu.repaint();
+       JPanel op1;
+        if (Sucursal == 4) {
+            op1 = new ConAlcohol(noorden, tipomenu);
+        } else {
+            op1 = new ConAlcoholSanLuis(noorden, tipomenu);
+        }
+        op1.setSize(1170, 380);
+        op1.setLocation(0, 0);
+        PanelMenu.removeAll();
+        PanelMenu.add(op1, BorderLayout.CENTER);
+        PanelMenu.revalidate();
+        PanelMenu.repaint();
     }//GEN-LAST:event_Titulo5MouseClicked
 
     private void Titulo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo6MouseClicked
@@ -773,6 +783,7 @@ public class MenuSeguimiento extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         imprimirMas();
         CambiarVentaImprimir();
+        Totalizar();
         Ordenes F = new Ordenes();
         F.setVisible(true);
         this.dispose();

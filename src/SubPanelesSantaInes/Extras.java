@@ -5,9 +5,9 @@ import BDclass.BDOrdenes;
 import ClassAngels.EtiquetasClass;
 import ClassAngels.InsertarProducto;
 import Inicio.Menu;
-import Inicio.MenuParaLlevar;
+import Inicio.old.MenuParaLlevar;
 import static Inicio.Menu.PanelMenu;
-import static Inicio.MenuParaLlevar.PanelMenu;
+import static Inicio.old.MenuParaLlevar.PanelMenu;
 import static Inicio.MenuSeguimiento.PanelMenu;
 import Inicio.MenuSeguimiento;
 import java.awt.BorderLayout;
@@ -462,7 +462,7 @@ public class Extras extends javax.swing.JPanel {
         P1.setRoundTopLeft(20);
         P1.setRoundTopRight(20);
 
-        EX1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX1.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         EX1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         EX1.setText("1");
         EX1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -489,7 +489,7 @@ public class Extras extends javax.swing.JPanel {
         P2.setRoundTopLeft(20);
         P2.setRoundTopRight(20);
 
-        EX2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        EX2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
         EX2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         EX2.setText("2");
         EX2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -2142,7 +2142,7 @@ public class Extras extends javax.swing.JPanel {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(107, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -3066,10 +3066,10 @@ public class Extras extends javax.swing.JPanel {
              MenuSeguimiento.ListarProductosPedidos();
              break;
          case 2:
-             Inicio.MenuParaLlevar.PanelMenu.removeAll();
-             Inicio.MenuParaLlevar.PanelMenu.add(op1,BorderLayout.CENTER);
-             Inicio.MenuParaLlevar.PanelMenu.revalidate();
-             Inicio.MenuParaLlevar.PanelMenu.repaint();
+             Inicio.old.MenuParaLlevar.PanelMenu.removeAll();
+             Inicio.old.MenuParaLlevar.PanelMenu.add(op1,BorderLayout.CENTER);
+             Inicio.old.MenuParaLlevar.PanelMenu.revalidate();
+             Inicio.old.MenuParaLlevar.PanelMenu.repaint();
              MenuParaLlevar.ListarProductosPedidos();
              break;
          default:
@@ -3141,7 +3141,7 @@ public class Extras extends javax.swing.JPanel {
             if (157 == codigo) {
              descripcion1 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_1 = result.get(i).getDescripcion2().toUpperCase(); Precio1 = result.get(i).getPrecio();codigo1 = result.get(i).getCodigo();
             }
-            else if (158 == codigo){
+            else if (189 == codigo){
              descripcion2 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_2 = result.get(i).getDescripcion2().toUpperCase(); Precio2 = result.get(i).getPrecio();codigo2 = result.get(i).getCodigo();
             }
              else if (159 == codigo){
@@ -3183,7 +3183,7 @@ public class Extras extends javax.swing.JPanel {
              else if (168== codigo){
              descripcion15 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_15 = result.get(i).getDescripcion2().toUpperCase(); Precio15 = result.get(i).getPrecio();codigo15 = result.get(i).getCodigo();
             }
-            else if (189== codigo){
+            else if (158== codigo){
              descripcion16 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_16 = result.get(i).getDescripcion2().toUpperCase(); Precio16 = result.get(i).getPrecio();codigo16 = result.get(i).getCodigo();
             }
             else if (169== codigo){

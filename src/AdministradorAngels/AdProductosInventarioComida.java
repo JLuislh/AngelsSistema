@@ -6,7 +6,12 @@ package AdministradorAngels;
 
 import BDclass.BDConexion;
 import ClassAngels.InsertarProducto;
+import ClassAngels.SucursalUtil;
 import ClassAngels.TextAreaRenderer;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -152,8 +157,9 @@ public class AdProductosInventarioComida extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, ex);
         }
     }
-
-     public void ActualizarCantidad(){
+    
+     
+   /*  public void ActualizarCantidad(){
      BDConexion conecta = new BDConexion();
         Connection con = conecta.getConexion();
         PreparedStatement sm = null;
@@ -164,7 +170,79 @@ public class AdProductosInventarioComida extends javax.swing.JPanel {
         sm.close();
         } catch (SQLException ex) {
             System.out.println("ERROR ="+ex);
-        }}
+        }}*/
+     
+     
+     
+       public void ActualizarCantidad() {
+    BDConexion conecta = new BDConexion();
+    Connection con = conecta.getConexion();
+    PreparedStatement sm = null;
+    try {
+        sm = con.prepareStatement("{call IngresoInventario(" + Codigo.getText() + "," + cantidadin.getText() + ")}");
+        sm.executeUpdate();
+        sm.close();
+        con.close();
+
+        // Después de actualizar local, sincroniza con la API remota
+        actualizarInicioRemoto(
+            Codigo.getText(),
+            Integer.parseInt(cantidadin.getText()),
+            obtenerFechaHoy(),   // formato "yyyy-MM-dd" o el que uses en la BD remota
+            SucursalUtil.obtenerSucursal()          // o el identificador que uses
+        );
+
+    } catch (SQLException ex) {
+        System.out.println("ERROR =" + ex);
+    }
+}
+
+private void actualizarInicioRemoto(String codigo, int cantidad, String fecha, String sucursal) {
+    // Ejecuta en hilo separado para no bloquear la UI
+    new Thread(() -> {
+        HttpURLConnection conn = null;
+        try {
+            URL url = new URL("http://40.233.19.196/inventariospinula/actualizar-inicio");
+            conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("PUT");
+            conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+            conn.setDoOutput(true);
+            conn.setConnectTimeout(5000);
+            conn.setReadTimeout(5000);
+
+            String json = String.format(
+                "{\"codigo\":\"%s\",\"cantidad\":%d,\"fecha\":\"%s\",\"sucursal\":\"%s\"}",
+                codigo, cantidad, fecha, sucursal
+            );
+
+            try (OutputStream os = conn.getOutputStream()) {
+                os.write(json.getBytes(StandardCharsets.UTF_8));
+            }
+
+            int code = conn.getResponseCode();
+            if (code >= 200 && code < 300) {
+                System.out.println("Inicio remoto actualizado OK");
+            } else {
+                System.out.println("Error remoto, código: " + code);
+                // Opcional: leer error stream para log
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error llamando API remota: " + e.getMessage());
+            // Opcional: guardar en una tabla local de "pendientes de sincronizar"
+        } finally {
+            if (conn != null) conn.disconnect();
+        }
+    }).start();
+}
+
+private String obtenerFechaHoy() {
+    return new java.text.SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date());
+}
+     
+     
+     
+     
      
      private void ListarIngresos(){
      int id = (int) (ProInventario.getModel().getValueAt(ProInventario.getSelectedRow(), 0));

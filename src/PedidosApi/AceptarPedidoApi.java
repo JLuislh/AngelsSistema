@@ -4,6 +4,7 @@
  */
 package PedidosApi;
 
+import ClassAngels.Buscasucursal;
 import Pedidos.*;
 import ClassAngels.TextAreaRenderer;
 import Inicio.Ordenes;
@@ -24,7 +25,6 @@ import javax.swing.event.TableModelListener;
  * @author it
  */
 public class AceptarPedidoApi extends javax.swing.JFrame {
-  String sede;
   int id_producto;
   int Sucursal = 0;
   int bloqueo = 0;
@@ -34,7 +34,6 @@ public class AceptarPedidoApi extends javax.swing.JFrame {
     public AceptarPedidoApi() throws Exception {
         initComponents();
         setLocationRelativeTo(null);
-        sede = System.getProperty("user.name");
         buscasucursal();
         ListarPedidos();
         
@@ -54,22 +53,7 @@ public class AceptarPedidoApi extends javax.swing.JFrame {
     
     
      private void buscasucursal(){
-        switch (sede) {
-            case "it" ->
-                Sucursal = 5;
-            case "AngelsParaiso" ->
-                Sucursal = 1;//ok
-            case "AngelsSanLuis" ->
-                Sucursal = 2;//ok
-            case "AngelsResidenciales" ->
-                Sucursal = 3;
-            case "AngelsSantaInes" ->
-                Sucursal = 4;
-            case "angelspalencia" ->
-                Sucursal = 5;//ok  
-            default -> {
-            }
-        }
+         Sucursal = Buscasucursal.obtenerSucursal();
     }
 
   

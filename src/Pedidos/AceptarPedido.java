@@ -32,14 +32,14 @@ public class AceptarPedido extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         sede = System.getProperty("user.name");
-        ListarPedidosRecido();
         buscasucursal();
+        ListarPedidosRecido();
     }
     
     
      private void buscasucursal(){
         switch (sede) {
-            case "it" -> Sucursal = 1;
+            case "it" -> Sucursal = 3;
             case "AngelsParaiso" -> Sucursal = 2;//ok
             case "AngelsSanLuis" -> Sucursal = 3;//ok
             case "angelspalencia" -> Sucursal = 4;//ok
@@ -47,7 +47,9 @@ public class AceptarPedido extends javax.swing.JFrame {
             case "AngelsSantaInes" -> Sucursal = 6;//ook
             default -> {
             }
+            
         }
+         System.out.println("Sucursal :::"+Sucursal);
     }
     
     public void insertarProducto(){

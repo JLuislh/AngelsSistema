@@ -6,7 +6,7 @@ import ClassAngels.EtiquetasClass;
 import ClassAngels.InsertarProducto;
 import Inicio.Menu;
 import static Inicio.Menu.noorden;
-import Inicio.MenuParaLlevar;
+import Inicio.old.MenuParaLlevar;
 import Inicio.MenuSeguimiento;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -52,11 +52,11 @@ public class Helados extends javax.swing.JPanel {
  String descripcion20;	String descripcion2_20;	 String Precio20; int codigo20;
  String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
  String descripcion22;	String descripcion2_22;	 String Precio22; int codigo22;
- String descripcion23= "";	String descripcion2_23= "";	 String Precio23= ""; int codigo23;
- String descripcion24= "";	String descripcion2_24= "";	 String Precio24= ""; int codigo24;
- String descripcion25= "";	String descripcion2_25= "";	 String Precio25= ""; int codigo25;
- String descripcion26= "";	String descripcion2_26= "";	 String Precio26= ""; int codigo26;
- String descripcion27= "";	String descripcion2_27= "";	 String Precio27= ""; int codigo27;
+ String descripcion23;	String descripcion2_23;	 String Precio23; int codigo23;
+ String descripcion24;	String descripcion2_24;	 String Precio24; int codigo24;
+ String descripcion25;	String descripcion2_25;	 String Precio25; int codigo25;
+ String descripcion26;	String descripcion2_26;	 String Precio26; int codigo26;
+ String descripcion27;	String descripcion2_27;	 String Precio27; int codigo27;
  String descripcion28= "";	String descripcion2_28= "";	 String Precio28= ""; int codigo28;
  String descripcion29= "";	String descripcion2_29= "";	 String Precio29= ""; int codigo29;
  String descripcion30;	String descripcion2_30;	 String Precio30; int codigo30;
@@ -984,6 +984,7 @@ public class Helados extends javax.swing.JPanel {
 
         LH23.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         LH23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LH23.setText("H23");
         LH23.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LH23MouseClicked(evt);
@@ -1010,6 +1011,7 @@ public class Helados extends javax.swing.JPanel {
 
         LH24.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         LH24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LH24.setText("H24");
         LH24.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LH24MouseClicked(evt);
@@ -1036,6 +1038,7 @@ public class Helados extends javax.swing.JPanel {
 
         LH25.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         LH25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LH25.setText("H25");
         LH25.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LH25MouseClicked(evt);
@@ -1062,6 +1065,7 @@ public class Helados extends javax.swing.JPanel {
 
         LH26.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         LH26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LH26.setText("H26");
         LH26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LH26MouseClicked(evt);
@@ -1086,8 +1090,9 @@ public class Helados extends javax.swing.JPanel {
         H27.setRoundTopLeft(20);
         H27.setRoundTopRight(20);
 
-        LH27.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        LH27.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         LH27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LH27.setText("H27");
         LH27.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LH27MouseClicked(evt);
@@ -1579,7 +1584,7 @@ public class Helados extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void LH27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LH27MouseClicked
-      /*  if ((evt.getModifiers() & 4) !=0){
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo27;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -1593,7 +1598,7 @@ public class Helados extends javax.swing.JPanel {
             H27.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-       }*/
+       }
     }//GEN-LAST:event_LH27MouseClicked
 
     private void LH28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LH28MouseClicked
@@ -2209,7 +2214,7 @@ public class Helados extends javax.swing.JPanel {
     }//GEN-LAST:event_LH22MouseClicked
 
     private void LH23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LH23MouseClicked
-     /*   if ((evt.getModifiers() & 4) !=0){
+        if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo23;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -2223,11 +2228,11 @@ public class Helados extends javax.swing.JPanel {
             H23.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }*/
+        }
     }//GEN-LAST:event_LH23MouseClicked
 
     private void LH24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LH24MouseClicked
-      /*    if ((evt.getModifiers() & 4) !=0){
+          if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo24;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -2241,29 +2246,29 @@ public class Helados extends javax.swing.JPanel {
             H24.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }*/
+        }
     }//GEN-LAST:event_LH24MouseClicked
 
     private void LH25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LH25MouseClicked
-    /*  if ((evt.getModifiers() & 4) !=0){
+      if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo25;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
-            H26.setBackground(Color.darkGray);
+            H25.setBackground(Color.darkGray);
             timer.setRepeats(false);
             timer.start();
         }else{
             codigooreden = codigo25;
             BuscarExistencia();
             if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
-            H26.setBackground(Color.GREEN);
+            H25.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }*/
+        }
     }//GEN-LAST:event_LH25MouseClicked
 
     private void LH26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LH26MouseClicked
-  /*      if ((evt.getModifiers() & 4) !=0){
+       if ((evt.getModifiers() & 4) !=0){
             codigooreden= codigo26;
             BuscarExistencia();
             if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
@@ -2277,7 +2282,7 @@ public class Helados extends javax.swing.JPanel {
             H26.setBackground(Color.GREEN);
             timer.setRepeats(false);
             timer.start();
-        }*/
+        }
     }//GEN-LAST:event_LH26MouseClicked
  
     
@@ -2352,22 +2357,22 @@ public class Helados extends javax.swing.JPanel {
             else if (311== codigo){
              descripcion22 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_22 = result.get(i).getDescripcion2().toUpperCase(); Precio22 = result.get(i).getPrecio();codigo22 = result.get(i).getCodigo();
             }
-          /*  else if (0 == codigo){
+            else if (318 == codigo){
              descripcion23 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_23 = result.get(i).getDescripcion2().toUpperCase(); Precio23 = result.get(i).getPrecio();codigo23 = result.get(i).getCodigo();
             }
-            else if (0 == codigo){
+            else if (319 == codigo){
              descripcion24 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_24 = result.get(i).getDescripcion2().toUpperCase(); Precio24 = result.get(i).getPrecio();codigo24 = result.get(i).getCodigo();
             }
-            else if (0== codigo){
+            else if (322== codigo){
              descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
             }
-            else if (0== codigo){
+            else if (323== codigo){
              descripcion26 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_26 = result.get(i).getDescripcion2().toUpperCase(); Precio26 = result.get(i).getPrecio();codigo26 = result.get(i).getCodigo();
             }
-             else if (0== codigo){
+             else if (324== codigo){
              descripcion27 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_27 = result.get(i).getDescripcion2().toUpperCase(); Precio27 = result.get(i).getPrecio();codigo27 = result.get(i).getCodigo();
             }
-            else if (0== codigo){
+           /* else if (0== codigo){
              descripcion28 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_28 = result.get(i).getDescripcion2().toUpperCase(); Precio28 = result.get(i).getPrecio();codigo28 = result.get(i).getCodigo();
             }
              else if (0== codigo){
@@ -2533,7 +2538,7 @@ public class Helados extends javax.swing.JPanel {
         LH21.setText(texto21);
         String texto22 ="<html><center><body>"+descripcion22+"<br>"+descripcion2_22+"<br><font color='RED'>Q"+Precio22+"</font></body></center></html>";
         LH22.setText(texto22);
-        /*String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
+        String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
         LH23.setText(texto23);
         String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
         LH24.setText(texto24);
@@ -2543,7 +2548,7 @@ public class Helados extends javax.swing.JPanel {
         LH26.setText(texto26);
         String texto27 ="<html><center><body>"+descripcion27+"<br>"+descripcion2_27+"<br><font color='RED'>Q"+Precio27+"</font></body></center></html>";
         LH27.setText(texto27);
-        String texto28 ="<html><center><body>"+descripcion28+"<br>"+descripcion2_28+"<br><font color='RED'>Q"+Precio28+"</font></body></center></html>";
+        /*String texto28 ="<html><center><body>"+descripcion28+"<br>"+descripcion2_28+"<br><font color='RED'>Q"+Precio28+"</font></body></center></html>";
         LH28.setText(texto28);
         String texto29 ="<html><center><body>"+descripcion29+"<br>"+descripcion2_29+"<br><font color='RED'>Q"+Precio29+"</font></body></center></html>";
         LH29.setText(texto29);

@@ -5,6 +5,7 @@
 package PedidosApi;
 
 import BDclass.BDConexionPedidos;
+import ClassAngels.Buscasucursal;
 import ClassAngels.TextAreaRenderer;
 import Inicio.Ordenes;
 import java.awt.event.WindowAdapter;
@@ -28,6 +29,7 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import javax.swing.event.TableModelListener;
 import javax.swing.event.TableModelEvent;
+import java.sql.PreparedStatement;
 
 /**
  *
@@ -48,15 +50,14 @@ public class InicioPedidoApi extends javax.swing.JFrame {
     public InicioPedidoApi() throws Exception {
         initComponents();
         setLocationRelativeTo(null);
-        sede = System.getProperty("user.name");
         ListarPedidos();
         buscasucursal();
         agregarFiltro();
-        
-    /////////////toda esta parte es para cerrar y abrir ordenes/////////////////    
+
+        /////////////toda esta parte es para cerrar y abrir ordenes/////////////////    
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    ////////////////////////////////////////
-         addWindowListener(new WindowAdapter() {
+        ////////////////////////////////////////
+        addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosed(WindowEvent e) {
                 // Mostrar el segundo JFrame
@@ -64,27 +65,12 @@ public class InicioPedidoApi extends javax.swing.JFrame {
                 F.setVisible(true);
             }
         });
-    ////////////////////////////////////////
-        
+        ////////////////////////////////////////
+
     }
 
     private void buscasucursal() {
-        switch (sede) {
-            case "it" ->
-                Sucursal = 5;
-            case "AngelsParaiso" ->
-                Sucursal = 1;//ok
-            case "AngelsSanLuis" ->
-                Sucursal = 2;//ok
-            case "AngelsResidenciales" ->
-                Sucursal = 3;
-            case "AngelsSantaInes" ->
-                Sucursal = 4;
-            case "angelspalencia" ->
-                Sucursal = 5;//ok    
-            default -> {
-            }
-        }
+        Sucursal = Buscasucursal.obtenerSucursal();
     }
 
     public void insertarProducto() {
@@ -127,12 +113,6 @@ public class InicioPedidoApi extends javax.swing.JFrame {
         columna2.setPreferredWidth(255);
     }
 
-    
-    
-    
-    
-    
-    
     private void ListarProductos() throws Exception {
         ArrayList<ClassProductosApi> result = BDApiRest.obtenerProductos(Integer.parseInt(NoPedido.getText()));
         RecargarTablaDetallado(result);
@@ -195,16 +175,10 @@ public class InicioPedidoApi extends javax.swing.JFrame {
             }
         });
     }
-    
-    
-    
-    
-    
-    
 
     private void ListarProductosSolicitados() throws Exception {
         ArrayList<ClassProductosApi> result = BDApiRest.ProductosSolicitados(
-        Integer.parseInt(NoPedido.getText()), Sucursal );
+                Integer.parseInt(NoPedido.getText()), Sucursal);
         RecargarTabla(result);
     }
 
@@ -249,7 +223,7 @@ public class InicioPedidoApi extends javax.swing.JFrame {
                             String.valueOf(model.getValueAt(modelRow, 3))
                     );
                     double cantidad = Math.round(cantidadRaw * 100.0) / 100.0;
-                    
+
                     int id_pedido = Integer.parseInt(NoPedido.getText());
 
                     BDApiRest.actualizarCantidad(id_pedido, id_producto, Sucursal, cantidad);
@@ -258,29 +232,28 @@ public class InicioPedidoApi extends javax.swing.JFrame {
         });
     }
 
-    private void imprimir() {
+   /* private void imprimir() {
         BDConexionPedidos con = new BDConexionPedidos();
         Connection conexion = con.getConexion();
         try {
 
             switch (Sucursal) {
-                case 1: //SANTA INES IT PRUEBA
-                    Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoSantaInes.jasper";
-                    break;
-                case 2://PARAISO
+
+                case 1://PARAISO
                     Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoParaiso.jasper";
                     break;
-                case 3://SAN LUIS
+                case 2://SAN LUIS
                     Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoPuertaNegra.jasper";
                     break;
-                case 4://PALENCIA
-                    Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoPalencia.jasper";
-                    break;
-                case 5://RESIDENCIALES
+                case 3://RESIDENCIALES
                     Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoResidenciales.jasper";
                     break;
-                case 6://SANTA INES
+
+                case 4://SANTA INES
                     Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoSantaInes.jasper";
+                    break;
+                case 5://PALENCIA
+                    Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoPalencia.jasper";
                     break;
                 default:
                     break;
@@ -295,7 +268,61 @@ public class InicioPedidoApi extends javax.swing.JFrame {
             System.out.println("F" + e);
             JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  " + e);
         }
+    }*/
+    
+    
+    private void imprimir() {
+    BDConexionPedidos con = new BDConexionPedidos();
+    Connection conexion = con.getConexion();
+
+    try {
+        String columnaActualizar = "";
+        switch (Sucursal) {
+            case 1: // PARAISO
+                Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoParaiso.jasper";
+                columnaActualizar = "PARAISO";
+                break;
+            case 2: // SAN LUIS (PUERTA NEGRA)
+                Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoPuertaNegra.jasper";
+                columnaActualizar = "PUERTANEGRA";
+                break;
+            case 3: // RESIDENCIALES
+                Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoResidenciales.jasper";
+                columnaActualizar = "RESIDENCIALES";
+                break;
+            case 4: // SANTA INES
+                Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoSantaInes.jasper";
+                columnaActualizar = "SANTAINES";
+                break;
+            case 5: // PALENCIA
+                Linksucursal = "C:\\Reportes\\ANGELS\\PEDIDO\\ProductoSolicitadoPalencia.jasper";
+                columnaActualizar = "PALENCIA";
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Sucursal no válida");
+                return;
+        }
+
+        // Imprimir el reporte
+        JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile(Linksucursal);
+        Map<String, Object> parametros = new HashMap<>();
+        int idPedido = Integer.parseInt(NoPedido.getText());
+        parametros.put("PEDIDO", idPedido);
+        JasperPrint print = JasperFillManager.fillReport(jasperReport, parametros, conexion);
+        JasperPrintManager.printReport(print, true);
+
+        // Actualizar la columna correspondiente en la base de datos
+        String sql = "UPDATE pedidos SET " + columnaActualizar + " = 1 WHERE ID_PEDIDO = ?";
+        PreparedStatement ps = conexion.prepareStatement(sql);
+        ps.setInt(1, idPedido);
+        ps.executeUpdate();
+        ps.close();
+
+    } catch (Exception e) {
+        System.out.println("F" + e);
+        JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  " + e);
     }
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -438,11 +465,7 @@ public class InicioPedidoApi extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -455,8 +478,13 @@ public class InicioPedidoApi extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(BUSCAR)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 539, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(12, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jButton3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton2)
+                        .addGap(213, 213, 213))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -475,10 +503,10 @@ public class InicioPedidoApi extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 402, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

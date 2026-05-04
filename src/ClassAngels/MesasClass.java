@@ -21,6 +21,15 @@ public class MesasClass {
     private int estado;
     private int Orden;
     private int Ordendia;
+    private String NombreEmpleado;
+
+    public String getNombreEmpleado() {
+        return NombreEmpleado;
+    }
+
+    public void setNombreEmpleado(String NombreEmpleado) {
+        this.NombreEmpleado = NombreEmpleado;
+    }
 
     public int getOrdendia() {
         return Ordendia;
@@ -58,7 +67,8 @@ public class MesasClass {
     
     
     public static ArrayList<MesasClass> ListaMesas () {
-        return SQLP("SELECT nomesa,m.estado,o.NOORDEN,o.ordendia FROM mesas m inner join ordenes o on m.ID_MESA = o.ID_MESA WHERE m.ESTADO = 2 and o.estado = 1 order by m.ID_MESA;");    
+        //return SQLP("SELECT nomesa,m.estado,o.NOORDEN,o.ordendia FROM mesas m inner join ordenes o on m.ID_MESA = o.ID_MESA WHERE m.ESTADO = 2 and o.estado = 1 order by m.ID_MESA;");    
+        return SQLP("SELECT nomesa,m.estado,o.NOORDEN,o.ordendia,e.nombre_corto FROM mesas m inner join ordenes o on m.ID_MESA = o.ID_MESA join empleados e on o.CODIGOEMPLEADO = e.CODIGO WHERE m.ESTADO = 2 and o.estado = 1 order by m.ID_MESA;");    
  }  
 
 private static ArrayList<MesasClass> SQLP(String sql){
@@ -76,7 +86,7 @@ private static ArrayList<MesasClass> SQLP(String sql){
                  t.setEstado(rs.getInt("estado"));
                  t.setOrden(rs.getInt("noorden"));
                  t.setOrdendia(rs.getInt("ordendia"));
-                 
+                 t.setNombreEmpleado(rs.getString("nombre_corto"));
                  list.add(t);
             }
             cn.close();

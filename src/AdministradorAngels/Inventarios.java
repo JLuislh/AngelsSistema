@@ -5,6 +5,7 @@
 package AdministradorAngels;
 
 import Inicio.Ordenes;
+import Inventario.InventarioDiario;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.BorderFactory;
@@ -40,8 +41,8 @@ public class Inventarios extends javax.swing.JFrame {
         T5.setText(texto5);
         String texto6 = "<html><center><body>DESCARGAS<br>DE<br>INVENTARIO</body></center></html>";
         T6.setText(texto6);
-        /*String texto7 = "<html><center><body>CORREGIR<br>ORDEN</body></center></html>";
-        T7.setText(texto7);*/
+        String texto7 = "<html><center><body>INVENTARIO<br>DIARIO</body></center></html>";
+        T7.setText(texto7);
         String texto8 = "<html><center><body>VOLVER<br>A<br>INICIO</body></center></html>";
         T8.setText(texto8);
     }
@@ -52,6 +53,7 @@ public class Inventarios extends javax.swing.JFrame {
          P5.setBorder(BorderFactory.createEmptyBorder());
          P6.setBorder(BorderFactory.createEmptyBorder());
          P8.setBorder(BorderFactory.createEmptyBorder());
+         P7.setBorder(BorderFactory.createEmptyBorder());
     }
 
     /**
@@ -75,6 +77,8 @@ public class Inventarios extends javax.swing.JFrame {
         T6 = new javax.swing.JLabel();
         P8 = new ClassAngels.PanelRound();
         T8 = new javax.swing.JLabel();
+        P7 = new ClassAngels.PanelRound();
+        T7 = new javax.swing.JLabel();
         PANEL = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -233,6 +237,36 @@ public class Inventarios extends javax.swing.JFrame {
             .addComponent(T8, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
         );
 
+        P7.setBackground(new java.awt.Color(255, 204, 204));
+        P7.setPreferredSize(new java.awt.Dimension(126, 59));
+        P7.setRoundBottomLeft(20);
+        P7.setRoundBottomRight(20);
+        P7.setRoundTopLeft(20);
+        P7.setRoundTopRight(20);
+
+        T7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        T7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        T7.setText("INVENTARIO DIARIO");
+        T7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                T7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                T7MouseEntered(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P7Layout = new javax.swing.GroupLayout(P7);
+        P7.setLayout(P7Layout);
+        P7Layout.setHorizontalGroup(
+            P7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(T7, javax.swing.GroupLayout.PREFERRED_SIZE, 126, Short.MAX_VALUE)
+        );
+        P7Layout.setVerticalGroup(
+            P7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(T7, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -247,8 +281,10 @@ public class Inventarios extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(445, Short.MAX_VALUE))
+                .addContainerGap(313, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,8 +294,9 @@ public class Inventarios extends javax.swing.JFrame {
                     .addComponent(P4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         PANEL.setBackground(new java.awt.Color(255, 255, 255));
@@ -272,7 +309,7 @@ public class Inventarios extends javax.swing.JFrame {
         );
         PANELLayout.setVerticalGroup(
             PANELLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 493, Short.MAX_VALUE)
+            .addGap(0, 483, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -380,6 +417,22 @@ public class Inventarios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_T8MouseEntered
 
+    private void T7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T7MouseClicked
+      InventarioDiario op2 = new InventarioDiario();
+        op2.setSize(1024, 635);
+        op2.setLocation(0, 0);
+        PANEL.removeAll();
+        PANEL.add(op2,BorderLayout.CENTER);
+        PANEL.revalidate();
+        PANEL.repaint();
+        CambiarBodes();
+        P7.setBorder(BorderFactory.createMatteBorder(0, 0, 10, 0, Color.red));
+    }//GEN-LAST:event_T7MouseClicked
+
+    private void T7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_T7MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_T7MouseEntered
+
     /**
      * @param args the command line arguments
      */
@@ -423,12 +476,14 @@ public class Inventarios extends javax.swing.JFrame {
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
     private ClassAngels.PanelRound P6;
+    private ClassAngels.PanelRound P7;
     private ClassAngels.PanelRound P8;
     public static javax.swing.JPanel PANEL;
     private javax.swing.JLabel T3;
     private javax.swing.JLabel T4;
     private javax.swing.JLabel T5;
     private javax.swing.JLabel T6;
+    private javax.swing.JLabel T7;
     private javax.swing.JLabel T8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

@@ -5,7 +5,7 @@ import BDclass.BDOrdenes;
 import ClassAngels.EtiquetasClass;
 import ClassAngels.InsertarProducto;
 import Inicio.Menu;
-import Inicio.MenuParaLlevar;
+import Inicio.old.MenuParaLlevar;
 import Inicio.MenuSeguimiento;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -52,6 +52,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
  String descripcion23;	String descripcion2_23;	 String Precio23; int codigo23;
  String descripcion24;	String descripcion2_24;	 String Precio24; int codigo24;
  String descripcion25;	String descripcion2_25;	 String Precio25; int codigo25;
+ String descripcion26;	String descripcion2_26;	 String Precio26; int codigo26;
+ String descripcion27;  String descripcion2_27;	 String Precio27; int codigo27;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -154,6 +156,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
        P23.setBackground(Original);
        P24.setBackground(Original);
        P25.setBackground(Original);
+       P26.setBackground(Original);
+       P27.setBackground(Original);
      }
     });
     
@@ -294,6 +298,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
         Caldo6 = new javax.swing.JLabel();
         P25 = new ClassAngels.PanelRound();
         Caldo7 = new javax.swing.JLabel();
+        P26 = new ClassAngels.PanelRound();
+        Caldo8 = new javax.swing.JLabel();
+        P27 = new ClassAngels.PanelRound();
+        Caldo9 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         P6 = new ClassAngels.PanelRound();
         PAL1 = new javax.swing.JLabel();
@@ -525,6 +533,58 @@ public class CaldosAntojos extends javax.swing.JPanel {
             .addComponent(Caldo7, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
+        P26.setBackground(new java.awt.Color(204, 255, 102));
+        P26.setPreferredSize(new java.awt.Dimension(100, 75));
+        P26.setRoundBottomLeft(20);
+        P26.setRoundBottomRight(20);
+        P26.setRoundTopLeft(20);
+        P26.setRoundTopRight(20);
+
+        Caldo8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Caldo8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Caldo8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Caldo8MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P26Layout = new javax.swing.GroupLayout(P26);
+        P26.setLayout(P26Layout);
+        P26Layout.setHorizontalGroup(
+            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Caldo8, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P26Layout.setVerticalGroup(
+            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Caldo8, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
+        P27.setBackground(new java.awt.Color(204, 255, 102));
+        P27.setPreferredSize(new java.awt.Dimension(100, 75));
+        P27.setRoundBottomLeft(20);
+        P27.setRoundBottomRight(20);
+        P27.setRoundTopLeft(20);
+        P27.setRoundTopRight(20);
+
+        Caldo9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Caldo9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Caldo9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Caldo9MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P27Layout = new javax.swing.GroupLayout(P27);
+        P27.setLayout(P27Layout);
+        P27Layout.setHorizontalGroup(
+            P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Caldo9, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P27Layout.setVerticalGroup(
+            P27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Caldo9, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -544,6 +604,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
                 .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -551,6 +615,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(9, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(P27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1598,6 +1664,42 @@ public class CaldosAntojos extends javax.swing.JPanel {
             timer.start();
        }
     }//GEN-LAST:event_Caldo7MouseClicked
+
+    private void Caldo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Caldo8MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo26;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P26.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo26;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P26.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_Caldo8MouseClicked
+
+    private void Caldo9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Caldo9MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo27;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P27.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo27;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P27.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_Caldo9MouseClicked
  
     
     
@@ -1681,6 +1783,12 @@ public class CaldosAntojos extends javax.swing.JPanel {
             else if (287== codigo){
              descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
             }
+             else if (320== codigo){
+             descripcion26 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_26 = result.get(i).getDescripcion2().toUpperCase(); Precio26 = result.get(i).getPrecio();codigo26 = result.get(i).getCodigo();
+            }
+             else if (321== codigo){
+             descripcion27 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_27 = result.get(i).getDescripcion2().toUpperCase(); Precio27 = result.get(i).getPrecio();codigo27 = result.get(i).getCodigo();
+            }
         }
   }
     
@@ -1689,6 +1797,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Caldo6;
     private javax.swing.JLabel Caldo7;
+    private javax.swing.JLabel Caldo8;
+    private javax.swing.JLabel Caldo9;
     private javax.swing.JLabel Caldos1;
     private javax.swing.JLabel Caldos2;
     private javax.swing.JLabel Caldos3;
@@ -1712,6 +1822,8 @@ public class CaldosAntojos extends javax.swing.JPanel {
     private ClassAngels.PanelRound P23;
     private ClassAngels.PanelRound P24;
     private ClassAngels.PanelRound P25;
+    private ClassAngels.PanelRound P26;
+    private ClassAngels.PanelRound P27;
     private ClassAngels.PanelRound P3;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
@@ -1793,6 +1905,10 @@ public class CaldosAntojos extends javax.swing.JPanel {
         Caldo6.setText(texto24);
          String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
         Caldo7.setText(texto25);
+        String texto26 ="<html><center><body>"+descripcion26+"<br>"+descripcion2_26+"<br><font color='RED'>Q"+Precio26+"</font></body></center></html>";
+        Caldo8.setText(texto26);
+        String texto27 ="<html><center><body>"+descripcion27+"<br>"+descripcion2_27+"<br><font color='RED'>Q"+Precio27+"</font></body></center></html>";
+        Caldo9.setText(texto27);
     }
 
 }

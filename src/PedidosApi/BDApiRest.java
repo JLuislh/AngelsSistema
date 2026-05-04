@@ -14,7 +14,6 @@ import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 /**
  *
  * @author it
@@ -22,7 +21,7 @@ import java.util.List;
 public class BDApiRest {
     
     public static ArrayList<ClassProductosApi>ListarPedidos(int estado) throws Exception {
-        URL url = new URL("http://140.84.178.126:3500/pedidos");
+        URL url = new URL("http://140.84.178.126:3500/api/pedidos");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("POST");
         con.setRequestProperty("Content-Type", "application/json");
@@ -52,7 +51,7 @@ public class BDApiRest {
     
 
     public static ArrayList<ClassProductosApi>obtenerProductos(int idPedido) throws Exception {
-       URL url = new URL("http://140.84.178.126:3500/productos");
+       URL url = new URL("http://140.84.178.126:3500/api/productos");
     HttpURLConnection con = (HttpURLConnection) url.openConnection();
     con.setRequestMethod("POST");
     con.setRequestProperty("Content-Type", "application/json");
@@ -81,7 +80,7 @@ public class BDApiRest {
     
     
    public static ArrayList<ClassProductosApi> ProductosSolicitados(int idPedido, int sucursal) throws Exception {
-    URL url = new URL("http://140.84.178.126:3500/productossolicitados");
+    URL url = new URL("http://140.84.178.126:3500/api/productossolicitados");
     HttpURLConnection con = (HttpURLConnection) url.openConnection();
     con.setRequestMethod("POST");
     con.setRequestProperty("Content-Type", "application/json");
@@ -113,7 +112,7 @@ public class BDApiRest {
    
 public static boolean agregarProductoAlPedido(int idPedido, int idProducto) {
     try {
-        URL url = new URL("http://140.84.178.126:3500/agregar-producto-pedido"); // Ajusta si usas otro puerto
+        URL url = new URL("http://140.84.178.126:3500/api/agregar-producto-pedido"); // Ajusta si usas otro puerto
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("POST");
         con.setRequestProperty("Content-Type", "application/json");
@@ -152,7 +151,7 @@ public static boolean agregarProductoAlPedido(int idPedido, int idProducto) {
 
 public static void actualizarCantidad(int idPedido, int idProducto,int sucursal, double cantidad) {
     try {
-        URL url = new URL("http://140.84.178.126:3500/actualizar-cantidades");
+        URL url = new URL("http://140.84.178.126:3500/api/actualizar-cantidades");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("PUT");
         con.setRequestProperty("Content-Type", "application/json");
@@ -192,7 +191,7 @@ public static void actualizarCantidad(int idPedido, int idProducto,int sucursal,
 
 
   public static ArrayList<ClassProductosApi> ProductosRecibidos(int idPedido, int sucursal) throws Exception {
-    URL url = new URL("http://140.84.178.126:3500/productosrecibido");
+    URL url = new URL("http://140.84.178.126:3500/api/productosrecibido");
     HttpURLConnection con = (HttpURLConnection) url.openConnection();
     con.setRequestMethod("POST");
     con.setRequestProperty("Content-Type", "application/json");
@@ -221,7 +220,7 @@ public static void actualizarCantidad(int idPedido, int idProducto,int sucursal,
   
   public static void actualizarCantidadRecibida(int idPedido, int idProducto,int sucursal, double cantidad) {
     try {
-        URL url = new URL("http://140.84.178.126:3500/actualizar-cantidades-recibidas");
+        URL url = new URL("http://140.84.178.126:3500/api/actualizar-cantidades-recibidas");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("PUT");
         con.setRequestProperty("Content-Type", "application/json");

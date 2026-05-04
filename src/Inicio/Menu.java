@@ -6,6 +6,7 @@ package Inicio;
 
 import BDclass.BDConexion;
 import BDclass.BDOrdenes;
+import ClassAngels.Buscasucursal;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import SubPanelesSantaInes.BebidasSinAlcohol;
@@ -13,6 +14,7 @@ import SubPanelesSantaInes.Botellas;
 import SubPanelesSantaInes.CaldosAntojos;
 import SubPanelesSantaInes.Ceviches;
 import SubPanelesSantaInes.ConAlcohol;
+import SubPanelesSantaInes.ConAlcoholSanLuis;
 import SubPanelesSantaInes.Extras;
 import SubPanelesSantaInes.Hamburguesas;
 import java.awt.BorderLayout;
@@ -27,6 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.table.TableColumn;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -39,21 +42,26 @@ import net.sf.jasperreports.engine.util.JRLoader;
  * @author jluis
  */
 public final class Menu extends javax.swing.JFrame {
-     public static int noorden;
-     int nomesa;
-     int tipomenu = 0;
-     int ordendia;
+
+    public static int noorden;
+    int nomesa;
+    int tipomenu = 0;
+    int ordendia;
+    int Sucursal = 0;
+
     /**
      * Creates new form Menu
+     *
      * @param a
      * @param b
      */
-    public Menu(int a,int b) {
+    public Menu(int a, int b) {
         initComponents();
         setLocationRelativeTo(null);
         this.nomesa = a;
         Menu.noorden = b;
         BuscarOrdenDia();
+        buscasucursal();
         Ordentxt.setText(String.valueOf(ordendia));
         mesatxt.setText(String.valueOf(a));
         String texto1 = "<html><center><body>HAMBURGUEZAS<br>FUERA DEL MAR</body></center></html>";
@@ -68,33 +76,37 @@ public final class Menu extends javax.swing.JFrame {
         Titulo6.setText(texto5);
         String texto6 = "<html><center><body>EXTRAS<br>MICHELADAS</body></center></html>";
         Titulo7.setText(texto6);
-    }
-    
-    public void BuscarOrdenDia() {
-            try {
-                BDConexion conecta = new BDConexion();
-                Connection cn = conecta.getConexion();
-                java.sql.Statement stmt = cn.createStatement();
-                ResultSet rs = stmt.executeQuery("select ordendia  from ordenes where date_format(fecha,'%d/%m/%Y') = date_format(now(),'%d/%m/%Y') and NOORDEN = "+noorden);
-                while (rs.next()) {
-                      ordendia = (rs.getInt(1));
-                }
-                rs.close();
-                stmt.close();
-                cn.close();
-            } catch (Exception error) {
-                System.out.print(error);
-            }
+        if (mesatxt.getText().trim().equals("") || mesatxt.getText().trim().equals("0")) {
+            SALIR.setEnabled(false);
+        } else {
+            SALIR.setEnabled(true);
         }
-    
-    
-    private void eliminarOrden(){
+    }
+
+    public void BuscarOrdenDia() {
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection cn = conecta.getConexion();
+            java.sql.Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery("select ordendia  from ordenes where date_format(fecha,'%d/%m/%Y') = date_format(now(),'%d/%m/%Y') and NOORDEN = " + noorden);
+            while (rs.next()) {
+                ordendia = (rs.getInt(1));
+            }
+            rs.close();
+            stmt.close();
+            cn.close();
+        } catch (Exception error) {
+            System.out.print(error);
+        }
+    }
+
+    private void eliminarOrden() {
         try {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
             PreparedStatement p = null;
-            ps= con.prepareStatement("delete from Ordenes where noorden="+noorden);
+            ps = con.prepareStatement("delete from Ordenes where noorden=" + noorden);
             p = con.prepareStatement("UPDATE MESAS SET ESTADO = 1 WHERE id_mesa =" + nomesa);
             ps.executeUpdate();
             p.executeUpdate();
@@ -102,10 +114,23 @@ public final class Menu extends javax.swing.JFrame {
             ps.close();
             p.close();
         } catch (SQLException ex) {
-           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+            JOptionPane.showMessageDialog(null, "ERROr = " + ex);
         }
- }
-    
+    }
+
+    private void Totalizar() {
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection con = conecta.getConexion();
+            PreparedStatement ps = null;
+            ps = con.prepareStatement("UPDATE ORDENES SET TOTAL = " + Total.getText() + " where noorden=" + noorden);
+            ps.executeUpdate();
+            con.close();
+            ps.close();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "ERROr = " + ex);
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -145,7 +170,7 @@ public final class Menu extends javax.swing.JFrame {
         mesatxt = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         Total = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
+        SALIR = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
@@ -433,11 +458,15 @@ public final class Menu extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText(" NO. ORDEN");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, -1));
+
+        Ordentxt.setEditable(false);
         jPanel6.add(Ordentxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 130, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setText(" NO. MESA");
         jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 70, 20));
+
+        mesatxt.setEditable(false);
         jPanel6.add(mesatxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 140, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -449,16 +478,16 @@ public final class Menu extends javax.swing.JFrame {
         Total.setForeground(new java.awt.Color(255, 0, 0));
         jPanel6.add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 170, -1));
 
-        jButton3.setBackground(new java.awt.Color(255, 255, 153));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton3.setText("SALIR");
-        jButton3.setPreferredSize(new java.awt.Dimension(75, 25));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        SALIR.setBackground(new java.awt.Color(255, 255, 153));
+        SALIR.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        SALIR.setText("SALIR");
+        SALIR.setPreferredSize(new java.awt.Dimension(75, 25));
+        SALIR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                SALIRActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 130, 40));
+        jPanel6.add(SALIR, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 130, 40));
 
         jButton4.setBackground(new java.awt.Color(255, 255, 153));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -488,196 +517,210 @@ public final class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    public static void ListarProductosPedidos(){
-     
+    public static void ListarProductosPedidos() {
+
         ArrayList<InsertarProducto> result = BDOrdenes.ListarProductosPedidos(noorden);
-        RecargarTabla(result);  
+        RecargarTabla(result);
     }
-     public static void RecargarTabla(ArrayList<InsertarProducto> list) {
-         DecimalFormat df = new DecimalFormat("#.00");
-              Object[][] datos = new Object[list.size()][4];
-              int i = 0;
-              for(InsertarProducto t : list)
-              {
-                  datos[i][0] = t.getCantidad();
-                  datos[i][1] = t.getDescripcion();
-                  datos[i][2] = df.format(t.getPrecio());
-                  datos[i][3] = df.format(t.getTotal());
-                  i++;
-              }    
-             Pedidos.setModel(new javax.swing.table.DefaultTableModel(
+
+    public static void RecargarTabla(ArrayList<InsertarProducto> list) {
+        DecimalFormat df = new DecimalFormat("#.00");
+        Object[][] datos = new Object[list.size()][4];
+        int i = 0;
+        for (InsertarProducto t : list) {
+            datos[i][0] = t.getCantidad();
+            datos[i][1] = t.getDescripcion();
+            datos[i][2] = df.format(t.getPrecio());
+            datos[i][3] = df.format(t.getTotal());
+            i++;
+        }
+        Pedidos.setModel(new javax.swing.table.DefaultTableModel(
                 datos,
                 new String[]{
-                "CANTIDAD","DESCRIPCION","PRECIO","TOTAL"
-             })
-             {  
-                 @Override
-                 public boolean isCellEditable(int row, int column){
-                 return false;
+                    "CANTIDAD", "DESCRIPCION", "PRECIO", "TOTAL"
+                }) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
 
-             }
-             });
-             Pedidos.getColumnModel().getColumn(1).setCellRenderer(new TextAreaRenderer());
-             TableColumn columna1 = Pedidos.getColumn("CANTIDAD");
-             columna1.setPreferredWidth(-20);
-             TableColumn columna2 = Pedidos.getColumn("DESCRIPCION");
-             columna2.setPreferredWidth(275);
-             TableColumn columna3 = Pedidos.getColumn("PRECIO");
-             columna3.setPreferredWidth(35);
-             TableColumn columna4 = Pedidos.getColumn("TOTAL");
-             columna4.setPreferredWidth(55);
-             sumaTotal();
-     }
-    
-    
+            }
+        });
+        Pedidos.getColumnModel().getColumn(1).setCellRenderer(new TextAreaRenderer());
+        TableColumn columna1 = Pedidos.getColumn("CANTIDAD");
+        columna1.setPreferredWidth(-20);
+        TableColumn columna2 = Pedidos.getColumn("DESCRIPCION");
+        columna2.setPreferredWidth(275);
+        TableColumn columna3 = Pedidos.getColumn("PRECIO");
+        columna3.setPreferredWidth(35);
+        TableColumn columna4 = Pedidos.getColumn("TOTAL");
+        columna4.setPreferredWidth(55);
+        sumaTotal();
+    }
+
     public static void sumaTotal() {
         DecimalFormat df = new DecimalFormat("#.00");
-            try {
-                 BDConexion conecta = new BDConexion();
-                Connection cn = conecta.getConexion();
-                java.sql.Statement stmt = cn.createStatement();
-                ResultSet rs = stmt.executeQuery("select truncate(sum(total),2) as Total from ventas where noorden =" + noorden);
-                while (rs.next()) {
-                     String TOTAL = df.format(rs.getInt(1));
-                    Total.setText(String.valueOf(TOTAL));
-                }
-                rs.close();
-                stmt.close();
-                cn.close();
-            } catch (Exception error) {
-                System.out.print(error);
-            }
-        }
-    
-    
-    private void imprimir(){
-      BDConexion con= new BDConexion();
-         Connection conexion= con.getConexion();
         try {
-            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngels.jasper");
-            Map parametros= new HashMap();
-            parametros.put("ID_ORDEN", noorden);
-            JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
-            JasperPrintManager.printReport(print, true);
-        } catch (Exception e) {System.out.println("F"+e);
-           JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
+            BDConexion conecta = new BDConexion();
+            Connection cn = conecta.getConexion();
+            java.sql.Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery("select truncate(sum(total),2) as Total from ventas where noorden =" + noorden);
+            while (rs.next()) {
+                String TOTAL = df.format(rs.getInt(1));
+                Total.setText(String.valueOf(TOTAL));
+            }
+            rs.close();
+            stmt.close();
+            cn.close();
+        } catch (Exception error) {
+            System.out.print(error);
         }
     }
-    
-    
-    private void CambiarVentaImprimir(){
+
+    private void imprimir() {
+        BDConexion con = new BDConexion();
+        Connection conexion = con.getConexion();
+        try {
+            JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngels.jasper");
+            Map parametros = new HashMap();
+            parametros.put("ID_ORDEN", noorden);
+            JasperPrint print = JasperFillManager.fillReport(jasperReport, parametros, conexion);
+            JasperPrintManager.printReport(print, true);
+        } catch (Exception e) {
+            System.out.println("F" + e);
+            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  " + e);
+        }
+    }
+
+    private void CambiarVentaImprimir() {
         try {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
-            ps= con.prepareStatement("UPDATE ventas SET estado = 2 where noorden="+noorden);
+            ps = con.prepareStatement("UPDATE ventas SET estado = 2 where noorden=" + noorden);
             ps.executeUpdate();
             con.close();
             ps.close();
         } catch (SQLException ex) {
-           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+            JOptionPane.showMessageDialog(null, "ERROr = " + ex);
         }
- }
-    
-    
+    }
+
+    private void buscasucursal() {
+       Sucursal = Buscasucursal.obtenerSucursal();
+    }
+
+
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-    CaldosAntojos op1 = new CaldosAntojos(noorden,tipomenu);
-    op1.setSize(1170, 380);
-    op1.setLocation(0, 0);
-    PanelMenu.removeAll();
-    PanelMenu.add(op1,BorderLayout.CENTER);
-    PanelMenu.revalidate();
-    PanelMenu.repaint();
-    //CambiarBodes();
-    //P1.setBorder(BorderFactory.createMatteBorder(0, 0, 10, 0, Color.red));
+        CaldosAntojos op1 = new CaldosAntojos(noorden, tipomenu);
+        op1.setSize(1170, 380);
+        op1.setLocation(0, 0);
+        PanelMenu.removeAll();
+        PanelMenu.add(op1, BorderLayout.CENTER);
+        PanelMenu.revalidate();
+        PanelMenu.repaint();
+        //CambiarBodes();
+        //P1.setBorder(BorderFactory.createMatteBorder(0, 0, 10, 0, Color.red));
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void Titulo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo2MouseClicked
-    Hamburguesas op1 = new Hamburguesas(noorden,tipomenu);
-    op1.setSize(1170, 380);
-    op1.setLocation(0, 0);
-    PanelMenu.removeAll();
-    PanelMenu.add(op1,BorderLayout.CENTER);
-    PanelMenu.revalidate();
-    PanelMenu.repaint();
+        Hamburguesas op1 = new Hamburguesas(noorden, tipomenu);
+        op1.setSize(1170, 380);
+        op1.setLocation(0, 0);
+        PanelMenu.removeAll();
+        PanelMenu.add(op1, BorderLayout.CENTER);
+        PanelMenu.revalidate();
+        PanelMenu.repaint();
     }//GEN-LAST:event_Titulo2MouseClicked
 
     private void Titulo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo3MouseClicked
-    Ceviches op1 = new Ceviches(noorden,tipomenu);
-    op1.setSize(1170, 380);
-    op1.setLocation(0, 0);
-    PanelMenu.removeAll();
-    PanelMenu.add(op1,BorderLayout.CENTER);
-    PanelMenu.revalidate();
-    PanelMenu.repaint();
+        Ceviches op1 = new Ceviches(noorden, tipomenu);
+        op1.setSize(1170, 380);
+        op1.setLocation(0, 0);
+        PanelMenu.removeAll();
+        PanelMenu.add(op1, BorderLayout.CENTER);
+        PanelMenu.revalidate();
+        PanelMenu.repaint();
     }//GEN-LAST:event_Titulo3MouseClicked
 
     private void Titulo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo4MouseClicked
-    BebidasSinAlcohol op1 = new BebidasSinAlcohol(noorden,tipomenu);
-    op1.setSize(1170, 380);
-    op1.setLocation(0, 0);
-    PanelMenu.removeAll();
-    PanelMenu.add(op1,BorderLayout.CENTER);
-    PanelMenu.revalidate();
-    PanelMenu.repaint();
+        BebidasSinAlcohol op1 = new BebidasSinAlcohol(noorden, tipomenu);
+        op1.setSize(1170, 380);
+        op1.setLocation(0, 0);
+        PanelMenu.removeAll();
+        PanelMenu.add(op1, BorderLayout.CENTER);
+        PanelMenu.revalidate();
+        PanelMenu.repaint();
     }//GEN-LAST:event_Titulo4MouseClicked
 
     private void Titulo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo5MouseClicked
-    ConAlcohol op1 = new ConAlcohol(noorden,tipomenu);
-    op1.setSize(1170, 380);
-    op1.setLocation(0, 0);
-    PanelMenu.removeAll();
-    PanelMenu.add(op1,BorderLayout.CENTER);
-    PanelMenu.revalidate();
-    PanelMenu.repaint();
+
+        JPanel op1;
+        if (Sucursal == 4) {
+            op1 = new ConAlcohol(noorden, tipomenu);
+        } else {
+            op1 = new ConAlcoholSanLuis(noorden, tipomenu);
+        }
+        op1.setSize(1170, 380);
+        op1.setLocation(0, 0);
+        PanelMenu.removeAll();
+        PanelMenu.add(op1, BorderLayout.CENTER);
+        PanelMenu.revalidate();
+        PanelMenu.repaint();
     }//GEN-LAST:event_Titulo5MouseClicked
 
     private void Titulo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo6MouseClicked
-    Botellas op1 = new Botellas(noorden,tipomenu);
-    op1.setSize(1170, 380);
-    op1.setLocation(0, 0);
-    PanelMenu.removeAll();
-    PanelMenu.add(op1,BorderLayout.CENTER);
-    PanelMenu.revalidate();
-    PanelMenu.repaint();
+        Botellas op1 = new Botellas(noorden, tipomenu);
+        op1.setSize(1170, 380);
+        op1.setLocation(0, 0);
+        PanelMenu.removeAll();
+        PanelMenu.add(op1, BorderLayout.CENTER);
+        PanelMenu.revalidate();
+        PanelMenu.repaint();
     }//GEN-LAST:event_Titulo6MouseClicked
 
     private void Titulo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo8MouseClicked
-     int resp=JOptionPane.showConfirmDialog(null,"DESEA CANCELAR LA ORDEN");
-          if (JOptionPane.OK_OPTION == resp){
-           eliminarOrden();
-           Ordenes F = new Ordenes();
-           F.setVisible(true);
-           this.dispose();
-          }
-    
+        int resp = JOptionPane.showConfirmDialog(null, "DESEA CANCELAR LA ORDEN");
+        if (JOptionPane.OK_OPTION == resp) {
+            eliminarOrden();
+            Ordenes F = new Ordenes();
+            F.setVisible(true);
+            this.dispose();
+        }
+
 
     }//GEN-LAST:event_Titulo8MouseClicked
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-       CambiarVentaImprimir();
-       Ordenes F = new Ordenes();
-       F.setVisible(true);
-       this.dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void SALIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SALIRActionPerformed
+        if (Pedidos.getRowCount() == 0) {
+            eliminarOrden();
+        } else {
+            CambiarVentaImprimir();
+        }
+        new Ordenes().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_SALIRActionPerformed
 
     private void Titulo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Titulo7MouseClicked
-    Extras op1 = new Extras(noorden,tipomenu);
-    op1.setSize(1170, 380);
-    op1.setLocation(0, 0);
-    PanelMenu.removeAll();
-    PanelMenu.add(op1,BorderLayout.CENTER);
-    PanelMenu.revalidate();
-    PanelMenu.repaint();
+        Extras op1 = new Extras(noorden, tipomenu);
+        op1.setSize(1170, 380);
+        op1.setLocation(0, 0);
+        PanelMenu.removeAll();
+        PanelMenu.add(op1, BorderLayout.CENTER);
+        PanelMenu.revalidate();
+        PanelMenu.repaint();
     }//GEN-LAST:event_Titulo7MouseClicked
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-       imprimir();
-       CambiarVentaImprimir();
-       Ordenes F = new Ordenes();
-       F.setVisible(true);
-       this.dispose();
+        if (Pedidos.getRowCount() == 0) {
+            JOptionPane.showMessageDialog(null, "NO SE A AGREGADO NINGUN PRODUCTO A LA ORDEN...");
+        } else {
+            imprimir();
+            CambiarVentaImprimir();
+            Totalizar();
+            Ordenes F = new Ordenes();
+            F.setVisible(true);
+            this.dispose();
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -713,7 +756,7 @@ public final class Menu extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-               // new MenuSeguimiento().setVisible(true);
+                // new MenuSeguimiento().setVisible(true);
             }
         });
     }
@@ -730,6 +773,7 @@ public final class Menu extends javax.swing.JFrame {
     private javax.swing.JTextField Ordentxt;
     public static javax.swing.JPanel PanelMenu;
     public static javax.swing.JTable Pedidos;
+    private javax.swing.JButton SALIR;
     private javax.swing.JLabel Titulo2;
     private javax.swing.JLabel Titulo3;
     private javax.swing.JLabel Titulo4;
@@ -739,7 +783,6 @@ public final class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel Titulo8;
     public static javax.swing.JTextField Total;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

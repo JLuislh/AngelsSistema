@@ -2,13 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Inicio;
+package Inicio.old;
 
 import BDclass.BDConexion;
 import BDclass.BDOrdenes;
 import ClassAngels.InsertarProducto;
 import ClassAngels.TextAreaRenderer;
 import FEL.CobroFacturacion;
+import Inicio.CobroET;
+import Inicio.Ordenes;
 import static Inicio.Menu.noorden;
 import static Inicio.MenuSeguimiento.noorden;
 import SubPanelesSantaInes.BebidasSinAlcohol;

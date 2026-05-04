@@ -8,12 +8,17 @@ import AdministradorAngels.Contraseña;
 import AdministradorAngels.Inventarios;
 import BDclass.BDConexion;
 import BDclass.BDOrdenes;
+import ClassAngels.Buscasucursal;
 import ClassAngels.OrdenesClass;
+import ClassAngels.SucursalUtil;
 import FELclass.Token;
+import Inventario.SincronizadorInventario;
 import Pedidos.AceptarPedido;
 import Pedidos.InicioPedido;
 import PedidosApi.AceptarPedidoApi;
 import PedidosApi.InicioPedidoApi;
+import PedidosApiPinula.AceptarPedidoApiPinula;
+import PedidosApiPinula.InicioPedidoApiPinula;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 //import com.mysql.cj.xdevapi.Client;
@@ -64,12 +69,17 @@ public class Ordenes extends javax.swing.JFrame {
         //token();
         imagen();
         setLocationRelativeTo(null);
-        String texto1 = "<html><center><body>NUEVA ORDEN<br>PARA LLEVAR</body></center></html>";
+        String texto1 = "<html><center><body>ORDENES<br>PARA LLEVAR</body></center></html>";
         llevar.setText(texto1);
-        String texto2 = "<html><center><body>REALIZAR<br>PEDIDO</body></center></html>";
+        String texto2 = "<html><center><body>REALIZAR<br>PEDIDO<br>PARAISO</body></center></html>";
         jLabel5.setText(texto2);
-        String texto3 = "<html><center><body>ACEPTAR<br>PEDIDO</body></center></html>";
+        String texto3 = "<html><center><body>ACEPTAR<br>PEDIDO<br>PARAISO</body></center></html>";
         jLabel6.setText(texto3);
+        String texto4 = "<html><center><body>REALIZAR<br>PEDIDO</body></center></html>";
+        jLabel8.setText(texto4);
+        String texto5 = "<html><center><body>ACEPTAR<br>PEDIDO</body></center></html>";
+        jLabel9.setText(texto5);
+       
     }
     
     public void crear() {
@@ -97,7 +107,6 @@ public class Ordenes extends javax.swing.JFrame {
             Icon iconoEscalado = new ImageIcon(imgEscalada);
             imagen.setIcon(iconoEscalado);
         } catch (Exception e) {
-            
             System.out.println("ERRROR IMAGEN "+e);
             JOptionPane.showMessageDialog(null, "ERROR + "+e);
         }
@@ -132,6 +141,10 @@ public class Ordenes extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         GASTOS1 = new ClassAngels.PanelRound();
         jLabel7 = new javax.swing.JLabel();
+        PEDIDOPINULA = new ClassAngels.PanelRound();
+        jLabel8 = new javax.swing.JLabel();
+        RECIBIRPINULA = new ClassAngels.PanelRound();
+        jLabel9 = new javax.swing.JLabel();
 
         jRadioButton1.setText("jRadioButton1");
 
@@ -231,7 +244,7 @@ public class Ordenes extends javax.swing.JFrame {
 
         llevar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         llevar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        llevar.setText("NUEVA ORDEN");
+        llevar.setText("ORDENES PARA LLEVAR");
         llevar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 llevarMouseClicked(evt);
@@ -285,9 +298,9 @@ public class Ordenes extends javax.swing.JFrame {
         PEDIDO.setRoundTopLeft(20);
         PEDIDO.setRoundTopRight(20);
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("PEDIDO");
+        jLabel5.setText("PEDIDO ");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
@@ -312,7 +325,7 @@ public class Ordenes extends javax.swing.JFrame {
         RECIBIR.setRoundTopLeft(20);
         RECIBIR.setRoundTopRight(20);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("ACEPTAR");
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -359,6 +372,60 @@ public class Ordenes extends javax.swing.JFrame {
             .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
         );
 
+        PEDIDOPINULA.setBackground(new java.awt.Color(153, 255, 153));
+        PEDIDOPINULA.setPreferredSize(new java.awt.Dimension(98, 49));
+        PEDIDOPINULA.setRoundBottomLeft(20);
+        PEDIDOPINULA.setRoundBottomRight(20);
+        PEDIDOPINULA.setRoundTopLeft(20);
+        PEDIDOPINULA.setRoundTopRight(20);
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("PEDIDO ");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PEDIDOPINULALayout = new javax.swing.GroupLayout(PEDIDOPINULA);
+        PEDIDOPINULA.setLayout(PEDIDOPINULALayout);
+        PEDIDOPINULALayout.setHorizontalGroup(
+            PEDIDOPINULALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+        );
+        PEDIDOPINULALayout.setVerticalGroup(
+            PEDIDOPINULALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+        );
+
+        RECIBIRPINULA.setBackground(new java.awt.Color(153, 255, 153));
+        RECIBIRPINULA.setPreferredSize(new java.awt.Dimension(98, 49));
+        RECIBIRPINULA.setRoundBottomLeft(20);
+        RECIBIRPINULA.setRoundBottomRight(20);
+        RECIBIRPINULA.setRoundTopLeft(20);
+        RECIBIRPINULA.setRoundTopRight(20);
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("ACEPTAR");
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout RECIBIRPINULALayout = new javax.swing.GroupLayout(RECIBIRPINULA);
+        RECIBIRPINULA.setLayout(RECIBIRPINULALayout);
+        RECIBIRPINULALayout.setHorizontalGroup(
+            RECIBIRPINULALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
+        );
+        RECIBIRPINULALayout.setVerticalGroup(
+            RECIBIRPINULALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -375,14 +442,18 @@ public class Ordenes extends javax.swing.JFrame {
                         .addComponent(imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(PEDIDOPINULA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(RECIBIRPINULA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(PEDIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(RECIBIR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(GASTOS, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(ADMINISTRAR, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(GASTOS1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(PEDIDO, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(RECIBIR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(GASTOS1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -400,10 +471,14 @@ public class Ordenes extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(RECIBIR, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(PEDIDO, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(RECIBIRPINULA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PEDIDOPINULA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(GASTOS1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -433,7 +508,8 @@ public class Ordenes extends javax.swing.JFrame {
 
     private void nuevaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nuevaMouseClicked
        crear();
-         Mesas F = new Mesas(noorden);
+         //Mesas F = new Mesas(noorden);
+         Empleados F = new Empleados(noorden);
          F.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_nuevaMouseClicked
@@ -445,8 +521,8 @@ public class Ordenes extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void llevarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_llevarMouseClicked
-        crear();
-        MenuParaLlevar F = new MenuParaLlevar(noorden);
+       
+        OrdenesSinMesa F = new OrdenesSinMesa();
         F.setVisible(true);
         this.dispose(); 
         
@@ -494,6 +570,28 @@ public class Ordenes extends javax.swing.JFrame {
         F.setVisible(true);
         this.dispose(); 
     }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+       InicioPedidoApiPinula F;
+       try {
+           F = new InicioPedidoApiPinula();
+           F.setVisible(true);
+           this.dispose(); 
+       } catch (Exception ex) {
+           Logger.getLogger(Ordenes.class.getName()).log(Level.SEVERE, null, ex);
+       }
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        AceptarPedidoApiPinula F;
+       try {
+           F = new AceptarPedidoApiPinula();
+           F.setVisible(true);
+           this.dispose(); 
+       } catch (Exception ex) {
+           Logger.getLogger(Ordenes.class.getName()).log(Level.SEVERE, null, ex);
+       }
+    }//GEN-LAST:event_jLabel9MouseClicked
 
       private void token(){
          // System.out.println("llega token");
@@ -579,7 +677,9 @@ public class Ordenes extends javax.swing.JFrame {
     private ClassAngels.PanelRound NEWORDER;
     private ClassAngels.PanelRound NUEVAPARALLEVAR;
     private ClassAngels.PanelRound PEDIDO;
+    private ClassAngels.PanelRound PEDIDOPINULA;
     private ClassAngels.PanelRound RECIBIR;
+    private ClassAngels.PanelRound RECIBIRPINULA;
     private javax.swing.JLabel imagen;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -587,6 +687,8 @@ public class Ordenes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JLabel llevar;

@@ -5,7 +5,7 @@ import BDclass.BDOrdenes;
 import ClassAngels.EtiquetasClass;
 import ClassAngels.InsertarProducto;
 import Inicio.Menu;
-import Inicio.MenuParaLlevar;
+import Inicio.old.MenuParaLlevar;
 import Inicio.MenuSeguimiento;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -51,6 +51,9 @@ public class Hamburguesas extends javax.swing.JPanel {
  String descripcion21;	String descripcion2_21;	 String Precio21; int codigo21;
  String descripcion22;	String descripcion2_22;	 String Precio22; int codigo22;
  String descripcion23;	String descripcion2_23;	 String Precio23; int codigo23;
+ String descripcion24;	String descripcion2_24;	 String Precio24; int codigo24;
+ String descripcion25;	String descripcion2_25;	 String Precio25; int codigo25;
+ String descripcion26;	String descripcion2_26;	 String Precio26; int codigo26;
  int noorden;
  int codigooreden;
  int existe = 0;
@@ -99,6 +102,9 @@ public class Hamburguesas extends javax.swing.JPanel {
        P21.setBackground(Original);
        P22.setBackground(Original);
        P23.setBackground(Original);
+       P24.setBackground(Original);
+       P25.setBackground(Original);
+       P26.setBackground(Original);
       
      }
     });
@@ -301,6 +307,12 @@ public class Hamburguesas extends javax.swing.JPanel {
         HAM14 = new javax.swing.JLabel();
         P23 = new ClassAngels.PanelRound();
         HAM15 = new javax.swing.JLabel();
+        P24 = new ClassAngels.PanelRound();
+        HAM16 = new javax.swing.JLabel();
+        P25 = new ClassAngels.PanelRound();
+        HAM17 = new javax.swing.JLabel();
+        P26 = new ClassAngels.PanelRound();
+        HAM18 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         P15 = new ClassAngels.PanelRound();
         FUE1 = new javax.swing.JLabel();
@@ -732,6 +744,87 @@ public class Hamburguesas extends javax.swing.JPanel {
             .addComponent(HAM15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
         );
 
+        P24.setBackground(new java.awt.Color(204, 255, 102));
+        P24.setMinimumSize(new java.awt.Dimension(100, 75));
+        P24.setRoundBottomLeft(20);
+        P24.setRoundBottomRight(20);
+        P24.setRoundTopLeft(20);
+        P24.setRoundTopRight(20);
+
+        HAM16.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM16.setText("24");
+        HAM16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HAM16MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P24Layout = new javax.swing.GroupLayout(P24);
+        P24.setLayout(P24Layout);
+        P24Layout.setHorizontalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(HAM16, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P24Layout.setVerticalGroup(
+            P24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(HAM16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
+        P25.setBackground(new java.awt.Color(204, 255, 102));
+        P25.setMinimumSize(new java.awt.Dimension(100, 75));
+        P25.setRoundBottomLeft(20);
+        P25.setRoundBottomRight(20);
+        P25.setRoundTopLeft(20);
+        P25.setRoundTopRight(20);
+
+        HAM17.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM17.setText("25");
+        HAM17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HAM17MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P25Layout = new javax.swing.GroupLayout(P25);
+        P25.setLayout(P25Layout);
+        P25Layout.setHorizontalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(HAM17, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P25Layout.setVerticalGroup(
+            P25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(HAM17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
+        P26.setBackground(new java.awt.Color(204, 255, 102));
+        P26.setMinimumSize(new java.awt.Dimension(100, 75));
+        P26.setRoundBottomLeft(20);
+        P26.setRoundBottomRight(20);
+        P26.setRoundTopLeft(20);
+        P26.setRoundTopRight(20);
+
+        HAM18.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        HAM18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HAM18.setText("26");
+        HAM18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HAM18MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout P26Layout = new javax.swing.GroupLayout(P26);
+        P26.setLayout(P26Layout);
+        P26Layout.setHorizontalGroup(
+            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(HAM18, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+        );
+        P26Layout.setVerticalGroup(
+            P26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(HAM18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -769,7 +862,14 @@ public class Hamburguesas extends javax.swing.JPanel {
                         .addComponent(P6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(P7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -793,7 +893,10 @@ public class Hamburguesas extends javax.swing.JPanel {
                     .addComponent(P10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(P8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(P23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(P26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
@@ -1492,6 +1595,60 @@ public class Hamburguesas extends javax.swing.JPanel {
             timer.start();
        }
     }//GEN-LAST:event_HAM15MouseClicked
+
+    private void HAM16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM16MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo24;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P24.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo24;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P24.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_HAM16MouseClicked
+
+    private void HAM17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM17MouseClicked
+        if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo25;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P25.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo25;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P25.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_HAM17MouseClicked
+
+    private void HAM18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HAM18MouseClicked
+       if ((evt.getModifiers() & 4) !=0){
+            codigooreden= codigo26;
+            BuscarExistencia();
+            if(existe >= 2){UpdateCantidadMenos();} else if (existe == 1){eliminarProducto();} else{JOptionPane.showMessageDialog(this, "Aun no tienes agregado este producto");}
+            P26.setBackground(Color.darkGray);
+            timer.setRepeats(false);
+            timer.start();
+          }else{
+            codigooreden = codigo26;
+            BuscarExistencia();
+            if(existe == 0){InsertarProductoPedido();}else{UpdateCantidad();}
+            P26.setBackground(Color.GREEN);
+            timer.setRepeats(false);
+            timer.start();
+       }
+    }//GEN-LAST:event_HAM18MouseClicked
  
     
     private void nombres(){
@@ -1568,6 +1725,15 @@ public class Hamburguesas extends javax.swing.JPanel {
              else if (232== codigo){
              descripcion23 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_23 = result.get(i).getDescripcion2().toUpperCase(); Precio23 = result.get(i).getPrecio();codigo23 = result.get(i).getCodigo();
             }
+            else if (328== codigo){
+             descripcion24 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_24 = result.get(i).getDescripcion2().toUpperCase(); Precio24 = result.get(i).getPrecio();codigo24 = result.get(i).getCodigo();
+            }
+            else if (329== codigo){
+             descripcion25 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_25 = result.get(i).getDescripcion2().toUpperCase(); Precio25 = result.get(i).getPrecio();codigo25 = result.get(i).getCodigo();
+            }
+            else if (330== codigo){
+             descripcion26 = result.get(i).getDescripcion1().toUpperCase(); descripcion2_26 = result.get(i).getDescripcion2().toUpperCase(); Precio26 = result.get(i).getPrecio();codigo26 = result.get(i).getCodigo();
+            }
         }
   }
 
@@ -1587,6 +1753,9 @@ public class Hamburguesas extends javax.swing.JPanel {
     private javax.swing.JLabel HAM13;
     private javax.swing.JLabel HAM14;
     private javax.swing.JLabel HAM15;
+    private javax.swing.JLabel HAM16;
+    private javax.swing.JLabel HAM17;
+    private javax.swing.JLabel HAM18;
     private javax.swing.JLabel HAM2;
     private javax.swing.JLabel HAM3;
     private javax.swing.JLabel HAM4;
@@ -1611,6 +1780,9 @@ public class Hamburguesas extends javax.swing.JPanel {
     private ClassAngels.PanelRound P21;
     private ClassAngels.PanelRound P22;
     private ClassAngels.PanelRound P23;
+    private ClassAngels.PanelRound P24;
+    private ClassAngels.PanelRound P25;
+    private ClassAngels.PanelRound P26;
     private ClassAngels.PanelRound P3;
     private ClassAngels.PanelRound P4;
     private ClassAngels.PanelRound P5;
@@ -1669,6 +1841,12 @@ public class Hamburguesas extends javax.swing.JPanel {
         FUE8.setText(texto22);
         String texto23 ="<html><center><body>"+descripcion23+"<br>"+descripcion2_23+"<br><font color='RED'>Q"+Precio23+"</font></body></center></html>";
         HAM15.setText(texto23);
+         String texto24 ="<html><center><body>"+descripcion24+"<br>"+descripcion2_24+"<br><font color='RED'>Q"+Precio24+"</font></body></center></html>";
+        HAM16.setText(texto24);
+         String texto25 ="<html><center><body>"+descripcion25+"<br>"+descripcion2_25+"<br><font color='RED'>Q"+Precio25+"</font></body></center></html>";
+        HAM17.setText(texto25);
+         String texto26 ="<html><center><body>"+descripcion26+"<br>"+descripcion2_26+"<br><font color='RED'>Q"+Precio26+"</font></body></center></html>";
+        HAM18.setText(texto26);
     }
 
 

@@ -22,19 +22,23 @@ import net.sf.jasperreports.engine.JasperPrintManager;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 import java.sql.ResultSet;
+
 /**
  *
  * @author jluis
  */
 public class CobroET extends javax.swing.JFrame {
-     int cobro;
-     int noorden;
-     String Query;
-     int ordendia;
+
+    int cobro;
+    int noorden;
+    String Query;
+    int ordendia;
+    int codigoempleado;
+
     /**
      * Creates new form CobroET
      */
-    public CobroET(double a,int b) {
+    public CobroET(double a, int b) {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
@@ -50,63 +54,78 @@ public class CobroET extends javax.swing.JFrame {
         total.setText(String.valueOf(a));
         Orden.setText(String.valueOf(ordendia));
     }
-    
-    
-     private void BuscarOrdenDia() {
-            try {
-                BDConexion conecta = new BDConexion();
-                Connection cn = conecta.getConexion();
-                java.sql.Statement stmt = cn.createStatement();
-                ResultSet rs = stmt.executeQuery("select ordendia  from ordenes where date_format(fecha,'%d/%m/%Y') = date_format(now(),'%d/%m/%Y') and NOORDEN = "+noorden);
-                while (rs.next()) {
-                      ordendia= (rs.getInt(1));
-                }
-                rs.close();
-                stmt.close();
-                cn.close();
-            } catch (Exception error) {
-                System.out.print(error);
+
+    private void BuscarOrdenDia() {
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection cn = conecta.getConexion();
+            java.sql.Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery("select ordendia  from ordenes where date_format(fecha,'%d/%m/%Y') = date_format(now(),'%d/%m/%Y') and NOORDEN = " + noorden);
+            while (rs.next()) {
+                ordendia = (rs.getInt(1));
             }
+            rs.close();
+            stmt.close();
+            cn.close();
+        } catch (Exception error) {
+            System.out.print(error);
         }
-    
-    private void cobrarOrdenET(){
+    }
+
+   /* private void Buscarempleado() {
+        try {
+            BDConexion conecta = new BDConexion();
+            Connection cn = conecta.getConexion();
+            java.sql.Statement stmt = cn.createStatement();
+            ResultSet rs = stmt.executeQuery("select count(codigo) as codigo  from empleados where codigo =  " + CODIGOEMPLE.getText());
+            while (rs.next()) {
+                codigoempleado = (rs.getInt(1));
+            }
+            rs.close();
+            stmt.close();
+            cn.close();
+        } catch (Exception error) {
+            System.out.print(error);
+        }
+    }*/
+
+    private void cobrarOrdenET() {
         try {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
-            ps= con.prepareStatement("UPDATE ORDENES SET efectivo = "+CantEfectivo.getText()+",tarjeta = "+Canttarjeta.getText()+",ESTADO = 2,transferencia = 0.00 where noorden="+noorden);
+            ps = con.prepareStatement("UPDATE ORDENES SET efectivo = " + CantEfectivo.getText() + ",tarjeta = " + Canttarjeta.getText() + ",ESTADO = 2,transferencia = 0.00 where noorden=" + noorden);
             ps.executeUpdate();
             con.close();
             ps.close();
         } catch (SQLException ex) {
-           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+            JOptionPane.showMessageDialog(null, "ERROr = " + ex);
         }
-         imprimirCobrodividido();
-         Ordenes F = new Ordenes();
-         F.setVisible(true);
-         this.dispose();
- }
-    
-    private void cobrarOrdenTT(){
+        imprimirCobrodividido();
+        Ordenes F = new Ordenes();
+        F.setVisible(true);
+        this.dispose();
+    }
+
+    private void cobrarOrdenTT() {
         try {
             BDConexion conecta = new BDConexion();
             Connection con = conecta.getConexion();
             PreparedStatement ps = null;
-            ps= con.prepareStatement("UPDATE ORDENES SET efectivo = "+CantEfectivo.getText()+",tarjeta = 0.00,transferencia = "+Canttarjeta.getText()+",ESTADO = 2 where noorden="+noorden);
+            ps = con.prepareStatement("UPDATE ORDENES SET efectivo = " + CantEfectivo.getText() + ",tarjeta = 0.00,transferencia = " + Canttarjeta.getText() + ",ESTADO = 2 where noorden=" + noorden);
             ps.executeUpdate();
             con.close();
             ps.close();
         } catch (SQLException ex) {
-           JOptionPane.showMessageDialog(null,"ERROr = "+ex);
+            JOptionPane.showMessageDialog(null, "ERROr = " + ex);
         }
-         imprimirCobrodividido();
-         Ordenes F = new Ordenes();
-         F.setVisible(true);
-         this.dispose();
-        
-        
- }
-    
+        imprimirCobrodividido();
+        Ordenes F = new Ordenes();
+        F.setVisible(true);
+        this.dispose();
+
+    }
+
     /* private void imprimir(){
       BDConexion con= new BDConexion();
          Connection conexion= con.getConexion();
@@ -120,44 +139,44 @@ public class CobroET extends javax.swing.JFrame {
            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
         }
     }*/
-     
-    private void imprimirCobrodividido(){
-      BDConexion con= new BDConexion();
-         Connection conexion= con.getConexion();
+    private void imprimirCobrodividido() {
+        BDConexion con = new BDConexion();
+        Connection conexion = con.getConexion();
         try {
-            JasperReport jasperReport=(JasperReport)JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuentaDividida.jasper");
-            Map parametros= new HashMap();
+            JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile("C:\\Reportes\\ANGELS\\TiketAngelsPreCuentaDividida.jasper");
+            Map parametros = new HashMap();
             parametros.put("ID_ORDEN", noorden);
-            JasperPrint print = JasperFillManager.fillReport(jasperReport,parametros, conexion);
+            JasperPrint print = JasperFillManager.fillReport(jasperReport, parametros, conexion);
             JasperPrintManager.printReport(print, true);
-        } catch (Exception e) {System.out.println("F"+e);
-           JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  "+e);
+        } catch (Exception e) {
+            System.out.println("F" + e);
+            JOptionPane.showMessageDialog(null, "ERROR EJECUTAR REPORTES =  " + e);
         }
     }
-    
-    private void descargarInventario(){
-     
-          ArrayList<InsertarProducto> result = BDOrdenes.ListarCodigosPedido(noorden);
+
+    private void descargarInventario() {
+
+        ArrayList<InsertarProducto> result = BDOrdenes.ListarCodigosPedido(noorden);
         for (int i = 0; i < result.size(); i++) {
-          int codigo = result.get(i).getCodigo();
-          int cant = result.get(i).getCantidad();
-          try {
-             System.out.println(result.get(i).getCodigo());
-            BDConexion conecta = new BDConexion();
-            Connection con = conecta.getConexion();
-            Query = "{call Descontar("+codigo+","+cant+")}"; 
-            PreparedStatement pse = null;
-            pse= con.prepareStatement(Query);
-            pse.executeUpdate();                   
-            con.close();
-            pse.close();
-        } catch (SQLException ex) {
-           JOptionPane.showMessageDialog(null,"ERROR = "+ex);
+            int codigo = result.get(i).getCodigo();
+            int cant = result.get(i).getCantidad();
+            try {
+                System.out.println(result.get(i).getCodigo());
+                BDConexion conecta = new BDConexion();
+                Connection con = conecta.getConexion();
+                Query = "{call Descontar(" + codigo + "," + cant + ")}";
+                PreparedStatement pse = null;
+                pse = con.prepareStatement(Query);
+                pse.executeUpdate();
+                con.close();
+                pse.close();
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(null, "ERROR = " + ex);
+            }
+
         }
-          
-        }
-     
-     }
+
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -286,10 +305,6 @@ public class CobroET extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addComponent(cobrar, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -297,7 +312,11 @@ public class CobroET extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(Canttarjeta)
-                            .addComponent(CantEfectivo))))
+                            .addComponent(CantEfectivo)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addComponent(cobrar, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -307,13 +326,13 @@ public class CobroET extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Canttarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CantEfectivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(cobrar, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
-                .addGap(11, 11, 11))
+                .addGap(24, 24, 24)
+                .addComponent(cobrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(14, 14, 14))
         );
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -377,11 +396,11 @@ public class CobroET extends javax.swing.JFrame {
                         .addComponent(Tarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Efectivo, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(TYE, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -400,38 +419,37 @@ public class CobroET extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void TarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TarjetaActionPerformed
-       cobro = 1;
-       CantEfectivo.setText("0.00");
-       Canttarjeta.setText("");
-       Canttarjeta.setText(total.getText());
-       Canttarjeta.requestFocus();
-       CantEfectivo.setEditable(false);
-       
-       
-       
+        cobro = 1;
+        CantEfectivo.setText("0.00");
+        Canttarjeta.setText("");
+        Canttarjeta.setText(total.getText());
+        Canttarjeta.requestFocus();
+        CantEfectivo.setEditable(false);
+
+
     }//GEN-LAST:event_TarjetaActionPerformed
 
     private void EfectivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EfectivoActionPerformed
-      cobro = 2;
-      CantEfectivo.setText("");
-      Canttarjeta.setText("0.00");
-      CantEfectivo.setText(total.getText());
-      Canttarjeta.setEditable(false);
-      CantEfectivo.setEditable(false);
-     
+        cobro = 2;
+        CantEfectivo.setText("");
+        Canttarjeta.setText("0.00");
+        CantEfectivo.setText(total.getText());
+        Canttarjeta.setEditable(false);
+        CantEfectivo.setEditable(false);
+
     }//GEN-LAST:event_EfectivoActionPerformed
 
     private void TYEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TYEActionPerformed
-       cobro = 3;
-       CantEfectivo.setText("0.00");
-       Canttarjeta.setText("");
-       Canttarjeta.setText(total.getText());
-       CantEfectivo.setEditable(true);
-       CantEfectivo.requestFocus();
+        cobro = 3;
+        CantEfectivo.setText("0.00");
+        Canttarjeta.setText("");
+        Canttarjeta.setText(total.getText());
+        CantEfectivo.setEditable(true);
+        CantEfectivo.requestFocus();
     }//GEN-LAST:event_TYEActionPerformed
 
     private void CanttarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CanttarjetaActionPerformed
-       cobrar.requestFocus();
+        cobrar.requestFocus();
     }//GEN-LAST:event_CanttarjetaActionPerformed
 
     private void CantEfectivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CantEfectivoActionPerformed
@@ -439,11 +457,11 @@ public class CobroET extends javax.swing.JFrame {
     }//GEN-LAST:event_CantEfectivoActionPerformed
 
     private void totalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalActionPerformed
-      
+
     }//GEN-LAST:event_totalActionPerformed
 
     private void CantEfectivoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CantEfectivoKeyTyped
-        
+
     }//GEN-LAST:event_CantEfectivoKeyTyped
 
     private void CantEfectivoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CantEfectivoKeyReleased
@@ -451,30 +469,38 @@ public class CobroET extends javax.swing.JFrame {
         double totale = Double.parseDouble(total.getText());
         double efectivo = Double.parseDouble(CantEfectivo.getText());
         double contarje = totale - efectivo;
-        Canttarjeta.setText(String.valueOf(contarje));    
+        Canttarjeta.setText(String.valueOf(contarje));
     }//GEN-LAST:event_CantEfectivoKeyReleased
 
     private void cobrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cobrarActionPerformed
-       if(cobro > 0){
-        if(cobro == 3){
-            if(Double.parseDouble(Canttarjeta.getText())>0 && Double.parseDouble(CantEfectivo.getText())>0){cobrarOrdenET();descargarInventario();}
-            else{JOptionPane.showMessageDialog(null, "EL COBRO TIENE QUE ESTAR DIVIDIDO");}
-        }else{
-            
-         if(cobro ==4){cobrarOrdenTT();descargarInventario();}else{   
-        cobrarOrdenET();descargarInventario();}
+
+        if (cobro == 3) {
+            if (Double.parseDouble(Canttarjeta.getText()) > 0 && Double.parseDouble(CantEfectivo.getText()) > 0) {
+                cobrarOrdenET();
+                descargarInventario();
+            } else {
+                JOptionPane.showMessageDialog(null, "EL COBRO TIENE QUE ESTAR DIVIDIDO");
+            }
+        } else {
+            if (cobro == 4) {
+                cobrarOrdenTT();
+                descargarInventario();
+            } else {
+                cobrarOrdenET();
+                descargarInventario();
+            }
         }
-       }else{JOptionPane.showMessageDialog(null, "SELECCIONAR UN METODO DE PAGO");}
+
 
     }//GEN-LAST:event_cobrarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       cobro = 4;
-       CantEfectivo.setText("0.00");
-       Canttarjeta.setText("");
-       Canttarjeta.setText(total.getText());
-       Canttarjeta.requestFocus();
-       CantEfectivo.setEditable(false);
+        cobro = 4;
+        CantEfectivo.setText("0.00");
+        Canttarjeta.setText("");
+        Canttarjeta.setText(total.getText());
+        Canttarjeta.requestFocus();
+        CantEfectivo.setEditable(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
