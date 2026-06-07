@@ -410,7 +410,7 @@ public static InsertarProducto BuscarProductoPromo(int a) throws SQLException{
                             }
             cn.close();
         } catch (Exception e) {
-            System.out.println("error consulta DE LA TABLA "+e);
+            System.out.println("error consulta DE LA TABLA LISTA VENTA "+e);
             return null;
         } 
         return list;
@@ -469,7 +469,7 @@ public static ArrayList<InsertarProducto>ListadeIngresos (int a) {
                             }
             cn.close();
         } catch (Exception e) {
-            System.out.println("error consulta DE LA ATABLA "+e);
+            System.out.println("error consulta DE LA ATABLA LISTA INGRESOS "+e);
             return null;
         } 
         return list;
@@ -498,7 +498,7 @@ public static ArrayList<InsertarProducto>ListadeIngresos (int a) {
                             }
             cn.close();
         } catch (Exception e) {
-            System.out.println("error consulta DE LA TABLA "+e);
+            System.out.println("error consulta DE LA TABLA PRODUCTOS INVENTARIO "+e);
             return null;
         } 
         return list;

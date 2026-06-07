@@ -32,7 +32,7 @@ public class DescargaProducto extends javax.swing.JPanel {
     
     private void ListarProductos(){
      
-        ArrayList<InsertarProducto> result = BDIngresos.ListaProductosBodegaPrincipal();
+        ArrayList<InsertarProducto> result = BDIngresos.ProductosInventario();
         RecargarTabla(result);  
     }
      private void RecargarTabla(ArrayList<InsertarProducto> list) {
@@ -41,16 +41,15 @@ public class DescargaProducto extends javax.swing.JPanel {
               int i = 0;
               for(InsertarProducto t : list)
               {
-                  datos[i][0] = t.getCodigo();
+                  datos[i][0] = t.getId_producto();
                   datos[i][1] = t.getDescripcion();
                   datos[i][2] = t.getUMedida();
-                  datos[i][3] = t.getCantidad();
                   i++;
               }    
              PRO.setModel(new javax.swing.table.DefaultTableModel(
                 datos,
                 new String[]{
-                "CODIGO","DESCRIPCION","UNIDAD MEDIDA","CANTIDAD"
+                "CODIGO","DESCRIPCION","U MEDIDA"
              })
              {  
                  @Override
@@ -64,10 +63,6 @@ public class DescargaProducto extends javax.swing.JPanel {
              columna1.setPreferredWidth(-20);
              TableColumn columna2 = PRO.getColumn("DESCRIPCION");
              columna2.setPreferredWidth(225);
-             TableColumn columna3 = PRO.getColumn("UNIDAD MEDIDA");
-             columna3.setPreferredWidth(35);
-             TableColumn columna4 = PRO.getColumn("CANTIDAD");
-             columna4.setPreferredWidth(35);
              
      }
      
@@ -75,7 +70,7 @@ public class DescargaProducto extends javax.swing.JPanel {
      CODIGO.setText("");
      DESCRI.setText("");
      MEDIDA.setText("");
-     CANTIDAD.setText("");
+     //CANTIDAD.setText("");
      CANTIDADIN.setText("");
      NOTA.setText("");
      }
@@ -86,11 +81,11 @@ public class DescargaProducto extends javax.swing.JPanel {
         PreparedStatement smtp;
         try (Connection con = conecta.getConexion()) {
             smtp = null;
-            smtp =con.prepareStatement("call DESCARGACANTIDADBP('"+CODIGO.getText()+"','"+CANTIDADIN.getText()+"','"+NOTA.getText()+"')");
+            smtp =con.prepareStatement("call DescargaMalEstado('"+CODIGO.getText()+"','"+CANTIDADIN.getText()+"','"+NOTA.getText()+"')");
             smtp.executeUpdate();
         }
         smtp.close(); 
-        JOptionPane.showMessageDialog(null, "CANTIDAD AGREGADA");
+        JOptionPane.showMessageDialog(null, "CANTIDAD ACTUALIZADA");
         ListarProductos();
         limpiar();
     }
@@ -114,8 +109,6 @@ public class DescargaProducto extends javax.swing.JPanel {
         DESCRI = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         MEDIDA = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        CANTIDAD = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         CANTIDADIN = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
@@ -128,7 +121,7 @@ public class DescargaProducto extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("DESCARGAR PRODUCTO");
+        jLabel1.setText("PRODUCTO EN MAL ESTADO");
 
         PRO.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -166,15 +159,6 @@ public class DescargaProducto extends javax.swing.JPanel {
         MEDIDA.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         MEDIDA.setForeground(new java.awt.Color(51, 51, 255));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("CANTIDAD DISPONIBLE");
-
-        CANTIDAD.setEditable(false);
-        CANTIDAD.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        CANTIDAD.setForeground(new java.awt.Color(51, 255, 51));
-        CANTIDAD.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -189,10 +173,8 @@ public class DescargaProducto extends javax.swing.JPanel {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(CANTIDAD))
+                            .addComponent(jLabel4))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -210,21 +192,17 @@ public class DescargaProducto extends javax.swing.JPanel {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(MEDIDA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CANTIDAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DESCARGA DE CANTIDAD Y ANOTACIONES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " ANOTACIONES PRODUCTO EN MAL ESTADO", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
 
         CANTIDADIN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         CANTIDADIN.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("CANTIDAD DE DESCARGA");
+        jLabel6.setText("CANTIDAD");
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel7.setText("NOTA");
@@ -233,7 +211,7 @@ public class DescargaProducto extends javax.swing.JPanel {
         NOTA.setRows(5);
         jScrollPane2.setViewportView(NOTA);
 
-        jButton1.setText("DESCARGA");
+        jButton1.setText("GUARDAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -253,9 +231,9 @@ public class DescargaProducto extends javax.swing.JPanel {
                             .addComponent(jLabel7)
                             .addComponent(jLabel6)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -267,7 +245,7 @@ public class DescargaProducto extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(12, Short.MAX_VALUE))
@@ -296,10 +274,10 @@ public class DescargaProducto extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(8, 8, 8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -307,7 +285,7 @@ public class DescargaProducto extends javax.swing.JPanel {
         CODIGO.setText(String.valueOf(PRO.getModel().getValueAt(PRO.getSelectedRow(), 0)));
         DESCRI.setText(String.valueOf(PRO.getModel().getValueAt(PRO.getSelectedRow(), 1)));
         MEDIDA.setText(String.valueOf(PRO.getModel().getValueAt(PRO.getSelectedRow(), 2)));
-        CANTIDAD.setText(String.valueOf(PRO.getModel().getValueAt(PRO.getSelectedRow(), 3)));
+       // CANTIDAD.setText(String.valueOf(PRO.getModel().getValueAt(PRO.getSelectedRow(), 3)));
         CANTIDADIN.requestFocus();
     }//GEN-LAST:event_PROMouseClicked
 
@@ -321,7 +299,6 @@ public class DescargaProducto extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField CANTIDAD;
     private javax.swing.JTextField CANTIDADIN;
     private javax.swing.JTextField CODIGO;
     private javax.swing.JTextField DESCRI;
@@ -333,7 +310,6 @@ public class DescargaProducto extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;

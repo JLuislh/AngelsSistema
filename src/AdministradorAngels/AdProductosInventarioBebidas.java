@@ -193,7 +193,7 @@ private void actualizarInicioRemoto(String codigo, int cantidad, String fecha, S
     new Thread(() -> {
         HttpURLConnection conn = null;
         try {
-            URL url = new URL("http://40.233.19.196/api/actualizar-inicio");
+            URL url = new URL("http://40.233.19.196/inventariospinula/actualizar-inicio");
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("PUT");
             conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
